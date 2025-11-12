@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import CrossSellCTA from '@/components/CrossSellCTA'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
@@ -279,6 +280,12 @@ export default function BCRTPage() {
             </p>
           </div>
         </div>
+
+        {/* Cross-Sell: Ixora Security */}
+        <CrossSellCTA brand="ixorasecurity" />
+
+        {/* Cross-Sell: DRNF */}
+        <CrossSellCTA brand="drnf" />
       </div>
     </div>
   )

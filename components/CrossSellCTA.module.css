@@ -1,0 +1,147 @@
+.container {
+  padding: 60px 24px;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.03) 0%, rgba(16, 185, 129, 0.02) 100%);
+}
+
+.card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(52, 211, 153, 0.4);
+  box-shadow: 0 12px 40px rgba(52, 211, 153, 0.15);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(52, 211, 153, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #34D399;
+  margin-bottom: 4px;
+}
+
+.brandName {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 24px;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.checkmark {
+  color: #34D399;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.ctaRow {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+  color: #0a0f1a;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(52, 211, 153, 0.4);
+}
+
+.ecosystemLink {
+  color: #34D399;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.ecosystemLink:hover {
+  color: #10B981;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 28px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+  }
+
+  .featuresList {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctaButton {
+    text-align: center;
+  }
+}

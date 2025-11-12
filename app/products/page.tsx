@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import CrossSellCTA from '@/components/CrossSellCTA'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
@@ -695,6 +696,12 @@ export default function ProductsPage() {
             Schedule Infrastructure Consultation
           </a>
         </section>
+
+        {/* Cross-Sell: Ixora Group */}
+        <CrossSellCTA brand="ixoragroup" />
+
+        {/* Cross-Sell: LooCafe */}
+        <CrossSellCTA brand="loocafe" />
       </div>
     </div>
   )

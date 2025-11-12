@@ -1,7 +1,16 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import styles from './page.module.css'
+
+// Load interactive components dynamically
+const EcosystemDiagram = dynamic(() => import('@/components/EcosystemDiagram'), {
+  loading: () => <div style={{ minHeight: '600px' }} />,
+})
+const Testimonials = dynamic(() => import('@/components/Testimonials'), {
+  loading: () => <div style={{ minHeight: '400px' }} />,
+})
 
 export const metadata: Metadata = {
   title: 'The Ixora Ecosystem - Integrated Solutions for Smart Cities',
@@ -202,6 +211,9 @@ export default function EcosystemPage() {
           </div>
         </div>
 
+        {/* Interactive Ecosystem Diagram */}
+        <EcosystemDiagram />
+
         {/* Integration Benefits */}
         <div className={styles.integrationSection}>
           <h2 className={styles.sectionTitle}>Why the Ecosystem Matters</h2>
@@ -339,6 +351,9 @@ export default function EcosystemPage() {
             </div>
           </div>
         </div>
+
+        {/* Testimonials */}
+        <Testimonials />
 
         {/* CTA Section */}
         <div className={styles.ctaSection}>
