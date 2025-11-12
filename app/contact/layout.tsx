@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us - ReFlow Toilets',
     description: 'Contact ReFlow Toilets for public toilet solutions and partnerships',
+    images: ['/images/units/reflow mini.png'],
   },
 }
 

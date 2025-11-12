@@ -20,7 +20,7 @@ export default function ReinventedMission() {
           
           <div className={styles.heroContent}>
             <p className={`${styles.subtitle} slide-in-up`}>
-              <strong>The Reinveted toilet mission</strong>
+              <strong>The Reinvented Toilet Mission</strong>
             </p>
             
             <h2 className={`${styles.title} slide-in-up`}>

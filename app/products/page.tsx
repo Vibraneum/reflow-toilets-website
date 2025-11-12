@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: 'Product Line - ReFlow Mini, Standard & B-CRT | ReFlow Toilets',
   description: 'Choose the right ReFlow sanitation solution for your district. Compare ReFlow Mini, ReFlow Standard, and 40ft B-CRT specifications, capacity, deployment, and pricing.',
   keywords: ['ReFlow Mini', 'ReFlow Standard', 'B-CRT', '40ft container toilet', 'government sanitation', 'district deployment', 'ISO30500', 'prefabricated toilets'],
+  openGraph: {
+    title: 'Product Line - ReFlow Mini, Standard & B-CRT | ReFlow Toilets',
+    description: 'Choose the right ReFlow sanitation solution for your district',
+    images: ['/images/bcrt/MAIN B-CRT IMAGE.png'],
+  },
 }
 
 interface ProductSpec {
