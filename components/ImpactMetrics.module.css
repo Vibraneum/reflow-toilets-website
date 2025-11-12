@@ -1,0 +1,243 @@
+.impactMetrics {
+  padding: var(--section-padding-large) 0;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(103, 183, 229, 0.05) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.impactMetrics::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(52, 211, 153, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(103, 183, 229, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-family: var(--font-poppins);
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.metricCard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-medium);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  position: relative;
+  overflow: hidden;
+}
+
+.metricCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease;
+}
+
+.metricCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideInScale 0.6s ease forwards;
+}
+
+.metricCard.visible::before {
+  transform: scaleX(1);
+}
+
+.metricCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-large);
+}
+
+@keyframes slideInScale {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.iconWrapper {
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 3rem;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.value {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 12px;
+  font-family: var(--font-poppins);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.suffix {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.label {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow-small);
+}
+
+.footerText {
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.footerText strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.footerSubtext {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footerSubtext::before,
+.footerSubtext::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: var(--gradient-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .impactMetrics {
+    padding: var(--section-padding-medium) 0;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .metricsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .metricCard {
+    padding: 30px 20px;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footerSubtext {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footerSubtext::before,
+  .footerSubtext::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .value {
+    font-size: 2.5rem;
+  }
+
+  .suffix {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,233 @@
+.page {
+  width: 100%;
+  padding: 50px 0;
+  background: var(--background-default);
+  min-height: calc(100vh - 200px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.title {
+  font-family: var(--font-montserrat);
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--color-text-sharp);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.sectionTitle {
+  font-family: var(--font-montserrat);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--color-text-sharp);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.infoItem h3 {
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-text-sharp);
+}
+
+.infoItem p {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+.scheduleButton {
+  display: inline-block;
+  background: var(--color-green);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 20px -10px var(--color-green);
+  transition: transform 0.2s ease;
+}
+
+.scheduleButton:hover {
+  transform: translateY(-2px);
+}
+
+.linkedinLink {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.linkedinLink:hover {
+  color: var(--color-green);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-sharp);
+}
+
+.input,
+.textarea {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  padding: 12px 16px;
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  background: var(--background-default);
+  color: var(--color-text-sharp);
+  transition: all var(--transition-base);
+  width: 100%;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.1);
+}
+
+.inputError {
+  border-color: var(--color-error) !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+
+.errorMessage {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--color-error);
+  margin-top: 4px;
+  display: block;
+  animation: slideInDown 0.2s ease-out;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  background: var(--color-green);
+  color: var(--color-white);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -10px var(--color-green);
+  transition: transform 0.2s ease;
+  align-self: flex-start;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 30px 0;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .infoItem h3 {
+    font-size: 18px;
+  }
+  
+  .infoItem p {
+    font-size: 15px;
+  }
+  
+  .formGroup label {
+    font-size: 14px;
+  }
+  
+  .input,
+  .textarea {
+    padding: 12px 14px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+  
+  .scheduleButton {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+  
+  .sectionTitle {
+    font-size: 20px;
+  }
+  
+  .infoItem {
+    gap: 15px;
+  }
+}
+

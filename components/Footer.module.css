@@ -1,0 +1,254 @@
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background: var(--background-default);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.footerHero {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, transparent 100%);
+  border-radius: 16px;
+}
+
+.footerTagline {
+  font-family: var(--font-montserrat);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--color-text-sharp);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+.footerCtaButton {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 16px 40px;
+  border-radius: 999px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.5);
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footerCtaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(52, 211, 153, 0.7);
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 0.5fr 0.2fr 0.2fr 0.1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.footerLogo {
+  width: 131px;
+  height: auto;
+}
+
+.footerDescription {
+  font-family: var(--font-montserrat);
+  color: var(--color-text-sharp);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.phoneNumber {
+  font-family: var(--font-montserrat);
+  color: var(--color-text-sharp);
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.phoneNumber strong {
+  font-weight: 700;
+}
+
+.linkedinButton {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 20px -10px #000000;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.linkedinButton:hover {
+  transform: translateY(-2px);
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLegal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLink {
+  font-family: var(--font-montserrat);
+  color: var(--color-text-sharp);
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+  color: var(--color-primary);
+}
+
+.footerPartners {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.partnerTitle {
+  font-family: var(--font-montserrat);
+  color: var(--color-text-sharp);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.partnerLink {
+  font-family: var(--font-montserrat);
+  color: var(--color-primary);
+  font-size: 15px;
+  text-decoration: none;
+  transition: all var(--transition-base);
+  position: relative;
+  padding-left: 12px;
+}
+
+.partnerLink::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all var(--transition-base);
+}
+
+.partnerLink:hover {
+  color: var(--color-primary-dark);
+  padding-left: 18px;
+}
+
+.partnerLink:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.spacer {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .footerHero {
+    padding: 32px 16px;
+  }
+
+  .footerTagline {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .footerCtaButton {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 32px;
+  }
+
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .footerLinks,
+  .footerLegal,
+  .footerPartners {
+    align-items: center;
+  }
+
+  .partnerLink {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .partnerLink:hover {
+    padding-left: 0;
+  }
+
+  .partnerLink::before {
+    display: none;
+  }
+  
+  .footerDescription {
+    font-size: 15px;
+  }
+  
+  .phoneNumber {
+    font-size: 15px;
+  }
+  
+  .footerLink {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+  
+  .linkedinButton {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerLogo {
+    width: 110px;
+  }
+  
+  .footerDescription {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,49 @@
+{
+  "name": "ReFlow Toilets - Smart Sanitation Solutions",
+  "short_name": "ReFlow",
+  "description": "Smart, resilient, and sustainable public toilet solutions designed for modern urban needs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#34D399",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch with ReFlow Toilets",
+      "url": "/contact",
+      "icons": [{ "src": "/favicon.ico", "sizes": "192x192" }]
+    },
+    {
+      "name": "B-CRT",
+      "short_name": "B-CRT",
+      "description": "Learn about B-CRT technology",
+      "url": "/b-crt",
+      "icons": [{ "src": "/favicon.ico", "sizes": "192x192" }]
+    }
+  ]
+}
+

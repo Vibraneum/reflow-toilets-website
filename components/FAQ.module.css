@@ -1,0 +1,161 @@
+.section {
+  width: 100%;
+  padding: 60px 0;
+  background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.title {
+  font-family: var(--font-montserrat);
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--color-text-sharp);
+}
+
+.subtitle {
+  font-family: var(--font-montserrat);
+  color: var(--color-text-light);
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: var(--background-default);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faqQuestion {
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-sharp);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.faqQuestion:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.icon {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  padding: 0 20px 20px 20px;
+  animation: slideDown 0.3s ease-out;
+}
+
+.faqAnswer p {
+  font-family: var(--font-montserrat);
+  color: var(--color-text-light);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+    transform: translateY(0);
+  }
+}
+
+.spacer {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .title {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .faqQuestion {
+    font-size: 17px;
+    padding: 18px 15px;
+  }
+  
+  .faqQuestion:active {
+    transform: scale(0.98);
+  }
+
+  .faqAnswer {
+    padding: 0 15px 18px 15px;
+  }
+  
+  .faqAnswer p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  
+  .faqItem {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+  }
+  
+  .faqQuestion {
+    font-size: 16px;
+    padding: 16px 12px;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+}
+
