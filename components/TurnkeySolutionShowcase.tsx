@@ -97,7 +97,24 @@ export default function TurnkeySolutionShowcase() {
                   <span>15+ years managing large-scale infrastructure</span>
                 </div>
               </div>
-              <a href="https://www.ixoragroup.com" target="_blank" rel="noopener noreferrer" className={styles.expertLink}>
+              <a
+                href="https://www.ixoragroup.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.expertLink}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'turnkey_ecosystem_click', {
+                      partner_name: 'Ixora Group',
+                      partner_role: 'Operations & Facilities Management',
+                      destination_url: 'https://www.ixoragroup.com',
+                      source_site: 'reflow_toilets',
+                      event_category: 'turnkey_solution',
+                      event_label: 'Ixora Group credentials'
+                    });
+                  }
+                }}
+              >
                 View Ixora Group credentials →
               </a>
             </div>
@@ -132,7 +149,24 @@ export default function TurnkeySolutionShowcase() {
                   <span>Emergency response teams on standby</span>
                 </div>
               </div>
-              <a href="https://www.ixorasecurity.com" target="_blank" rel="noopener noreferrer" className={styles.expertLink}>
+              <a
+                href="https://www.ixorasecurity.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.expertLink}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'turnkey_ecosystem_click', {
+                      partner_name: 'Ixora Security',
+                      partner_role: '24/7 Monitoring & Safety',
+                      destination_url: 'https://www.ixorasecurity.com',
+                      source_site: 'reflow_toilets',
+                      event_category: 'turnkey_solution',
+                      event_label: 'Ixora Security capabilities'
+                    });
+                  }
+                }}
+              >
                 Explore security capabilities →
               </a>
             </div>
@@ -167,7 +201,24 @@ export default function TurnkeySolutionShowcase() {
                   <span>Self-sustaining business model proven</span>
                 </div>
               </div>
-              <a href="https://www.loocafe.com" target="_blank" rel="noopener noreferrer" className={styles.expertLink}>
+              <a
+                href="https://www.loocafe.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.expertLink}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'turnkey_ecosystem_click', {
+                      partner_name: 'LooCafe Network',
+                      partner_role: 'Proof of Concept at Scale',
+                      destination_url: 'https://www.loocafe.com',
+                      source_site: 'reflow_toilets',
+                      event_category: 'turnkey_solution',
+                      event_label: 'LooCafe locations'
+                    });
+                  }
+                }}
+              >
                 Visit LooCafe locations →
               </a>
             </div>
@@ -202,7 +253,24 @@ export default function TurnkeySolutionShowcase() {
                   <span>Education and skill development support</span>
                 </div>
               </div>
-              <a href="https://www.drnf.org" target="_blank" rel="noopener noreferrer" className={styles.expertLink}>
+              <a
+                href="https://www.drnf.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.expertLink}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'turnkey_ecosystem_click', {
+                      partner_name: 'Dr. Rabinder Nath Foundation',
+                      partner_role: 'Community Development & Impact',
+                      destination_url: 'https://www.drnf.org',
+                      source_site: 'reflow_toilets',
+                      event_category: 'turnkey_solution',
+                      event_label: 'DRNF social impact'
+                    });
+                  }
+                }}
+              >
                 See our social impact →
               </a>
             </div>
