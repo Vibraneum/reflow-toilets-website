@@ -12,8 +12,9 @@ export default function TurnkeySolutionShowcase() {
             One Contract. Complete Accountability. Zero Coordination Hassles.
           </h2>
           <p className={styles.subtitle}>
-            When you choose ReFlow, you're not just buying toilets—you're partnering with a proven ecosystem
-            of specialists who've successfully deployed and operated 270+ sanitation facilities across India.
+            Built on LooCafe's proven 270+ facility model since 2018, ReFlow is the next-generation enhancement
+            deploying Gates Foundation's B-CRT technology—same operational excellence, upgraded with zero-discharge
+            waste processing and 100% solar power.
           </p>
         </div>
 
@@ -172,20 +173,20 @@ export default function TurnkeySolutionShowcase() {
             </div>
           </div>
 
-          {/* LooCafe - Proven Track Record */}
+          {/* LooCafe - Proven Heritage */}
           <div className={styles.expertCard}>
             <div className={styles.cardHeader}>
               <div className={styles.expertIcon}>☕</div>
               <div className={styles.headerContent}>
-                <h4 className={styles.expertName}>LooCafe Network</h4>
-                <div className={styles.expertRole}>Proof of Concept at Scale</div>
+                <h4 className={styles.expertName}>LooCafe Heritage</h4>
+                <div className={styles.expertRole}>Proven Foundation (2018-2024)</div>
               </div>
-              <div className={styles.expertBadge}>270+ Locations</div>
+              <div className={styles.expertBadge}>270+ Facilities</div>
             </div>
             <div className={styles.cardBody}>
               <p className={styles.expertDescription}>
-                Don't take our word for it—visit any of our 270+ LooCafe locations operating across Hyderabad.
-                Award-winning IoT-enabled facilities where café revenue funds maintenance. See the exact same model working seamlessly every day.
+                ReFlow is built on LooCafe's proven 270+ facility success—award-winning IoT-enabled public toilets
+                where café revenue funds maintenance. Same operational excellence, now enhanced with Gates B-CRT technology.
               </p>
               <div className={styles.expertProof}>
                 <div className={styles.proofItem}>
