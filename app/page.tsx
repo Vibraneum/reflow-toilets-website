@@ -34,6 +34,9 @@ const ConceptVideos = dynamic(() => import('@/components/ConceptVideos'), {
 const EcosystemShowcase = dynamic(() => import('@/components/EcosystemShowcase'), {
   loading: () => <div style={{ minHeight: '400px' }} />,
 })
+const TurnkeySolutionShowcase = dynamic(() => import('@/components/TurnkeySolutionShowcase'), {
+  loading: () => <div style={{ minHeight: '600px' }} />,
+})
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -140,7 +143,7 @@ export default function Home() {
         <TrustBadges />
         <DesignInnovation />
         <KeyFeatures />
-        <EcosystemShowcase />
+        <TurnkeySolutionShowcase />
         <ReinventedMission />
         <ImpactMetrics />
         <BCRT />

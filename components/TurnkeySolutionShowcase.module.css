@@ -1,0 +1,423 @@
+.section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #475569;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Value Section */
+.valueSection {
+  margin-bottom: 60px;
+}
+
+.valueProp {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.valueIcon {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.valueContent {
+  flex: 1;
+}
+
+.valueTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.valueText {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.valueText strong {
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* Experts Grid */
+.expertsGrid {
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.expertCard {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.expertCard:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.expertIcon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.headerContent {
+  flex: 1;
+  min-width: 200px;
+}
+
+.expertName {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.expertRole {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expertBadge {
+  padding: 6px 12px;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cardBody {
+  border-top: 2px solid #f1f5f9;
+  padding-top: 20px;
+}
+
+.expertDescription {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.expertProof {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.proofItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #334155;
+}
+
+.proofIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #dcfce7;
+  color: #16a34a;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.expertLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0369a1;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.expertLink:hover {
+  color: #0284c7;
+  gap: 12px;
+}
+
+/* Bundle CTA */
+.bundleCTA {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 20px;
+  padding: 48px;
+  margin-bottom: 60px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.bundleContent {
+  text-align: center;
+}
+
+.bundleTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.bundleDescription {
+  font-size: 18px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.bundleDescription strong {
+  color: #10b981;
+}
+
+.bundleOptions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.4);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.4);
+}
+
+.secondaryButton {
+  display: inline-block;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.trustIndicators {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.trustIcon {
+  font-size: 20px;
+}
+
+/* Why Section */
+.whySection {
+  margin-top: 60px;
+}
+
+.whyTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.comparisonCard {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.comparisonCard.highlighted {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 2px solid #10b981;
+}
+
+.comparisonHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.comparisonIcon {
+  font-size: 32px;
+}
+
+.comparisonTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.comparisonList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparisonList li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.comparisonList li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .valueProp {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bundleCTA {
+    padding: 32px 24px;
+  }
+
+  .bundleTitle {
+    font-size: 24px;
+  }
+
+  .bundleDescription {
+    font-size: 16px;
+  }
+
+  .bundleOptions {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .trustIndicators {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comparisonGrid {
+    grid-template-columns: 1fr;
+  }
+}
