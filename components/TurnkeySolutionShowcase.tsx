@@ -185,20 +185,24 @@ export default function TurnkeySolutionShowcase() {
             <div className={styles.cardBody}>
               <p className={styles.expertDescription}>
                 Don't take our word for it—visit any of our 270+ LooCafe locations operating across Hyderabad.
-                See the same technology, operations, and security working seamlessly every single day.
+                Award-winning IoT-enabled facilities where café revenue funds maintenance. See the exact same model working seamlessly every day.
               </p>
               <div className={styles.expertProof}>
                 <div className={styles.proofItem}>
                   <span className={styles.proofIcon}>✓</span>
-                  <span>270+ facilities operational citywide</span>
+                  <span>270+ IoT-enabled facilities operational citywide</span>
                 </div>
                 <div className={styles.proofItem}>
                   <span className={styles.proofIcon}>✓</span>
-                  <span>Gates Foundation exclusive partner</span>
+                  <span>Gates Foundation exclusive partner since 2018</span>
                 </div>
                 <div className={styles.proofItem}>
                   <span className={styles.proofIcon}>✓</span>
-                  <span>Self-sustaining business model proven</span>
+                  <span>Swachh Bharat Mission Top Innovative Company Award</span>
+                </div>
+                <div className={styles.proofItem}>
+                  <span className={styles.proofIcon}>✓</span>
+                  <span>Self-sustaining café-funded model proven at scale</span>
                 </div>
               </div>
               <a
