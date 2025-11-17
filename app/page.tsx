@@ -34,6 +34,9 @@ const FAQ = dynamic(() => import('@/components/FAQ'), {
 const GovCaseStudies = dynamic(() => import('@/components/GovCaseStudies'), {
   loading: () => <div style={{ minHeight: '600px' }} />,
 })
+const IxoraCrossSell = dynamic(() => import('@/components/IxoraCrossSell'), {
+  loading: () => <div style={{ minHeight: '500px' }} />,
+})
 const ConceptVideos = dynamic(() => import('@/components/ConceptVideos'), {
   loading: () => <div style={{ minHeight: '400px' }} />,
 })
@@ -152,6 +155,7 @@ export default function Home() {
         </section>
         <BCRT />
         <GovCaseStudies />
+        <IxoraCrossSell />
         <ConceptVideos />
         <CTASection />
         <FAQ />
