@@ -24,11 +24,11 @@ export default function Hero() {
             <div className={styles.spacer} style={{ height: '48px' }}></div>
 
             <h1 className={`${styles.heroTitle} slide-in-up`}>
-              Government-Grade Sanitation Infrastructure for Smart Cities
+              One of the World's First Fully Integrated Public Toilet Infrastructure
             </h1>
 
             <p className={`${styles.heroSubtitle} slide-in-up`}>
-              ISO30500-certified, zero-discharge systems. 50+ locations operating under India's 2024 WASH standards.
+              ISO30500-certified B-CRT technology deployed across 58 locations in Hyderabad & Mumbai. Serving 50,000+ daily users with zero environmental discharge.
             </p>
 
             <div className={styles.spacer} style={{ height: '16px' }}></div>
@@ -39,7 +39,7 @@ export default function Hero() {
               size="lg"
               className={styles.heroButton}
             >
-              Request Implementation Consultation
+              Schedule Site Demo for Your District
             </LuxuryButton>
 
             <div className={styles.spacer} style={{ height: '16px' }}></div>
