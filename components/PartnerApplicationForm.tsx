@@ -116,7 +116,7 @@ export default function PartnerApplicationForm() {
     const { name, value } = e.target
     setTouched({ ...touched, [name]: true })
     const error = validateField(name, value)
-    setErrors({ ...errors, [name]: error })
+    setErrors({ ...errors, [name]: error || '' })
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -133,14 +133,14 @@ export default function PartnerApplicationForm() {
 
       if (touched.preferredLocations) {
         const error = validateField('preferredLocations', newValues)
-        setErrors({ ...errors, preferredLocations: error })
+        setErrors({ ...errors, preferredLocations: error || '' })
       }
     } else {
       setFormData({ ...formData, [name]: value })
 
       if (touched[name]) {
         const error = validateField(name, value)
-        setErrors({ ...errors, [name]: error })
+        setErrors({ ...errors, [name]: error || '' })
       }
     }
   }
