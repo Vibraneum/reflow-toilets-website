@@ -1,7 +1,9 @@
 .section {
   width: 100%;
-  padding: 20px 0;
-  background: var(--background-default);
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #ffffff 0%, #f0fdf4 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -77,4 +79,3 @@
     font-size: 14px;
   }
 }
-

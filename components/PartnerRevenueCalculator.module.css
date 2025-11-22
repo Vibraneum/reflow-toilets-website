@@ -1,0 +1,425 @@
+/* Partner Revenue Calculator - Apple-Style Design */
+
+.calculator {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.calculatorContent {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+/* Inputs Section */
+.inputsSection {
+  background: #f5f5f7;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+}
+
+.inputGroup {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.value {
+  color: #10b981;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e5e5e7;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #34D399;
+  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.1);
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #d1fae5 0%, #10b981 100%);
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #10b981;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+  transition: all 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.6);
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #10b981;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #86868b;
+}
+
+.assumptions {
+  margin-top: 32px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border-left: 4px solid #34D399;
+}
+
+.assumptions h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+}
+
+.assumptions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.assumptions li {
+  font-size: 0.85rem;
+  color: #6e6e73;
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.assumptions li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: 700;
+}
+
+/* Results Section */
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.resultCard {
+  background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+  border-radius: 16px;
+  padding: 24px;
+  border: 2px solid #a7f3d0;
+}
+
+.resultHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgba(16, 185, 129, 0.2);
+}
+
+.resultHeader h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #065f46;
+  margin: 0;
+}
+
+.resultValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.breakdownRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.breakdownRow span {
+  color: #065f46;
+}
+
+.breakdownRow strong {
+  font-weight: 600;
+}
+
+.negative {
+  color: #dc2626;
+}
+
+.positive {
+  color: #10b981;
+}
+
+.total {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 2px solid rgba(16, 185, 129, 0.3);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.total span,
+.total strong {
+  font-weight: 700;
+  color: #065f46;
+}
+
+/* Metrics Grid */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.metricCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #e5e5e7;
+  transition: all 0.3s ease;
+}
+
+.metricCard:hover {
+  border-color: #34D399;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 211, 153, 0.15);
+}
+
+.metricIcon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.metricValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #10b981;
+  margin-bottom: 4px;
+}
+
+.metricLabel {
+  font-size: 0.85rem;
+  color: #6e6e73;
+  font-weight: 500;
+}
+
+/* Investment Summary */
+.investmentSummary {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.investmentSummary h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #78350f;
+  margin-bottom: 16px;
+}
+
+.investmentRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 0.95rem;
+}
+
+.investmentRow span {
+  color: #92400e;
+}
+
+.investmentRow strong {
+  color: #78350f;
+  font-weight: 600;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #1d1d1f 0%, #2c5530 100%);
+  border-radius: 16px;
+  color: white;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #34D399 0%, #10b981 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(52, 211, 153, 0.3);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(52, 211, 153, 0.4);
+}
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 32px;
+  padding: 20px;
+  background: #f5f5f7;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #6e6e73;
+  line-height: 1.7;
+}
+
+.disclaimer p {
+  margin: 0;
+}
+
+.disclaimer strong {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .calculatorContent {
+    grid-template-columns: 1fr;
+  }
+
+  .inputsSection {
+    order: 1;
+  }
+
+  .resultsSection {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .calculator {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .inputsSection {
+    padding: 24px;
+  }
+
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+
+  .resultValue {
+    font-size: 1.5rem;
+  }
+
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .resultHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    padding: 20px;
+  }
+
+  .inputsSection {
+    padding: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+
+  .resultCard {
+    padding: 20px;
+  }
+
+  .resultValue {
+    font-size: 1.25rem;
+  }
+
+  .metricValue {
+    font-size: 1.25rem;
+  }
+
+  .breakdownRow {
+    font-size: 0.85rem;
+  }
+}

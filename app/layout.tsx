@@ -8,7 +8,6 @@ import PWAInstallPrompt from '@/components/PWAInstallPrompt'
 import ServiceWorkerRegistration from '@/components/ServiceWorkerRegistration'
 import ExitIntentPopup from '@/components/ExitIntentPopup'
 import StickyCtaBar from '@/components/StickyCtaBar'
-import WhatsAppButton from '@/components/WhatsAppButton'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -140,7 +139,6 @@ export default function RootLayout({
           <PWAInstallPrompt />
           <ExitIntentPopup />
           <StickyCtaBar />
-          <WhatsAppButton />
         </ErrorBoundary>
       </body>
     </html>

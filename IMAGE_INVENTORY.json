@@ -1,0 +1,425 @@
+{
+  "project": "ReFlow Toilets Website",
+  "scanDate": "2025-11-21",
+  "totalImages": 31,
+  "totalSizeMB": 11.72,
+  "cloudinaryCloud": "dhupieu4x",
+  "cloudinaryFolder": "reflow-toilets",
+  "summary": {
+    "byFolder": {
+      "root": {
+        "count": 3,
+        "sizeMB": 0.06,
+        "percentage": 0.5
+      },
+      "bcrt": {
+        "count": 10,
+        "sizeMB": 1.9,
+        "percentage": 16.2
+      },
+      "hero": {
+        "count": 2,
+        "sizeMB": 3.1,
+        "percentage": 26.4
+      },
+      "logos": {
+        "count": 4,
+        "sizeMB": 0.54,
+        "percentage": 4.6
+      },
+      "tech": {
+        "count": 8,
+        "sizeMB": 3.9,
+        "percentage": 33.3
+      },
+      "units": {
+        "count": 4,
+        "sizeMB": 2.0,
+        "percentage": 17.1
+      }
+    },
+    "largestFiles": [
+      {
+        "path": "/images/hero/Hero image.png",
+        "size": "2.8MB",
+        "sizeBytes": 2936012,
+        "priority": "HIGH",
+        "expectedReduction": "70-80%"
+      },
+      {
+        "path": "/images/tech/Screenshot 2025-04-18 172042.png",
+        "size": "1.1MB",
+        "sizeBytes": 1153434,
+        "priority": "HIGH",
+        "expectedReduction": "60-70%"
+      },
+      {
+        "path": "/images/units/reflow mini.png",
+        "size": "928KB",
+        "sizeBytes": 950272,
+        "priority": "MEDIUM",
+        "expectedReduction": "60-70%"
+      },
+      {
+        "path": "/images/units/reflow dal lake.png",
+        "size": "684KB",
+        "sizeBytes": 700416,
+        "priority": "MEDIUM",
+        "expectedReduction": "60-70%"
+      },
+      {
+        "path": "/images/tech/Reflow unit app (1).png",
+        "size": "560KB",
+        "sizeBytes": 573440,
+        "priority": "MEDIUM",
+        "expectedReduction": "60-70%"
+      }
+    ]
+  },
+  "images": [
+    {
+      "path": "/favicon.ico",
+      "filename": "favicon.ico",
+      "folder": "root",
+      "size": "4.0K",
+      "sizeBytes": 4096,
+      "format": "ico",
+      "usage": "Browser favicon",
+      "cloudinaryPath": "reflow-toilets/favicon"
+    },
+    {
+      "path": "/favicon.png",
+      "filename": "favicon.png",
+      "folder": "root",
+      "size": "4.0K",
+      "sizeBytes": 4096,
+      "format": "png",
+      "usage": "Apple touch icon",
+      "cloudinaryPath": "reflow-toilets/favicon"
+    },
+    {
+      "path": "/logo.png",
+      "filename": "logo.png",
+      "folder": "root",
+      "size": "52K",
+      "sizeBytes": 53248,
+      "format": "png",
+      "usage": "Site logo",
+      "cloudinaryPath": "reflow-toilets/logo"
+    },
+    {
+      "path": "/images/bcrt/MAIN B-CRT IMAGE.png",
+      "filename": "MAIN B-CRT IMAGE.png",
+      "folder": "bcrt",
+      "size": "496K",
+      "sizeBytes": 507904,
+      "format": "png",
+      "usage": "Hero image for B-CRT technology page",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/main-bcrt-image"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-03-12 231711.png",
+      "filename": "Screenshot 2025-03-12 231711.png",
+      "folder": "bcrt",
+      "size": "96K",
+      "sizeBytes": 98304,
+      "format": "png",
+      "usage": "B-CRT process diagram",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-03-12-231711"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-03-12 231909.png",
+      "filename": "Screenshot 2025-03-12 231909.png",
+      "folder": "bcrt",
+      "size": "176K",
+      "sizeBytes": 180224,
+      "format": "png",
+      "usage": "B-CRT system overview",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-03-12-231909"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-04-03 011055.png",
+      "filename": "Screenshot 2025-04-03 011055.png",
+      "folder": "bcrt",
+      "size": "280K",
+      "sizeBytes": 286720,
+      "format": "png",
+      "usage": "B-CRT technology detail",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-04-03-011055"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-04-03 011136.png",
+      "filename": "Screenshot 2025-04-03 011136.png",
+      "folder": "bcrt",
+      "size": "172K",
+      "sizeBytes": 176128,
+      "format": "png",
+      "usage": "B-CRT process flow",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-04-03-011136"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-04-03 011210.png",
+      "filename": "Screenshot 2025-04-03 011210.png",
+      "folder": "bcrt",
+      "size": "220K",
+      "sizeBytes": 225280,
+      "format": "png",
+      "usage": "B-CRT system components",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-04-03-011210"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-04-03 011410.png",
+      "filename": "Screenshot 2025-04-03 011410.png",
+      "folder": "bcrt",
+      "size": "64K",
+      "sizeBytes": 65536,
+      "format": "png",
+      "usage": "B-CRT technical specifications",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-04-03-011410"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-04-03 011514.png",
+      "filename": "Screenshot 2025-04-03 011514.png",
+      "folder": "bcrt",
+      "size": "224K",
+      "sizeBytes": 229376,
+      "format": "png",
+      "usage": "B-CRT implementation",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-04-03-011514"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-04-03 011945.png",
+      "filename": "Screenshot 2025-04-03 011945.png",
+      "folder": "bcrt",
+      "size": "80K",
+      "sizeBytes": 81920,
+      "format": "png",
+      "usage": "B-CRT monitoring system",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-04-03-011945"
+    },
+    {
+      "path": "/images/bcrt/Screenshot 2025-04-03 012150.png",
+      "filename": "Screenshot 2025-04-03 012150.png",
+      "folder": "bcrt",
+      "size": "100K",
+      "sizeBytes": 102400,
+      "format": "png",
+      "usage": "B-CRT analytics dashboard",
+      "cloudinaryPath": "reflow-toilets/images/bcrt/screenshot-2025-04-03-012150"
+    },
+    {
+      "path": "/images/hero/Hero image.png",
+      "filename": "Hero image.png",
+      "folder": "hero",
+      "size": "2.8M",
+      "sizeBytes": 2936012,
+      "format": "png",
+      "usage": "Main hero image (homepage)",
+      "cloudinaryPath": "reflow-toilets/images/hero/hero-image",
+      "notes": "LARGEST FILE - Needs aggressive optimization"
+    },
+    {
+      "path": "/images/hero/Interior.png",
+      "filename": "Interior.png",
+      "folder": "hero",
+      "size": "344K",
+      "sizeBytes": 352256,
+      "format": "png",
+      "usage": "Interior design showcase",
+      "cloudinaryPath": "reflow-toilets/images/hero/interior"
+    },
+    {
+      "path": "/images/logos/iso.jpg",
+      "filename": "iso.jpg",
+      "folder": "logos",
+      "size": "136K",
+      "sizeBytes": 139264,
+      "format": "jpg",
+      "usage": "ISO certification logo",
+      "cloudinaryPath": "reflow-toilets/images/logos/iso"
+    },
+    {
+      "path": "/images/logos/reflow favicon.png",
+      "filename": "reflow favicon.png",
+      "folder": "logos",
+      "size": "4.0K",
+      "sizeBytes": 4096,
+      "format": "png",
+      "usage": "Favicon variant",
+      "cloudinaryPath": "reflow-toilets/images/logos/reflow-favicon"
+    },
+    {
+      "path": "/images/logos/reflow toilets png.png",
+      "filename": "reflow toilets png.png",
+      "folder": "logos",
+      "size": "364K",
+      "sizeBytes": 372736,
+      "format": "png",
+      "usage": "ReFlow logo with transparency",
+      "cloudinaryPath": "reflow-toilets/images/logos/reflow-toilets-png"
+    },
+    {
+      "path": "/images/logos/telangana.png",
+      "filename": "telangana.png",
+      "folder": "logos",
+      "size": "36K",
+      "sizeBytes": 36864,
+      "format": "png",
+      "usage": "Telangana government logo",
+      "cloudinaryPath": "reflow-toilets/images/logos/telangana"
+    },
+    {
+      "path": "/images/tech/Reflow app 2 (1).png",
+      "filename": "Reflow app 2 (1).png",
+      "folder": "tech",
+      "size": "520K",
+      "sizeBytes": 532480,
+      "format": "png",
+      "usage": "Mobile app interface screenshot",
+      "cloudinaryPath": "reflow-toilets/images/tech/reflow-app-2-1"
+    },
+    {
+      "path": "/images/tech/Reflow app.png",
+      "filename": "Reflow app.png",
+      "folder": "tech",
+      "size": "372K",
+      "sizeBytes": 380928,
+      "format": "png",
+      "usage": "App dashboard view",
+      "cloudinaryPath": "reflow-toilets/images/tech/reflow-app"
+    },
+    {
+      "path": "/images/tech/Reflow unit app (1).png",
+      "filename": "Reflow unit app (1).png",
+      "folder": "tech",
+      "size": "560K",
+      "sizeBytes": 573440,
+      "format": "png",
+      "usage": "Unit control app interface",
+      "cloudinaryPath": "reflow-toilets/images/tech/reflow-unit-app-1"
+    },
+    {
+      "path": "/images/tech/Screenshot 2025-04-18 172042.png",
+      "filename": "Screenshot 2025-04-18 172042.png",
+      "folder": "tech",
+      "size": "1.1M",
+      "sizeBytes": 1153434,
+      "format": "png",
+      "usage": "Tech dashboard main view",
+      "cloudinaryPath": "reflow-toilets/images/tech/screenshot-2025-04-18-172042",
+      "notes": "2nd LARGEST FILE - Needs optimization"
+    },
+    {
+      "path": "/images/tech/Screenshot 2025-04-18 172328.png",
+      "filename": "Screenshot 2025-04-18 172328.png",
+      "folder": "tech",
+      "size": "536K",
+      "sizeBytes": 548864,
+      "format": "png",
+      "usage": "Analytics view",
+      "cloudinaryPath": "reflow-toilets/images/tech/screenshot-2025-04-18-172328"
+    },
+    {
+      "path": "/images/tech/reflow dashboard.png",
+      "filename": "reflow dashboard.png",
+      "folder": "tech",
+      "size": "440K",
+      "sizeBytes": 450560,
+      "format": "png",
+      "usage": "Main dashboard interface",
+      "cloudinaryPath": "reflow-toilets/images/tech/reflow-dashboard"
+    },
+    {
+      "path": "/images/tech/reflow dashboard2.png",
+      "filename": "reflow dashboard2.png",
+      "folder": "tech",
+      "size": "300K",
+      "sizeBytes": 307200,
+      "format": "png",
+      "usage": "Dashboard variant view",
+      "cloudinaryPath": "reflow-toilets/images/tech/reflow-dashboard2"
+    },
+    {
+      "path": "/images/tech/wiring system.jpg",
+      "filename": "wiring system.jpg",
+      "folder": "tech",
+      "size": "68K",
+      "sizeBytes": 69632,
+      "format": "jpg",
+      "usage": "Electrical wiring diagram",
+      "cloudinaryPath": "reflow-toilets/images/tech/wiring-system"
+    },
+    {
+      "path": "/images/units/big unit reflow.png",
+      "filename": "big unit reflow.png",
+      "folder": "units",
+      "size": "232K",
+      "sizeBytes": 237568,
+      "format": "png",
+      "usage": "Large toilet unit exterior",
+      "cloudinaryPath": "reflow-toilets/images/units/big-unit-reflow"
+    },
+    {
+      "path": "/images/units/Mini on footpath reflow.jpg",
+      "filename": "Mini on footpath reflow.jpg",
+      "folder": "units",
+      "size": "208K",
+      "sizeBytes": 212992,
+      "format": "jpg",
+      "usage": "Mini unit on footpath installation",
+      "cloudinaryPath": "reflow-toilets/images/units/mini-on-footpath-reflow"
+    },
+    {
+      "path": "/images/units/reflow dal lake.png",
+      "filename": "reflow dal lake.png",
+      "folder": "units",
+      "size": "684K",
+      "sizeBytes": 700416,
+      "format": "png",
+      "usage": "Dal Lake installation photo",
+      "cloudinaryPath": "reflow-toilets/images/units/reflow-dal-lake"
+    },
+    {
+      "path": "/images/units/reflow mini.png",
+      "filename": "reflow mini.png",
+      "folder": "units",
+      "size": "928K",
+      "sizeBytes": 950272,
+      "format": "png",
+      "usage": "Mini unit detailed view",
+      "cloudinaryPath": "reflow-toilets/images/units/reflow-mini",
+      "notes": "3rd LARGEST FILE - Needs optimization"
+    }
+  ],
+  "optimizationPlan": {
+    "totalExpectedReduction": "60-70%",
+    "targetTotalSizeMB": "3.5-4.7",
+    "savingsMB": "7.0-8.2",
+    "cloudinaryFeatures": [
+      "Automatic format detection (WebP, AVIF)",
+      "Quality optimization (q_auto:good)",
+      "Responsive image generation",
+      "Global CDN delivery",
+      "On-the-fly transformations"
+    ],
+    "highPriorityFiles": [
+      "/images/hero/Hero image.png (2.8MB → ~500-800KB)",
+      "/images/tech/Screenshot 2025-04-18 172042.png (1.1MB → ~300-400KB)",
+      "/images/units/reflow mini.png (928KB → ~250-350KB)",
+      "/images/units/reflow dal lake.png (684KB → ~200-250KB)",
+      "/images/tech/Reflow unit app (1).png (560KB → ~150-200KB)"
+    ]
+  },
+  "cloudinaryStructure": {
+    "baseFolder": "reflow-toilets",
+    "subfolders": [
+      "reflow-toilets/",
+      "reflow-toilets/images/bcrt/",
+      "reflow-toilets/images/hero/",
+      "reflow-toilets/images/logos/",
+      "reflow-toilets/images/tech/",
+      "reflow-toilets/images/units/"
+    ],
+    "namingConvention": "Lowercase, spaces replaced with hyphens, no file extensions in public_id"
+  }
+}

@@ -19,9 +19,6 @@ const ReinventedMission = dynamic(() => import('@/components/ReinventedMission')
 const ImpactMetrics = dynamic(() => import('@/components/ImpactMetrics'), {
   loading: () => <div style={{ minHeight: '400px' }} />,
 })
-const ROICalculator = dynamic(() => import('@/components/ROICalculator'), {
-  loading: () => <div style={{ minHeight: '600px' }} />,
-})
 const BCRT = dynamic(() => import('@/components/BCRT'), {
   loading: () => <div style={{ minHeight: '400px' }} />,
 })
@@ -31,14 +28,14 @@ const CTASection = dynamic(() => import('@/components/CTASection'), {
 const FAQ = dynamic(() => import('@/components/FAQ'), {
   loading: () => <div style={{ minHeight: '400px' }} />,
 })
-const GovCaseStudies = dynamic(() => import('@/components/GovCaseStudies'), {
-  loading: () => <div style={{ minHeight: '600px' }} />,
-})
 const IxoraCrossSell = dynamic(() => import('@/components/IxoraCrossSell'), {
   loading: () => <div style={{ minHeight: '500px' }} />,
 })
 const ConceptVideos = dynamic(() => import('@/components/ConceptVideos'), {
   loading: () => <div style={{ minHeight: '400px' }} />,
+})
+const BundlingEcosystem = dynamic(() => import('@/components/BundlingEcosystem'), {
+  loading: () => <div style={{ minHeight: '600px' }} />,
 })
 
 export const metadata: Metadata = {
@@ -148,13 +145,8 @@ export default function Home() {
         <KeyFeatures />
         <ReinventedMission />
         <ImpactMetrics />
-        <section className="section" style={{ padding: '80px 0' }}>
-          <div className="container">
-            <ROICalculator />
-          </div>
-        </section>
         <BCRT />
-        <GovCaseStudies />
+        <BundlingEcosystem />
         <IxoraCrossSell />
         <ConceptVideos />
         <CTASection />

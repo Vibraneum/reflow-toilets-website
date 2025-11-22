@@ -1,0 +1,811 @@
+/* APPLE-INSPIRED DESIGN SYSTEM */
+
+.page {
+  min-height: 100vh;
+  background: var(--background-default);
+  font-family: var(--font-inter);
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
+  color: white;
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 500;
+  margin-bottom: 16px;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+.description {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  opacity: 0.8;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* CONTROLS SECTION */
+.controls {
+  padding: 80px 20px;
+  background: var(--color-gray-50);
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 48px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: var(--color-navy-dark);
+}
+
+.controlGroup {
+  margin-bottom: 48px;
+}
+
+.controlLabel {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-navy);
+}
+
+/* MODEL SELECTION BUTTONS */
+.modelButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.modelButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modelButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.modelButtonActive {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modelButtonName {
+  font-weight: 600;
+}
+
+.checkmark {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* PARAMETERS GRID */
+.parametersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.parameter {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.parameterLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-navy);
+}
+
+.parameterValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-cyan);
+}
+
+/* APPLE-STYLE SLIDER */
+.slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-gray-200);
+  outline: none;
+  -webkit-appearance: none;
+  margin-bottom: 12px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-gray-300);
+  transition: all 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-gray-300);
+  transition: all 0.2s ease;
+}
+
+.slider::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--color-gray);
+  margin-top: 8px;
+}
+
+/* SELECT DROPDOWN */
+.select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 12px;
+  background: white;
+  font-size: 1rem;
+  font-family: var(--font-inter);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.select:hover {
+  border-color: var(--color-cyan);
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+/* EXPORT BUTTONS */
+.exportButtons {
+  display: flex;
+  gap: 16px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+
+.exportButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: var(--color-navy);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.exportButton:hover {
+  background: var(--color-navy-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.exportButton svg {
+  stroke-width: 2;
+}
+
+/* COMPARISON SECTION */
+.comparison {
+  padding: 80px 20px;
+  background: white;
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.comparisonCard {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comparisonCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.cardHeader {
+  padding: 32px;
+  border-top: 4px solid;
+  background: linear-gradient(to bottom, var(--color-gray-50) 0%, white 100%);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--color-navy-dark);
+}
+
+.cardDescription {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-gray);
+}
+
+.cardBody {
+  padding: 32px;
+}
+
+/* TCO SECTION */
+.tcoSection {
+  padding: 24px;
+  background: var(--color-gray-50);
+  border-radius: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.tcoLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gray);
+  margin-bottom: 8px;
+}
+
+.tcoValue {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.tcoBreakdown {
+  font-size: 0.875rem;
+  color: var(--color-gray);
+  margin-bottom: 12px;
+}
+
+.savings {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--color-success);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* METRICS */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  background: var(--color-gray-50);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.metricLabel {
+  font-size: 0.75rem;
+  color: var(--color-gray);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metricValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+}
+
+/* OPERATING COSTS */
+.operatingCosts {
+  margin-bottom: 24px;
+}
+
+.operatingTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-navy);
+}
+
+.costBreakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.costItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9375rem;
+}
+
+.costLabel {
+  color: var(--color-gray);
+}
+
+.costValue {
+  font-weight: 600;
+  color: var(--color-navy-dark);
+}
+
+/* ENVIRONMENTAL */
+.environmental {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+  border-radius: 12px;
+}
+
+.environmentalTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-navy);
+}
+
+.environmentalMetrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.envMetric {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.envIcon {
+  flex-shrink: 0;
+  color: var(--color-cyan);
+}
+
+.envValue {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+}
+
+.envLabel {
+  font-size: 0.75rem;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9375rem;
+}
+
+.featureActive {
+  color: var(--color-success);
+  font-weight: 700;
+}
+
+.featureInactive {
+  color: var(--color-error);
+  font-weight: 700;
+}
+
+/* CHART SECTION */
+.chartSection {
+  padding: 80px 20px;
+  background: var(--color-gray-50);
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.chartRow {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.chartYearLabel {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-navy);
+}
+
+.chartBars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chartBarContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chartBarLabel {
+  min-width: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.chartBarWrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  background: var(--color-gray-100);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.chartBar {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 2px;
+}
+
+.chartBarValue {
+  position: absolute;
+  right: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+  mix-blend-mode: difference;
+  filter: invert(1);
+}
+
+/* CTA SECTION */
+.cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
+  color: white;
+}
+
+.ctaContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.ctaText {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  margin-bottom: 32px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 32px;
+  background: var(--color-cyan);
+  color: white;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.3);
+}
+
+.ctaButton:hover {
+  background: var(--color-cyan-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.4);
+}
+
+.ctaButtonSecondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 32px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ctaButtonSecondary:hover {
+  background: white;
+  color: var(--color-navy);
+  transform: translateY(-2px);
+}
+
+.ctaNote {
+  font-size: 0.9375rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* SOURCES SECTION */
+.sources {
+  padding: 80px 20px;
+  background: white;
+}
+
+.sourcesTitle {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 48px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: var(--color-navy-dark);
+}
+
+.sourcesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.sourceCard {
+  padding: 24px;
+  background: var(--color-gray-50);
+  border-radius: 16px;
+  border-left: 4px solid var(--color-cyan);
+}
+
+.sourceCard h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-navy);
+}
+
+.sourceCard ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sourceCard li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-gray-700);
+  padding-left: 20px;
+  position: relative;
+}
+
+.sourceCard li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-cyan);
+  font-weight: 700;
+}
+
+.disclaimer {
+  padding: 24px;
+  background: var(--color-warning);
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%);
+  border-left: 4px solid var(--color-orange);
+  border-radius: 12px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-gray-700);
+}
+
+.disclaimer strong {
+  color: var(--color-orange-dark);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px 60px;
+  }
+
+  .controls,
+  .comparison,
+  .chartSection,
+  .cta,
+  .sources {
+    padding: 60px 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 32px;
+  }
+
+  .parametersGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .comparisonGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .environmentalMetrics {
+    grid-template-columns: 1fr;
+  }
+
+  .chartBarContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chartBarLabel {
+    min-width: auto;
+  }
+
+  .chartBarWrapper {
+    width: 100%;
+  }
+
+  .exportButtons {
+    flex-direction: column;
+  }
+
+  .exportButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctaButton,
+  .ctaButtonSecondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .modelButtons {
+    grid-template-columns: 1fr;
+  }
+
+  .tcoValue {
+    font-size: 2rem;
+  }
+}
+
+/* PRINT STYLES */
+@media print {
+  .exportButtons,
+  .cta {
+    display: none;
+  }
+
+  .page {
+    background: white;
+  }
+
+  .comparisonCard {
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid var(--color-gray-300);
+  }
+
+  .chartSection {
+    page-break-before: always;
+  }
+}

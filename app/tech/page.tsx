@@ -5,8 +5,8 @@ import styles from './page.module.css'
 
 export const metadata: Metadata = {
   title: 'Technology Platform - 4-in-1 Management System',
-  description: 'Integrated sanitation infrastructure management platform. AI-powered monitoring with Gemini 2.5 Flash, IoT sensors, mobile apps for public users, operators, executives, and managers. Proven at 270+ LooCafe locations.',
-  keywords: ['IoT toilets', 'smart sanitation', 'AI monitoring', 'toilet management system', 'ReFlow platform', 'public toilet technology', '4-in-1 platform', 'Gemini AI'],
+  description: 'Integrated sanitation infrastructure management platform. AI-powered monitoring with Google Gemini AI, IoT sensors, mobile apps for public users, operators, executives, and managers. Proven at 270+ LooCafe locations.',
+  keywords: ['IoT toilets', 'smart sanitation', 'AI monitoring', 'toilet management system', 'ReFlow platform', 'public toilet technology', '4-in-1 platform', 'Google Gemini AI'],
   openGraph: {
     title: 'Technology Platform - 4-in-1 Management System | ReFlow Toilets',
     description: 'Complete sanitation infrastructure management - from public users to operations executives',
@@ -127,14 +127,14 @@ export default function TechPage() {
               </p>
               <ul className={styles.featureList}>
                 <li>Multi-unit oversight dashboard (up to 50 units)</li>
-                <li>AI image analysis with Gemini 2.5 Flash</li>
+                <li>AI image analysis with Google Gemini AI</li>
                 <li>Damage cost tracking (automated from photos)</li>
                 <li>Performance metrics per unit (uptime, cleanliness)</li>
                 <li>Team coordination and task dispatch</li>
                 <li>Route optimization for field visits</li>
               </ul>
               <div className={styles.techNote}>
-                <strong>Tech:</strong> Gemini 2.5 Flash API, image recognition, geolocation
+                <strong>Tech:</strong> Google Gemini AI API, image recognition, geolocation
               </div>
             </div>
 
@@ -149,7 +149,7 @@ export default function TechPage() {
               </p>
               <ul className={styles.featureList}>
                 <li>District-wide dashboard (1-1,000+ units)</li>
-                <li>AI-powered daily summaries (Gemini 2.5 Flash)</li>
+                <li>AI-powered daily summaries (Google Gemini AI)</li>
                 <li>Multi-year historical data (3+ years stored)</li>
                 <li>Budget tracking (maintenance, consumables, labor)</li>
                 <li>Predictive maintenance alerts</li>
@@ -163,6 +163,54 @@ export default function TechPage() {
         </div>
       </section>
 
+      {/* Comparison Section */}
+      <section className={styles.section} style={{ background: '#fff', padding: '80px 20px' }}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>Why ReFlow Technology?</h2>
+          <p className={styles.platformIntro}>
+            Comparing traditional public toilet management with the ReFlow AI-driven approach.
+          </p>
+          <div style={{ overflowX: 'auto', marginTop: '40px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '600px' }}>
+              <thead>
+                <tr style={{ background: '#f5f5f7' }}>
+                  <th style={{ padding: '20px', textAlign: 'left', borderRadius: '12px 0 0 12px', color: '#1d1d1f' }}>Feature</th>
+                  <th style={{ padding: '20px', textAlign: 'left', color: '#6e6e73' }}>Traditional Public Toilets</th>
+                  <th style={{ padding: '20px', textAlign: 'left', borderRadius: '0 12px 12px 0', color: '#0071e3', fontWeight: '700' }}>ReFlow Platform</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+                  <td style={{ padding: '20px', fontWeight: '600' }}>Monitoring</td>
+                  <td style={{ padding: '20px', color: '#6e6e73' }}>Manual, sporadic inspections</td>
+                  <td style={{ padding: '20px', color: '#1d1d1f' }}>24/7 Real-time IoT Sensors</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+                  <td style={{ padding: '20px', fontWeight: '600' }}>Maintenance Response</td>
+                  <td style={{ padding: '20px', color: '#6e6e73' }}>Reactive (days/weeks)</td>
+                  <td style={{ padding: '20px', color: '#1d1d1f' }}>Proactive (&lt; 2 hours)</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+                  <td style={{ padding: '20px', fontWeight: '600' }}>Cleanliness Verification</td>
+                  <td style={{ padding: '20px', color: '#6e6e73' }}>Paper checklists (unreliable)</td>
+                  <td style={{ padding: '20px', color: '#1d1d1f' }}>AI Photo Analysis & Digital Logs</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+                  <td style={{ padding: '20px', fontWeight: '600' }}>User Feedback</td>
+                  <td style={{ padding: '20px', color: '#6e6e73' }}>Rarely collected</td>
+                  <td style={{ padding: '20px', color: '#1d1d1f' }}>In-app Reporting & Rating</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '20px', fontWeight: '600' }}>Data & Analytics</td>
+                  <td style={{ padding: '20px', color: '#6e6e73' }}>None</td>
+                  <td style={{ padding: '20px', color: '#1d1d1f' }}>Full Historical & Predictive Data</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* AI & Analytics */}
       <section className={styles.aiAnalytics}>
         <div className={styles.container}>
@@ -170,9 +218,9 @@ export default function TechPage() {
 
           <div className={styles.aiGrid}>
             <div className={styles.aiContent}>
-              <h3 className={styles.aiSubtitle}>Gemini 2.5 Flash Integration</h3>
+              <h3 className={styles.aiSubtitle}>Google Gemini AI Integration</h3>
               <p className={styles.aiDescription}>
-                Google's Gemini 2.5 Flash AI model analyzes daily operational photos, generates summaries, and provides predictive insights for maintenance and performance optimization.
+                Google's advanced Gemini AI model analyzes daily operational photos, generates summaries, and provides predictive insights for maintenance and performance optimization.
               </p>
               <ul className={styles.aiFeatureList}>
                 <li><strong>Image Analysis:</strong> Automated cleanliness scoring (0-100 scale) from daily photos</li>
@@ -190,7 +238,7 @@ export default function TechPage() {
                 height={430}
                 className={styles.aiDashboardImage}
               />
-              <p className={styles.aiImageCaption}>AI Dashboard - Gemini 2.5 Flash analyzes unit photos and generates actionable insights</p>
+              <p className={styles.aiImageCaption}>AI Dashboard - Gemini AI analyzes unit photos and generates actionable insights</p>
             </div>
           </div>
 
@@ -406,7 +454,7 @@ export default function TechPage() {
             <div className={styles.stackCategory}>
               <h3 className={styles.stackCategoryTitle}>AI & Machine Learning</h3>
               <ul className={styles.stackList}>
-                <li><strong>Google Gemini 2.5 Flash:</strong> Image analysis, damage detection, daily summaries</li>
+                <li><strong>Google Gemini AI:</strong> Image analysis, damage detection, daily summaries</li>
                 <li><strong>Predictive Models:</strong> Maintenance forecasting, usage pattern analysis</li>
                 <li><strong>NLP Processing:</strong> Issue report categorization, sentiment analysis</li>
               </ul>

@@ -7,12 +7,12 @@ export default function DesignInnovation() {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.spacer} style={{ height: '16px' }}></div>
-        
+
         <div className={styles.contentGrid}>
           <ScrollReveal delay={0}>
             <div className={styles.imageColumn}>
               <Image
-                src="/images/units/reflow mini.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732615/reflow-assets/units/reflow-mini.jpg"
                 alt="ReFlow Toilets Design"
                 width={305}
                 height={458}
@@ -21,7 +21,7 @@ export default function DesignInnovation() {
               />
             </div>
           </ScrollReveal>
-          
+
           <ScrollReveal delay={150}>
             <div className={styles.textColumn}>
               <h3 className={`${styles.heading} text-h2`}>
@@ -36,7 +36,7 @@ export default function DesignInnovation() {
             </div>
           </ScrollReveal>
         </div>
-        
+
         <div className={styles.spacer} style={{ height: '48px' }}></div>
       </div>
     </section>

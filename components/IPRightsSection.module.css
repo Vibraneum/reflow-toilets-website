@@ -1,0 +1,448 @@
+/* IP Rights Section - Professional, Legal, Trustworthy */
+
+.section {
+  width: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.intro {
+  font-size: 1.125rem;
+  color: #4a5568;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Timeline */
+.timeline {
+  background: white;
+  border-radius: 16px;
+  padding: 48px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.timelineTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.timelineGrid {
+  display: grid;
+  gap: 32px;
+  position: relative;
+}
+
+/* Vertical line for timeline */
+.timelineGrid::before {
+  content: '';
+  position: absolute;
+  left: 60px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #0066cc 0%, #004999 100%);
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 24px;
+  position: relative;
+}
+
+.timelineYear {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0066cc;
+  text-align: right;
+  padding-right: 20px;
+  position: relative;
+}
+
+/* Timeline dot */
+.timelineYear::after {
+  content: '';
+  position: absolute;
+  right: -9px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background: #0066cc;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #e6f2ff;
+}
+
+.timelineContent {
+  background: #f8f9fa;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border-left: 4px solid #0066cc;
+}
+
+.timelineEvent {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.timelineDescription {
+  font-size: 0.9375rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Licensing Structure */
+.licensing {
+  margin-bottom: 60px;
+}
+
+.licensingTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.licensingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.licensingCard {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.licensingCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.licensingIcon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.licensingCardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+}
+
+.licensingCardText {
+  font-size: 0.9375rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* FAQ Accordion */
+.faq {
+  margin-bottom: 60px;
+}
+
+.faqTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.accordion {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.accordionItem {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.accordionItem:last-child {
+  border-bottom: none;
+}
+
+.accordionButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+.accordionButton:hover {
+  background-color: #f8f9fa;
+}
+
+.accordionButton.active {
+  background-color: #e6f2ff;
+}
+
+.accordionQuestion {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.accordionIcon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #0066cc;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordionContent.open {
+  max-height: 1000px;
+  padding: 0 28px 24px 28px;
+}
+
+.accordionAnswer {
+  font-size: 0.9375rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Legal Disclaimer */
+.disclaimer {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 24px 28px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.disclaimerText {
+  font-size: 0.875rem;
+  color: #856404;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.disclaimerText strong {
+  font-weight: 700;
+}
+
+/* Sources */
+.sources {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sourcesTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+}
+
+.sourcesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sourcesList li {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.sourcesList li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #0066cc;
+  font-weight: 600;
+}
+
+.sourcesList li:last-child {
+  margin-bottom: 0;
+}
+
+.sourcesList a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: color 0.2s ease;
+}
+
+.sourcesList a:hover {
+  color: #004999;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .timeline {
+    padding: 32px 20px;
+  }
+
+  .timelineGrid::before {
+    left: 50px;
+  }
+
+  .timelineItem {
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+  }
+
+  .timelineYear {
+    font-size: 1.25rem;
+  }
+
+  .timelineYear::after {
+    right: -9px;
+  }
+
+  .timelineContent {
+    padding: 16px 20px;
+  }
+
+  .timelineEvent {
+    font-size: 1rem;
+  }
+
+  .timelineDescription {
+    font-size: 0.875rem;
+  }
+
+  .licensingGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .licensingCard {
+    padding: 24px;
+  }
+
+  .accordionButton {
+    padding: 20px;
+  }
+
+  .accordionQuestion {
+    font-size: 1rem;
+  }
+
+  .accordionContent.open {
+    padding: 0 20px 20px 20px;
+  }
+
+  .disclaimer {
+    padding: 20px;
+  }
+
+  .sources {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .timelineGrid::before {
+    display: none;
+  }
+
+  .timelineYear {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .timelineYear::after {
+    display: none;
+  }
+}

@@ -223,17 +223,17 @@ export default function ROICalculator() {
             </div>
             <div className={styles.savingsGrid}>
               <div className={styles.savingsCard}>
-                <div className={styles.savingsIcon}>💰</div>
+                <div className={styles.savingsIcon}></div>
                 <div className={styles.savingsAmount}>{formatCurrency(totalSavings)}</div>
                 <div className={styles.savingsLabel}>Total Cost Savings</div>
               </div>
               <div className={styles.savingsCard}>
-                <div className={styles.savingsIcon}>💧</div>
+                <div className={styles.savingsIcon}></div>
                 <div className={styles.savingsAmount}>{formatNumber(totalWaterSaved)}L</div>
                 <div className={styles.savingsLabel}>Water Saved</div>
               </div>
               <div className={styles.savingsCard}>
-                <div className={styles.savingsIcon}>🌱</div>
+                <div className={styles.savingsIcon}></div>
                 <div className={styles.savingsAmount}>{formatNumber(Math.round(co2Offset))}kg</div>
                 <div className={styles.savingsLabel}>CO₂ Offset</div>
               </div>

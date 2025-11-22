@@ -1,0 +1,534 @@
+/* ================================
+   LOOCAFE VS REFLOW COMPARISON
+   Apple-inspired clean design
+   ================================ */
+
+.comparison {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 50%, #ffffff 100%);
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #34c759;
+  margin-bottom: 16px;
+  background: rgba(52, 199, 89, 0.1);
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.6;
+  color: #6e6e73;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== OVERVIEW CARDS ===== */
+.overviewGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 80px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overviewCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+  border: 1px solid #f1f1f1;
+}
+
+.overviewCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+}
+
+.brandName {
+  font-size: 32px;
+  font-weight: 900;
+  color: #34c759;
+  letter-spacing: -0.02em;
+}
+
+.overviewTagline {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6e6e73;
+  margin-bottom: 32px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overviewStat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 24px;
+  border-top: 2px solid #f1f1f1;
+}
+
+.overviewNumber {
+  font-size: 48px;
+  font-weight: 900;
+  color: #34c759;
+  line-height: 1;
+}
+
+.overviewLabel {
+  font-size: 15px;
+  font-weight: 600;
+  color: #6e6e73;
+}
+
+/* ===== COMPARISON TABLE ===== */
+.tableWrapper {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 60px;
+  border: 1px solid #f1f1f1;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.table th {
+  padding: 24px 32px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  border-bottom: 2px solid #34c759;
+}
+
+.thCategory {
+  width: 20%;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6e6e73;
+}
+
+.thBrand {
+  width: 40%;
+  font-size: 18px;
+  color: #34c759;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #f1f1f1;
+  transition: background 0.2s;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tdCategory {
+  padding: 28px 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  vertical-align: top;
+  background: #fafafa;
+}
+
+.tdCategory div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.categoryIcon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.tdCategory span {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.tdData {
+  padding: 28px 32px;
+  vertical-align: top;
+}
+
+.tdData strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.tdData p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6e6e73;
+  margin: 0;
+}
+
+/* ===== SUMMARY CARDS ===== */
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.summaryCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 20px;
+  padding: 40px;
+  border: 2px solid #34c759;
+  box-shadow: 0 4px 20px rgba(52, 199, 89, 0.1);
+}
+
+.summaryTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #34c759;
+}
+
+.summaryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summaryList li {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  padding-left: 32px;
+  position: relative;
+}
+
+.summaryList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: #34c759;
+  color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  top: -2px;
+}
+
+/* ===== PARTNERSHIP NOTE ===== */
+.partnership {
+  background: linear-gradient(135deg, #34c759 0%, #30b350 100%);
+  border-radius: 24px;
+  padding: 60px 48px;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  box-shadow: 0 8px 32px rgba(52, 199, 89, 0.3);
+}
+
+.partnershipIcon {
+  font-size: 64px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.partnershipContent {
+  flex: 1;
+  color: #ffffff;
+}
+
+.partnershipTitle {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.partnershipText {
+  font-size: 17px;
+  line-height: 1.7;
+  opacity: 0.95;
+  margin-bottom: 32px;
+  max-width: 900px;
+}
+
+.partnershipLinks {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.partnershipLink {
+  display: inline-block;
+  background: #ffffff;
+  color: #34c759;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.partnershipLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .table th,
+  .tdCategory,
+  .tdData {
+    padding: 20px 24px;
+  }
+
+  .thCategory {
+    width: 25%;
+  }
+
+  .thBrand {
+    width: 37.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .comparison {
+    padding: 60px 20px;
+  }
+
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .overviewGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+
+  .overviewCard {
+    padding: 36px 32px;
+  }
+
+  /* Mobile: Stack table vertically */
+  .tableWrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table {
+    min-width: 800px;
+  }
+
+  .table th,
+  .tdCategory,
+  .tdData {
+    padding: 16px 20px;
+    font-size: 14px;
+  }
+
+  .tdData strong {
+    font-size: 15px;
+  }
+
+  .tdData p {
+    font-size: 14px;
+  }
+
+  .categoryIcon {
+    font-size: 20px;
+  }
+
+  .summaryGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .summaryCard {
+    padding: 32px 24px;
+  }
+
+  .summaryTitle {
+    font-size: 20px;
+  }
+
+  .summaryList li {
+    font-size: 15px;
+  }
+
+  .partnership {
+    flex-direction: column;
+    padding: 40px 32px;
+    gap: 24px;
+  }
+
+  .partnershipIcon {
+    font-size: 48px;
+  }
+
+  .partnershipTitle {
+    font-size: 24px;
+  }
+
+  .partnershipText {
+    font-size: 16px;
+  }
+
+  .partnershipLinks {
+    flex-direction: column;
+  }
+
+  .partnershipLink {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .comparison {
+    padding: 40px 16px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .overviewCard {
+    padding: 28px 24px;
+  }
+
+  .brandName {
+    font-size: 28px;
+  }
+
+  .overviewTagline {
+    font-size: 16px;
+    min-height: 40px;
+  }
+
+  .overviewNumber {
+    font-size: 40px;
+  }
+
+  .overviewLabel {
+    font-size: 14px;
+  }
+
+  .table {
+    min-width: 700px;
+  }
+
+  .summaryCard {
+    padding: 24px 20px;
+  }
+
+  .partnership {
+    padding: 32px 24px;
+  }
+
+  .partnershipIcon {
+    font-size: 40px;
+  }
+
+  .partnershipTitle {
+    font-size: 20px;
+  }
+
+  .partnershipText {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .brandName {
+    font-size: 24px;
+  }
+
+  .overviewNumber {
+    font-size: 36px;
+  }
+
+  .summaryTitle {
+    font-size: 18px;
+  }
+
+  .partnershipTitle {
+    font-size: 18px;
+  }
+}

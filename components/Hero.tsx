@@ -24,11 +24,11 @@ export default function Hero() {
             <div className={styles.spacer} style={{ height: '48px' }}></div>
 
             <h1 className={`${styles.heroTitle} slide-in-up`}>
-              One of the World's First Fully Integrated Public Toilet Infrastructure
+              Scalable Decentralized Sanitation Infrastructure
             </h1>
 
             <p className={`${styles.heroSubtitle} slide-in-up`}>
-              ISO30500-certified B-CRT technology deployed across 58 locations in Hyderabad & Mumbai. Serving 50,000+ daily users with zero environmental discharge.
+              ISO30500-certified B-CRT technology. First deployment coming soon. Zero environmental discharge.
             </p>
 
             <div className={styles.spacer} style={{ height: '16px' }}></div>

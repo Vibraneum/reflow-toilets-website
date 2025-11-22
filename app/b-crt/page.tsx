@@ -1,14 +1,20 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import styles from './page.module.css'
+
+// Dynamic import for IP Rights Section
+const IPRightsSection = dynamic(() => import('@/components/IPRightsSection'), {
+  loading: () => <div style={{ minHeight: '400px' }} />,
+})
 
 export const metadata: Metadata = {
   title: 'B-CRT Technical Specifications - 40ft Reinvented Toilet',
-  description: '8-stage treatment. Zero discharge. ISO30500 compliant. 3,000 users daily. 100% solar powered. Complete engineering deep dive.',
-  keywords: ['B-CRT', 'Blackwater Circular Reinvented Toilet', 'reinvented toilet', 'Gates Foundation', 'ISO30500', 'zero discharge toilet', 'water treatment technology'],
+  description: '8-stage treatment. Zero discharge. ISO30500 compliant. 3,000 users daily. 100% solar powered. Complete engineering deep dive. Built on Gates Foundation Reinvent the Toilet Challenge innovations.',
+  keywords: ['B-CRT', 'Blackwater Circular Reinvented Toilet', 'reinvented toilet', 'Gates Foundation', 'ISO30500', 'zero discharge toilet', 'water treatment technology', 'Global Access', 'patent licensing', 'technology transfer'],
   openGraph: {
     title: 'B-CRT Technical Specifications | ReFlow Toilets',
-    description: '8-stage treatment. Zero discharge. ISO30500 compliant. Complete engineering documentation.',
+    description: '8-stage treatment. Zero discharge. ISO30500 compliant. Complete engineering documentation. Gates Foundation Global Access commitment.',
     images: ['/images/bcrt/MAIN B-CRT IMAGE.png'],
   },
 }
@@ -665,6 +671,9 @@ export default function BCRTPage() {
           </div>
         </div>
       </section>
+
+      {/* IP Rights & Licensing */}
+      <IPRightsSection />
 
       {/* CTA */}
       <section className={styles.cta}>

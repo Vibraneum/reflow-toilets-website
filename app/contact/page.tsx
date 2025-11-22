@@ -65,11 +65,11 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     if (!validateForm()) {
       return
     }
-    
+
     setIsSubmitting(true)
     setSubmitStatus('idle')
 
@@ -171,15 +171,32 @@ export default function ContactPage() {
         <div className={styles.contentGrid}>
           <div className={styles.contactInfo}>
             <h2 className={styles.sectionTitle}>Get in Touch</h2>
-            
+
+            <div className={styles.infoItem}>
+              <h3>Office Address</h3>
+              <p>
+                <strong>Ixora Corporate Services Pvt Ltd</strong><br />
+                Door No: 8, 2-293/82/J/A/101,<br />
+                Journalist Colony, Jubilee Hills,<br />
+                Hyderabad, Telangana 500033
+              </p>
+            </div>
+
             <div className={styles.infoItem}>
               <h3>Phone</h3>
               <p>
-                <strong>+91 9494330442</strong><br />
-                (10am–5pm Monday–Friday)
+                <strong>+91-40-4850-4850</strong><br />
+                (10am–6pm Monday–Saturday)
               </p>
             </div>
-            
+
+            <div className={styles.infoItem}>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:info@ixoragroup.com" style={{ color: 'inherit', textDecoration: 'underline' }}>info@ixoragroup.com</a>
+              </p>
+            </div>
+
             <div className={styles.infoItem}>
               <h3>Schedule a Consultation</h3>
               <a
@@ -191,9 +208,9 @@ export default function ContactPage() {
                 Book Consultation
               </a>
             </div>
-            
+
             <div className={styles.infoItem}>
-              <h3>LinkedIn</h3>
+              <h3>Social</h3>
               <a
                 href="https://www.linkedin.com/company/reflow-toilets"
                 target="_blank"
@@ -203,11 +220,22 @@ export default function ContactPage() {
                 Connect with us on LinkedIn
               </a>
             </div>
+
+            <div className={styles.mapContainer} style={{ marginTop: '20px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8272226612307!2d78.4072!3d17.4203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9158f201b205%3A0x11303421b36795e3!2sIxora%20Corporate%20Services%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1625000000000!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
-          
+
           <div className={styles.formSection}>
             <h2 className={styles.sectionTitle}>Send us a Message</h2>
-            
+
             <form onSubmit={handleSubmit} className={styles.form}>
               <div className={styles.formGroup}>
                 <label htmlFor="name">Name *</label>
@@ -229,7 +257,7 @@ export default function ContactPage() {
                   </span>
                 )}
               </div>
-              
+
               <div className={styles.formGroup}>
                 <label htmlFor="email">Email *</label>
                 <input
@@ -250,7 +278,7 @@ export default function ContactPage() {
                   </span>
                 )}
               </div>
-              
+
               <div className={styles.formGroup}>
                 <label htmlFor="phone">Phone</label>
                 <input
@@ -270,7 +298,7 @@ export default function ContactPage() {
                   </span>
                 )}
               </div>
-              
+
               <div className={styles.formGroup}>
                 <label htmlFor="message">Message *</label>
                 <textarea
@@ -291,21 +319,21 @@ export default function ContactPage() {
                   </span>
                 )}
               </div>
-              
-              <button 
-                type="submit" 
+
+              <button
+                type="submit"
                 className={styles.submitButton}
                 disabled={isSubmitting}
               >
                 {isSubmitting ? 'Sending...' : submitStatus === 'success' ? 'Message Sent!' : 'Send Message'}
               </button>
-              
+
               {submitStatus === 'success' && (
                 <p style={{ color: '#10b981', marginTop: '10px', fontSize: '14px' }}>
                   ✅ Thank you! We'll get back to you soon.
                 </p>
               )}
-              
+
               {submitStatus === 'error' && (
                 <p style={{ color: '#ef4444', marginTop: '10px', fontSize: '14px' }}>
                   ❌ Something went wrong. Please try again or call us directly.

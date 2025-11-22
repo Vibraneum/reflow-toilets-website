@@ -1,254 +1,403 @@
+/* ===== FOOTER - REFLOW BRAND THEME ===== */
+
 .footer {
   width: 100%;
-  padding: 20px 0;
-  background: var(--background-default);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: #1a1a1a;
+  color: #ffffff;
+  margin-top: 0;
+  padding: 0;
+  border-top: none;
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 20px;
 }
 
-.footerHero {
+/* ===== CTA SECTION ===== */
+.ctaSection {
+  padding: 80px 20px;
   text-align: center;
-  margin-bottom: 0;
-  padding: 40px 20px;
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, transparent 100%);
-  border-radius: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footerTagline {
-  font-family: var(--font-montserrat);
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 24px;
-  color: var(--color-text-sharp);
-  max-width: 800px;
+.ctaTitle {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.ctaText {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.4;
 }
 
-.footerCtaButton {
-  background: var(--color-primary);
-  color: var(--color-white);
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #34c759 0%, #30b350 100%);
+  color: #ffffff;
   padding: 16px 40px;
-  border-radius: 999px;
-  font-family: var(--font-montserrat);
-  font-weight: 600;
-  font-size: 16px;
-  box-shadow: 0 0 20px rgba(52, 211, 153, 0.5);
-  transition: all 0.3s ease;
-  display: inline-block;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(52, 199, 89, 0.3);
 }
 
-.footerCtaButton:hover {
+.primaryButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(52, 211, 153, 0.7);
+  box-shadow: 0 6px 20px rgba(52, 199, 89, 0.5);
 }
 
-.footerContent {
+.secondaryButton {
+  background: transparent;
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* ===== MAIN FOOTER GRID ===== */
+.footerGrid {
   display: grid;
-  grid-template-columns: 0.5fr 0.2fr 0.2fr 0.1fr;
-  gap: 40px;
-  align-items: start;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+  padding: 60px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footerMain {
+/* Company Section */
+.companySection {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 15px;
+  gap: 20px;
 }
 
-.footerLogo {
-  width: 131px;
+.logo {
+  width: 120px;
   height: auto;
 }
 
-.footerDescription {
-  font-family: var(--font-montserrat);
-  color: var(--color-text-sharp);
+.tagline {
   font-size: 16px;
   line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 350px;
 }
 
-.phoneNumber {
-  font-family: var(--font-montserrat);
-  color: var(--color-text-sharp);
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
 }
 
-.phoneNumber strong {
+.contactLabel {
+  font-size: 14px;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
 }
 
-.linkedinButton {
-  background: var(--color-black);
-  color: var(--color-white);
-  padding: 12px 24px;
-  border-radius: 999px;
-  font-family: var(--font-montserrat);
+.phone {
+  font-size: 20px;
+  font-weight: 700;
+  color: #34c759;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.phone:hover {
+  color: #30d158;
+}
+
+.hours {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* Link Sections */
+.linkSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.linkTitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 8px 0;
+}
+
+.link {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.2s;
+  line-height: 1.5;
+}
+
+.link:hover {
+  color: #34c759;
+  transform: translateX(4px);
+}
+
+/* ===== BOTTOM BAR ===== */
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 20px;
+}
+
+.bottomLeft {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.legal {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.legal:hover {
+  color: #ffffff;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
   font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  box-shadow: 0 10px 20px -10px #000000;
-  transition: transform 0.2s ease;
-  display: inline-block;
+  transition: color 0.2s;
 }
 
-.linkedinButton:hover {
-  transform: translateY(-2px);
+.social:hover {
+  color: #34c759;
 }
 
-.footerLinks {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.social svg {
+  width: 20px;
+  height: 20px;
 }
 
-.footerLegal {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .linkSection:last-child {
+    grid-column: 1 / -1;
+  }
 }
 
-.footerLink {
-  font-family: var(--font-montserrat);
-  color: var(--color-text-sharp);
-  font-size: 16px;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.footerLink:hover {
-  color: var(--color-primary);
-}
-
-.footerPartners {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.partnerTitle {
-  font-family: var(--font-montserrat);
-  color: var(--color-text-sharp);
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.partnerLink {
-  font-family: var(--font-montserrat);
-  color: var(--color-primary);
-  font-size: 15px;
-  text-decoration: none;
-  transition: all var(--transition-base);
-  position: relative;
-  padding-left: 12px;
-}
-
-.partnerLink::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  transform: translateX(-5px);
-  transition: all var(--transition-base);
-}
-
-.partnerLink:hover {
-  color: var(--color-primary-dark);
-  padding-left: 18px;
-}
-
-.partnerLink:hover::before {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.spacer {
-  width: 100%;
-}
-
+/* Mobile */
 @media (max-width: 768px) {
-  .container {
-    padding: 0 15px;
+  .ctaSection {
+    padding: 60px 20px;
   }
 
-  .footerHero {
-    padding: 32px 16px;
+  .ctaTitle {
+    font-size: 32px;
   }
 
-  .footerTagline {
-    font-size: 22px;
-    margin-bottom: 20px;
+  .ctaText {
+    font-size: 16px;
   }
 
-  .footerCtaButton {
+  .ctaButtons {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .primaryButton,
+  .secondaryButton {
     width: 100%;
-    max-width: 300px;
-    padding: 14px 32px;
-  }
-
-  .footerContent {
-    grid-template-columns: 1fr;
-    gap: 35px;
     text-align: center;
   }
 
-  .footerLinks,
-  .footerLegal,
-  .footerPartners {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 48px 20px;
+  }
+
+  .companySection {
+    text-align: center;
     align-items: center;
   }
 
-  .partnerLink {
+  .tagline {
     text-align: center;
-    padding-left: 0;
   }
 
-  .partnerLink:hover {
-    padding-left: 0;
+  .contact {
+    align-items: center;
+    text-align: center;
   }
 
-  .partnerLink::before {
-    display: none;
+  .linkSection {
+    text-align: center;
   }
-  
-  .footerDescription {
-    font-size: 15px;
-  }
-  
-  .phoneNumber {
-    font-size: 15px;
-  }
-  
-  .footerLink {
-    font-size: 15px;
+
+  .link {
+    display: inline-block;
     padding: 8px 0;
   }
-  
-  .linkedinButton {
-    width: 100%;
-    max-width: 300px;
-    padding: 14px 24px;
+
+  .link:hover {
+    transform: none;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 20px;
+    text-align: center;
+  }
+
+  .bottomLeft {
+    flex-direction: column;
+    gap: 16px;
   }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
-  .footerLogo {
-    width: 110px;
+  .ctaSection {
+    padding: 48px 20px;
   }
-  
-  .footerDescription {
+
+  .ctaTitle {
+    font-size: 28px;
+  }
+
+  .ctaText {
+    font-size: 15px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+
+  .footerGrid {
+    padding: 40px 20px;
+    gap: 32px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .tagline {
+    font-size: 15px;
+  }
+
+  .phone {
+    font-size: 18px;
+  }
+
+  .link {
+    font-size: 15px;
+  }
+
+  .bottomBar {
+    padding: 28px 20px;
+  }
+
+  .copyright,
+  .legal,
+  .social {
+    font-size: 13px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 375px) {
+  .ctaSection {
+    padding: 40px 16px;
+  }
+
+  .ctaTitle {
+    font-size: 24px;
+  }
+
+  .ctaText {
     font-size: 14px;
   }
-}
 
+  .primaryButton,
+  .secondaryButton {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
+  .footerGrid {
+    padding: 32px 16px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .phone {
+    font-size: 16px;
+  }
+}

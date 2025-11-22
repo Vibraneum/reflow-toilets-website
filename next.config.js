@@ -16,6 +16,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'image.typedream.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
     ],
   },
   // PWA Configuration

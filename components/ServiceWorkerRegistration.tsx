@@ -4,6 +4,21 @@ import { useEffect } from 'react'
 
 export default function ServiceWorkerRegistration() {
   useEffect(() => {
+    // Disable Service Worker in development mode to prevent caching issues
+    if (process.env.NODE_ENV === 'development') {
+      // Unregister any existing service workers in development
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          registrations.forEach((registration) => {
+            registration.unregister()
+            console.log('Service Worker unregistered for development')
+          })
+        })
+      }
+      return
+    }
+
+    // Only register Service Worker in production
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker
@@ -20,6 +35,8 @@ export default function ServiceWorkerRegistration() {
 
   return null
 }
+
+
 
 
 

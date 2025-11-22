@@ -74,6 +74,7 @@ export default function Header() {
             <Link href="/tech" className={styles.navLink} onClick={closeMenu}>Tech</Link>
             <Link href="/b-crt" className={styles.navLink} onClick={closeMenu}>B-CRT</Link>
             <Link href="/innovation" className={styles.navLink} onClick={closeMenu}>Innovation</Link>
+            <Link href="/knowledge" className={styles.navLink} onClick={closeMenu}>Knowledge</Link>
             <Link href="/contact" className={styles.navLink} onClick={closeMenu}>Contact</Link>
             {isMenuOpen && (
               <a
