@@ -57,7 +57,7 @@ export default function BCRTPage() {
       <section className={styles.productImage}>
         <div className={styles.container}>
           <Image
-            src="/images/bcrt/MAIN B-CRT IMAGE.png"
+            src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg"
             alt="B-CRT 40ft containerized toilet unit"
             width={1200}
             height={600}
@@ -200,7 +200,7 @@ export default function BCRTPage() {
           {/* Process Flow Image */}
           <div className={styles.treatmentFlowWrapper}>
             <Image
-              src="/images/bcrt/Screenshot 2025-04-03 011055.png"
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-3-filtration.png"
               alt="8-stage treatment process flow diagram"
               width={1200}
               height={600}
@@ -516,7 +516,7 @@ export default function BCRTPage() {
           <div className={styles.galleryGrid}>
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/Screenshot 2025-03-12 231711.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-1-intake.png"
                 alt="40ft container floor plan with cubicle layout"
                 width={600}
                 height={400}
@@ -527,7 +527,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/Screenshot 2025-03-12 231909.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-2-screening.png"
                 alt="Treatment equipment installation diagram"
                 width={600}
                 height={400}
@@ -538,7 +538,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/Screenshot 2025-04-03 011055.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-3-filtration.png"
                 alt="8-stage treatment process flow diagram"
                 width={600}
                 height={400}
@@ -549,7 +549,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/Screenshot 2025-04-03 011136.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-4-bio.png"
                 alt="Engineering drawings with complete dimensions"
                 width={600}
                 height={400}
@@ -560,7 +560,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/Screenshot 2025-04-03 011210.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-5-secondary.png"
                 alt="Equipment configuration and specifications"
                 width={600}
                 height={400}
@@ -571,7 +571,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/Screenshot 2025-04-03 011410.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-6-tertiary.png"
                 alt="Water quality standards and compliance data"
                 width={600}
                 height={400}

@@ -19,7 +19,7 @@ export default function CTASection() {
             <ScrollReveal delay={0}>
               <div className={styles.logoContainer}>
                 <Image
-                  src="/images/logos/reflow toilets png.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-toilets-logo.png"
                   alt="ReFlow Toilets Logo"
                   width={50}
                   height={50}

@@ -21,7 +21,7 @@ export default function DesignPage() {
       <section className={styles.heroFull}>
         <div className={styles.heroImageWrapper}>
           <Image
-            src="/images/units/Mini on footpath reflow.jpg"
+            src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732617/reflow-assets/units/mini-on-footpath.jpg"
             alt="ReFlow Design"
             fill
             className={styles.heroImage}
@@ -77,7 +77,7 @@ export default function DesignPage() {
           <div className={styles.imageGrid}>
             <div className={styles.gridItemLarge}>
               <Image
-                src="/images/units/big unit reflow.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732614/reflow-assets/units/big-unit-reflow.jpg"
                 alt="40ft B-CRT Unit Architecture"
                 width={800}
                 height={600}
@@ -91,7 +91,7 @@ export default function DesignPage() {
 
             <div className={styles.gridItemMedium}>
               <Image
-                src="/images/units/reflow dal lake.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png"
                 alt="Dal Lake Deployment"
                 width={600}
                 height={400}
@@ -105,7 +105,7 @@ export default function DesignPage() {
 
             <div className={styles.gridItemMedium}>
               <Image
-                src="/images/units/reflow mini.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732615/reflow-assets/units/reflow-mini.jpg"
                 alt="ReFlow Mini Design"
                 width={600}
                 height={400}
@@ -119,7 +119,7 @@ export default function DesignPage() {
 
             <div className={styles.gridItemWide}>
               <Image
-                src="/images/hero/Hero image.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732613/reflow-assets/hero/hero-image.jpg"
                 alt="Urban Deployment Vision"
                 width={1200}
                 height={400}
@@ -174,7 +174,7 @@ export default function DesignPage() {
 
           <div className={styles.materialsImage}>
             <Image
-              src="/images/hero/Interior.png"
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/interior.png"
               alt="Interior Design Quality"
               width={700}
               height={500}
@@ -200,7 +200,7 @@ export default function DesignPage() {
           {/* Main B-CRT Image */}
           <div className={styles.bcrtMainImage}>
             <Image
-              src="/images/bcrt/MAIN B-CRT IMAGE.png"
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg"
               alt="B-CRT System"
               width={1200}
               height={420}
@@ -213,7 +213,7 @@ export default function DesignPage() {
             <div className={styles.processCard}>
               <div className={styles.processImage}>
                 <Image
-                  src="/images/bcrt/Screenshot 2025-03-12 231711.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-1-intake.png"
                   alt="Stage 1-2: Filtration & Digestion"
                   width={400}
                   height={300}
@@ -230,7 +230,7 @@ export default function DesignPage() {
             <div className={styles.processCard}>
               <div className={styles.processImage}>
                 <Image
-                  src="/images/bcrt/Screenshot 2025-03-12 231909.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-2-screening.png"
                   alt="Stage 3-4: Aerobic Treatment & Oxidation"
                   width={400}
                   height={300}
@@ -247,7 +247,7 @@ export default function DesignPage() {
             <div className={styles.processCard}>
               <div className={styles.processImage}>
                 <Image
-                  src="/images/bcrt/Screenshot 2025-04-03 011055.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-3-filtration.png"
                   alt="Stage 5: Membrane Filtration"
                   width={400}
                   height={300}
@@ -264,7 +264,7 @@ export default function DesignPage() {
             <div className={styles.processCard}>
               <div className={styles.processImage}>
                 <Image
-                  src="/images/bcrt/Screenshot 2025-04-03 011136.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-4-bio.png"
                   alt="Stage 6: UV Disinfection"
                   width={400}
                   height={300}
@@ -281,7 +281,7 @@ export default function DesignPage() {
             <div className={styles.processCard}>
               <div className={styles.processImage}>
                 <Image
-                  src="/images/bcrt/Screenshot 2025-04-03 011210.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-5-secondary.png"
                   alt="Stage 7: Mineralization"
                   width={400}
                   height={300}
@@ -298,7 +298,7 @@ export default function DesignPage() {
             <div className={styles.processCard}>
               <div className={styles.processImage}>
                 <Image
-                  src="/images/bcrt/Screenshot 2025-04-03 011410.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-6-tertiary.png"
                   alt="Stage 8: ISO30500 Verification"
                   width={400}
                   height={300}
@@ -317,7 +317,7 @@ export default function DesignPage() {
           <div className={styles.technicalDetails}>
             <div className={styles.techDetailCard}>
               <Image
-                src="/images/bcrt/Screenshot 2025-04-03 011514.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-7-disinfection.png"
                 alt="Control System"
                 width={500}
                 height={375}
@@ -329,7 +329,7 @@ export default function DesignPage() {
 
             <div className={styles.techDetailCard}>
               <Image
-                src="/images/bcrt/Screenshot 2025-04-03 011945.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-8-storage.png"
                 alt="Water Flow Management"
                 width={500}
                 height={375}
@@ -341,7 +341,7 @@ export default function DesignPage() {
 
             <div className={styles.techDetailCard}>
               <Image
-                src="/images/bcrt/Screenshot 2025-04-03 012150.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/complete-system.png"
                 alt="System Integration"
                 width={500}
                 height={375}
@@ -366,7 +366,7 @@ export default function DesignPage() {
           <div className={styles.smartGrid}>
             <div className={styles.smartCard}>
               <Image
-                src="/images/tech/reflow dashboard.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png"
                 alt="Operations Dashboard"
                 width={600}
                 height={400}
@@ -378,7 +378,7 @@ export default function DesignPage() {
 
             <div className={styles.smartCard}>
               <Image
-                src="/images/tech/reflow dashboard2.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-2.png"
                 alt="4-in-1 Platform"
                 width={600}
                 height={400}
@@ -390,7 +390,7 @@ export default function DesignPage() {
 
             <div className={styles.smartCard}>
               <Image
-                src="/images/tech/Screenshot 2025-04-18 172042.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-analytics.png"
                 alt="IoT Sensors"
                 width={600}
                 height={400}
@@ -402,7 +402,7 @@ export default function DesignPage() {
 
             <div className={styles.smartCard}>
               <Image
-                src="/images/tech/Screenshot 2025-04-18 172328.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-map.png"
                 alt="AI Analysis"
                 width={600}
                 height={400}
@@ -414,7 +414,7 @@ export default function DesignPage() {
 
             <div className={styles.smartCard}>
               <Image
-                src="/images/tech/wiring system.jpg"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/wiring-system.jpg"
                 alt="Electrical Systems"
                 width={600}
                 height={400}
@@ -426,7 +426,7 @@ export default function DesignPage() {
 
             <div className={styles.smartCard}>
               <Image
-                src="/images/tech/Reflow app.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/app-public.png"
                 alt="Mobile Apps"
                 width={300}
                 height={533}

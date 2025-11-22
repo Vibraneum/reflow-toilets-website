@@ -11,7 +11,7 @@ export default function Hero() {
         <div className={styles.heroCard}>
           <div className={styles.heroBackground}>
             <Image
-              src="/images/hero/Hero image.png"
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732613/reflow-assets/hero/hero-image.jpg"
               alt="ReFlow Toilets Hero"
               fill
               className={styles.heroImage}

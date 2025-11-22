@@ -1,0 +1,311 @@
+{
+  "timestamp": "2025-11-22T06:49:05.351Z",
+  "dryRun": false,
+  "summary": {
+    "filesChecked": 71,
+    "filesModified": 10,
+    "totalReplacements": 48
+  },
+  "details": [
+    {
+      "file": "app/tech/page.tsx",
+      "replacements": 7,
+      "changes": [
+        {
+          "from": "/images/tech/Screenshot 2025-04-18 172042.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-analytics.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/Screenshot 2025-04-18 172042\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/Screenshot 2025-04-18 172328.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-map.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/Screenshot 2025-04-18 172328\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/Reflow unit app (1).png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/app-operator.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/Reflow unit app \\(1\\)\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/reflow dashboard.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/reflow dashboard\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/Reflow app 2 (1).png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/app-public-2.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/Reflow app 2 \\(1\\)\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/wiring system.jpg",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/wiring-system.jpg",
+          "pattern": "src=[\"']\\/images\\/tech\\/wiring system\\.jpg[\"']"
+        },
+        {
+          "from": "/images/tech/Reflow app.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/app-public.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/Reflow app\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "app/innovation/page.tsx",
+      "replacements": 4,
+      "changes": [
+        {
+          "from": "/images/units/Mini on footpath reflow.jpg",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732617/reflow-assets/units/mini-on-footpath.jpg",
+          "pattern": "src=[\"']\\/images\\/units\\/Mini on footpath reflow\\.jpg[\"']"
+        },
+        {
+          "from": "/images/units/big unit reflow.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732614/reflow-assets/units/big-unit-reflow.jpg",
+          "pattern": "src=[\"']\\/images\\/units\\/big unit reflow\\.png[\"']"
+        },
+        {
+          "from": "/images/units/reflow dal lake.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png",
+          "pattern": "src=[\"']\\/images\\/units\\/reflow dal lake\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/MAIN B-CRT IMAGE.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/MAIN B-CRT IMAGE\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "app/hiring/page.tsx",
+      "replacements": 1,
+      "changes": [
+        {
+          "from": "/images/hero/Interior.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/interior.png",
+          "pattern": "src=[\"']\\/images\\/hero\\/Interior\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "app/design/page.tsx",
+      "replacements": 22,
+      "changes": [
+        {
+          "from": "/images/tech/Screenshot 2025-04-18 172042.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-analytics.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/Screenshot 2025-04-18 172042\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/Screenshot 2025-04-18 172328.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-map.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/Screenshot 2025-04-18 172328\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-03-12 231711.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-1-intake.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-03-12 231711\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-03-12 231909.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-2-screening.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-03-12 231909\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011055.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-3-filtration.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011055\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011136.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-4-bio.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011136\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011210.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-5-secondary.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011210\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011410.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-6-tertiary.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011410\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011514.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-7-disinfection.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011514\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011945.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-8-storage.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011945\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 012150.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/complete-system.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 012150\\.png[\"']"
+        },
+        {
+          "from": "/images/units/Mini on footpath reflow.jpg",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732617/reflow-assets/units/mini-on-footpath.jpg",
+          "pattern": "src=[\"']\\/images\\/units\\/Mini on footpath reflow\\.jpg[\"']"
+        },
+        {
+          "from": "/images/tech/reflow dashboard2.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-2.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/reflow dashboard2\\.png[\"']"
+        },
+        {
+          "from": "/images/units/big unit reflow.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732614/reflow-assets/units/big-unit-reflow.jpg",
+          "pattern": "src=[\"']\\/images\\/units\\/big unit reflow\\.png[\"']"
+        },
+        {
+          "from": "/images/units/reflow dal lake.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png",
+          "pattern": "src=[\"']\\/images\\/units\\/reflow dal lake\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/MAIN B-CRT IMAGE.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/MAIN B-CRT IMAGE\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/reflow dashboard.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/reflow dashboard\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/wiring system.jpg",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/wiring-system.jpg",
+          "pattern": "src=[\"']\\/images\\/tech\\/wiring system\\.jpg[\"']"
+        },
+        {
+          "from": "/images/units/reflow mini.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732615/reflow-assets/units/reflow-mini.jpg",
+          "pattern": "src=[\"']\\/images\\/units\\/reflow mini\\.png[\"']"
+        },
+        {
+          "from": "/images/hero/Hero image.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732613/reflow-assets/hero/hero-image.jpg",
+          "pattern": "src=[\"']\\/images\\/hero\\/Hero image\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/Reflow app.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/app-public.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/Reflow app\\.png[\"']"
+        },
+        {
+          "from": "/images/hero/Interior.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/interior.png",
+          "pattern": "src=[\"']\\/images\\/hero\\/Interior\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "app/b-crt/page.tsx",
+      "replacements": 7,
+      "changes": [
+        {
+          "from": "/images/bcrt/Screenshot 2025-03-12 231711.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-1-intake.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-03-12 231711\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-03-12 231909.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-2-screening.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-03-12 231909\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011055.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-3-filtration.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011055\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011136.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-4-bio.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011136\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011210.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-5-secondary.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011210\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/Screenshot 2025-04-03 011410.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/stage-6-tertiary.png",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/Screenshot 2025-04-03 011410\\.png[\"']"
+        },
+        {
+          "from": "/images/bcrt/MAIN B-CRT IMAGE.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg",
+          "pattern": "src=[\"']\\/images\\/bcrt\\/MAIN B-CRT IMAGE\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "components/Hero.tsx",
+      "replacements": 1,
+      "changes": [
+        {
+          "from": "/images/hero/Hero image.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732613/reflow-assets/hero/hero-image.jpg",
+          "pattern": "src=[\"']\\/images\\/hero\\/Hero image\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "components/Header.tsx",
+      "replacements": 1,
+      "changes": [
+        {
+          "from": "/images/logos/reflow favicon.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-favicon.png",
+          "pattern": "src=[\"']\\/images\\/logos\\/reflow favicon\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "components/Footer.tsx",
+      "replacements": 1,
+      "changes": [
+        {
+          "from": "/images/logos/reflow toilets png.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-toilets-logo.png",
+          "pattern": "src=[\"']\\/images\\/logos\\/reflow toilets png\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "components/CTASection.tsx",
+      "replacements": 1,
+      "changes": [
+        {
+          "from": "/images/logos/reflow toilets png.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-toilets-logo.png",
+          "pattern": "src=[\"']\\/images\\/logos\\/reflow toilets png\\.png[\"']"
+        }
+      ]
+    },
+    {
+      "file": "components/BCRT.tsx",
+      "replacements": 3,
+      "changes": [
+        {
+          "from": "/images/units/big unit reflow.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732614/reflow-assets/units/big-unit-reflow.jpg",
+          "pattern": "src=[\"']\\/images\\/units\\/big unit reflow\\.png[\"']"
+        },
+        {
+          "from": "/images/units/reflow dal lake.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png",
+          "pattern": "src=[\"']\\/images\\/units\\/reflow dal lake\\.png[\"']"
+        },
+        {
+          "from": "/images/tech/reflow dashboard.png",
+          "to": "https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png",
+          "pattern": "src=[\"']\\/images\\/tech\\/reflow dashboard\\.png[\"']"
+        }
+      ]
+    }
+  ]
+}

@@ -56,7 +56,7 @@ export default function InnovationPage() {
         <div className={styles.missionContainer}>
           <div className={styles.missionImage}>
             <Image
-              src="/images/units/Mini on footpath reflow.jpg"
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732617/reflow-assets/units/mini-on-footpath.jpg"
               alt="ReFlow Mini"
               width={800}
               height={1000}
@@ -140,7 +140,7 @@ export default function InnovationPage() {
               <div className={styles.productBadge}>Most Popular</div>
               <div className={styles.productImageWrapper}>
                 <Image
-                  src="/images/units/Mini on footpath reflow.jpg"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732617/reflow-assets/units/mini-on-footpath.jpg"
                   alt="ReFlow Mini"
                   width={400}
                   height={500}
@@ -173,7 +173,7 @@ export default function InnovationPage() {
               <div className={styles.productBadge}>Customizable</div>
               <div className={styles.productImageWrapper}>
                 <Image
-                  src="/images/units/reflow dal lake.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png"
                   alt="ReFlow Standard"
                   width={400}
                   height={500}
@@ -206,7 +206,7 @@ export default function InnovationPage() {
               <div className={styles.productBadgePremium}>Advanced</div>
               <div className={styles.productImageWrapper}>
                 <Image
-                  src="/images/bcrt/MAIN B-CRT IMAGE.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg"
                   alt="40ft B-CRT"
                   width={400}
                   height={500}
@@ -262,7 +262,7 @@ export default function InnovationPage() {
           </div>
           <div className={styles.manufacturingImage}>
             <Image
-              src="/images/units/big unit reflow.png"
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732614/reflow-assets/units/big-unit-reflow.jpg"
               alt="Manufacturing"
               width={700}
               height={500}
@@ -297,7 +297,7 @@ export default function InnovationPage() {
             </div>
             <div className={styles.researchImage}>
               <Image
-                src="/images/units/reflow dal lake.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png"
                 alt="Research"
                 width={600}
                 height={700}

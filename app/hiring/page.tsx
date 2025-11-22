@@ -98,7 +98,7 @@ export default function HiringPage() {
           <div className={styles.splitLayout}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/hero/Interior.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/interior.png"
                 alt="ReFlow Team"
                 width={600}
                 height={400}

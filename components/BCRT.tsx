@@ -50,7 +50,7 @@ export default function BCRT() {
           <div className={styles.deploymentGrid}>
             <div className={styles.deploymentImageWrapper}>
               <Image
-                src="/images/units/big unit reflow.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732614/reflow-assets/units/big-unit-reflow.jpg"
                 alt="LooCafe 40-foot B-CRT"
                 fill
                 className={styles.deploymentImage}
@@ -132,7 +132,7 @@ export default function BCRT() {
           <div className={styles.standardGrid}>
             <div className={styles.standardImageWrapper}>
               <Image
-                src="/images/units/reflow dal lake.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png"
                 alt="ReFlow at Dal Lake"
                 fill
                 className={styles.standardImage}
@@ -143,7 +143,7 @@ export default function BCRT() {
             </div>
             <div className={styles.standardImageWrapper}>
               <Image
-                src="/images/tech/reflow dashboard.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png"
                 alt="ReFlow Dashboard"
                 fill
                 className={styles.standardImage}

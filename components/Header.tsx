@@ -38,7 +38,7 @@ export default function Header() {
             <Link href="/" className={styles.logoLink} onClick={closeMenu}>
               <div className={styles.logoImage}>
                 <Image
-                  src="/images/logos/reflow favicon.png"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-favicon.png"
                   alt="ReFlow Toilets Logo"
                   width={42}
                   height={42}
@@ -74,7 +74,7 @@ export default function Header() {
             <Link href="/tech" className={styles.navLink} onClick={closeMenu}>Tech</Link>
             <Link href="/b-crt" className={styles.navLink} onClick={closeMenu}>B-CRT</Link>
             <Link href="/innovation" className={styles.navLink} onClick={closeMenu}>Innovation</Link>
-            <Link href="/knowledge" className={styles.navLink} onClick={closeMenu}>Knowledge</Link>
+            <Link href="/blog" className={styles.navLink} onClick={closeMenu}>Blog</Link>
             <Link href="/contact" className={styles.navLink} onClick={closeMenu}>Contact</Link>
             {isMenuOpen && (
               <a
