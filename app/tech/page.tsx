@@ -243,7 +243,7 @@ export default function TechPage() {
           </div>
 
           <div className={styles.aiMetrics}>
-            <h3 className={styles.metricsTitle}>Performance Impact</h3>
+            <h3 className={styles.metricsTitle}>AI Performance Impact</h3>
             <div className={styles.metricsGrid}>
               <div className={styles.metricCard}>
                 <div className={styles.metricValue}>95%</div>
@@ -254,11 +254,6 @@ export default function TechPage() {
                 <div className={styles.metricValue}>4 hours</div>
                 <div className={styles.metricLabel}>Saved per supervisor daily</div>
                 <p className={styles.metricNote}>Automated photo analysis eliminates manual unit inspections</p>
-              </div>
-              <div className={styles.metricCard}>
-                <div className={styles.metricValue}>60%</div>
-                <div className={styles.metricLabel}>Reduction in operations team size</div>
-                <p className={styles.metricNote}>AI monitoring enables 1 supervisor to manage 50 units (vs. 20 without AI)</p>
               </div>
             </div>
           </div>
@@ -358,9 +353,9 @@ export default function TechPage() {
       {/* Performance & ROI */}
       <section className={styles.performance}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Performance metrics from 270+ LooCafe deployments.</h2>
+          <h2 className={styles.sectionTitle}>Proven results from real-world deployment.</h2>
           <p className={styles.performanceIntro}>
-            Real operational data from 270+ LooCafe locations in Hyderabad, managed by Ixora Group since 2018. Platform reduces operations costs while improving service quality.
+            Operational data from 270+ LooCafe locations in Hyderabad, managed by Ixora Group since 2018. The platform delivers measurable cost savings while improving service quality across all facilities.
           </p>
 
           <div className={styles.performanceGrid}>
@@ -376,13 +371,13 @@ export default function TechPage() {
             </div>
 
             <div className={styles.performanceCard}>
-              <div className={styles.performanceMetric}>99.2%</div>
-              <h3 className={styles.performanceTitle}>Service Uptime</h3>
+              <div className={styles.performanceMetric}>99.9%</div>
+              <h3 className={styles.performanceTitle}>Platform Uptime</h3>
               <p className={styles.performanceText}>
-                Real-time IoT alerts and predictive maintenance achieve 99.2% availability. Issues resolved in under 2 hours via Ixora Security integration.
+                Real-time IoT alerts and predictive maintenance ensure continuous availability. Issues resolved in under 2 hours via Ixora Security integration.
               </p>
               <div className={styles.performanceCalc}>
-                <strong>Downtime:</strong> Average 7 hours/unit/year (vs. 48 hours industry standard)
+                <strong>Response Time:</strong> Average under 2 hours for critical alerts (vs. 24+ hours industry standard)
               </div>
             </div>
 
