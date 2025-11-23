@@ -3,9 +3,6 @@ const path = require('path')
 
 const nextConfig = {
   reactStrictMode: true,
-  turbopack: {
-    root: path.resolve(__dirname),
-  },
   images: {
     remotePatterns: [
       {

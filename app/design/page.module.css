@@ -1,23 +1,23 @@
-/* ================================
-   DESIGN PAGE - EXCITING & VISUAL
-   Image-Heavy, Dynamic Layouts
-   ================================ */
+/* Design Page - Premium Apple-Inspired Aesthetic */
 
 .page {
-  background: #000000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* ===== FULL-SCREEN HERO ===== */
 .heroFull {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #000;
+  /* Fallback */
 }
 
 .heroImageWrapper {
@@ -29,12 +29,13 @@
 .heroImage {
   object-fit: cover;
   object-position: center;
+  opacity: 0.8;
 }
 
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
   z-index: 2;
 }
 
@@ -42,33 +43,33 @@
   position: relative;
   z-index: 3;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 24px;
   max-width: 1000px;
 }
 
 .heroTitle {
-  font-size: clamp(48px, 8vw, 96px);
-  font-weight: 800;
-  line-height: 1;
+  font-size: clamp(56px, 8vw, 96px);
+  font-weight: 700;
+  line-height: 1.05;
   letter-spacing: -0.03em;
   margin-bottom: 24px;
-  text-shadow: 0 4px 24px rgba(0,0,0,0.5);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #ffffff;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .heroSubtitle {
-  font-size: clamp(20px, 3vw, 32px);
-  font-weight: 300;
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 500;
   line-height: 1.4;
+  color: #ffffff;
   opacity: 0.95;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== PHILOSOPHY SECTION ===== */
 .philosophy {
   background: #ffffff;
-  color: #1d1d1f;
-  padding: 120px 20px;
+  padding: 140px 20px;
 }
 
 .philosophyContainer {
@@ -78,20 +79,21 @@
 
 .label {
   display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #34c759;
+  letter-spacing: 0.05em;
+  color: #86868b;
   margin-bottom: 16px;
 }
 
 .philosophyTitle {
-  font-size: clamp(48px, 6vw, 72px);
-  font-weight: 800;
-  line-height: 1.1;
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 700;
+  line-height: 1.05;
   letter-spacing: -0.02em;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  color: #1d1d1f;
 }
 
 .philosophyPrinciples {
@@ -105,31 +107,32 @@
 }
 
 .principleNumber {
-  font-size: 64px;
-  font-weight: 800;
-  color: #34c759;
-  opacity: 0.2;
+  font-size: 80px;
+  font-weight: 700;
+  color: #f5f5f7;
   line-height: 1;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
 }
 
 .principle h3 {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 16px;
   color: #1d1d1f;
 }
 
 .principle p {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.6;
-  color: #6e6e73;
+  color: #86868b;
 }
 
 /* ===== ARCHITECTURE GRID ===== */
 .architectureGrid {
-  background: #0a0a0a;
-  padding: 120px 20px;
+  background: #fbfbfd;
+  padding: 140px 20px;
 }
 
 .gridContainer {
@@ -139,25 +142,29 @@
 
 .gridHeader {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .gridHeader h2 {
-  font-size: clamp(48px, 6vw, 72px);
-  font-weight: 800;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
 }
 
 .gridHeader p {
-  font-size: 21px;
-  opacity: 0.7;
+  font-size: 24px;
+  color: #86868b;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .imageGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .gridItemLarge {
@@ -165,39 +172,38 @@
   grid-row: span 2;
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
-  background: #1a1a1a;
-  transition: transform 0.4s;
-}
-
-.gridItemLarge:hover {
-  transform: scale(1.02);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .gridItemMedium {
   grid-column: span 6;
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
-  background: #1a1a1a;
-  transition: transform 0.4s;
-}
-
-.gridItemMedium:hover {
-  transform: scale(1.02);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .gridItemWide {
   grid-column: span 12;
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
-  background: #1a1a1a;
-  transition: transform 0.4s;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.gridItemLarge:hover,
+.gridItemMedium:hover,
 .gridItemWide:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+  z-index: 2;
 }
 
 .gridImage {
@@ -205,7 +211,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .gridItemLarge:hover .gridImage,
@@ -219,28 +225,26 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-  padding: 40px 32px 32px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 60px 40px 40px;
+  color: white;
 }
 
 .gridCaption h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #ffffff;
 }
 
 .gridCaption p {
-  font-size: 15px;
-  opacity: 0.8;
-  color: #ffffff;
+  font-size: 17px;
+  opacity: 0.9;
 }
 
 /* ===== MATERIALS SECTION ===== */
 .materials {
   background: #ffffff;
-  color: #1d1d1f;
-  padding: 120px 20px;
+  padding: 140px 20px;
 }
 
 .materialsContainer {
@@ -248,44 +252,46 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 100px;
   align-items: center;
 }
 
 .materialsContent h2 {
-  font-size: clamp(48px, 6vw, 64px);
-  font-weight: 800;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 48px;
+  margin-bottom: 60px;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
 }
 
 .materialsList {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px;
 }
 
 .materialItem {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   align-items: flex-start;
 }
 
 .materialIcon {
-  font-size: 48px;
+  font-size: 32px;
   flex-shrink: 0;
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #34c759 0%, #30d158 100%);
+  background: #f5f5f7;
   border-radius: 16px;
 }
 
 .materialItem h4 {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 8px;
   color: #1d1d1f;
 }
@@ -293,13 +299,19 @@
 .materialItem p {
   font-size: 17px;
   line-height: 1.6;
-  color: #6e6e73;
+  color: #86868b;
 }
 
 .materialsImage {
-  border-radius: 24px;
+  border-radius: 32px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+  transform: rotate(-2deg);
+  transition: transform 0.4s ease;
+}
+
+.materialsImage:hover {
+  transform: rotate(0deg) scale(1.02);
 }
 
 .image {
@@ -309,16 +321,17 @@
 }
 
 .imageLabel {
-  font-size: 14px;
-  color: #6e6e73;
+  font-size: 13px;
+  color: #86868b;
   margin-top: 16px;
   text-align: center;
+  font-weight: 500;
 }
 
 /* ===== ENGINEERING SECTION ===== */
 .engineering {
-  background: #0a0a0a;
-  padding: 120px 20px;
+  background: #f5f5f7;
+  padding: 140px 20px;
 }
 
 .engineeringContainer {
@@ -328,28 +341,31 @@
 
 .engineeringHeader {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .engineeringHeader h2 {
-  font-size: clamp(48px, 6vw, 72px);
-  font-weight: 800;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
 }
 
 .engineeringIntro {
-  font-size: 21px;
-  line-height: 1.6;
-  opacity: 0.8;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #86868b;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .bcrtMainImage {
   margin-bottom: 80px;
-  border-radius: 24px;
+  border-radius: 32px;
   overflow: hidden;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
 }
 
 .fullImage {
@@ -366,15 +382,16 @@
 }
 
 .processCard {
-  background: #1a1a1a;
-  border-radius: 20px;
+  background: #ffffff;
+  border-radius: 24px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .processCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(52, 199, 89, 0.2);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
 }
 
 .processImage {
@@ -382,7 +399,7 @@
   aspect-ratio: 4/3;
   position: relative;
   overflow: hidden;
-  background: #000;
+  background: #f5f5f7;
 }
 
 .techImage {
@@ -392,34 +409,33 @@
 }
 
 .processInfo {
-  padding: 28px;
+  padding: 32px;
 }
 
 .stageNumber {
   display: inline-block;
-  background: linear-gradient(135deg, #34c759 0%, #30d158 100%);
-  color: #000;
-  font-size: 12px;
-  font-weight: 800;
+  background: rgba(0, 113, 227, 0.1);
+  color: #0071e3;
+  font-size: 11px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 980px;
   margin-bottom: 16px;
 }
 
 .processInfo h4 {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 12px;
-  color: #ffffff;
+  color: #1d1d1f;
 }
 
 .processInfo p {
   font-size: 15px;
   line-height: 1.6;
-  opacity: 0.8;
-  color: #ffffff;
+  color: #86868b;
 }
 
 .technicalDetails {
@@ -429,38 +445,37 @@
 }
 
 .techDetailCard {
-  background: #1a1a1a;
-  border-radius: 20px;
-  padding: 24px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
   text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .detailImage {
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  border-radius: 16px;
+  margin-bottom: 24px;
 }
 
 .techDetailCard h4 {
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 12px;
-  color: #ffffff;
+  color: #1d1d1f;
 }
 
 .techDetailCard p {
   font-size: 15px;
   line-height: 1.6;
-  opacity: 0.8;
-  color: #ffffff;
+  color: #86868b;
 }
 
 /* ===== SMART SYSTEMS ===== */
 .smartSystems {
   background: #ffffff;
-  color: #1d1d1f;
-  padding: 120px 20px;
+  padding: 140px 20px;
 }
 
 .smartContainer {
@@ -470,21 +485,21 @@
 
 .smartHeader {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .smartHeader h2 {
-  font-size: clamp(48px, 6vw, 72px);
-  font-weight: 800;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 20px;
   color: #1d1d1f;
 }
 
 .smartHeader p {
-  font-size: 21px;
-  line-height: 1.6;
-  color: #6e6e73;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #86868b;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -496,49 +511,52 @@
 }
 
 .smartCard {
-  background: #f5f5f7;
-  border-radius: 20px;
-  padding: 32px;
+  background: #fbfbfd;
+  border-radius: 24px;
+  padding: 40px;
   transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .smartCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
 }
 
 .smartImage {
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .smartImageTall {
   max-width: 250px;
   height: auto;
-  border-radius: 12px;
-  margin: 0 auto 20px;
+  border-radius: 16px;
+  margin: 0 auto 24px;
   display: block;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .smartCard h3 {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 12px;
   color: #1d1d1f;
 }
 
 .smartCard p {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.6;
-  color: #6e6e73;
+  color: #86868b;
 }
 
 /* ===== MANUFACTURING ===== */
 .manufacturing {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 120px 20px;
+  background: #f5f5f7;
+  padding: 140px 20px;
 }
 
 .mfgContainer {
@@ -551,17 +569,18 @@
 }
 
 .mfgContent h2 {
-  font-size: clamp(48px, 6vw, 64px);
-  font-weight: 800;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
+  color: #1d1d1f;
 }
 
 .mfgDescription {
   font-size: 21px;
   line-height: 1.6;
-  opacity: 0.95;
-  margin-bottom: 48px;
+  color: #86868b;
+  margin-bottom: 60px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -571,7 +590,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .stat {
@@ -579,36 +598,36 @@
 }
 
 .statNumber {
-  font-size: clamp(44px, 5vw, 64px);
-  font-weight: 800;
+  font-size: clamp(48px, 5vw, 64px);
+  font-weight: 700;
   line-height: 1;
   margin-bottom: 8px;
-  color: #ffffff;
+  color: #1d1d1f;
 }
 
 .statLabel {
   font-size: 15px;
-  font-weight: 500;
-  opacity: 0.9;
-  color: #ffffff;
+  font-weight: 600;
+  color: #86868b;
 }
 
 .mfgProcess {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
+  background: #ffffff;
+  border-radius: 24px;
   padding: 40px;
   margin-bottom: 32px;
   text-align: left;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .mfgProcess h4 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 21px;
+  font-weight: 600;
   margin-bottom: 20px;
+  color: #1d1d1f;
 }
 
 .mfgProcess ul {
@@ -623,7 +642,7 @@
   padding-left: 32px;
   margin-bottom: 12px;
   position: relative;
-  opacity: 0.95;
+  color: #1d1d1f;
 }
 
 .mfgProcess li::before {
@@ -635,30 +654,26 @@
 }
 
 .ixoraBadge {
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(20px);
-  border-radius: 16px;
+  background: #ffffff;
+  border-radius: 24px;
   padding: 32px;
   text-align: left;
   max-width: 700px;
   margin: 0 auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .ixoraBadge p {
   font-size: 17px;
   line-height: 1.6;
-  opacity: 0.95;
+  color: #1d1d1f;
   margin-bottom: 12px;
-}
-
-.ixoraBadge p:last-child {
-  margin-bottom: 0;
 }
 
 /* ===== HERITAGE ===== */
 .heritage {
-  background: #0a0a0a;
-  padding: 120px 20px;
+  background: #ffffff;
+  padding: 140px 20px;
   text-align: center;
 }
 
@@ -668,44 +683,44 @@
 }
 
 .heritageContainer h2 {
-  font-size: clamp(48px, 6vw, 72px);
-  font-weight: 800;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  color: #1d1d1f;
 }
 
 .heritageIntro {
-  font-size: 19px;
+  font-size: 21px;
   line-height: 1.6;
-  opacity: 0.8;
+  color: #86868b;
   max-width: 800px;
-  margin: 0 auto 60px;
+  margin: 0 auto 80px;
 }
 
 .heritageIntro a {
-  color: #34c759;
+  color: #0071e3;
   text-decoration: none;
   font-weight: 600;
-  border-bottom: 2px solid #34c759;
-  transition: opacity 0.2s;
 }
 
 .heritageIntro a:hover {
-  opacity: 0.7;
+  text-decoration: underline;
 }
 
 .heritageStats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .heritageStat {
-  background: #1a1a1a;
-  border-radius: 20px;
+  background: #fbfbfd;
+  border-radius: 24px;
   padding: 40px 32px;
   transition: transform 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .heritageStat:hover {
@@ -713,37 +728,38 @@
 }
 
 .heritageNumber {
-  font-size: clamp(36px, 4vw, 48px);
-  font-weight: 800;
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 700;
   line-height: 1;
   margin-bottom: 12px;
-  color: #34c759;
+  color: #1d1d1f;
 }
 
 .heritageLabel {
   font-size: 15px;
-  font-weight: 500;
-  opacity: 0.8;
+  font-weight: 600;
+  color: #86868b;
 }
 
 .heritageAddition {
-  background: #1a1a1a;
-  border-radius: 24px;
-  padding: 60px 40px;
+  background: #f5f5f7;
+  border-radius: 32px;
+  padding: 80px 40px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .heritageAddition h3 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  color: #1d1d1f;
 }
 
 .additionGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 32px;
+  gap: 40px;
 }
 
 .additionCard {
@@ -753,26 +769,27 @@
 .additionIcon {
   font-size: 48px;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .additionCard h4 {
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 19px;
+  font-weight: 600;
   margin-bottom: 12px;
+  color: #1d1d1f;
 }
 
 .additionCard p {
   font-size: 15px;
   line-height: 1.6;
-  opacity: 0.8;
+  color: #86868b;
 }
 
 /* ===== FINAL CTA ===== */
 .finalCta {
-  background: linear-gradient(135deg, #34c759 0%, #30d158 100%);
-  color: #000000;
-  padding: 120px 20px;
+  background: #000;
+  color: #fff;
+  padding: 140px 20px;
   text-align: center;
 }
 
@@ -782,17 +799,21 @@
 }
 
 .ctaContent h2 {
-  font-size: clamp(48px, 6vw, 64px);
-  font-weight: 800;
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
+  background: linear-gradient(135deg, #fff 0%, #a1a1a6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .ctaContent p {
-  font-size: 21px;
-  line-height: 1.6;
-  opacity: 0.9;
-  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #86868b;
+  margin-bottom: 48px;
 }
 
 .ctaButtons {
@@ -803,138 +824,65 @@
 }
 
 .ctaPrimary {
-  background: #000000;
-  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
   padding: 18px 40px;
-  border-radius: 100px;
-  font-size: 19px;
-  font-weight: 700;
+  background: #fff;
+  color: #000;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 600;
   text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s;
+  transition: transform 0.3s;
 }
 
 .ctaPrimary:hover {
   transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .ctaSecondary {
-  background: rgba(0,0,0,0.15);
-  backdrop-filter: blur(10px);
-  color: #000000;
-  padding: 18px 40px;
-  border-radius: 100px;
-  font-size: 19px;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  padding: 18px 32px;
+  color: #2997ff;
+  font-size: 17px;
+  font-weight: 600;
   text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s;
+  transition: opacity 0.3s;
 }
 
 .ctaSecondary:hover {
-  background: rgba(0,0,0,0.25);
+  text-decoration: underline;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-  .imageGrid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .gridItemLarge {
-    grid-column: span 6;
-    grid-row: span 1;
-  }
-
-  .gridItemMedium {
-    grid-column: span 6;
-  }
-
-  .materialsContainer {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
-}
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .heroFull {
-    min-height: 500px;
-  }
-
-  .philosophy,
-  .architectureGrid,
-  .materials,
-  .engineering,
-  .smartSystems,
-  .manufacturing,
-  .heritage,
-  .finalCta {
-    padding: 80px 20px;
-  }
-
   .imageGrid {
     grid-template-columns: 1fr;
-    gap: 16px;
   }
 
   .gridItemLarge,
   .gridItemMedium,
   .gridItemWide {
     grid-column: span 1;
-    grid-row: span 1;
   }
 
-  .philosophyPrinciples {
+  .materialsContainer {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 60px;
   }
 
-  .processGrid,
-  .technicalDetails,
-  .smartGrid,
-  .additionGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .mfgStats {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-
-  .heritageStats {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+  .materialsImage {
+    order: -1;
   }
 
   .ctaButtons {
     flex-direction: column;
-    align-items: stretch;
   }
 
   .ctaPrimary,
   .ctaSecondary {
     width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .heroTitle {
-    font-size: 40px;
-  }
-
-  .mfgStats {
-    grid-template-columns: 1fr;
-  }
-
-  .heritageStats {
-    grid-template-columns: 1fr;
-  }
-
-  .mfgProcess,
-  .ixoraBadge,
-  .heritageAddition {
-    padding: 32px 24px;
+    justify-content: center;
   }
 }

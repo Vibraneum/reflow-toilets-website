@@ -164,46 +164,47 @@ export default function TechPage() {
       </section>
 
       {/* Comparison Section */}
-      <section className={styles.section} style={{ background: '#fff', padding: '80px 20px' }}>
+      {/* Comparison Section */}
+      <section className={styles.comparisonSection}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Why ReFlow Technology?</h2>
           <p className={styles.platformIntro}>
             Comparing traditional public toilet management with the ReFlow AI-driven approach.
           </p>
-          <div style={{ overflowX: 'auto', marginTop: '40px' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '600px' }}>
+          <div className={styles.tableContainer}>
+            <table className={styles.comparisonTable}>
               <thead>
-                <tr style={{ background: '#f5f5f7' }}>
-                  <th style={{ padding: '20px', textAlign: 'left', borderRadius: '12px 0 0 12px', color: '#1d1d1f' }}>Feature</th>
-                  <th style={{ padding: '20px', textAlign: 'left', color: '#6e6e73' }}>Traditional Public Toilets</th>
-                  <th style={{ padding: '20px', textAlign: 'left', borderRadius: '0 12px 12px 0', color: '#0071e3', fontWeight: '700' }}>ReFlow Platform</th>
+                <tr>
+                  <th>Feature</th>
+                  <th>Traditional Public Toilets</th>
+                  <th>ReFlow Platform</th>
                 </tr>
               </thead>
               <tbody>
-                <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
-                  <td style={{ padding: '20px', fontWeight: '600' }}>Monitoring</td>
-                  <td style={{ padding: '20px', color: '#6e6e73' }}>Manual, sporadic inspections</td>
-                  <td style={{ padding: '20px', color: '#1d1d1f' }}>24/7 Real-time IoT Sensors</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
-                  <td style={{ padding: '20px', fontWeight: '600' }}>Maintenance Response</td>
-                  <td style={{ padding: '20px', color: '#6e6e73' }}>Reactive (days/weeks)</td>
-                  <td style={{ padding: '20px', color: '#1d1d1f' }}>Proactive (&lt; 2 hours)</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
-                  <td style={{ padding: '20px', fontWeight: '600' }}>Cleanliness Verification</td>
-                  <td style={{ padding: '20px', color: '#6e6e73' }}>Paper checklists (unreliable)</td>
-                  <td style={{ padding: '20px', color: '#1d1d1f' }}>AI Photo Analysis & Digital Logs</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
-                  <td style={{ padding: '20px', fontWeight: '600' }}>User Feedback</td>
-                  <td style={{ padding: '20px', color: '#6e6e73' }}>Rarely collected</td>
-                  <td style={{ padding: '20px', color: '#1d1d1f' }}>In-app Reporting & Rating</td>
+                <tr>
+                  <td>Monitoring</td>
+                  <td>Manual, sporadic inspections</td>
+                  <td>24/7 Real-time IoT Sensors</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: '20px', fontWeight: '600' }}>Data & Analytics</td>
-                  <td style={{ padding: '20px', color: '#6e6e73' }}>None</td>
-                  <td style={{ padding: '20px', color: '#1d1d1f' }}>Full Historical & Predictive Data</td>
+                  <td>Maintenance Response</td>
+                  <td>Reactive (days/weeks)</td>
+                  <td>Proactive (&lt; 2 hours)</td>
+                </tr>
+                <tr>
+                  <td>Cleanliness Verification</td>
+                  <td>Paper checklists (unreliable)</td>
+                  <td>AI Photo Analysis & Digital Logs</td>
+                </tr>
+                <tr>
+                  <td>User Feedback</td>
+                  <td>Rarely collected</td>
+                  <td>In-app Reporting & Rating</td>
+                </tr>
+                <tr>
+                  <td>Data & Analytics</td>
+                  <td>None</td>
+                  <td>Full Historical & Predictive Data</td>
                 </tr>
               </tbody>
             </table>
@@ -581,7 +582,7 @@ export default function TechPage() {
                 Schedule technical demo
               </a>
               <Link href="/contact" className={styles.ctaButtonSecondary}>
-                Request integration details
+                Request integration details <span style={{ fontSize: '0.9em' }}>&gt;</span>
               </Link>
             </div>
             <p className={styles.ctaNote}>

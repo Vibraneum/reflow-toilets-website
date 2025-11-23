@@ -5,7 +5,7 @@ import { getPostBySlug, getAllPosts, getRelatedPosts } from '@/lib/blogPosts';
 import styles from './BlogPost.module.css';
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -16,7 +16,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return {
@@ -46,14 +47,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function BlogPostPage({ params }: Props) {
-  const post = getPostBySlug(params.slug);
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     notFound();
   }
 
-  const relatedPosts = getRelatedPosts(params.slug, 3);
+  const relatedPosts = getRelatedPosts(slug, 3);
 
   // Generate JSON-LD structured data
   const articleStructuredData = {
@@ -184,42 +186,36 @@ export default function BlogPostPage({ params }: Props) {
         <div className={styles.shareSection}>
           <h3 className={styles.shareTitle}>Share this article</h3>
           <div className={styles.shareButtons}>
-            <button
+            <a
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=https://www.reflowtoilets.com/blog/${post.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.shareButton}
-              onClick={() => {
-                const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(window.location.href)}`;
-                window.open(url, '_blank');
-              }}
             >
               Twitter
-            </button>
-            <button
+            </a>
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.reflowtoilets.com/blog/${post.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.shareButton}
-              onClick={() => {
-                const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`;
-                window.open(url, '_blank');
-              }}
             >
               LinkedIn
-            </button>
-            <button
+            </a>
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://www.reflowtoilets.com/blog/${post.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.shareButton}
-              onClick={() => {
-                const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
-                window.open(url, '_blank');
-              }}
             >
               Facebook
-            </button>
-            <button
+            </a>
+            <a
+              href={`mailto:?subject=${encodeURIComponent(post.title)}&body=https://www.reflowtoilets.com/blog/${post.slug}`}
               className={styles.shareButton}
-              onClick={() => {
-                const url = `mailto:?subject=${encodeURIComponent(post.title)}&body=${encodeURIComponent(window.location.href)}`;
-                window.location.href = url;
-              }}
             >
               Email
-            </button>
+            </a>
           </div>
         </div>
 

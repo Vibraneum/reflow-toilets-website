@@ -4,9 +4,9 @@ import Link from 'next/link'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'Product Line - ReFlow Mini, Standard & B-CRT | ReFlow Toilets',
-  description: 'Choose the right ReFlow sanitation solution for your district. Compare ReFlow Mini, ReFlow Standard, and 40ft B-CRT specifications, capacity, deployment, and pricing.',
-  keywords: ['ReFlow Mini', 'ReFlow Standard', 'B-CRT', '40ft container toilet', 'government sanitation', 'district deployment', 'ISO30500', 'prefabricated toilets'],
+  title: 'Sanitation Bundles - Turnkey Infrastructure Solutions | ReFlow',
+  description: 'Select from our pre-configured sanitation bundles: ReFlow Mini, Standard, and B-CRT Hub. Complete turnkey solutions with IoT, maintenance, and ISO30500 compliance included.',
+  keywords: ['Sanitation bundles', 'turnkey toilets', 'ReFlow Mini', 'ReFlow Standard', 'B-CRT Hub', 'infrastructure packages', 'smart city sanitation'],
 }
 
 interface ProductSpec {
@@ -31,16 +31,16 @@ interface ProductSpec {
 
 const products: ProductSpec[] = [
   {
-    name: 'ReFlow Mini',
-    tagline: 'Fast Urban Deployment',
-    image: '/images/units/Mini on footpath reflow.jpg',
+    name: 'ReFlow Mini Bundle',
+    tagline: 'Rapid Urban Deployment Kit',
+    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/products/mini-unit.jpg',
     size: '8×8 ft (64 sq ft)',
     capacity: '2 toilet cubicles',
     cubicles: '2 cubicles',
-    deployment: 'Rapid (Days)',
+    deployment: 'Rapid (2-3 Days)',
     treatment: 'Basic on-site',
     power: 'Solar/Grid hybrid',
-    technology: 'Standard IoT',
+    technology: 'Standard IoT Suite',
     bestFor: [
       'Urban streets & sidewalks',
       'High pedestrian traffic areas',
@@ -49,30 +49,30 @@ const products: ProductSpec[] = [
       'Rapid deployment needs',
     ],
     dailyUsers: '500-1,000 users/day',
-    costRange: '₹ (Most affordable)',
+    costRange: '₹ (Entry Level)',
     features: [
-      'Compact 8×8 ft footprint',
-      'Grassroot level distribution',
-      'Quick installation (2-3 days)',
-      'Low maintenance requirements',
-      'Ideal for dense urban areas',
-      'Cost-effective scaling',
+      'Pre-fabricated modular unit',
+      'Plug-and-play installation',
+      'Basic IoT monitoring sensors',
+      'Anti-vandalism fittings',
+      'Auto-cleaning functionality',
+      'Advertising display panels',
     ],
     deploymentTime: '2-3 days',
     maintenance: 'Low',
-    customization: 'Limited (Color, Branding)',
+    customization: 'Branding Wrap',
   },
   {
-    name: 'ReFlow Standard',
-    tagline: 'Customizable Mid-Capacity',
-    image: '/images/units/big unit reflow.png',
+    name: 'ReFlow Standard Bundle',
+    tagline: 'Complete Community Solution',
+    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/products/standard-unit.png',
     size: '~15×10 ft (150 sq ft)',
     capacity: '3 toilet units',
     cubicles: '3 cubicles',
-    deployment: 'Medium (1-2 weeks)',
+    deployment: 'Standard (1-2 Weeks)',
     treatment: 'Intermediate on-site',
     power: 'Solar primary',
-    technology: 'Advanced IoT-enabled',
+    technology: 'Advanced IoT + AI',
     bestFor: [
       'Tourist locations & attractions',
       'District parks & gardens',
@@ -83,28 +83,28 @@ const products: ProductSpec[] = [
     dailyUsers: '1,000-2,000 users/day',
     costRange: '₹₹ (Mid-range)',
     features: [
-      'Customizable fittings & paneling',
-      'Integrated advanced technology',
-      'Full exterior/interior customization',
-      'Enhanced treatment system',
+      'Custom architectural finish',
+      'Full AI-monitoring suite',
+      'Touchless automation',
+      'Recycled water flushing',
       'LooCafe-patented design',
-      'Advertisement revenue potential',
+      'Digital ad revenue system',
     ],
     deploymentTime: '1-2 weeks',
     maintenance: 'Medium',
-    customization: 'Full (Exterior + Interior)',
+    customization: 'Full Architectural',
   },
   {
-    name: '40ft B-CRT',
-    tagline: 'World\'s Most Advanced Public Toilet',
-    image: '/images/bcrt/MAIN B-CRT IMAGE.png',
+    name: '40ft B-CRT Hub',
+    tagline: 'District Sanitation Center',
+    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/products/bcrt-container.png',
     size: '40ft container (320 sq ft)',
     capacity: '6 cubicles + urinals + special access',
     cubicles: '6+ cubicles + urinals',
-    deployment: 'Large-scale (1-3 months)',
+    deployment: 'Infrastructure (1-3 Months)',
     treatment: 'ISO30500 Advanced',
-    power: '100% Solar',
-    technology: 'AI-powered (Gemini 2.5)',
+    power: '100% Solar Off-grid',
+    technology: 'Enterprise AI (Gemini)',
     bestFor: [
       'Smart city infrastructure',
       'Airport & transit terminals',
@@ -115,17 +115,16 @@ const products: ProductSpec[] = [
     dailyUsers: '3,000+ users/day',
     costRange: '₹₹₹ (Premium)',
     features: [
-      'ISO30500 certified water output',
-      '10,000L startup, years of operation',
-      'Ship-worthy container design',
-      'Full 4-in-1 IoT management',
-      'Zero liquid discharge',
-      'Gates Foundation technology',
+      'ISO30500 water treatment plant',
+      'Zero-sewage discharge',
+      '10,000L daily recycling capacity',
+      'Command center capability',
       'Complete circular economy',
+      'Disaster relief ready',
     ],
     deploymentTime: '1-3 months',
     maintenance: 'Comprehensive',
-    customization: 'Full + Technology Integration',
+    customization: 'Infrastructure Grade',
   },
 ]
 
@@ -134,9 +133,9 @@ export default function ProductsPage() {
     <div className={styles.page}>
       <div className={styles.hero}>
         <div className={styles.container}>
-          <h1 className={styles.title}>Choose Your ReFlow Solution</h1>
+          <h1 className={styles.title}>Turnkey Sanitation Bundles</h1>
           <p className={styles.subtitle}>
-            Scalable sanitation infrastructure from grassroots to district-wide deployment
+            Complete infrastructure packages designed for rapid deployment and immediate impact.
           </p>
           <div className={styles.badges}>
             <span className={styles.badge}>ISO30500 Certified</span>
@@ -196,12 +195,10 @@ export default function ProductsPage() {
 
               <div className={styles.productCTA}>
                 <a
-                  href="https://calendar.app.google/5pRiSHEjP851jiNQ7"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/configure"
                   className={styles.ctaButton}
                 >
-                  Request Proposal
+                  Configure This Bundle
                 </a>
               </div>
             </div>

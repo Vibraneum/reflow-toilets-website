@@ -1,32 +1,58 @@
-.page {
-  min-height: 100vh;
-  background: var(--background-default);
-}
+/* Products Page - Premium Aesthetic */
 
-.hero {
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.1) 0%, rgba(103, 183, 229, 0.1) 100%);
-  padding: 80px 0 60px;
-  text-align: center;
+.page {
+  background: #ffffff;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--container-padding);
+  padding: 0 24px;
+}
+
+/* HERO SECTION */
+.hero {
+  background: radial-gradient(circle at 50% 0%, #f5f5f7 0%, #ffffff 100%);
+  padding: 140px 20px 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 113, 227, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
 }
 
 .title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(48px, 8vw, 72px);
   font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 16px;
-  font-family: var(--font-poppins);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+  background: linear-gradient(180deg, #1d1d1f 0%, #434344 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
-  font-size: clamp(1.125rem, 2vw, 1.375rem);
-  color: var(--text-secondary);
-  margin-bottom: 24px;
+  font-size: clamp(21px, 4vw, 28px);
+  line-height: 1.4;
+  color: #86868b;
+  font-weight: 500;
+  margin-bottom: 40px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -35,110 +61,130 @@
 .badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   justify-content: center;
 }
 
 .badge {
-  padding: 8px 20px;
-  background: var(--gradient-primary);
-  color: white;
-  border-radius: 20px;
-  font-size: 0.875rem;
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(0, 113, 227, 0.1);
+  color: #0071e3;
+  border: 1px solid rgba(0, 113, 227, 0.2);
+  border-radius: 980px;
+  font-size: 13px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  backdrop-filter: blur(10px);
 }
 
-/* Products Grid */
+/* PRODUCTS GRID */
 .productsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 32px;
-  margin: 60px 0;
+  gap: 40px;
+  margin: 80px 0;
 }
 
 .productCard {
-  background: white;
-  border-radius: 16px;
+  background: #fff;
+  border-radius: 32px;
   overflow: hidden;
-  box-shadow: var(--shadow-medium);
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
 }
 
 .productCard:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-large);
+  transform: translateY(-12px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
 }
 
 .productHeader {
-  padding: 32px 24px 16px;
+  padding: 40px 32px 24px;
   text-align: center;
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(103, 183, 229, 0.05) 100%);
+  background: #fbfbfd;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .productName {
-  font-size: 1.75rem;
+  font-size: 32px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #1d1d1f;
   margin-bottom: 8px;
-  font-family: var(--font-poppins);
+  letter-spacing: -0.01em;
 }
 
 .productTagline {
-  font-size: 1rem;
-  color: var(--text-secondary);
+  font-size: 17px;
+  color: #86868b;
   font-weight: 500;
 }
 
 .productImage {
-  padding: 24px;
+  padding: 40px;
   text-align: center;
-  background: white;
+  background: #fff;
+  position: relative;
 }
 
 .image {
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.5s ease;
+}
+
+.productCard:hover .image {
+  transform: scale(1.05);
 }
 
 .productSpecs {
-  padding: 24px;
-  border-top: 1px solid #E5E7EB;
-  border-bottom: 1px solid #E5E7EB;
+  padding: 32px;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  background: #fbfbfd;
 }
 
 .spec {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.spec:last-child {
+  border-bottom: none;
 }
 
 .specLabel {
   font-weight: 600;
-  color: var(--text-secondary);
-  font-size: 0.9375rem;
+  color: #86868b;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .specValue {
-  color: var(--text-primary);
-  font-weight: 500;
-  font-size: 0.9375rem;
+  color: #1d1d1f;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .bestFor {
-  padding: 24px;
+  padding: 32px;
   flex-grow: 1;
+  background: #fff;
 }
 
 .bestForTitle {
-  font-size: 1.125rem;
+  font-size: 17px;
   font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 12px;
+  color: #1d1d1f;
+  margin-bottom: 16px;
 }
 
 .bestForList {
@@ -148,875 +194,331 @@
 }
 
 .bestForList li {
-  padding: 6px 0 6px 24px;
-  color: var(--text-secondary);
+  padding: 8px 0 8px 28px;
+  color: #424245;
   position: relative;
-  font-size: 0.9375rem;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .bestForList li::before {
-  content: '✓';
+  content: '';
   position: absolute;
   left: 0;
-  color: var(--primary-color);
-  font-weight: 700;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230071e3'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .productCTA {
-  padding: 24px;
+  padding: 32px;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .ctaButton {
   display: block;
   width: 100%;
-  padding: 16px 24px;
-  background: var(--gradient-primary);
+  padding: 18px 24px;
+  background: #0071e3;
   color: white;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 980px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 17px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .ctaButton:hover {
+  background: #0077ed;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-primary);
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
 }
 
-/* Comparison Section */
+/* COMPARISON SECTION */
 .comparisonSection {
-  margin: 80px 0;
+  margin: 120px 0;
 }
 
-/* Cost Comparison Section */
+.sectionTitle {
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 700;
+  color: #1d1d1f;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: -0.02em;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.comparisonTable th {
+  padding: 24px;
+  text-align: left;
+  background: #fbfbfd;
+  color: #1d1d1f;
+  font-weight: 600;
+  font-size: 17px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.comparisonTable td {
+  padding: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 17px;
+  color: #1d1d1f;
+}
+
+.comparisonTable tr:last-child td {
+  border-bottom: none;
+}
+
+.comparisonTable tr:hover td {
+  background: #f5f5f7;
+}
+
+/* COST COMPARISON */
 .costComparisonSection {
-  margin: 100px 0;
-  padding: 60px 40px;
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.03) 0%, rgba(103, 183, 229, 0.03) 100%);
-  border-radius: 20px;
+  margin: 140px 0;
+  padding: 80px 40px;
+  background: #fbfbfd;
+  border-radius: 32px;
 }
 
 .costDescription {
   text-align: center;
-  font-size: 1.125rem;
-  color: var(--text-secondary);
+  font-size: 21px;
+  color: #86868b;
   max-width: 800px;
-  margin: 0 auto 60px;
-  line-height: 1.7;
+  margin: 0 auto 80px;
+  line-height: 1.6;
 }
 
 .costComparisonGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .costColumn {
-  background: white;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: var(--shadow-medium);
+  background: #fff;
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
   position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .costColumnHighlight {
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(103, 183, 229, 0.05) 100%);
-  border: 2px solid var(--primary-color);
-  box-shadow: 0 10px 40px rgba(52, 211, 153, 0.2);
+  border: 2px solid #0071e3;
+  box-shadow: 0 20px 60px rgba(0, 113, 227, 0.1);
 }
 
 .savingsBadge {
   position: absolute;
-  top: -15px;
-  right: 30px;
-  background: var(--gradient-primary);
+  top: -20px;
+  right: 40px;
+  background: #0071e3;
   color: white;
-  padding: 10px 24px;
-  border-radius: 25px;
-  font-weight: 700;
-  font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(52, 211, 153, 0.3);
-  letter-spacing: 0.5px;
+  padding: 12px 24px;
+  border-radius: 980px;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
 }
 
 .costColumnTitle {
-  font-size: 1.75rem;
+  font-size: 28px;
   font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 30px;
-  font-family: var(--font-poppins);
+  color: #1d1d1f;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-.costIcon {
-  font-size: 2rem;
+  gap: 16px;
+  letter-spacing: -0.01em;
 }
 
 .costBreakdown {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #E5E7EB;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f5f5f7;
 }
 
 .costBreakdown:last-of-type {
   border-bottom: none;
-  padding-bottom: 0;
 }
 
 .costBreakdownTitle {
-  font-size: 1.125rem;
+  font-size: 19px;
   font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 16px;
-  font-family: var(--font-poppins);
+  color: #1d1d1f;
+  margin-bottom: 24px;
 }
 
 .costItem {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 10px 0;
-  font-size: 0.9375rem;
-  gap: 20px;
+  padding: 12px 0;
+  font-size: 17px;
 }
 
 .costLabel {
-  color: var(--text-secondary);
-  flex: 1;
-  line-height: 1.5;
+  color: #86868b;
 }
 
 .costValue {
-  color: var(--text-primary);
+  color: #1d1d1f;
   font-weight: 600;
-  white-space: nowrap;
 }
 
 .costTotal {
-  margin-top: 16px;
-  padding: 16px;
-  background: rgba(52, 211, 153, 0.08);
-  border-radius: 8px;
-  font-size: 1.125rem;
-  color: var(--text-primary);
+  margin-top: 24px;
+  padding: 20px;
+  background: #fbfbfd;
+  border-radius: 12px;
+  font-size: 19px;
+  color: #1d1d1f;
   display: flex;
   justify-content: space-between;
-}
-
-.costNote {
-  margin-top: 12px;
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  font-style: italic;
-  line-height: 1.5;
-}
-
-.hiddenCostsList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.hiddenCostsList li {
-  padding: 8px 0 8px 24px;
-  color: var(--text-secondary);
-  position: relative;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-}
-
-.hiddenCostsList li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #EF4444;
-  font-size: 20px;
-  line-height: 1;
-}
-
-.costColumnHighlight .hiddenCostsList li::before {
-  content: '✓';
-  color: var(--primary-color);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .fiveYearTCO {
-  margin-top: 30px;
-  padding: 20px;
-  background: #FEE2E2;
-  border-radius: 12px;
+  margin-top: 40px;
+  padding: 32px;
+  background: #fff0f0;
+  border-radius: 16px;
   text-align: center;
-  font-size: 1.375rem;
-  color: #991B1B;
-  font-family: var(--font-poppins);
-  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.1);
+  font-size: 24px;
+  color: #d70015;
+  font-weight: 700;
 }
 
 .fiveYearTCOHighlight {
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.15) 0%, rgba(103, 183, 229, 0.15) 100%);
-  color: #065F46;
-  box-shadow: 0 4px 12px rgba(52, 211, 153, 0.2);
+  background: rgba(52, 199, 89, 0.1);
+  color: #248a3d;
 }
 
-.costSummary {
-  margin: 80px 0 60px;
-  text-align: center;
-}
-
-.costSummaryTitle {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 40px;
-  font-family: var(--font-poppins);
-}
-
-.costSummaryGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
-.costSummaryItem {
-  text-align: center;
-  padding: 30px 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: var(--shadow-small);
-  transition: all 0.3s ease;
-}
-
-.costSummaryItem:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-medium);
-}
-
-.costSummaryIcon {
-  font-size: 3rem;
-  margin-bottom: 16px;
-}
-
-.costSummaryItem h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 10px;
-  font-family: var(--font-poppins);
-}
-
-.costSummaryItem p {
-  font-size: 0.9375rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.costCTA {
-  text-align: center;
-  padding: 50px 40px;
-  background: white;
-  border-radius: 16px;
-  box-shadow: var(--shadow-medium);
-}
-
-.costCTA h3 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 12px;
-  font-family: var(--font-poppins);
-}
-
-.costCTA p {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  margin-bottom: 28px;
-  line-height: 1.6;
-}
-
-.costCTAButton {
-  display: inline-block;
-  padding: 16px 40px;
-  background: var(--gradient-primary);
-  color: white;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.125rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: var(--shadow-medium);
-}
-
-.costCTAButton:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-large);
-}
-
-/* Procurement Guidance Section */
+/* PROCUREMENT SECTION */
 .procurementSection {
-  margin: 100px 0;
-  padding: 60px 40px;
-  background: linear-gradient(135deg, rgba(103, 183, 229, 0.05) 0%, rgba(52, 211, 153, 0.05) 100%);
-  border-radius: 20px;
+  margin: 140px 0;
+  padding: 80px 40px;
+  background: #fff;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .procurementIntro {
   text-align: center;
-  font-size: 1.125rem;
-  color: var(--text-secondary);
+  font-size: 21px;
+  color: #86868b;
   max-width: 900px;
-  margin: 0 auto 60px;
-  line-height: 1.7;
-}
-
-.procurementTimeline {
-  margin-bottom: 80px;
-}
-
-.procurementTimelineTitle {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: var(--font-poppins);
+  margin: 0 auto 80px;
+  line-height: 1.6;
 }
 
 .timelineSteps {
   position: relative;
-  padding-left: 60px;
+  padding-left: 80px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .timelineSteps::before {
   content: '';
   position: absolute;
-  left: 20px;
-  top: 30px;
-  bottom: 30px;
-  width: 3px;
-  background: var(--gradient-primary);
+  left: 39px;
+  top: 40px;
+  bottom: 40px;
+  width: 2px;
+  background: #e5e5e5;
 }
 
 .timelineStep {
   position: relative;
-  margin-bottom: 50px;
-  padding: 30px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: var(--shadow-small);
-}
-
-.timelineStep:last-child {
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .timelineNumber {
   position: absolute;
-  left: -60px;
-  top: 30px;
+  left: -80px;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timelineNumber::before {
+  content: attr(data-number);
+  /* Requires data attribute or just use CSS counter */
   width: 40px;
   height: 40px;
-  background: var(--gradient-primary);
+  background: #0071e3;
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.25rem;
-  box-shadow: 0 4px 12px rgba(52, 211, 153, 0.3);
+  font-size: 19px;
   z-index: 1;
+  box-shadow: 0 0 0 8px #fff;
+}
+
+.timelineContent {
+  background: #fbfbfd;
+  padding: 32px;
+  border-radius: 24px;
 }
 
 .timelineContent h4 {
-  font-size: 1.375rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 10px;
-  font-family: var(--font-poppins);
-}
-
-.timelineContent p {
-  font-size: 0.9375rem;
-  color: var(--text-secondary);
-  margin-bottom: 16px;
-}
-
-.timelineContent ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 16px 0;
-}
-
-.timelineContent ul li {
-  padding: 6px 0 6px 24px;
-  color: var(--text-secondary);
-  position: relative;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-}
-
-.timelineContent ul li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-.timelineNote {
-  padding: 12px 16px;
-  background: rgba(52, 211, 153, 0.08);
-  border-left: 4px solid var(--primary-color);
-  border-radius: 6px;
-  font-size: 0.9375rem !important;
-  line-height: 1.5 !important;
-  margin: 16px 0 0 0 !important;
-}
-
-.procurementRequirements {
-  margin-bottom: 80px;
-}
-
-.procurementRequirementsTitle {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-align: center;
-  margin-bottom: 40px;
-  font-family: var(--font-poppins);
-}
-
-.requirementsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.requirementCard {
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: var(--shadow-small);
-  transition: all 0.3s ease;
-}
-
-.requirementCard:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-medium);
-}
-
-.requirementCard h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 20px;
-  font-family: var(--font-poppins);
-}
-
-.requirementCard ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.requirementCard ul li {
-  padding: 8px 0;
-  color: var(--text-secondary);
-  font-size: 0.9375rem;
-  line-height: 1.6;
-}
-
-.requirementCard ul li strong {
-  color: var(--text-primary);
+  font-size: 21px;
   font-weight: 600;
-}
-
-.procurementFunding {
-  margin-bottom: 60px;
-}
-
-.procurementFundingTitle {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-align: center;
-  margin-bottom: 40px;
-  font-family: var(--font-poppins);
-}
-
-.fundingGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.fundingItem {
-  text-align: center;
-  padding: 30px 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: var(--shadow-small);
-  transition: all 0.3s ease;
-}
-
-.fundingItem:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-medium);
-  border: 2px solid var(--primary-color);
-}
-
-.fundingIcon {
-  font-size: 3rem;
-  margin-bottom: 16px;
-}
-
-.fundingItem h4 {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 10px;
-  font-family: var(--font-poppins);
-}
-
-.fundingItem p {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.procurementCTA {
-  text-align: center;
-  padding: 50px 40px;
-  background: white;
-  border-radius: 16px;
-  box-shadow: var(--shadow-medium);
-}
-
-.procurementCTA h3 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-primary);
+  color: #1d1d1f;
   margin-bottom: 12px;
-  font-family: var(--font-poppins);
 }
 
-.procurementCTA p {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  margin-bottom: 28px;
-  line-height: 1.6;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
 
-.procurementCTAButton {
-  display: inline-block;
-  padding: 16px 40px;
-  background: var(--gradient-primary);
-  color: white;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.125rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: var(--shadow-medium);
-}
-
-.procurementCTAButton:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-large);
-}
-
-.sectionTitle {
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  font-weight: 700;
-  color: var(--text-primary);
-  text-align: center;
-  margin-bottom: 48px;
-  font-family: var(--font-poppins);
-}
-
-.tableWrapper {
-  overflow-x: auto;
-  background: white;
-  border-radius: 16px;
-  box-shadow: var(--shadow-medium);
-}
-
-.comparisonTable {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.comparisonTable thead {
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.1) 0%, rgba(103, 183, 229, 0.1) 100%);
-}
-
-.comparisonTable th {
-  padding: 20px;
-  text-align: left;
-  font-weight: 700;
-  color: var(--text-primary);
-  font-size: 1rem;
-  border-bottom: 2px solid var(--primary-color);
-}
-
-.comparisonTable td {
-  padding: 16px 20px;
-  color: var(--text-secondary);
-  border-bottom: 1px solid #E5E7EB;
-  font-size: 0.9375rem;
-}
-
-.comparisonTable tbody tr:hover {
-  background: rgba(52, 211, 153, 0.03);
-}
-
-.comparisonTable td:first-child {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-/* BoT Section */
-.botSection {
-  margin: 80px 0;
-  padding: 60px 40px;
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(103, 183, 229, 0.05) 100%);
-  border-radius: 16px;
-}
-
-.botDescription {
-  text-align: center;
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  max-width: 800px;
-  margin: 0 auto 48px;
-  line-height: 1.7;
-}
-
-.botSteps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
-}
-
-.botStep {
-  text-align: center;
-  padding: 32px 24px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: var(--shadow-small);
-  transition: all 0.3s ease;
-}
-
-.botStep:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-medium);
-}
-
-.botIcon {
-  font-size: 3rem;
-  margin-bottom: 16px;
-}
-
-.botStep h3 {
-  font-size: 1.375rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 12px;
-  font-family: var(--font-poppins);
-}
-
-.botStep p {
-  font-size: 0.9375rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-/* Final CTA */
-.finalCTA {
-  text-align: center;
-  padding: 80px 40px;
-  background: white;
-  border-radius: 16px;
-  box-shadow: var(--shadow-medium);
-  margin: 80px 0;
-}
-
-.finalCTA h2 {
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 16px;
-  font-family: var(--font-poppins);
-}
-
-.finalCTA p {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  margin-bottom: 32px;
-}
-
-.ctaButtonLarge {
-  display: inline-block;
-  padding: 18px 48px;
-  background: var(--gradient-primary);
-  color: white;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.125rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: var(--shadow-medium);
-}
-
-.ctaButtonLarge:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-large);
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
+  .productsGrid,
   .costComparisonGrid {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
 
-  .costSummaryGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .requirementsGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .fundingGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    padding: 60px 0 40px;
-  }
-
-  .productsGrid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    margin: 40px 0;
-  }
-
-  .comparisonSection,
-  .costComparisonSection,
-  .procurementSection,
-  .botSection,
-  .finalCTA {
-    margin: 60px 0;
-  }
-
-  .comparisonTable th,
-  .comparisonTable td {
-    padding: 12px 16px;
-    font-size: 0.875rem;
-  }
-
-  .botSection {
-    padding: 40px 24px;
-  }
-
-  .botSteps {
-    grid-template-columns: 1fr;
-  }
-
-  .finalCTA {
-    padding: 60px 24px;
-  }
-
-  .costComparisonSection {
-    padding: 40px 20px;
-  }
-
-  .costColumn {
-    padding: 30px 20px;
-  }
-
-  .costColumnTitle {
-    font-size: 1.5rem;
-  }
-
-  .costSummaryGrid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .costSummaryTitle {
-    font-size: 1.75rem;
-  }
-
-  .costCTA {
-    padding: 40px 20px;
-  }
-
-  .costCTA h3 {
-    font-size: 1.5rem;
-  }
-
-  .procurementSection {
-    padding: 40px 20px;
+  .title {
+    font-size: 40px;
   }
 
   .timelineSteps {
-    padding-left: 0;
+    padding-left: 50px;
   }
 
   .timelineSteps::before {
-    display: none;
+    left: 19px;
   }
 
   .timelineNumber {
-    position: static;
-    margin: 0 auto 20px;
-  }
-
-  .timelineStep {
-    padding: 24px 20px;
-  }
-
-  .fundingGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .procurementCTA {
-    padding: 40px 20px;
-  }
-
-  .procurementCTA h3 {
-    font-size: 1.5rem;
-  }
-
-  .procurementTimelineTitle,
-  .procurementRequirementsTitle,
-  .procurementFundingTitle {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .badges {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .badge {
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
+    left: -50px;
+    width: 40px;
   }
 }
