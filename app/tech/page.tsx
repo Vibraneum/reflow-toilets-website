@@ -52,7 +52,7 @@ export default function TechPage() {
       <section className={styles.dashboardImage}>
         <div className={styles.container}>
           <Image
-            src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/screenshot-2025-04-18-172042.png"
+            src="https://res.cloudinary.com/dhupieu4x/image/upload/v1732432120/reflow-assets/tech/monitoring-dashboard.png"
             alt="ReFlow operations dashboard showing real-time unit monitoring"
             width={1100}
             height={733}
