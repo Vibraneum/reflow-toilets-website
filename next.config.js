@@ -4,6 +4,7 @@ const path = require('path')
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    unoptimized: true, // Required for Cloudflare Pages - Cloudinary handles optimization
     remotePatterns: [
       {
         protocol: 'https',
