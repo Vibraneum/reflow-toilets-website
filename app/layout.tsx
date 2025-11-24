@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     description: 'Smart, resilient, and sustainable public toilet solutions designed for modern urban needs',
     images: [
       {
-        url: '/images/bcrt/MAIN B-CRT IMAGE.png',
+        url: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png',
         width: 1200,
         height: 630,
         alt: 'ReFlow Toilets - B-CRT Blackwater Circular Reinvented Toilet',
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ReFlow Toilets - Scalable Decentralized Sanitation Infrastructure',
     description: 'Smart, resilient, and sustainable public toilet solutions designed for modern urban needs',
-    images: ['/images/bcrt/MAIN B-CRT IMAGE.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
   },
   robots: {
     index: true,

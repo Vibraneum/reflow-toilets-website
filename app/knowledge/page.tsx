@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Public Sanitation Knowledge Hub - Understanding India\'s Sanitation Challenge',
     description: 'Data-driven insights into India\'s public sanitation crisis and sustainable solutions',
-    images: ['/images/bcrt/MAIN B-CRT IMAGE.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
   },
 }
 
@@ -47,7 +47,7 @@ export default function KnowledgeHub() {
       name: 'ReFlow Toilets',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.reflowtoilets.com/images/logos/reflow toilets png.png',
+        url: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-toilets-png.png',
       },
     },
   }
@@ -181,7 +181,7 @@ export default function KnowledgeHub() {
                   <h4 className={styles.crisisCardTitle}>Sanitation Ladder Challenges</h4>
                   <p className={styles.crisisCardText}>
                     While many households now have toilets, the challenge has shifted to ensuring they are <strong>safely
-                    managed</strong> — meaning proper faecal sludge collection, treatment, and disposal.
+                      managed</strong> — meaning proper faecal sludge collection, treatment, and disposal.
                   </p>
                   <p className={styles.crisisCardText}>
                     Public and community sanitation facilities remain inadequate in most urban and rural areas,
@@ -341,9 +341,9 @@ export default function KnowledgeHub() {
                   <div className={styles.timelineDetails}>
                     <p><strong>Technology:</strong> Water-based flushing to septic tanks or sewer networks.</p>
                     <p><strong>Challenges:</strong> Water wastage (6-15 liters per flush), requires piped water supply,
-                    expensive infrastructure, faecal sludge management gaps.</p>
+                      expensive infrastructure, faecal sludge management gaps.</p>
                     <p><strong>Impact:</strong> Improved hygiene in connected households but created water scarcity
-                    and sewage treatment challenges.</p>
+                      and sewage treatment challenges.</p>
                   </div>
                 </div>
               </div>
@@ -357,9 +357,9 @@ export default function KnowledgeHub() {
                   <div className={styles.timelineDetails}>
                     <p><strong>Technology:</strong> Twin-pit pour-flush toilets promoted as low-cost solution.</p>
                     <p><strong>Achievements:</strong> 100 million toilets built, 500 million people impacted,
-                    prevented 300,000 deaths.</p>
+                      prevented 300,000 deaths.</p>
                     <p><strong>Challenges:</strong> Many toilets unused due to lack of water, cultural barriers,
-                    or poor construction. "Safely managed" sanitation remains low.</p>
+                      or poor construction. "Safely managed" sanitation remains low.</p>
                   </div>
                 </div>
               </div>
@@ -372,14 +372,14 @@ export default function KnowledgeHub() {
                   <p className={styles.timelineEra}>2020 – Present (Emerging Technology)</p>
                   <div className={styles.timelineDetails}>
                     <p><strong>Technology:</strong> Decentralized, off-grid systems with onsite treatment.
-                    Examples include B-CRT (Bio-Circular Resource Technology), container-based sanitation, and
-                    solar-powered treatment units.</p>
+                      Examples include B-CRT (Bio-Circular Resource Technology), container-based sanitation, and
+                      solar-powered treatment units.</p>
                     <p><strong>Features:</strong> Zero water discharge, energy self-sufficient (solar), IoT monitoring,
-                    resource recovery (reusable water, compost).</p>
+                      resource recovery (reusable water, compost).</p>
                     <p><strong>Certification:</strong> ISO 30500 standard ensures safety, performance, and environmental
-                    compliance.</p>
+                      compliance.</p>
                     <p><strong>Impact:</strong> Solves water scarcity, eliminates sewage burden, enables deployment in
-                    water-stressed, off-grid, or coastal areas.</p>
+                      water-stressed, off-grid, or coastal areas.</p>
                   </div>
                 </div>
               </div>
@@ -459,11 +459,11 @@ export default function KnowledgeHub() {
                   <h4 className={styles.regulatorySubtitle}>Public Toilet Provisions</h4>
                   <ul className={styles.regulatoryList}>
                     <li><strong>Temporary Tourism Facilities:</strong> Toilets/washrooms permitted in No Development
-                    Zone (NDZ) for beach tourism, located at least 10m from High Tide Line (HTL)</li>
+                      Zone (NDZ) for beach tourism, located at least 10m from High Tide Line (HTL)</li>
                     <li><strong>Community Toilets:</strong> Allowed for traditional coastal inhabitants on a
-                    case-by-case basis by Coastal Zone Management Authority</li>
+                      case-by-case basis by Coastal Zone Management Authority</li>
                     <li><strong>Proper Sanitation:</strong> All facilities must incorporate proper sanitation
-                    arrangements as mandated</li>
+                      arrangements as mandated</li>
                   </ul>
                   <p className={styles.regulatoryDesc}>
                     These regulations make decentralized, zero-discharge toilets like B-CRT ideal for coastal areas
@@ -654,11 +654,11 @@ export default function KnowledgeHub() {
                 <h4 className={styles.sustainabilityCardTitle}>Water Recycling & Zero Discharge</h4>
                 <div className={styles.sustainabilityCardContent}>
                   <p><strong>The Challenge:</strong> India is water-stressed (1,486 m³ per capita/year).
-                  Cities face severe shortages; per capita availability down 73% since 1950.</p>
+                    Cities face severe shortages; per capita availability down 73% since 1950.</p>
                   <p><strong>The Solution:</strong> Advanced treatment systems (like B-CRT) recycle 100% of
-                  wastewater onsite. Treated water meets reuse standards for flushing, gardening, or groundwater recharge.</p>
+                    wastewater onsite. Treated water meets reuse standards for flushing, gardening, or groundwater recharge.</p>
                   <p><strong>Impact:</strong> Zero freshwater withdrawal for flushing; zero sewage discharge
-                  to rivers/groundwater. Ideal for water-stressed and off-grid areas.</p>
+                    to rivers/groundwater. Ideal for water-stressed and off-grid areas.</p>
                 </div>
               </div>
 
@@ -668,11 +668,11 @@ export default function KnowledgeHub() {
                 <h4 className={styles.sustainabilityCardTitle}>Energy Self-Sufficiency</h4>
                 <div className={styles.sustainabilityCardContent}>
                   <p><strong>Solar Power:</strong> Modern reinvented toilets use solar panels to power treatment
-                  processes, IoT sensors, lighting, and ventilation — completely off-grid.</p>
+                    processes, IoT sensors, lighting, and ventilation — completely off-grid.</p>
                   <p><strong>Biogas Recovery:</strong> Anaerobic digestion of organic waste produces methane
-                  (biogas) that can be used for cooking or electricity generation.</p>
+                    (biogas) that can be used for cooking or electricity generation.</p>
                   <p><strong>Impact:</strong> Net-zero or net-positive energy systems. No reliance on grid power,
-                  reducing operational costs and carbon footprint.</p>
+                    reducing operational costs and carbon footprint.</p>
                 </div>
               </div>
 
@@ -682,11 +682,11 @@ export default function KnowledgeHub() {
                 <h4 className={styles.sustainabilityCardTitle}>Nutrient Recovery & Reuse</h4>
                 <div className={styles.sustainabilityCardContent}>
                   <p><strong>Compost Production:</strong> Solid waste (faecal sludge) is treated and converted
-                  into pathogen-free compost, rich in nitrogen, phosphorus, and potassium.</p>
+                    into pathogen-free compost, rich in nitrogen, phosphorus, and potassium.</p>
                   <p><strong>Agricultural Value:</strong> Compost can be used for urban gardening, landscaping,
-                  or sold to farmers, closing the nutrient loop.</p>
+                    or sold to farmers, closing the nutrient loop.</p>
                   <p><strong>Impact:</strong> Reduces reliance on chemical fertilizers, improves soil health,
-                  and creates revenue streams from waste.</p>
+                    and creates revenue streams from waste.</p>
                 </div>
               </div>
 
@@ -696,11 +696,11 @@ export default function KnowledgeHub() {
                 <h4 className={styles.sustainabilityCardTitle}>Climate Resilience</h4>
                 <div className={styles.sustainabilityCardContent}>
                   <p><strong>Flood-Proof:</strong> Decentralized systems operate independently of sewer networks,
-                  which often overflow during floods, contaminating water sources.</p>
+                    which often overflow during floods, contaminating water sources.</p>
                   <p><strong>Drought-Proof:</strong> Zero freshwater requirement for operation; water recycling
-                  ensures continuity during droughts.</p>
+                    ensures continuity during droughts.</p>
                   <p><strong>Disaster-Ready:</strong> Modular, pre-fabricated units can be rapidly deployed in
-                  disaster zones, refugee camps, or post-disaster reconstruction.</p>
+                    disaster zones, refugee camps, or post-disaster reconstruction.</p>
                 </div>
               </div>
             </div>

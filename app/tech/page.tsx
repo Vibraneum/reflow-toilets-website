@@ -52,7 +52,7 @@ export default function TechPage() {
       <section className={styles.dashboardImage}>
         <div className={styles.container}>
           <Image
-            src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png"
+            src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/screenshot-2025-04-18-172042.png"
             alt="ReFlow operations dashboard showing real-time unit monitoring"
             width={1100}
             height={733}
@@ -164,7 +164,6 @@ export default function TechPage() {
       </section>
 
       {/* Comparison Section */}
-      {/* Comparison Section */}
       <section className={styles.comparisonSection}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Why ReFlow Technology?</h2>
@@ -233,7 +232,7 @@ export default function TechPage() {
             </div>
             <div className={styles.aiImage}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-map.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-dashboard2.png"
                 alt="AI-powered unit status dashboard with Gemini analysis"
                 width={430}
                 height={430}
@@ -269,7 +268,7 @@ export default function TechPage() {
           <div className={styles.iotGrid}>
             <div className={styles.iotImage}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-analytics.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/screenshot-2025-04-18-172328.png"
                 alt="IoT sensor dashboard showing real-time data from deployed units"
                 width={727}
                 height={485}
@@ -429,7 +428,7 @@ export default function TechPage() {
             </div>
             <div className={styles.bcrtImage}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/wiring-system.jpg"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/wiring-system.jpg"
                 alt="B-CRT control interface showing treatment system management"
                 width={214}
                 height={463}
@@ -510,21 +509,21 @@ export default function TechPage() {
           <div className={styles.showcaseGrid}>
             <div className={styles.showcaseImages}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/app-public.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-app.png"
                 alt="Area Executive mobile app interface"
                 width={245}
                 height={436}
                 className={styles.showcaseAppImage}
               />
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/app-public-2.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-app-2-1.png"
                 alt="Operations Manager dashboard interface"
                 width={241}
                 height={429}
                 className={styles.showcaseAppImage}
               />
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/app-operator.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-unit-app-1.png"
                 alt="Unit Operator mobile app interface"
                 width={237}
                 height={421}

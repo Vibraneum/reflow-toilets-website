@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getAllPosts, getAllCategories, getAllTags } from '@/lib/blogPosts';
 import styles from './Blog.module.css';
 
@@ -40,9 +41,14 @@ export default function BlogPage() {
               <article className={styles.featuredPost}>
                 <Link href={`/blog/${posts[0].slug}`} className={styles.featuredLink}>
                   <div className={styles.featuredImageWrapper}>
-                    <div className={styles.featuredImagePlaceholder}>
-                      {posts[0].category}
-                    </div>
+                    <Image
+                      src={posts[0].featuredImage}
+                      alt={posts[0].imageAlt}
+                      fill
+                      className={styles.featuredImage}
+                      style={{ objectFit: 'cover' }}
+                      priority
+                    />
                   </div>
                   <div className={styles.featuredContent}>
                     <div className={styles.featuredMeta}>
@@ -80,9 +86,13 @@ export default function BlogPage() {
                 <article key={post.slug} className={styles.blogCard}>
                   <Link href={`/blog/${post.slug}`} className={styles.cardLink}>
                     <div className={styles.cardImageWrapper}>
-                      <div className={styles.cardImagePlaceholder}>
-                        {post.category}
-                      </div>
+                      <Image
+                        src={post.featuredImage}
+                        alt={post.imageAlt}
+                        fill
+                        className={styles.cardImage}
+                        style={{ objectFit: 'cover' }}
+                      />
                     </div>
                     <div className={styles.cardContent}>
                       <div className={styles.cardMeta}>

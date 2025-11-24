@@ -56,7 +56,7 @@ export default function InnovationPage() {
         <div className={styles.missionContainer}>
           <div className={styles.missionImage}>
             <Image
-              src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732617/reflow-assets/units/mini-on-footpath.jpg"
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/mini-on-footpath-reflow.jpg"
               alt="ReFlow Mini"
               width={800}
               height={1000}
@@ -140,7 +140,7 @@ export default function InnovationPage() {
               <div className={styles.productBadge}>Most Popular</div>
               <div className={styles.productImageWrapper}>
                 <Image
-                  src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732617/reflow-assets/units/mini-on-footpath.jpg"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/mini-on-footpath-reflow.jpg"
                   alt="ReFlow Mini"
                   width={400}
                   height={500}
@@ -206,7 +206,7 @@ export default function InnovationPage() {
               <div className={styles.productBadgePremium}>Advanced</div>
               <div className={styles.productImageWrapper}>
                 <Image
-                  src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png"
                   alt="40ft B-CRT"
                   width={400}
                   height={500}
@@ -262,7 +262,7 @@ export default function InnovationPage() {
           </div>
           <div className={styles.manufacturingImage}>
             <Image
-              src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732614/reflow-assets/units/big-unit-reflow.jpg"
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/big-unit-reflow.png"
               alt="Manufacturing"
               width={700}
               height={500}

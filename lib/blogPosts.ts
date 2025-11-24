@@ -31,11 +31,11 @@ export const blogPosts: BlogPost[] = [
     category: 'Technology',
     tags: ['B-CRT', 'Water Treatment', 'MBBR', 'ISO30500', 'Engineering'],
     readingTime: '12 min read',
-    featuredImage: '/images/blog/zero-discharge-technical.jpg',
+    featuredImage: '/images/blog/zero-discharge-technical.png',
     imageAlt: 'Technical diagram of zero-discharge toilet system components',
     author: {
-      name: 'Ixora Engineering Team',
-      role: 'Sanitation Technology Experts',
+      name: 'ReFlow Engineering',
+      role: 'Sanitation Technology Team',
     },
     seo: {
       metaTitle: 'How Zero-Discharge Toilets Work: Complete Technical Guide (2025)',
@@ -287,11 +287,11 @@ As climate change intensifies water scarcity and urbanization accelerates, zero-
     category: 'Economics',
     tags: ['Public Policy', 'Cost Analysis', 'Urban Planning', 'Municipal Governance'],
     readingTime: '10 min read',
-    featuredImage: '/images/blog/toilet-economics.jpg',
+    featuredImage: '/images/blog/toilet-economics.png',
     imageAlt: 'Financial analysis of public toilet infrastructure costs',
     author: {
-      name: 'Dr. Priya Sharma',
-      role: 'Urban Infrastructure Economist, ReFlow Advisory Board',
+      name: 'ReFlow Research',
+      role: 'Urban Infrastructure Analysis',
     },
     seo: {
       metaTitle: 'Public Toilet Economics: Why Traditional Models Fail (2025 Analysis)',
@@ -608,11 +608,11 @@ The question isn't whether cities can afford to switch to decentralized sanitati
     category: 'Standards & Compliance',
     tags: ['ISO 30500', 'Certification', 'Quality Standards', 'Procurement', 'Compliance'],
     readingTime: '9 min read',
-    featuredImage: '/images/blog/iso30500-certification.jpg',
+    featuredImage: '/images/blog/iso30500-certification.png',
     imageAlt: 'ISO 30500 certification badge and testing facility',
     author: {
-      name: 'Rajesh Kumar, Ph.D.',
-      role: 'Quality Assurance Director, ReFlow Toilets',
+      name: 'ReFlow Quality Assurance',
+      role: 'Compliance Team',
     },
     seo: {
       metaTitle: 'ISO 30500 Certification Explained: Complete Guide for Cities (2025)',
@@ -1033,11 +1033,11 @@ The question for municipal decision-makers is simple: why would you invest publi
     category: 'Water Conservation',
     tags: ['Water Scarcity', 'Climate Change', 'Decentralized Systems', 'Sustainability'],
     readingTime: '11 min read',
-    featuredImage: '/images/blog/water-crisis-solutions.jpg',
+    featuredImage: '/images/blog/water-crisis-solutions.png',
     imageAlt: 'Comparison of water usage: traditional vs. zero-discharge toilets',
     author: {
-      name: 'Dr. Anjali Mehta',
-      role: 'Water Resources Specialist, ReFlow Sustainability Team',
+      name: 'ReFlow Sustainability',
+      role: 'Water Resources Team',
     },
     seo: {
       metaTitle: 'Water Crisis Solutions: Waterless Toilet Technology (2025 Guide)',
@@ -1434,11 +1434,11 @@ The question is not whether we can afford to deploy these systems, but whether w
     category: 'Case Studies',
     tags: ['Hyderabad', 'ROI', 'Case Study', 'Smart Cities', 'Municipal Projects'],
     readingTime: '14 min read',
-    featuredImage: '/images/blog/hyderabad-case-study.jpg',
+    featuredImage: '/images/blog/hyderabad-case-study.png',
     imageAlt: 'ReFlow B-CRT toilet installation in Hyderabad',
     author: {
-      name: 'Venkat Reddy',
-      role: 'Project Manager, Hyderabad Smart City Development',
+      name: 'ReFlow Projects',
+      role: 'Implementation Team',
     },
     seo: {
       metaTitle: 'Hyderabad Case Study: ₹2.1Cr Saved with Zero-Discharge Toilets',
@@ -2109,11 +2109,11 @@ Hyderabad's experience provides a roadmap. Other cities should follow.
     category: 'Technology',
     tags: ['IoT', 'Smart Cities', 'Digital Transformation', 'Predictive Maintenance', 'Data Analytics'],
     readingTime: '13 min read',
-    featuredImage: '/images/blog/iot-smart-toilets.jpg',
+    featuredImage: '/images/blog/iot-smart-toilets.png',
     imageAlt: 'Dashboard showing real-time IoT monitoring of smart toilet systems',
     author: {
-      name: 'Karthik Subramanian',
-      role: 'IoT Solutions Architect, ReFlow Toilets',
+      name: 'ReFlow Technology',
+      role: 'IoT Solutions Team',
     },
     seo: {
       metaTitle: 'Smart Toilets: IoT, Predictive Maintenance, Real-Time Monitoring (2025)',

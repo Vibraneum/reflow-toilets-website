@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ReFlow Toilets - Scalable Decentralized Sanitation Infrastructure',
     description: 'Smart, resilient, and sustainable public toilet solutions designed for modern urban needs',
-    images: ['/images/bcrt/MAIN B-CRT IMAGE.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
   },
 }
 
@@ -55,7 +55,7 @@ export default function Home() {
     name: 'ReFlow Toilets',
     alternateName: 'iRise Toilets',
     url: 'https://www.reflowtoilets.com',
-    logo: '/images/logos/reflow toilets png.png',
+    logo: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-toilets-png.png',
     description: 'Smart, resilient, and sustainable public toilet solutions designed for modern urban needs',
     address: {
       '@type': 'PostalAddress',

@@ -29,7 +29,7 @@
 .badge {
   display: inline-block;
   padding: 8px 16px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
   color: #fff;
   border-radius: 20px;
   font-size: 13px;
@@ -176,7 +176,7 @@
 }
 
 .statHighlightCard {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
   border-radius: 20px;
   padding: 40px 32px;
   color: #fff;
@@ -417,7 +417,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
   color: #fff;
   display: flex;
   align-items: center;
@@ -470,7 +470,7 @@
 
 /* Future Box */
 .futureBox {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
   border-radius: 24px;
   padding: 60px 40px;
   color: #fff;
@@ -547,7 +547,7 @@
 }
 
 .regulatoryHeader {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
   padding: 32px 28px;
   color: #fff;
   display: flex;
@@ -1039,7 +1039,7 @@
 
 /* Checklist Box */
 .checklistBox {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
   border-radius: 24px;
   padding: 60px 40px;
   color: #fff;
@@ -1085,7 +1085,7 @@
    CTA SECTION
    ========================= */
 .cta {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
   padding: 100px 20px;
 }
 
@@ -1236,6 +1236,7 @@
    RESPONSIVE DESIGN
    ========================= */
 @media (max-width: 1024px) {
+
   .regulatoryGrid,
   .sustainabilityGrid,
   .inclusionGrid {

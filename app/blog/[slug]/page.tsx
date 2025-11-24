@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getPostBySlug, getAllPosts, getRelatedPosts } from '@/lib/blogPosts';
 import styles from './BlogPost.module.css';
 
@@ -76,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
       name: 'ReFlow Toilets',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.reflowtoilets.com/images/logos/reflow favicon.png',
+        url: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-favicon.png',
       },
     },
     keywords: post.tags.join(', '),
@@ -168,9 +169,14 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Featured Image */}
         <div className={styles.featuredImage}>
-          <div className={styles.imagePlaceholder}>
-            {post.category} Feature Image
-          </div>
+          <Image
+            src={post.featuredImage}
+            alt={post.imageAlt}
+            width={1200}
+            height={600}
+            style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
+            priority
+          />
           <p className={styles.imageCaption}>{post.imageAlt}</p>
         </div>
 
@@ -228,9 +234,12 @@ export default async function BlogPostPage({ params }: Props) {
                 <article key={relatedPost.slug} className={styles.relatedCard}>
                   <Link href={`/blog/${relatedPost.slug}`} className={styles.relatedLink}>
                     <div className={styles.relatedImageWrapper}>
-                      <div className={styles.relatedImagePlaceholder}>
-                        {relatedPost.category}
-                      </div>
+                      <Image
+                        src={relatedPost.featuredImage}
+                        alt={relatedPost.imageAlt}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                      />
                     </div>
                     <div className={styles.relatedContent}>
                       <span className={styles.relatedCategory}>{relatedPost.category}</span>

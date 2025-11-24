@@ -33,7 +33,7 @@ const products: ProductSpec[] = [
   {
     name: 'ReFlow Mini Bundle',
     tagline: 'Rapid Urban Deployment Kit',
-    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/products/mini-unit.jpg',
+    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-mini.png',
     size: '8×8 ft (64 sq ft)',
     capacity: '2 toilet cubicles',
     cubicles: '2 cubicles',
@@ -65,7 +65,7 @@ const products: ProductSpec[] = [
   {
     name: 'ReFlow Standard Bundle',
     tagline: 'Complete Community Solution',
-    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/products/standard-unit.png',
+    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/big-unit-reflow.png',
     size: '~15×10 ft (150 sq ft)',
     capacity: '3 toilet units',
     cubicles: '3 cubicles',
@@ -97,7 +97,7 @@ const products: ProductSpec[] = [
   {
     name: '40ft B-CRT Hub',
     tagline: 'District Sanitation Center',
-    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/products/bcrt-container.png',
+    image: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png',
     size: '40ft container (320 sq ft)',
     capacity: '6 cubicles + urinals + special access',
     cubicles: '6+ cubicles + urinals',
