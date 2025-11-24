@@ -61,8 +61,13 @@ export default function BundlingEcosystem() {
                             <h3 className={styles.cardTitle}>Protect</h3>
                         </div>
                         <div className={styles.imageWrapper}>
-                            {/* Placeholder for Security Image - using a generic one for now if specific not found */}
-                            <div className={styles.placeholderImage}>Security</div>
+                            <Image
+                                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-analytics.png"
+                                alt="Ixora Security Monitoring"
+                                width={300}
+                                height={200}
+                                className={styles.cardImage}
+                            />
                         </div>
                         <div className={styles.cardContent}>
                             <h4 className={styles.brandName}>Ixora Security</h4>
@@ -99,8 +104,13 @@ export default function BundlingEcosystem() {
                             <h3 className={styles.cardTitle}>Maintain</h3>
                         </div>
                         <div className={styles.imageWrapper}>
-                            {/* Placeholder for FM Image */}
-                            <div className={styles.placeholderImage}>Facility Management</div>
+                            <Image
+                                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/interior.png"
+                                alt="Ixora Facility Management"
+                                width={300}
+                                height={200}
+                                className={styles.cardImage}
+                            />
                         </div>
                         <div className={styles.cardContent}>
                             <h4 className={styles.brandName}>Ixora FM</h4>

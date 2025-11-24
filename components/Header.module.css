@@ -1,18 +1,22 @@
 .navbar {
-  position: relative;
-  max-height: 60px;
-  height: 60px;
-  max-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
   width: 100%;
-  background: var(--background-default);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   z-index: 1000;
+  transition: all 0.3s ease;
 }
 
 .navbarContainer {
-  max-width: 1700px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,9 +31,9 @@
 .logoLink {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
-  color: var(--color-black);
+  color: #1d1d1f;
 }
 
 .logoImage {
@@ -38,46 +42,33 @@
 }
 
 .logoText {
-  font-family: var(--font-montserrat);
-  color: var(--color-black);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1d1d1f;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 19px;
+  letter-spacing: -0.01em;
 }
 
 .navMenu {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 32px;
 }
 
 .navLink {
-  font-family: var(--font-montserrat);
-  color: var(--color-black);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1d1d1f;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
-  transition: all var(--transition-base);
+  transition: color 0.2s ease;
   position: relative;
-  padding: 5px 0;
-}
-
-.navLink::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--color-primary);
-  transition: width var(--transition-base);
+  opacity: 0.8;
 }
 
 .navLink:hover {
-  color: var(--color-primary);
-}
-
-.navLink:hover::after {
-  width: 100%;
+  color: #0071e3;
+  opacity: 1;
 }
 
 .navEnd {
@@ -87,44 +78,21 @@
 }
 
 .bookCallButton {
-  background: var(--gradient-primary);
-  color: var(--color-white);
-  padding: 10px 24px;
-  border-radius: var(--radius-md);
-  font-family: var(--font-montserrat);
+  background: #1d1d1f;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 980px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition-base);
-  position: relative;
-  overflow: hidden;
-}
-
-.bookCallButton::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
-  opacity: 0;
-  transition: opacity var(--transition-base);
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .bookCallButton:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: var(--shadow-primary);
-}
-
-.bookCallButton:hover::before {
-  opacity: 1;
-}
-
-.bookCallButton:active {
-  transform: translateY(0) scale(0.98);
-  box-shadow: var(--shadow-md);
+  background: #3a3a3c;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .backdrop {
@@ -133,7 +101,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
   z-index: 998;
   animation: fadeIn 0.3s ease;
@@ -142,7 +110,7 @@
 .mobileMenuButton {
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
@@ -151,15 +119,15 @@
 }
 
 .menuIcon {
-  width: 25px;
-  height: 3px;
-  background: var(--color-black);
+  width: 24px;
+  height: 2px;
+  background: #1d1d1f;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
 .menuIconOpen:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .menuIconOpen:nth-child(2) {
@@ -167,64 +135,53 @@
 }
 
 .menuIconOpen:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .closeButton {
   display: none;
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 20px;
   background: none;
   border: none;
-  font-size: 36px;
-  color: var(--color-black);
+  font-size: 32px;
+  color: #1d1d1f;
   cursor: pointer;
   width: 40px;
   height: 40px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-base);
+  border-radius: 50%;
+  transition: background 0.2s;
 }
 
 .closeButton:hover {
   background: rgba(0, 0, 0, 0.05);
-  transform: rotate(90deg);
 }
 
-@media (max-width: 768px) {
-  .navbarContainer {
-    padding: 0 15px;
-  }
-  
-  .logoText {
-    font-size: 16px;
-  }
-  
-  .mobileMenuButton {
-    display: flex;
-  }
+@media (max-width: 900px) {
 
   .navMenu,
   .navEnd {
     display: none;
   }
 
+  .mobileMenuButton {
+    display: flex;
+  }
+
   .navMenuOpen {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--background-default);
-    padding: 40px 20px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    gap: 15px;
-    animation: slideDown 0.3s ease-out;
+    background: #ffffff;
+    padding: 80px 24px 40px;
+    gap: 24px;
     z-index: 999;
     overflow-y: auto;
   }
@@ -232,51 +189,31 @@
   .navMenuOpen .closeButton {
     display: flex;
   }
-  
+
   .navMenuOpen .navLink {
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 1;
     padding: 12px 0;
-    font-size: 18px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
-
-  .navMenuOpen .navLink::after {
-    display: none;
-  }
-
-  .navMenuOpen ~ .navEnd {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    gap: 15px;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--background-default);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    z-index: 999;
   }
 
-  .navMenuOpen ~ .navEnd .bookCallButton {
+  .navMenuOpen .bookCallButton {
+    margin-top: 20px;
     width: 100%;
     text-align: center;
-    padding: 14px 24px;
-  }
-
-  .navMenuOpen ~ .navEnd .navLink {
-    display: none;
+    padding: 16px;
+    font-size: 17px;
   }
 }
 
-@keyframes slideDown {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
-
