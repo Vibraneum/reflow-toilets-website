@@ -268,7 +268,7 @@ export default function TechPage() {
           <div className={styles.iotGrid}>
             <div className={styles.iotImage}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/screenshot-2025-04-18-172328.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-dashboard.png"
                 alt="IoT sensor dashboard showing real-time data from deployed units"
                 width={727}
                 height={485}
