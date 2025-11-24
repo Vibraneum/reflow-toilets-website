@@ -1,0 +1,57 @@
+# Cloudflare Pages Redirects for ReFlow Toilets Website
+# Documentation: https://developers.cloudflare.com/pages/platform/redirects/
+
+# =======================
+# SEO & URL Normalization
+# =======================
+
+# Remove trailing slashes (redirect to non-trailing slash version)
+/about/ /about 301
+/b-crt/ /b-crt 301
+/blog/ /blog 301
+/compare/ /compare 301
+/configure/ /configure 301
+/contact/ /contact 301
+/design/ /design 301
+/hiring/ /hiring 301
+/innovation/ /innovation 301
+/knowledge/ /knowledge 301
+/partners/ /partners 301
+/products/ /products 301
+/roi/ /roi 301
+/tech/ /tech 301
+/tos/ /tos 301
+
+# =======================
+# Legacy URL Redirects
+# =======================
+
+# Old B-CRT variations
+/bcrt /b-crt 301
+/BCRT /b-crt 301
+/B-CRT /b-crt 301
+/technology /tech 301
+/toilet /products 301
+/toilets /products 301
+
+# =======================
+# WWW to Non-WWW
+# =======================
+
+# Redirect www to non-www
+https://www.reflowtoilets.com/* https://reflowtoilets.com/:splat 301
+
+# =======================
+# HTTP to HTTPS
+# =======================
+
+# Redirect HTTP to HTTPS (Cloudflare handles this automatically)
+http://reflowtoilets.com/* https://reflowtoilets.com/:splat 301
+http://www.reflowtoilets.com/* https://reflowtoilets.com/:splat 301
+
+# =======================
+# Catch-all 404
+# =======================
+
+# This is handled by Next.js not-found.tsx
+# But you can add specific redirects here if needed
