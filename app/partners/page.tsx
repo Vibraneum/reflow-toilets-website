@@ -1,160 +1,104 @@
 'use client'
 
 import { useState } from 'react'
-import dynamic from 'next/dynamic'
+import Link from 'next/link'
 import styles from './page.module.css'
 import ScrollReveal from '@/components/ScrollReveal'
 import LuxuryCard from '@/components/LuxuryCard'
 
-// Dynamically load components for better performance
-const PartnerRevenueCalculator = dynamic(() => import('@/components/PartnerRevenueCalculator'), {
-  loading: () => <div style={{ minHeight: '400px' }} />,
-})
-
-const PartnerApplicationForm = dynamic(() => import('@/components/PartnerApplicationForm'), {
-  loading: () => <div style={{ minHeight: '400px' }} />,
-})
-
 export default function PartnersPage() {
-  const [activePartnershipModel, setActivePartnershipModel] = useState<string>('cafe')
+  const [activePartnerType, setActivePartnerType] = useState<string>('technology')
 
-  const partnershipModels = [
+  const partnerTypes = [
     {
-      id: 'cafe',
-      title: 'Café/Food Kiosk',
-      icon: '☕',
-      description: 'Operate a coffee shop, tea stall, or snack counter inside our B-CRT units.',
-      revenue: '₹30K-80K/month',
-      investment: '₹2-5L',
+      id: 'technology',
+      title: 'Technology & Manufacturing',
+      icon: '🔬',
+      description: 'Partner with us to manufacture and indigenize B-CRT technology in India.',
       highlights: [
-        '3,000+ daily footfall per unit',
-        'Prime transport hub locations',
-        'Full LooCafe branding support',
-        'Proven 270+ location model',
+        'T-Works collaboration for manufacturing',
+        'Gates Foundation Reinvented Toilet Mission',
+        'ISO30500 certification support',
+        'Technology transfer opportunities',
       ],
-      details: 'Like LooCafe\'s successful 270+ locations model, partner with us to operate café counters in our B-CRT units. You handle food/beverage operations, we handle facility maintenance.',
+      details: 'We are working with T-Works (Telangana\'s prototype and innovation center) to indigenize B-CRT manufacturing. Join us in bringing this groundbreaking sanitation technology to scale through manufacturing partnerships.',
+      cta: 'Explore Technology Partnership',
+      ctaLink: '/contact?subject=Technology%20Partnership',
     },
     {
-      id: 'retail',
-      title: 'Retail/Convenience Store',
-      icon: '🛒',
-      description: 'Sell essential products like newspapers, hygiene items, mobile accessories.',
-      revenue: '₹20K-50K/month',
-      investment: '₹1-3L',
+      id: 'csr',
+      title: 'CSR & Foundation Partners',
+      icon: '💚',
+      description: 'Deploy zero-discharge toilets through your CSR initiatives where sewage infrastructure isn\'t possible.',
       highlights: [
-        'High-demand essentials',
-        'Captive customer base',
-        'Low operational overhead',
-        'Multiple revenue streams',
+        'Zero sewage discharge - perfect for eco-sensitive areas',
+        'Visibility through branded installations',
+        'Measurable environmental impact metrics',
+        'Association with Gates Foundation innovation',
       ],
-      details: 'Set up a convenience retail counter selling newspapers, magazines, hygiene products, mobile accessories, and other essentials at high-footfall locations.',
+      details: 'ReFlow toilets are ideal for CSR deployments in areas where traditional sewage isn\'t possible - eco-parks, heritage sites, CRZ zones, and remote communities. Each unit processes all waste on-site, turning it into safe water and biosolids.',
+      cta: 'Discuss CSR Deployment',
+      ctaLink: '/contact?subject=CSR%20Partnership',
     },
     {
-      id: 'advertising',
-      title: 'Advertising & Branding',
-      icon: '📺',
-      description: 'Digital screens, poster spaces, and branded advertising opportunities.',
-      revenue: '₹15K-40K/month',
-      investment: '₹50K-2L',
+      id: 'government',
+      title: 'Government & Policy',
+      icon: '🏛️',
+      description: 'Work with us to bring B-CRT technology into national sanitation policy under Aspirational Toilets 3.0.',
       highlights: [
-        '4 external walls + internal spaces',
-        'Digital screen options available',
-        'Data-backed audience metrics',
-        'Brand-safe environment',
+        'Swachh Bharat Mission 2.0 alignment',
+        'Aspirational Toilets 3.0 policy integration',
+        'District-level pilot partnerships',
+        'Policy advocacy and technical support',
       ],
-      details: 'All 4 external walls plus internal spaces available for legal, commercially viable advertising. Digital screens and static posters supported with audience data.',
+      details: 'B-CRT technology represents the future of public sanitation - zero discharge, water recycling, solar powered. We are working to integrate this into national policy frameworks so districts can deploy next-generation sanitation infrastructure.',
+      cta: 'Government Partnership Inquiry',
+      ctaLink: '/government-framework',
     },
     {
-      id: 'services',
-      title: 'Value-Added Services',
-      icon: '⚡',
-      description: 'Mobile charging, WiFi hotspots, ATM, diagnostic centers, salons.',
-      revenue: '₹10K-60K/month',
-      investment: '₹1-4L',
+      id: 'research',
+      title: 'Research & Academic',
+      icon: '📚',
+      description: 'Collaborate on sanitation research, water treatment studies, and technology validation.',
       highlights: [
-        'Multiple service options',
-        'Partnership with telecom operators',
-        'ATM rental revenue',
-        'WiFi & charging stations',
+        'Gates Foundation research network',
+        'ISO30500 compliance studies',
+        'Water quality monitoring data',
+        'Technology validation partnerships',
       ],
-      details: 'Explore various service partnerships including mobile charging stations, WiFi hotspots (via telecom partnerships), ATM placements, mini diagnostic centers, or even hair salons.',
-    },
-    {
-      id: 'pos',
-      title: 'Point-of-Sale Systems',
-      icon: '💳',
-      description: 'Integrated payment solutions, vending machines, self-service kiosks.',
-      revenue: '₹25K-70K/month',
-      investment: '₹3-8L',
-      highlights: [
-        'Cashless payment infrastructure',
-        'Vending machine integration',
-        'Self-service kiosks',
-        'Transaction fee revenue',
-      ],
-      details: 'Deploy advanced POS systems including cashless payment terminals, automated vending machines, and self-service kiosks for various products and services.',
+      details: 'We collaborate with academic institutions and research organizations studying decentralized sanitation, water treatment, and sustainable infrastructure. Access real-world deployment data and contribute to advancing the field.',
+      cta: 'Research Collaboration',
+      ctaLink: '/contact?subject=Research%20Partnership',
     },
   ]
 
-  const activeModel = partnershipModels.find(m => m.id === activePartnershipModel) || partnershipModels[0]
+  const activeType = partnerTypes.find(p => p.id === activePartnerType) || partnerTypes[0]
 
-  const partnerBenefits = [
+  const currentDeployments = [
     {
-      icon: '👥',
-      title: 'High Footfall Locations',
-      description: 'Transport hubs, markets, parks with 3,000+ daily users per unit',
-    },
-    {
-      icon: '🏢',
-      title: 'Managed Facilities',
-      description: 'Ixora Group handles all maintenance, cleaning, and infrastructure',
-    },
-    {
-      icon: '💰',
-      title: 'Transparent Revenue Sharing',
-      description: 'Clear partnership fees with proven ROI from existing LooCafe model',
-    },
-    {
-      icon: '🎯',
-      title: 'Brand Association',
-      description: 'Align with civic infrastructure and government partnerships',
-    },
-    {
-      icon: '📊',
-      title: 'Data & Analytics',
-      description: 'Footfall data, usage patterns, and customer insights provided',
-    },
-    {
-      icon: '🤝',
-      title: 'Full Support',
-      description: 'Training, onboarding, marketing, and ongoing operational support',
-    },
-  ]
-
-  const successStories = [
-    {
-      name: 'LooCafe Model',
-      type: 'Café/Food Kiosk',
       location: 'Hyderabad, Telangana',
-      story: '270+ locations across Hyderabad proving the café-toilet hybrid model. Revenue from café operations sustains free public toilet access.',
-      metrics: ['270+ units deployed', '50K+ daily users', 'Self-sustainable model'],
-      logo: '☕',
+      type: 'Pilot Unit',
+      status: 'Operational',
+      partner: 'Gates Foundation / T-Works',
+      description: 'First B-CRT pilot unit in India, demonstrating zero-discharge technology with full IoT monitoring.',
+      year: '2024',
+    },
+  ]
+
+  const upcomingDeployments = [
+    {
+      location: 'Navi Mumbai, Maharashtra',
+      type: 'CRZ Zone Deployment',
+      units: 2,
+      timeline: 'Q1 2025',
+      description: 'Beachfront installation in Coastal Regulation Zone where sewage is prohibited.',
     },
     {
-      name: 'Chennai LooCafe',
-      type: 'Restaurant + Toilet',
-      location: 'Chennai, Tamil Nadu',
-      story: 'A thriving restaurant that funds clean public toilets, demonstrating the commercial viability of the hybrid model.',
-      metrics: ['24/7 operations', 'Zero municipal subsidy', 'Community impact'],
-      logo: '🍽️',
-    },
-    {
-      name: 'DRNF Chai Counters',
-      type: 'Social Enterprise',
-      location: 'Hyderabad (Jubilee Hills)',
-      story: 'Dr. Rabinder Nath Foundation runs free chai counters at LooCafe locations, serving 116,800+ cups to the homeless community.',
-      metrics: ['116,800+ cups served', '2 active counters', '70+ jobs created'],
-      logo: '🫖',
+      location: 'Hyderabad, Telangana',
+      type: 'Urban Expansion',
+      units: 3,
+      timeline: 'Q2 2025',
+      description: 'Additional units in high-footfall areas, expanding the pilot program.',
     },
   ]
 
@@ -164,196 +108,191 @@ export default function PartnersPage() {
       <section className={styles.hero}>
         <ScrollReveal>
           <div className={styles.heroContent}>
-            <div className={styles.heroTag}>Partnership Opportunities</div>
+            <div className={styles.heroTag}>Join the Mission</div>
             <h1 className={styles.heroTitle}>
-              Turn 3,000 Daily Users<br />Into Your Next Revenue Stream
+              Partner With Us to Transform<br />India&apos;s Sanitation Future
             </h1>
             <p className={styles.heroSubtitle}>
-              Partner with ReFlow to operate cafés, retail counters, advertising spaces, or value-added services in our smart B-CRT public toilet units. Proven model with LooCafe's 270+ successful locations.
+              ReFlow&apos;s B-CRT technology is an invention - the &quot;Lamborghini of toilets&quot; - developed through the Gates Foundation&apos;s Reinvent the Toilet Challenge. We&apos;re looking for partners to help bring this zero-discharge technology into policy and scale.
             </p>
             <div className={styles.heroStats}>
               <div className={styles.heroStat}>
-                <div className={styles.heroStatNumber}>3,000+</div>
-                <div className={styles.heroStatLabel}>Daily Users/Unit</div>
+                <div className={styles.heroStatNumber}>₹70L+</div>
+                <div className={styles.heroStatLabel}>Per Unit (Current)</div>
               </div>
               <div className={styles.heroStat}>
-                <div className={styles.heroStatNumber}>270+</div>
-                <div className={styles.heroStatLabel}>LooCafe Locations</div>
+                <div className={styles.heroStatNumber}>1</div>
+                <div className={styles.heroStatLabel}>Pilot Unit Live</div>
               </div>
               <div className={styles.heroStat}>
-                <div className={styles.heroStatNumber}>₹30K-80K</div>
-                <div className={styles.heroStatLabel}>Monthly Revenue Potential</div>
+                <div className={styles.heroStatNumber}>5</div>
+                <div className={styles.heroStatLabel}>Units in 2025</div>
               </div>
-            </div>
-            <div className={styles.heroCta}>
-              <a href="#apply" className={styles.primaryButton}>Apply for Partnership</a>
-              <a href="#calculator" className={styles.secondaryButton}>Calculate Revenue</a>
             </div>
           </div>
         </ScrollReveal>
       </section>
 
-      {/* The Opportunity */}
+      {/* Understanding ReFlow */}
       <section className={styles.opportunity}>
         <ScrollReveal>
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>The Opportunity</h2>
+            <h2 className={styles.sectionTitle}>Understanding ReFlow</h2>
             <p className={styles.sectionSubtitle}>
-              Each B-CRT unit serves 3,000+ users daily at prime locations. That's 3,000 potential customers for your business — a captive, recurring audience at transport hubs, markets, and parks.
+              ReFlow is not a franchise model - it&apos;s a technology company bringing groundbreaking sanitation innovation to India
             </p>
           </div>
 
           <div className={styles.opportunityGrid}>
             <LuxuryCard variant="elevated">
               <div className={styles.opportunityCard}>
-                <div className={styles.opportunityIcon}>🚻</div>
-                <h3>Captive Audience</h3>
-                <p>3,000+ daily users per unit = guaranteed footfall for your business</p>
+                <div className={styles.opportunityIcon}>🚀</div>
+                <h3>ReFlow Toilets</h3>
+                <p style={{ color: '#0f766e', fontWeight: 600, marginBottom: '16px' }}>Innovation & Invention</p>
+                <ul style={{ textAlign: 'left', fontSize: '14px', lineHeight: '1.8', color: '#666', listStyle: 'none', padding: 0 }}>
+                  <li>✓ B-CRT technology - zero sewage discharge</li>
+                  <li>✓ Gates Foundation Reinvent the Toilet innovation</li>
+                  <li>✓ ~₹70 lakhs per unit (premium technology)</li>
+                  <li>✓ Ideal for CRZ zones, eco-parks, off-grid areas</li>
+                  <li>✓ Goal: Policy integration (Aspirational Toilets 3.0)</li>
+                </ul>
+                <p style={{ marginTop: '16px', padding: '12px', background: '#f0fdf4', borderRadius: '8px', fontSize: '13px' }}>
+                  <strong>For:</strong> CSR initiatives, government pilots, eco-sensitive zones, innovation partnerships
+                </p>
               </div>
             </LuxuryCard>
 
             <LuxuryCard variant="elevated">
               <div className={styles.opportunityCard}>
-                <div className={styles.opportunityIcon}>🏪</div>
-                <h3>Commercial Space</h3>
-                <p>Dedicated retail/café space inside each B-CRT unit</p>
-              </div>
-            </LuxuryCard>
-
-            <LuxuryCard variant="elevated">
-              <div className={styles.opportunityCard}>
-                <div className={styles.opportunityIcon}>💵</div>
-                <h3>Multiple Revenue Streams</h3>
-                <p>Café sales, retail, advertising, services, POS systems</p>
-              </div>
-            </LuxuryCard>
-
-            <LuxuryCard variant="elevated">
-              <div className={styles.opportunityCard}>
-                <div className={styles.opportunityIcon}>📍</div>
-                <h3>Prime Locations</h3>
-                <p>Transport hubs, markets, parks, government partnerships</p>
+                <div className={styles.opportunityIcon}>☕</div>
+                <h3>LooCafe</h3>
+                <p style={{ color: '#0f766e', fontWeight: 600, marginBottom: '16px' }}>Scalable Business Model</p>
+                <ul style={{ textAlign: 'left', fontSize: '14px', lineHeight: '1.8', color: '#666', listStyle: 'none', padding: 0 }}>
+                  <li>✓ Ad-supported free public toilets</li>
+                  <li>✓ 270+ locations across Hyderabad</li>
+                  <li>✓ Franchise/partnership model available</li>
+                  <li>✓ Connected to existing sewage infrastructure</li>
+                  <li>✓ Proven revenue model - café + toilet</li>
+                </ul>
+                <p style={{ marginTop: '16px', padding: '12px', background: '#fef3c7', borderRadius: '8px', fontSize: '13px' }}>
+                  <strong>For:</strong> Commercial franchise, café operators, advertising partners
+                </p>
+                <a
+                  href="https://www.loocafe.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'inline-block', marginTop: '16px', color: '#0f766e', fontWeight: 600, textDecoration: 'none' }}
+                >
+                  Visit LooCafe.com →
+                </a>
               </div>
             </LuxuryCard>
           </div>
         </ScrollReveal>
       </section>
 
-      {/* Partnership Models */}
+      {/* Partnership Types */}
       <section className={styles.models}>
         <ScrollReveal>
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Partnership Models</h2>
+            <h2 className={styles.sectionTitle}>Partnership Opportunities</h2>
             <p className={styles.sectionSubtitle}>
-              Choose the model that aligns with your business goals and investment capacity
+              Join us in bringing zero-discharge sanitation technology to India
             </p>
           </div>
 
-          {/* Model Tabs */}
+          {/* Partner Type Tabs */}
           <div className={styles.modelTabs}>
-            {partnershipModels.map((model) => (
+            {partnerTypes.map((type) => (
               <button
-                key={model.id}
-                className={`${styles.modelTab} ${activePartnershipModel === model.id ? styles.activeTab : ''}`}
-                onClick={() => setActivePartnershipModel(model.id)}
+                key={type.id}
+                className={`${styles.modelTab} ${activePartnerType === type.id ? styles.activeTab : ''}`}
+                onClick={() => setActivePartnerType(type.id)}
               >
-                <span className={styles.modelTabIcon}>{model.icon}</span>
-                <span className={styles.modelTabTitle}>{model.title}</span>
+                <span className={styles.modelTabIcon}>{type.icon}</span>
+                <span className={styles.modelTabTitle}>{type.title}</span>
               </button>
             ))}
           </div>
 
-          {/* Active Model Details */}
+          {/* Active Partner Type Details */}
           <div className={styles.modelDetails}>
             <LuxuryCard variant="elevated">
               <div className={styles.modelContent}>
                 <div className={styles.modelHeader}>
-                  <div className={styles.modelIconLarge}>{activeModel.icon}</div>
+                  <div className={styles.modelIconLarge}>{activeType.icon}</div>
                   <div>
-                    <h3 className={styles.modelTitle}>{activeModel.title}</h3>
-                    <p className={styles.modelDescription}>{activeModel.description}</p>
-                  </div>
-                </div>
-
-                <div className={styles.modelMetrics}>
-                  <div className={styles.modelMetric}>
-                    <div className={styles.modelMetricLabel}>Revenue Potential</div>
-                    <div className={styles.modelMetricValue}>{activeModel.revenue}</div>
-                  </div>
-                  <div className={styles.modelMetric}>
-                    <div className={styles.modelMetricLabel}>Investment Required</div>
-                    <div className={styles.modelMetricValue}>{activeModel.investment}</div>
+                    <h3 className={styles.modelTitle}>{activeType.title}</h3>
+                    <p className={styles.modelDescription}>{activeType.description}</p>
                   </div>
                 </div>
 
                 <div className={styles.modelHighlights}>
                   <h4>Key Highlights</h4>
                   <ul>
-                    {activeModel.highlights.map((highlight, index) => (
+                    {activeType.highlights.map((highlight, index) => (
                       <li key={index}>{highlight}</li>
                     ))}
                   </ul>
                 </div>
 
                 <div className={styles.modelDetailsText}>
-                  <p>{activeModel.details}</p>
+                  <p>{activeType.details}</p>
                 </div>
+
+                <Link href={activeType.ctaLink} className={styles.primaryButton} style={{ display: 'inline-block', marginTop: '24px' }}>
+                  {activeType.cta}
+                </Link>
               </div>
             </LuxuryCard>
           </div>
         </ScrollReveal>
       </section>
 
-      {/* Partner Benefits */}
-      <section className={styles.benefits}>
-        <ScrollReveal>
-          <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Why Partner With ReFlow?</h2>
-            <p className={styles.sectionSubtitle}>
-              Backed by Ixora Group's 15+ years of facilities management experience
-            </p>
-          </div>
-
-          <div className={styles.benefitsGrid}>
-            {partnerBenefits.map((benefit, index) => (
-              <ScrollReveal key={index} delay={index * 0.1}>
-                <LuxuryCard>
-                  <div className={styles.benefitCard}>
-                    <div className={styles.benefitIcon}>{benefit.icon}</div>
-                    <h3 className={styles.benefitTitle}>{benefit.title}</h3>
-                    <p className={styles.benefitDescription}>{benefit.description}</p>
-                  </div>
-                </LuxuryCard>
-              </ScrollReveal>
-            ))}
-          </div>
-        </ScrollReveal>
-      </section>
-
-      {/* Success Stories */}
+      {/* Current Deployments */}
       <section className={styles.successStories}>
         <ScrollReveal>
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Proven Success Stories</h2>
+            <h2 className={styles.sectionTitle}>Current & Upcoming Deployments</h2>
             <p className={styles.sectionSubtitle}>
-              Real partnerships delivering real impact across India
+              Real B-CRT installations demonstrating zero-discharge technology
             </p>
           </div>
 
           <div className={styles.storiesGrid}>
-            {successStories.map((story, index) => (
-              <ScrollReveal key={index} delay={index * 0.15}>
+            {/* Current Deployment */}
+            <ScrollReveal delay={0.1}>
+              <LuxuryCard variant="bordered">
+                <div className={styles.storyCard}>
+                  <div className={styles.storyLogo} style={{ background: '#34c759' }}>✓</div>
+                  <h3 className={styles.storyName}>Hyderabad Pilot</h3>
+                  <div className={styles.storyType}>Operational Since 2024</div>
+                  <div className={styles.storyLocation}>📍 Hyderabad, Telangana</div>
+                  <p className={styles.storyText}>
+                    First B-CRT pilot unit in India with Gates Foundation / T-Works. Full IoT monitoring demonstrating zero-discharge technology.
+                  </p>
+                  <div className={styles.storyMetrics}>
+                    <div className={styles.storyMetric}>✓ Zero sewage discharge</div>
+                    <div className={styles.storyMetric}>✓ Solar powered</div>
+                    <div className={styles.storyMetric}>✓ Real-time monitoring</div>
+                  </div>
+                </div>
+              </LuxuryCard>
+            </ScrollReveal>
+
+            {/* Upcoming Deployments */}
+            {upcomingDeployments.map((deployment, index) => (
+              <ScrollReveal key={index} delay={(index + 1) * 0.15}>
                 <LuxuryCard variant="bordered">
                   <div className={styles.storyCard}>
-                    <div className={styles.storyLogo}>{story.logo}</div>
-                    <h3 className={styles.storyName}>{story.name}</h3>
-                    <div className={styles.storyType}>{story.type}</div>
-                    <div className={styles.storyLocation}>📍 {story.location}</div>
-                    <p className={styles.storyText}>{story.story}</p>
+                    <div className={styles.storyLogo} style={{ background: '#ff9500' }}>📅</div>
+                    <h3 className={styles.storyName}>{deployment.location.split(',')[0]}</h3>
+                    <div className={styles.storyType}>{deployment.timeline}</div>
+                    <div className={styles.storyLocation}>📍 {deployment.location}</div>
+                    <p className={styles.storyText}>{deployment.description}</p>
                     <div className={styles.storyMetrics}>
-                      {story.metrics.map((metric, idx) => (
-                        <div key={idx} className={styles.storyMetric}>✓ {metric}</div>
-                      ))}
+                      <div className={styles.storyMetric}>✓ {deployment.units} units planned</div>
+                      <div className={styles.storyMetric}>✓ {deployment.type}</div>
                     </div>
                   </div>
                 </LuxuryCard>
@@ -363,82 +302,102 @@ export default function PartnersPage() {
         </ScrollReveal>
       </section>
 
-      {/* Revenue Calculator */}
-      <section id="calculator" className={styles.calculatorSection}>
+      {/* The Vision */}
+      <section className={styles.benefits}>
         <ScrollReveal>
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Revenue Calculator</h2>
+            <h2 className={styles.sectionTitle}>The Vision: B-CRT in Policy</h2>
             <p className={styles.sectionSubtitle}>
-              Estimate your potential monthly earnings based on partnership model and location
+              Our goal is to make B-CRT technology part of India&apos;s sanitation policy
             </p>
           </div>
-          <PartnerRevenueCalculator />
+
+          <div className={styles.benefitsGrid}>
+            <ScrollReveal delay={0.1}>
+              <LuxuryCard>
+                <div className={styles.benefitCard}>
+                  <div className={styles.benefitIcon}>🎯</div>
+                  <h3 className={styles.benefitTitle}>Aspirational Toilets 3.0</h3>
+                  <p className={styles.benefitDescription}>
+                    Working to integrate B-CRT into national policy so districts can deploy zero-discharge toilets.
+                  </p>
+                </div>
+              </LuxuryCard>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.2}>
+              <LuxuryCard>
+                <div className={styles.benefitCard}>
+                  <div className={styles.benefitIcon}>🏭</div>
+                  <h3 className={styles.benefitTitle}>Indigenous Manufacturing</h3>
+                  <p className={styles.benefitDescription}>
+                    Partnering with T-Works to manufacture in India, reducing costs and enabling scale.
+                  </p>
+                </div>
+              </LuxuryCard>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.3}>
+              <LuxuryCard>
+                <div className={styles.benefitCard}>
+                  <div className={styles.benefitIcon}>🌊</div>
+                  <h3 className={styles.benefitTitle}>CRZ Compliance</h3>
+                  <p className={styles.benefitDescription}>
+                    Only solution for Coastal Regulation Zones where sewage discharge is prohibited.
+                  </p>
+                </div>
+              </LuxuryCard>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.4}>
+              <LuxuryCard>
+                <div className={styles.benefitCard}>
+                  <div className={styles.benefitIcon}>💡</div>
+                  <h3 className={styles.benefitTitle}>First Mover Advantage</h3>
+                  <p className={styles.benefitDescription}>
+                    Only company in India with access to Gates Foundation Reinvent the Toilet technology.
+                  </p>
+                </div>
+              </LuxuryCard>
+            </ScrollReveal>
+          </div>
         </ScrollReveal>
       </section>
 
-      {/* Application Form */}
-      <section id="apply" className={styles.applicationSection}>
+      {/* Looking for Commercial? */}
+      <section className={styles.calculatorSection}>
         <ScrollReveal>
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Apply for Partnership</h2>
+            <h2 className={styles.sectionTitle}>Looking for Commercial Opportunities?</h2>
             <p className={styles.sectionSubtitle}>
-              Join the ReFlow partner network and start your journey to sustainable revenue
+              For café operations, retail partnerships, and advertising opportunities
             </p>
           </div>
-          <PartnerApplicationForm />
-        </ScrollReveal>
-      </section>
 
-      {/* FAQ for Partners */}
-      <section className={styles.faqSection}>
-        <ScrollReveal>
-          <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Partner FAQs</h2>
-          </div>
-
-          <div className={styles.faqGrid}>
-            <LuxuryCard>
-              <div className={styles.faqItem}>
-                <h3>What is the partnership fee structure?</h3>
-                <p>Partnership fees vary by model (café, retail, advertising, etc.). Typically, partners pay a monthly license fee ranging from ₹5K-25K depending on location and business type, plus a revenue-sharing percentage (10-20%). We'll provide detailed terms during the application review.</p>
-              </div>
-            </LuxuryCard>
-
-            <LuxuryCard>
-              <div className={styles.faqItem}>
-                <h3>Who handles facility maintenance?</h3>
-                <p>Ixora Group handles 100% of facility maintenance including cleaning, repairs, utilities, and infrastructure management. Partners focus solely on their business operations (café, retail, services, etc.).</p>
-              </div>
-            </LuxuryCard>
-
-            <LuxuryCard>
-              <div className={styles.faqItem}>
-                <h3>What locations are available?</h3>
-                <p>We prioritize high-footfall locations including transport hubs (bus stations, metro stations), public parks, markets, government complexes, and commercial areas. Specific locations are assigned based on district/municipal partnerships and partner preferences.</p>
-              </div>
-            </LuxuryCard>
-
-            <LuxuryCard>
-              <div className={styles.faqItem}>
-                <h3>What support do partners receive?</h3>
-                <p>Full onboarding training, branding support (for LooCafe partners), marketing materials, ongoing operational guidance, footfall data/analytics, and dedicated account management.</p>
-              </div>
-            </LuxuryCard>
-
-            <LuxuryCard>
-              <div className={styles.faqItem}>
-                <h3>Can I operate multiple units?</h3>
-                <p>Absolutely! Successful partners can scale to multiple units. LooCafe has demonstrated this with 270+ locations. Multi-unit partnerships receive preferential terms and enhanced support.</p>
-              </div>
-            </LuxuryCard>
-
-            <LuxuryCard>
-              <div className={styles.faqItem}>
-                <h3>What is the contract duration?</h3>
-                <p>Standard partnership contracts are 3-5 years with renewal options. This aligns with our municipal deployment contracts and ensures long-term stability for both parties.</p>
-              </div>
-            </LuxuryCard>
-          </div>
+          <LuxuryCard variant="elevated">
+            <div style={{ padding: '40px', textAlign: 'center' }}>
+              <div style={{ fontSize: '64px', marginBottom: '24px' }}>☕</div>
+              <h3 style={{ fontSize: '28px', fontWeight: 700, marginBottom: '16px', color: '#1d1d1f' }}>
+                LooCafe - Scalable Business Model
+              </h3>
+              <p style={{ fontSize: '17px', color: '#6e6e73', maxWidth: '600px', margin: '0 auto 32px', lineHeight: 1.6 }}>
+                270+ locations across Hyderabad. Proven café-toilet hybrid model.
+                Commercial franchise and partnership opportunities available.
+              </p>
+              <a
+                href="https://www.loocafe.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.primaryButton}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+              >
+                Visit LooCafe.com
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </LuxuryCard>
         </ScrollReveal>
       </section>
 
@@ -447,14 +406,22 @@ export default function PartnersPage() {
         <ScrollReveal>
           <LuxuryCard variant="elevated">
             <div className={styles.finalCtaContent}>
-              <h2>Ready to Join the ReFlow Partner Network?</h2>
+              <h2>Ready to Join the B-CRT Revolution?</h2>
               <p>
-                Start your journey to sustainable revenue with proven models, prime locations, and full operational support from Ixora Group.
+                Whether you&apos;re a technology partner, CSR initiative, government body, or research institution -
+                let&apos;s discuss how we can work together to bring zero-discharge sanitation to India.
               </p>
               <div className={styles.finalCtaButtons}>
-                <a href="#apply" className={styles.primaryButton}>Submit Application</a>
-                <a href="https://calendar.app.google/5pRiSHEjP851jiNQ7" className={styles.secondaryButton} target="_blank" rel="noopener noreferrer">
-                  Schedule Consultation
+                <Link href="/contact" className={styles.primaryButton}>
+                  Start a Conversation
+                </Link>
+                <a
+                  href="https://calendar.app.google/5pRiSHEjP851jiNQ7"
+                  className={styles.secondaryButton}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book a Call
                 </a>
               </div>
               <p className={styles.finalCtaNote}>

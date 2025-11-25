@@ -67,6 +67,31 @@ export default function BCRTPage() {
         </div>
       </section>
 
+      {/* Video Demo Section */}
+      <section className={styles.videoSection}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>See B-CRT in action.</h2>
+          <p className={styles.videoIntro}>
+            Watch how our 8-stage treatment process transforms waste into safe water - all within a 40-foot container.
+          </p>
+          <div className={styles.videoWrapper}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/c9999G5DJEY"
+              title="B-CRT Technology Demo - How Zero-Discharge Toilets Work"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{ borderRadius: '16px' }}
+            />
+          </div>
+          <p className={styles.videoCaption}>
+            4-minute overview of the complete B-CRT treatment process
+          </p>
+        </div>
+      </section>
+
       {/* The Challenge */}
       <section className={styles.challenge}>
         <div className={styles.container}>

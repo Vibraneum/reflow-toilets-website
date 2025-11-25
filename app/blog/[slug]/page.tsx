@@ -2,8 +2,15 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { marked } from 'marked';
 import { getPostBySlug, getAllPosts, getRelatedPosts } from '@/lib/blogPosts';
 import styles from './BlogPost.module.css';
+
+// Configure marked for safe HTML rendering
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+});
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -184,7 +191,7 @@ export default async function BlogPostPage({ params }: Props) {
         <article className={styles.content}>
           <div
             className={styles.markdown}
-            dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }}
+            dangerouslySetInnerHTML={{ __html: marked.parse(post.content) as string }}
           />
         </article>
 
