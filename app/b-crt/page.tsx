@@ -9,12 +9,12 @@ const IPRightsSection = dynamic(() => import('@/components/IPRightsSection'), {
 })
 
 export const metadata: Metadata = {
-  title: 'B-CRT Technical Specifications - 40ft Reinvented Toilet',
-  description: '8-stage treatment. Zero discharge. ISO30500 compliant. 3,000 users daily. 100% solar powered. Complete engineering deep dive. Built on Gates Foundation Reinvent the Toilet Challenge innovations.',
-  keywords: ['B-CRT', 'Blackwater Circular Reinvented Toilet', 'reinvented toilet', 'Gates Foundation', 'ISO30500', 'zero discharge toilet', 'water treatment technology', 'Global Access', 'patent licensing', 'technology transfer'],
+  title: 'B-CRT Technical Specifications - Blackwater Circular Reinvented Toilet',
+  description: '8-stage treatment. Zero discharge. ISO30500 compliant. 98% water recovery. 4.05kWp solar capacity. 72+ hours off-grid. Gates Foundation technology. Georgia Tech verified.',
+  keywords: ['B-CRT', 'Blackwater Circular Reinvented Toilet', 'reinvented toilet', 'Gates Foundation', 'ISO30500', 'zero discharge toilet', 'water treatment technology', 'Georgia Tech', 'containerized toilet', 'off-grid sanitation'],
   openGraph: {
     title: 'B-CRT Technical Specifications | ReFlow Toilets',
-    description: '8-stage treatment. Zero discharge. ISO30500 compliant. Complete engineering documentation. Gates Foundation Global Access commitment.',
+    description: '8-stage treatment. Zero discharge. ISO30500 compliant. 98% water recovery. Gates Foundation technology verified by Georgia Tech.',
     images: ['/images/bcrt/MAIN B-CRT IMAGE.png'],
   },
 }
@@ -25,11 +25,11 @@ export default function BCRTPage() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
-          <div className={styles.badge}>Available Q4 2026</div>
+          <div className={styles.badge}>Pilot Unit Live in Hyderabad</div>
           <h1 className={styles.title}>B-CRT</h1>
-          <p className={styles.subtitle}>40-foot containerized public toilet.</p>
+          <p className={styles.subtitle}>Blackwater Circular Reinvented Toilet.</p>
           <p className={styles.description}>
-            8-stage treatment process. Zero liquid discharge. ISO30500 certified. Serves 3,000 users daily. Powered by 9 solar panels.
+            8-stage treatment. Zero discharge. ISO30500 compliant. 4.05kWp solar capacity. 72+ hours off-grid autonomy. Gates Foundation technology.
           </p>
 
           <div className={styles.stats}>
@@ -38,16 +38,16 @@ export default function BCRTPage() {
               <div className={styles.statLabel}>Treatment stages</div>
             </div>
             <div className={styles.stat}>
-              <div className={styles.statValue}>0</div>
-              <div className={styles.statLabel}>Discharge</div>
+              <div className={styles.statValue}>98%</div>
+              <div className={styles.statLabel}>Water recovery</div>
             </div>
             <div className={styles.stat}>
               <div className={styles.statValue}>6</div>
               <div className={styles.statLabel}>Cubicles</div>
             </div>
             <div className={styles.stat}>
-              <div className={styles.statValue}>3,000+</div>
-              <div className={styles.statLabel}>Daily capacity</div>
+              <div className={styles.statValue}>4.05kWp</div>
+              <div className={styles.statLabel}>Solar capacity</div>
             </div>
           </div>
         </div>
@@ -133,28 +133,28 @@ export default function BCRTPage() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Why districts choose B-CRT.</h2>
           <p className={styles.benefitsIntro}>
-            Built on decades of Gates Foundation Reinventing the Toilet research. ISO30500 certified. Managed by Ixora Group's 15-year operating experience with 270+ LooCafe locations.
+            Built on Gates Foundation "Reinvent the Toilet" initiative. ISO30500 compliant. Verified by Georgia Tech Research Institute. Managed by Ixora Group's 15-year operating experience with 270+ LooCafe locations.
           </p>
 
           <div className={styles.benefitsGrid}>
             <div className={styles.benefitCard}>
-              <h3 className={styles.benefitTitle}>73% lower costs</h3>
+              <h3 className={styles.benefitTitle}>98% water reduction</h3>
               <p className={styles.benefitText}>
-                ₹15K annual maintenance vs ₹85K traditional. Zero water bills. 100% solar powered. No sewage fees. Hyderabad saves ₹2.1Cr yearly across 50 units.
+                Near-complete water recycling after initial 10,000L charge. Annual savings: 420,000-600,000 liters per unit. 65% energy reduction vs conventional systems.
+              </p>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <h3 className={styles.benefitTitle}>55% lower operating costs</h3>
+              <p className={styles.benefitText}>
+                Solar-powered operation. Zero sewage fees. Sludge extraction only every 9-12 months. Class A Biosolids end product per EPA standards.
               </p>
             </div>
 
             <div className={styles.benefitCard}>
               <h3 className={styles.benefitTitle}>Zero discharge</h3>
               <p className={styles.benefitText}>
-                ISO30500 certified water quality output. Meets coastal city CRZ regulations. No groundwater contamination. Full environmental compliance verified quarterly by NABL-accredited laboratories.
-              </p>
-            </div>
-
-            <div className={styles.benefitCard}>
-              <h3 className={styles.benefitTitle}>99.2% uptime</h3>
-              <p className={styles.benefitText}>
-                Real-time IoT monitoring across all systems. Under 2-hour response time for issues. Managed by Ixora Group with 15 years facilities management experience.
+                Complete elimination of sewage system dependencies. Meets coastal city CRZ regulations. No groundwater contamination. ISO30500 water quality output.
               </p>
             </div>
           </div>
@@ -170,44 +170,46 @@ export default function BCRTPage() {
             <div className={styles.architectureSection}>
               <h3 className={styles.architectureTitle}>Container specifications</h3>
               <ul className={styles.specsList}>
-                <li>40-foot ISO shipping container (12.192m × 2.438m × 2.896m)</li>
-                <li>14-gauge corrugated steel construction</li>
-                <li>Double-insulated walls with climate control</li>
+                <li>40-foot ISO shipping container (20-foot variant available)</li>
+                <li>304 stainless steel internal components (1.5mm thickness)</li>
                 <li>Road-transportable to any truck-accessible location</li>
-                <li>Estimated container weight: 8,000-10,000 kg (loaded)</li>
+                <li>Installation: 72 hours from site preparation to commissioning</li>
+                <li>Fully operational within 96 hours of installation</li>
               </ul>
             </div>
 
             <div className={styles.architectureSection}>
               <h3 className={styles.architectureTitle}>Cubicle layout</h3>
               <ul className={styles.specsList}>
-                <li>6 ADA-compliant cubicles in front section</li>
-                <li>Universal design with accessible ramps</li>
-                <li>3,000+ users daily capacity (peak: 500 users/hour)</li>
+                <li>6 individual toilet cubicles serving 300+ users daily</li>
+                <li>Universal design with accessible features</li>
                 <li>Individual ventilation per cubicle</li>
-                <li>Emergency egress systems</li>
+                <li>6.5m² commercial space for point-of-sale partnership</li>
+                <li>16m² advertising panel space across unit surfaces</li>
               </ul>
             </div>
 
             <div className={styles.architectureSection}>
               <h3 className={styles.architectureTitle}>Solar power system</h3>
               <ul className={styles.specsList}>
-                <li>9 solar panels (estimated 3-4 kW total capacity)</li>
-                <li>6 battery systems (3-day autonomy for monsoon)</li>
-                <li>100% off-grid operation</li>
-                <li>Estimated daily energy consumption: 8-12 kWh</li>
-                <li>Grid independence verified in pilot deployments</li>
+                <li>9 solar panels × 450W each = 4.05kWp total capacity</li>
+                <li>Maximum daily yield: 16-20kWh</li>
+                <li>6 battery systems = 20kWh lithium iron phosphate storage</li>
+                <li>72+ hours off-grid autonomy (monsoon resilience)</li>
+                <li>Daily consumption: 12-15kWh under normal operation</li>
+                <li>Automatic grid switchover for critical systems (optional)</li>
               </ul>
             </div>
 
             <div className={styles.architectureSection}>
               <h3 className={styles.architectureTitle}>IoT control system</h3>
               <ul className={styles.specsList}>
-                <li>Centralized PLC (Programmable Logic Controller)</li>
-                <li>Real-time monitoring: water quality, flow rates, energy</li>
-                <li>Remote diagnostics and alerts</li>
-                <li>Integration with Ixora Security 24/7 monitoring</li>
-                <li>Data logging for regulatory compliance</li>
+                <li>35+ monitoring points across all systems</li>
+                <li>Industrial-grade edge computing with redundant storage</li>
+                <li>Multi-redundant 4G/LTE with LoRaWAN backup</li>
+                <li>Three-tiered dashboard: Area executives, Operations, Unit operators</li>
+                <li>Gemini 2.5 AI integration for automated reporting</li>
+                <li>End-to-end encryption with role-based access controls</li>
               </ul>
             </div>
           </div>
@@ -219,7 +221,7 @@ export default function BCRTPage() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>8-stage treatment process.</h2>
           <p className={styles.treatmentIntro}>
-            Integrated biological, physical, and chemical treatment achieves ISO30500 non-sewered sanitation standards. Each stage is engineered for high-capacity operation with minimal maintenance.
+            Integrated biological, physical, and chemical treatment achieves ISO30500 non-sewered sanitation standards. 95-98% water recovery efficiency. Processing capacity: 2,000-3,000L wastewater daily.
           </p>
 
           {/* Process Flow Image */}
@@ -238,7 +240,7 @@ export default function BCRTPage() {
           <div className={styles.treatmentStage}>
             <div className={styles.stageHeader}>
               <div className={styles.stageNumber}>1</div>
-              <h3 className={styles.stageTitle}>Screening & Grit Removal</h3>
+              <h3 className={styles.stageTitle}>Pre-treatment & Screening</h3>
             </div>
             <div className={styles.stageContent}>
               <div className={styles.stageDetail}>
@@ -250,13 +252,13 @@ export default function BCRTPage() {
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Technology</h4>
                 <p className={styles.stageDetailText}>
-                  Automated bar screen (6mm spacing) followed by grit chamber with aeration to separate heavy inorganic materials.
+                  2mm fine screening with automated solids separation. Prevents downstream equipment damage and improves treatment efficiency.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Performance</h4>
                 <p className={styles.stageDetailText}>
-                  Input: Raw blackwater (3,000 users/day ≈ 30,000L/day). Output: 95% removal of particles &gt;6mm, 80% grit removal efficiency.
+                  Removes debris &gt;2mm. Protects pumps and membranes. First line of defense in the treatment chain.
                 </p>
               </div>
             </div>
@@ -266,25 +268,25 @@ export default function BCRTPage() {
           <div className={styles.treatmentStage}>
             <div className={styles.stageHeader}>
               <div className={styles.stageNumber}>2</div>
-              <h3 className={styles.stageTitle}>Primary Sedimentation</h3>
+              <h3 className={styles.stageTitle}>Primary Anaerobic Digestion</h3>
             </div>
             <div className={styles.stageContent}>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Purpose</h4>
                 <p className={styles.stageDetailText}>
-                  Gravity separation of suspended solids and oils from screened wastewater.
+                  Break down organic matter in oxygen-free environment. Reduces BOD load and stabilizes waste.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Technology</h4>
                 <p className={styles.stageDetailText}>
-                  Primary clarifier with hydraulic retention time of 2-4 hours. Sludge collection system at tank bottom.
+                  2,000L bioreactor with controlled anaerobic environment. Enzymatic pre-treatment accelerates decomposition.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Performance</h4>
                 <p className={styles.stageDetailText}>
-                  50-60% TSS removal, 25-35% BOD removal. Reduces load on biological treatment stage.
+                  &gt;90% sludge volume reduction vs conventional systems. Sludge extraction required only every 9-12 months.
                 </p>
               </div>
             </div>
@@ -294,25 +296,25 @@ export default function BCRTPage() {
           <div className={styles.treatmentStage}>
             <div className={styles.stageHeader}>
               <div className={styles.stageNumber}>3</div>
-              <h3 className={styles.stageTitle}>Biological Treatment (MBBR)</h3>
+              <h3 className={styles.stageTitle}>Secondary Aerobic Treatment</h3>
             </div>
             <div className={styles.stageContent}>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Purpose</h4>
                 <p className={styles.stageDetailText}>
-                  Aerobic biological oxidation of organic matter (BOD/COD) and nitrogen removal through nitrification.
+                  Aerobic biological oxidation of remaining organic matter (BOD/COD) and nitrogen removal through nitrification.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Technology</h4>
                 <p className={styles.stageDetailText}>
-                  Moving Bed Biofilm Reactor (MBBR) with 500 m²/m³ specific surface area plastic media. Fine-bubble aeration maintains 2-4 mg/L dissolved oxygen.
+                  Fine-bubble diffusion system maintains optimal dissolved oxygen levels. High-efficiency biofilm media for microbial attachment.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Performance</h4>
                 <p className={styles.stageDetailText}>
-                  8-hour hydraulic retention time. 90-95% BOD removal efficiency. Maintains stable performance under varying loads.
+                  90-95% BOD removal efficiency. Stable performance under varying organic loads.
                 </p>
               </div>
             </div>
@@ -322,47 +324,19 @@ export default function BCRTPage() {
           <div className={styles.treatmentStage}>
             <div className={styles.stageHeader}>
               <div className={styles.stageNumber}>4</div>
-              <h3 className={styles.stageTitle}>Secondary Clarification</h3>
+              <h3 className={styles.stageTitle}>Membrane Ultrafiltration</h3>
             </div>
             <div className={styles.stageContent}>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Purpose</h4>
                 <p className={styles.stageDetailText}>
-                  Separate biomass and suspended solids from biologically treated water.
+                  Physical barrier filtration removing suspended solids, bacteria, and turbidity.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Technology</h4>
                 <p className={styles.stageDetailText}>
-                  Secondary clarifier with lamella settlers for enhanced settling efficiency in compact footprint.
-                </p>
-              </div>
-              <div className={styles.stageDetail}>
-                <h4 className={styles.stageDetailLabel}>Performance</h4>
-                <p className={styles.stageDetailText}>
-                  &gt;90% suspended solids removal. Clear supernatant suitable for membrane filtration.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Stage 5 */}
-          <div className={styles.treatmentStage}>
-            <div className={styles.stageHeader}>
-              <div className={styles.stageNumber}>5</div>
-              <h3 className={styles.stageTitle}>Membrane Filtration</h3>
-            </div>
-            <div className={styles.stageContent}>
-              <div className={styles.stageDetail}>
-                <h4 className={styles.stageDetailLabel}>Purpose</h4>
-                <p className={styles.stageDetailText}>
-                  Physical barrier filtration removing remaining suspended solids, bacteria, and turbidity.
-                </p>
-              </div>
-              <div className={styles.stageDetail}>
-                <h4 className={styles.stageDetailLabel}>Technology</h4>
-                <p className={styles.stageDetailText}>
-                  Ultrafiltration (UF) membrane with 0.02-0.1 μm pore size. Automated backwash cycle prevents fouling.
+                  0.04 micron ultrafiltration membrane. Automated backwash cycle prevents fouling and extends membrane life.
                 </p>
               </div>
               <div className={styles.stageDetail}>
@@ -374,51 +348,23 @@ export default function BCRTPage() {
             </div>
           </div>
 
-          {/* Stage 6 */}
+          {/* Stage 5 */}
           <div className={styles.treatmentStage}>
             <div className={styles.stageHeader}>
-              <div className={styles.stageNumber}>6</div>
-              <h3 className={styles.stageTitle}>Activated Carbon Adsorption</h3>
+              <div className={styles.stageNumber}>5</div>
+              <h3 className={styles.stageTitle}>UV-C Advanced Oxidation</h3>
             </div>
             <div className={styles.stageContent}>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Purpose</h4>
                 <p className={styles.stageDetailText}>
-                  Remove residual organic compounds, color, and odor through adsorption.
+                  Pathogen elimination through UV-C radiation inactivation of viruses and bacteria.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Technology</h4>
                 <p className={styles.stageDetailText}>
-                  Granular Activated Carbon (GAC) filter with coconut shell-based carbon. High surface area (&gt;1000 m²/g).
-                </p>
-              </div>
-              <div className={styles.stageDetail}>
-                <h4 className={styles.stageDetailLabel}>Performance</h4>
-                <p className={styles.stageDetailText}>
-                  Removes trace organic contaminants. Improves water clarity and eliminates odor.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Stage 7 */}
-          <div className={styles.treatmentStage}>
-            <div className={styles.stageHeader}>
-              <div className={styles.stageNumber}>7</div>
-              <h3 className={styles.stageTitle}>UV Disinfection</h3>
-            </div>
-            <div className={styles.stageContent}>
-              <div className={styles.stageDetail}>
-                <h4 className={styles.stageDetailLabel}>Purpose</h4>
-                <p className={styles.stageDetailText}>
-                  Final pathogen elimination through UV-C radiation inactivation of viruses and bacteria.
-                </p>
-              </div>
-              <div className={styles.stageDetail}>
-                <h4 className={styles.stageDetailLabel}>Technology</h4>
-                <p className={styles.stageDetailText}>
-                  UV-C lamps at 254nm wavelength. Dose: 40 mJ/cm² for ISO30500 compliance. Low-pressure mercury vapor lamps.
+                  UV-C lamps at 254nm wavelength. Optimal dose for ISO30500 compliance. Chemical-free disinfection.
                 </p>
               </div>
               <div className={styles.stageDetail}>
@@ -430,29 +376,85 @@ export default function BCRTPage() {
             </div>
           </div>
 
-          {/* Stage 8 */}
+          {/* Stage 6 */}
           <div className={styles.treatmentStage}>
             <div className={styles.stageHeader}>
-              <div className={styles.stageNumber}>8</div>
-              <h3 className={styles.stageTitle}>Storage & Reuse</h3>
+              <div className={styles.stageNumber}>6</div>
+              <h3 className={styles.stageTitle}>Activated Carbon Filtration</h3>
             </div>
             <div className={styles.stageContent}>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Purpose</h4>
                 <p className={styles.stageDetailText}>
-                  Store ISO30500-compliant treated water for closed-loop recycling within the system.
+                  Remove trace organic contaminants, color, and odor through adsorption.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Technology</h4>
                 <p className={styles.stageDetailText}>
-                  10,000L storage tank with circulation pumps. Water recycled for flush operations and cleaning.
+                  Granular Activated Carbon (GAC) filter. High surface area media captures micropollutants and improves aesthetics.
                 </p>
               </div>
               <div className={styles.stageDetail}>
                 <h4 className={styles.stageDetailLabel}>Performance</h4>
                 <p className={styles.stageDetailText}>
-                  Zero external water requirement. Zero liquid discharge. 100% water recycling achieved.
+                  Removes trace organic contaminants. Crystal-clear water with no residual odor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Stage 7 */}
+          <div className={styles.treatmentStage}>
+            <div className={styles.stageHeader}>
+              <div className={styles.stageNumber}>7</div>
+              <h3 className={styles.stageTitle}>Mineralization & pH Stabilization</h3>
+            </div>
+            <div className={styles.stageContent}>
+              <div className={styles.stageDetail}>
+                <h4 className={styles.stageDetailLabel}>Purpose</h4>
+                <p className={styles.stageDetailText}>
+                  Balance water chemistry for safe reuse and prevent pipe corrosion.
+                </p>
+              </div>
+              <div className={styles.stageDetail}>
+                <h4 className={styles.stageDetailLabel}>Technology</h4>
+                <p className={styles.stageDetailText}>
+                  Automated pH adjustment and mineral dosing system. Targets pH 6.8-7.2 range for optimal reuse compatibility.
+                </p>
+              </div>
+              <div className={styles.stageDetail}>
+                <h4 className={styles.stageDetailLabel}>Performance</h4>
+                <p className={styles.stageDetailText}>
+                  Consistent pH 6.8-7.2 output. Water chemistry optimized for toilet flushing and cleaning applications.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Stage 8 */}
+          <div className={styles.treatmentStage}>
+            <div className={styles.stageHeader}>
+              <div className={styles.stageNumber}>8</div>
+              <h3 className={styles.stageTitle}>Final Disinfection & Storage</h3>
+            </div>
+            <div className={styles.stageContent}>
+              <div className={styles.stageDetail}>
+                <h4 className={styles.stageDetailLabel}>Purpose</h4>
+                <p className={styles.stageDetailText}>
+                  Final quality verification and storage for closed-loop recycling within the system.
+                </p>
+              </div>
+              <div className={styles.stageDetail}>
+                <h4 className={styles.stageDetailLabel}>Technology</h4>
+                <p className={styles.stageDetailText}>
+                  10,000L storage tank with real-time quality monitoring. Circulation pumps maintain water freshness. Continuous sensor feedback.
+                </p>
+              </div>
+              <div className={styles.stageDetail}>
+                <h4 className={styles.stageDetailLabel}>Performance</h4>
+                <p className={styles.stageDetailText}>
+                  95-98% water recovery. Zero external water requirement after initial 10,000L charge. Zero liquid discharge.
                 </p>
               </div>
             </div>
@@ -638,7 +640,7 @@ export default function BCRTPage() {
             <div className={styles.faqItem}>
               <h3 className={styles.faqQuestion}>Can the system handle peak usage periods like festivals?</h3>
               <p className={styles.faqAnswer}>
-                The system is designed for peak capacity of 500 users/hour (vs. average 125 users/hour). MBBR biological treatment maintains stable performance under varying organic loads due to attached biofilm growth. Buffer storage tanks accommodate short-term surge capacity.
+                The system processes 2,000-3,000L of wastewater daily. The biological treatment maintains stable performance under varying organic loads due to attached biofilm growth. Buffer storage tanks accommodate short-term surge capacity.
               </p>
             </div>
 
@@ -652,21 +654,21 @@ export default function BCRTPage() {
             <div className={styles.faqItem}>
               <h3 className={styles.faqQuestion}>Is the system modular? Can we upgrade treatment capacity?</h3>
               <p className={styles.faqAnswer}>
-                Core treatment capacity is fixed for the 40ft container footprint (3,000 users/day). However, multiple units can be deployed in parallel at high-traffic locations. Each unit operates independently with redundancy benefits.
+                Core treatment capacity is fixed per container (300+ users daily, processing 2,000-3,000L wastewater). 20-foot variant available for space-constrained areas. Multiple units can be deployed in parallel at high-traffic locations. Each unit operates independently with redundancy benefits.
               </p>
             </div>
 
             <div className={styles.faqItem}>
-              <h3 className={styles.faqQuestion}>What certifications beyond ISO30500 does B-CRT hold?</h3>
+              <h3 className={styles.faqQuestion}>What certifications and validations does B-CRT have?</h3>
               <p className={styles.faqAnswer}>
-                ISO30500 non-sewered sanitation system certification (in progress, Q4 2026). Electrical systems: IEC 60364 standards. Container: ISO 668 shipping container standards. Water quality testing: NABL-accredited lab verification (quarterly).
+                ISO30500 non-sewered sanitation compliance. Georgia Tech Research Institute independent performance verification. Gates Foundation technical review and comprehensive evaluation. Field testing in challenging environments (China). Electrical systems: IEC 60364 standards. Container: ISO 668 shipping container standards.
               </p>
             </div>
 
             <div className={styles.faqItem}>
               <h3 className={styles.faqQuestion}>How does B-CRT compare to other decentralized treatment systems?</h3>
               <p className={styles.faqAnswer}>
-                B-CRT integrates 8 treatment stages in a single containerized unit (competitors: 3-5 stages). 100% solar operation (most require grid backup). 3,000 users/day capacity (industry average: 500-1,500). Ixora Group's 15-year operating experience and 270+ LooCafe deployments provide proven maintenance infrastructure.
+                B-CRT integrates 8 treatment stages in a single containerized unit (competitors: 3-5 stages). 98% water consumption reduction vs conventional. 65% energy reduction. 55% lower operational costs. Ixora Group's 15-year operating experience and 270+ LooCafe deployments provide proven maintenance infrastructure.
               </p>
             </div>
           </div>
@@ -705,7 +707,7 @@ export default function BCRTPage() {
         <div className={styles.container}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Deploy in your district.</h2>
-            <p className={styles.ctaText}>Q4 2026 pilot availability. Schedule a 45-minute technical consultation with water treatment engineers.</p>
+            <p className={styles.ctaText}>Pilot unit operational in Hyderabad. Scaling to 50 units by December 2025. Schedule a 45-minute technical consultation with our water treatment engineers.</p>
             <div className={styles.ctaButtons}>
               <a href="https://calendar.app.google/5pRiSHEjP851jiNQ7" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
                 Schedule technical briefing
