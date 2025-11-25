@@ -37,6 +37,9 @@ const ConceptVideos = dynamic(() => import('@/components/ConceptVideos'), {
 const BundlingEcosystem = dynamic(() => import('@/components/BundlingEcosystem'), {
   loading: () => <div style={{ minHeight: '600px' }} />,
 })
+const SustainabilityModel = dynamic(() => import('@/components/SustainabilityModel'), {
+  loading: () => <div style={{ minHeight: '400px' }} />,
+})
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -149,6 +152,7 @@ export default function Home() {
         <BundlingEcosystem />
         <IxoraCrossSell />
         <ConceptVideos />
+        <SustainabilityModel />
         <CTASection />
         <FAQ />
       </main>

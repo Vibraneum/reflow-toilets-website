@@ -32,29 +32,9 @@ const metrics: Metric[] = [
     )
   },
   { 
-    value: 24, 
-    suffix: '', 
-    label: 'Cities Covered', 
-    icon: (
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-      </svg>
-    )
-  },
-  { 
-    value: 2500000, 
-    suffix: 'M kg', 
-    label: 'CO₂ Saved', 
-    icon: (
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-      </svg>
-    )
-  },
-  { 
-    value: 5000000, 
-    suffix: 'M L', 
-    label: 'Water Recycled', 
+    value: 98, 
+    suffix: '%', 
+    label: 'Water Recovery Rate', 
     icon: (
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -62,12 +42,32 @@ const metrics: Metric[] = [
     )
   },
   { 
-    value: 99.9, 
-    suffix: '%', 
-    label: 'Uptime', 
+    value: 35, 
+    suffix: '+', 
+    label: 'IoT Sensors Per Unit', 
     icon: (
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+      </svg>
+    )
+  },
+  { 
+    value: 72, 
+    suffix: 'hrs+', 
+    label: 'Off-Grid Operation', 
+    icon: (
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+    )
+  },
+  { 
+    value: 90, 
+    suffix: '%+', 
+    label: 'Sludge Reduction', 
+    icon: (
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
       </svg>
     )
   },
@@ -153,8 +153,10 @@ export default function ImpactMetrics() {
                 ? (counts[index] / 1000000).toFixed(1)
                 : metric.suffix === 'M L'
                 ? (counts[index] / 1000000).toFixed(0)
-                : metric.suffix === '%'
-                ? counts[index].toFixed(1)
+                : metric.suffix === '%' || metric.suffix === '%+'
+                ? Math.round(counts[index])
+                : metric.suffix === 'hrs+'
+                ? Math.round(counts[index])
                 : Math.round(counts[index])
 
             return (
@@ -181,7 +183,10 @@ export default function ImpactMetrics() {
             <strong>50 locations</strong> compliant with Government of India Gazette CG DL-E-08102024-257748
           </p>
           <p className={styles.footerSubtext}>
-            Liquid Waste Management Rules 2024 • ISO30500 Certified • Gates Foundation Partner
+            Liquid Waste Management Rules 2024 • World's First ISO30500 Certified • TUV SUD Verified • Gates Foundation Partner
+          </p>
+          <p className={styles.footerSubtext} style={{ marginTop: '10px' }}>
+            <strong>8-stage treatment process</strong> • 4.05kWp solar capacity • 20kWh battery storage • Deploying Q2 2025
           </p>
           <p className={styles.footerSubtext} style={{ marginTop: '10px' }}>
             Operated by <a href="https://www.ixoragroup.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', fontWeight: '600' }}>Ixora Group</a> • Deployed via <a href="https://www.loocafe.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', fontWeight: '600' }}>LooCafe</a> network (270+ locations)

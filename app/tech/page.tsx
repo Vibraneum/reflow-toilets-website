@@ -220,7 +220,7 @@ export default function TechPage() {
             <div className={styles.aiContent}>
               <h3 className={styles.aiSubtitle}>Google Gemini AI Integration</h3>
               <p className={styles.aiDescription}>
-                Google's advanced Gemini AI model analyzes daily operational photos, generates summaries, and provides predictive insights for maintenance and performance optimization.
+                Google's advanced Gemini 2.5 Flash AI model analyzes daily operational photos, generates summaries, and provides predictive insights for maintenance and performance optimization.
               </p>
               <ul className={styles.aiFeatureList}>
                 <li><strong>Image Analysis:</strong> Automated cleanliness scoring (0-100 scale) from daily photos</li>
@@ -283,6 +283,7 @@ export default function TechPage() {
               </p>
               <ul className={styles.iotFeatureList}>
                 <li><strong>Occupancy Sensors:</strong> Infrared motion detection, real-time availability updates</li>
+                <li><strong>Stink Sensors:</strong> Advanced odor detection (ammonia, hydrogen sulfide) for air quality monitoring</li>
                 <li><strong>Usage Tracking:</strong> Entry counters, duration monitoring, peak hour analysis</li>
                 <li><strong>Water Quality:</strong> pH, TDS, turbidity sensors (B-CRT units)</li>
                 <li><strong>Solar Power:</strong> Battery level, generation rate, consumption tracking</li>
@@ -401,6 +402,159 @@ export default function TechPage() {
               <div className={styles.performanceCalc}>
                 <strong>ROI:</strong> 72% cost reduction, 8-month payback period
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* B-CRT Technical Specifications */}
+      <section className={styles.bcrtSpecs}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>B-CRT Technical Architecture</h2>
+          <p className={styles.performanceIntro}>
+            The B-CRT (Blackwater-Circular Reinvented Toilet) represents the most advanced implementation of the Gates Foundation's "Reinvent the Toilet" initiative globally. Housed in a 40-foot container (20-foot variant available), each unit features comprehensive treatment, power, and monitoring systems.
+          </p>
+
+          <div className={styles.specsGrid}>
+            <div className={styles.specsCard}>
+              <h3 className={styles.specsTitle}>Unit Specifications</h3>
+              <ul className={styles.specsList}>
+                <li><strong>Container Size:</strong> 40-foot (20-foot variant available)</li>
+                <li><strong>Toilet Cubicles:</strong> 6 individual units</li>
+                <li><strong>Daily Capacity:</strong> 300+ users per day</li>
+                <li><strong>Treatment Capacity:</strong> 2,000-3,000L wastewater daily</li>
+                <li><strong>Water Recovery:</strong> 95-98% efficiency</li>
+                <li><strong>Annual Water Savings:</strong> 420,000-600,000 liters per unit</li>
+              </ul>
+            </div>
+
+            <div className={styles.specsCard}>
+              <h3 className={styles.specsTitle}>8-Stage Treatment Process</h3>
+              <ol className={styles.processList}>
+                <li><strong>Pre-treatment:</strong> 2mm screening and solids separation</li>
+                <li><strong>Primary Anaerobic Digestion:</strong> 2,000L bioreactor for organic breakdown</li>
+                <li><strong>Secondary Aerobic Treatment:</strong> Fine-bubble diffusion aeration</li>
+                <li><strong>Membrane Filtration:</strong> 0.04 micron ultrafiltration</li>
+                <li><strong>Advanced Oxidation:</strong> UV-C (254nm wavelength) disinfection</li>
+                <li><strong>Activated Carbon Filtration:</strong> Trace contaminant removal</li>
+                <li><strong>Mineralization:</strong> pH stabilization to 6.8-7.2</li>
+                <li><strong>Final Disinfection:</strong> Real-time quality monitoring</li>
+              </ol>
+              <div className={styles.standardBadge}>
+                <strong>Water Quality:</strong> ISO30500-2018 compliant
+              </div>
+            </div>
+
+            <div className={styles.specsCard}>
+              <h3 className={styles.specsTitle}>Solar Power System</h3>
+              <ul className={styles.specsList}>
+                <li><strong>Solar Panels:</strong> 9 panels × 450W = 4.05kWp capacity</li>
+                <li><strong>Daily Generation:</strong> 16-20kWh maximum yield</li>
+                <li><strong>Battery Storage:</strong> 6 lithium iron phosphate systems</li>
+                <li><strong>Storage Capacity:</strong> 20kWh total</li>
+                <li><strong>Off-Grid Operation:</strong> 72+ hours continuous operation</li>
+                <li><strong>Daily Consumption:</strong> 12-15kWh under normal conditions</li>
+                <li><strong>Grid Connection:</strong> Automatic switchover capability</li>
+              </ul>
+            </div>
+
+            <div className={styles.specsCard}>
+              <h3 className={styles.specsTitle}>IoT Monitoring System</h3>
+              <ul className={styles.specsList}>
+                <li><strong>Monitoring Points:</strong> 35+ sensors per unit</li>
+                <li><strong>Water Quality Sensors:</strong> pH, TDS, turbidity, BOD, COD</li>
+                <li><strong>Power Monitoring:</strong> Battery level, generation rate, consumption</li>
+                <li><strong>Treatment Monitoring:</strong> Flow rates, pressure, temperature</li>
+                <li><strong>Connectivity:</strong> Multi-redundant 4G/LTE with LoRaWAN backup</li>
+                <li><strong>Edge Computing:</strong> Industrial-grade processing with redundant storage</li>
+                <li><strong>Security:</strong> End-to-end encryption with role-based access</li>
+              </ul>
+            </div>
+
+            <div className={styles.specsCard}>
+              <h3 className={styles.specsTitle}>Sludge Treatment</h3>
+              <ul className={styles.specsList}>
+                <li><strong>Volume Reduction:</strong> &gt;90% compared to conventional systems</li>
+                <li><strong>Treatment Process:</strong> Enzymatic pre-treatment with thermal disinfection (70°C)</li>
+                <li><strong>End Product:</strong> Class A Biosolids per EPA standards</li>
+                <li><strong>Maintenance Cycle:</strong> Extraction required only once every 9-12 months</li>
+                <li><strong>Zero Discharge:</strong> Complete elimination of sewage system dependencies</li>
+              </ul>
+            </div>
+
+            <div className={styles.specsCard}>
+              <h3 className={styles.specsTitle}>Water Management</h3>
+              <ul className={styles.specsList}>
+                <li><strong>Initial Charge:</strong> 10,000 liters during commissioning</li>
+                <li><strong>Self-Sufficiency:</strong> Years of operation without external water requirement</li>
+                <li><strong>Treatment Standard:</strong> ISO30500 water quality output</li>
+                <li><strong>Reuse Capability:</strong> Treated water suitable for flushing and non-potable uses</li>
+                <li><strong>Real-Time Monitoring:</strong> Continuous water quality tracking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sludge Disinfection Device */}
+      <section className={styles.sludgeSection}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>Sludge Harmless Disinfection Device</h2>
+          <p className={styles.platformIntro}>
+            State-of-the-art maintenance solution for long-term sludge management.
+          </p>
+
+          <div className={styles.sludgeGrid}>
+            <div className={styles.sludgeContent}>
+              <h3 className={styles.sludgeSubtitle}>Automated Maintenance</h3>
+              <p className={styles.sludgeDescription}>
+                An introductory SOTA machine for sludge cleaning in the sedimentation phase. Designed to handle 1000L/day capacity with complete pathogen elimination.
+              </p>
+              <ul className={styles.sludgeFeatureList}>
+                <li><strong>Capacity:</strong> 1000L/day treatment volume</li>
+                <li><strong>Efficiency:</strong> Handles 200 flushes/day equivalent sludge</li>
+                <li><strong>Pathogen Removal:</strong> 100% coliform removal</li>
+                <li><strong>Output:</strong> Harmless, odorless biosolids suitable for fertilizer</li>
+              </ul>
+
+              <div className={styles.waterQualityTable}>
+                <h4>Performance Metrics</h4>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Influent</th>
+                      <th>Effluent</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>CODcr (mg/L)</td>
+                      <td>≤1000</td>
+                      <td>≤50</td>
+                    </tr>
+                    <tr>
+                      <td>BOD (mg/L)</td>
+                      <td>≤200</td>
+                      <td>≤10</td>
+                    </tr>
+                    <tr>
+                      <td>NH3-N (mg/L)</td>
+                      <td>≤250</td>
+                      <td>≤5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className={styles.sludgeImage}>
+              <Image
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/wiring-system.jpg"
+                alt="Sludge Disinfection Device"
+                width={500}
+                height={400}
+                className={styles.sludgeImg}
+              />
             </div>
           </div>
         </div>

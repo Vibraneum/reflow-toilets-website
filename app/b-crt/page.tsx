@@ -25,11 +25,11 @@ export default function BCRTPage() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
-          <div className={styles.badge}>Pilot Unit Live in Hyderabad</div>
+          <div className={styles.badge}>Deploying Q4 2025</div>
           <h1 className={styles.title}>B-CRT</h1>
-          <p className={styles.subtitle}>Blackwater Circular Reinvented Toilet.</p>
+          <p className={styles.subtitle}>The largest scale deployment of the most advanced public toilet in the world.</p>
           <p className={styles.description}>
-            8-stage treatment. Zero discharge. ISO30500 compliant. 4.05kWp solar capacity. 72+ hours off-grid autonomy. Gates Foundation technology.
+            Blackwater Circular Reinvented Toilet. 8-stage treatment. Zero discharge. ISO30500 compliant. 4.05kWp solar capacity. 72+ hours off-grid autonomy. Gates Foundation technology.
           </p>
 
           <div className={styles.stats}>
@@ -707,7 +707,7 @@ export default function BCRTPage() {
         <div className={styles.container}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Deploy in your district.</h2>
-            <p className={styles.ctaText}>Pilot unit operational in Hyderabad. Scaling to 50 units by December 2025. Schedule a 45-minute technical consultation with our water treatment engineers.</p>
+            <p className={styles.ctaText}>Pilot unit operational in Hyderabad. 4 additional units deploying over the next 3 months. Schedule a 45-minute technical consultation with our water treatment engineers.</p>
             <div className={styles.ctaButtons}>
               <a href="https://calendar.app.google/5pRiSHEjP851jiNQ7" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
                 Schedule technical briefing

@@ -129,8 +129,15 @@ export default function Header() {
                       <Link href="/tech" className={styles.megaLink} onClick={closeMenu}>
                         <div className={styles.megaLinkIcon}>⚙️</div>
                         <div>
-                          <span className={styles.megaLinkTitle}>Technical Specs</span>
-                          <span className={styles.megaLinkDesc}>IoT, solar, water recycling details</span>
+                          <span className={styles.megaLinkTitle}>Technology Overview</span>
+                          <span className={styles.megaLinkDesc}>IoT, solar, water recycling</span>
+                        </div>
+                      </Link>
+                      <Link href="/specifications" className={styles.megaLink} onClick={closeMenu}>
+                        <div className={styles.megaLinkIcon}>📋</div>
+                        <div>
+                          <span className={styles.megaLinkTitle}>Full Specifications</span>
+                          <span className={styles.megaLinkDesc}>Complete engineering documentation</span>
                         </div>
                       </Link>
                       <Link href="/innovation" className={styles.megaLink} onClick={closeMenu}>
@@ -312,7 +319,8 @@ export default function Header() {
                 <div className={styles.mobileSection}>
                   <h4 className={styles.mobileSectionTitle}>Technology</h4>
                   <Link href="/b-crt" className={styles.navLink} onClick={closeMenu}>B-CRT Technology</Link>
-                  <Link href="/tech" className={styles.navLink} onClick={closeMenu}>Technical Specs</Link>
+                  <Link href="/tech" className={styles.navLink} onClick={closeMenu}>Technology Overview</Link>
+                  <Link href="/specifications" className={styles.navLink} onClick={closeMenu}>Full Specifications</Link>
                   <Link href="/innovation" className={styles.navLink} onClick={closeMenu}>Innovation</Link>
                   <Link href="/design" className={styles.navLink} onClick={closeMenu}>Design Solutions</Link>
                   <Link href="/products" className={styles.navLink} onClick={closeMenu}>Products</Link>

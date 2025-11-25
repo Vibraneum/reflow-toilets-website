@@ -90,14 +90,14 @@ export default function PartnersPage() {
       location: 'Navi Mumbai, Maharashtra',
       type: 'CRZ Zone Deployment',
       units: 2,
-      timeline: 'Q1 2025',
+      timeline: 'Next 3 months',
       description: 'Beachfront installation in Coastal Regulation Zone where sewage is prohibited.',
     },
     {
       location: 'Hyderabad, Telangana',
       type: 'Urban Expansion',
-      units: 3,
-      timeline: 'Q2 2025',
+      units: 2,
+      timeline: 'Next 3 months',
       description: 'Additional units in high-footfall areas, expanding the pilot program.',
     },
   ]
@@ -125,8 +125,8 @@ export default function PartnersPage() {
                 <div className={styles.heroStatLabel}>Pilot Unit Live</div>
               </div>
               <div className={styles.heroStat}>
-                <div className={styles.heroStatNumber}>5</div>
-                <div className={styles.heroStatLabel}>Units in 2025</div>
+                <div className={styles.heroStatNumber}>4</div>
+                <div className={styles.heroStatLabel}>Deploying Soon</div>
               </div>
             </div>
           </div>

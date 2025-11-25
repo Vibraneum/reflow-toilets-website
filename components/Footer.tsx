@@ -52,7 +52,8 @@ export default function Footer() {
           <div className={styles.linkSection}>
             <h3 className={styles.linkTitle}>Technology</h3>
             <Link href="/b-crt" className={styles.link}>B-CRT Technology</Link>
-            <Link href="/tech" className={styles.link}>Technical Specs</Link>
+            <Link href="/tech" className={styles.link}>Technology Overview</Link>
+            <Link href="/specifications" className={styles.link}>Full Specifications</Link>
             <Link href="/innovation" className={styles.link}>Innovation</Link>
             <Link href="/design" className={styles.link}>Design Solutions</Link>
             <Link href="/products" className={styles.link}>Products</Link>

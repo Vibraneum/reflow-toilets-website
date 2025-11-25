@@ -589,6 +589,96 @@
   color: #424245;
 }
 
+/* B-CRT SPECIFICATIONS */
+.bcrtSpecs {
+  padding: 140px 20px;
+  background: #f5f5f7;
+}
+
+.specsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+  margin-top: 80px;
+}
+
+.specsCard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specsCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.specsTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+  border-bottom: 2px solid #0071e3;
+  padding-bottom: 12px;
+}
+
+.processList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.processList li {
+  font-size: 16px;
+  color: #424245;
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  counter-increment: step-counter;
+}
+
+.processList li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: #0071e3;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.processList {
+  counter-reset: step-counter;
+}
+
+.standardBadge {
+  margin-top: 24px;
+  padding: 12px 20px;
+  background: rgba(52, 199, 89, 0.1);
+  border: 1px solid rgba(52, 199, 89, 0.2);
+  border-radius: 12px;
+  font-size: 15px;
+  color: #248a3d;
+  text-align: center;
+}
+
+.standardBadge strong {
+  color: #248a3d;
+  font-weight: 600;
+}
+
 /* B-CRT */
 .bcrtIntegration {
   padding: 140px 20px;
@@ -745,6 +835,307 @@
   }
 }
 
+/* SLUDGE DISINFECTION DEVICE */
+.sludgeSection {
+  padding: 140px 20px;
+  background: #fff;
+}
+
+.sludgeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.sludgeSubtitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.sludgeDescription {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #6e6e73;
+  margin-bottom: 40px;
+}
+
+.sludgeFeatureList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.sludgeFeatureList li {
+  font-size: 17px;
+  color: #424245;
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.sludgeFeatureList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2334c759'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.waterQualityTable {
+  background: #fbfbfd;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.waterQualityTable h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.waterQualityTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.waterQualityTable th {
+  text-align: left;
+  font-size: 14px;
+  color: #86868b;
+  font-weight: 600;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.waterQualityTable td {
+  font-size: 15px;
+  color: #1d1d1f;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.waterQualityTable tr:last-child td {
+  border-bottom: none;
+}
+
+.stackCategoryTitle {
+  color: #fff;
+  font-size: 21px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
+.stackList li {
+  color: #a1a1a6;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.stackList li strong {
+  color: #fff;
+}
+
+/* APP SHOWCASE */
+.appShowcase {
+  background: #fff;
+  padding: 140px 20px;
+}
+
+.showcaseTitle {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+/* CTA */
+.cta {
+  background: #000;
+  padding: 160px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #fff 0%, #a1a1a6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ctaText {
+  font-size: 24px;
+  color: #86868b;
+  max-width: 700px;
+  margin: 0 auto 48px;
+  line-height: 1.4;
+}
+
+.ctaButton {
+  background: #fff;
+  color: #000;
+  padding: 18px 40px;
+  font-size: 19px;
+  border-radius: 980px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+}
+
+.ctaButtonSecondary {
+  color: #2997ff;
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 32px;
+}
+
+.ctaButtonSecondary:hover {
+  text-decoration: underline;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SLUDGE DISINFECTION DEVICE */
+.sludgeSection {
+  padding: 140px 20px;
+  background: #fff;
+}
+
+.sludgeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.sludgeSubtitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.sludgeDescription {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #6e6e73;
+  margin-bottom: 40px;
+}
+
+.sludgeFeatureList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.sludgeFeatureList li {
+  font-size: 17px;
+  color: #424245;
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.sludgeFeatureList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2334c759'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.waterQualityTable {
+  background: #fbfbfd;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.waterQualityTable h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.waterQualityTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.waterQualityTable th {
+  text-align: left;
+  font-size: 14px;
+  color: #86868b;
+  font-weight: 600;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.waterQualityTable td {
+  font-size: 15px;
+  color: #1d1d1f;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.waterQualityTable tr:last-child td {
+  border-bottom: none;
+}
+
+.sludgeImage {
+  width: 100%;
+  height: auto;
+}
+
+.sludgeImg {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .stats {
@@ -758,6 +1149,7 @@
   .iotGrid,
   .aiGrid,
   .bcrtGrid,
+  .sludgeGrid,
   .showcaseGrid {
     grid-template-columns: 1fr;
     gap: 40px;
