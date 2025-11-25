@@ -119,15 +119,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${montserrat.variable} ${inter.variable} ${quicksand.variable} ${poppins.variable} ${playfairDisplay.variable} ${cormorantGaramond.variable}`}>
       <head>
-        {/* Resource Hints for Performance - Note: Next.js handles these automatically via metadata API */}
         {/* Prevent hydration mismatch by ensuring consistent image rendering */}
         <style>{`
-          html, body {
-            filter: none !important;
-          }
-          img {
-            filter: none !important;
-          }
+          html, body { filter: none !important; }
+          img { filter: none !important; }
         `}</style>
       </head>
       <body>

@@ -497,11 +497,425 @@
   margin-bottom: 12px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+/* COST ICON */
+.costIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
 
+/* COST NOTE */
+.costNote {
+  font-size: 13px;
+  color: #86868b;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+/* HIDDEN COSTS LIST */
+.hiddenCostsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hiddenCostsList li {
+  padding: 8px 0;
+  color: #424245;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.hiddenCostsList li:last-child {
+  border-bottom: none;
+}
+
+/* COST SUMMARY */
+.costSummary {
+  text-align: center;
+  padding: 60px 40px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+.costSummaryTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 48px;
+}
+
+.costSummaryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.costSummaryItem {
+  text-align: center;
+}
+
+.costSummaryIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.costSummaryItem h4 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.costSummaryItem p {
+  font-size: 15px;
+  color: #86868b;
+  line-height: 1.5;
+}
+
+/* COST CTA */
+.costCTA {
+  text-align: center;
+  margin-top: 60px;
+  padding: 48px;
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.05) 0%, rgba(0, 113, 227, 0.02) 100%);
+  border-radius: 24px;
+}
+
+.costCTA h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+}
+
+.costCTA p {
+  font-size: 17px;
+  color: #86868b;
+  margin-bottom: 24px;
+}
+
+.costCTAButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  background: #0071e3;
+  color: white;
+  border-radius: 980px;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.costCTAButton:hover {
+  background: #0077ed;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
+}
+
+/* PROCUREMENT TIMELINE */
+.procurementTimeline {
+  margin-bottom: 60px;
+}
+
+.procurementTimelineTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* TIMELINE NOTE */
+.timelineNote {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: rgba(0, 113, 227, 0.05);
+  border-radius: 12px;
+  font-size: 14px;
+  color: #0071e3;
+}
+
+.timelineContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.timelineContent ul li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+  color: #424245;
+  font-size: 15px;
+}
+
+.timelineContent ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #0071e3;
+  font-weight: bold;
+}
+
+.timelineContent p {
+  color: #86868b;
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* PROCUREMENT REQUIREMENTS */
+.procurementRequirements {
+  margin-top: 80px;
+}
+
+.procurementRequirementsTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.requirementsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.requirementCard {
+  background: #fbfbfd;
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.requirementCard h4 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+
+.requirementCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirementCard ul li {
+  padding: 8px 0;
+  color: #424245;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.requirementCard ul li:last-child {
+  border-bottom: none;
+}
+
+.requirementCard ul li strong {
+  color: #1d1d1f;
+}
+
+/* PROCUREMENT FUNDING */
+.procurementFunding {
+  margin-top: 60px;
+}
+
+.procurementFundingTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.fundingGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.fundingItem {
+  text-align: center;
+  padding: 32px 24px;
+  background: #fbfbfd;
+  border-radius: 20px;
+}
+
+.fundingIcon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.fundingItem h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.fundingItem p {
+  font-size: 14px;
+  color: #86868b;
+  line-height: 1.5;
+}
+
+/* PROCUREMENT CTA */
+.procurementCTA {
+  text-align: center;
+  margin-top: 60px;
+  padding: 48px;
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.05) 0%, rgba(0, 113, 227, 0.02) 100%);
+  border-radius: 24px;
+}
+
+.procurementCTA h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+}
+
+.procurementCTA p {
+  font-size: 17px;
+  color: #86868b;
+  margin-bottom: 24px;
+}
+
+.procurementCTAButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  background: #0071e3;
+  color: white;
+  border-radius: 980px;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.procurementCTAButton:hover {
+  background: #0077ed;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
+}
+
+/* BOT SECTION */
+.botSection {
+  margin: 120px 0;
+  padding: 80px 40px;
+  background: #fbfbfd;
+  border-radius: 32px;
+}
+
+.botDescription {
+  text-align: center;
+  font-size: 21px;
+  color: #86868b;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.botSteps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.botStep {
+  text-align: center;
+  padding: 40px 32px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+.botIcon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.botStep h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+}
+
+.botStep p {
+  font-size: 15px;
+  color: #86868b;
+  line-height: 1.5;
+}
+
+/* FINAL CTA */
+.finalCTA {
+  text-align: center;
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #1d1d1f 0%, #3a3a3c 100%);
+  border-radius: 32px;
+  margin: 120px 0 80px;
+}
+
+.finalCTA h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.finalCTA p {
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+}
+
+.ctaButtonLarge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 40px;
+  background: #0071e3;
+  color: white;
+  border-radius: 980px;
+  font-weight: 600;
+  font-size: 19px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 113, 227, 0.4);
+}
+
+.ctaButtonLarge:hover {
+  background: #0077ed;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 113, 227, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .costSummaryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fundingGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .botSteps {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
   .productsGrid,
-  .costComparisonGrid {
+  .costComparisonGrid,
+  .requirementsGrid {
     grid-template-columns: 1fr;
   }
 
@@ -520,5 +934,105 @@
   .timelineNumber {
     left: -50px;
     width: 40px;
+  }
+
+  .costComparisonSection,
+  .procurementSection,
+  .botSection {
+    padding: 48px 24px;
+  }
+
+  .costColumn {
+    padding: 32px 24px;
+  }
+
+  .costSummaryGrid,
+  .fundingGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .finalCTA {
+    padding: 60px 24px;
+    margin: 80px 0 60px;
+  }
+
+  .ctaButtonLarge {
+    padding: 16px 32px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 120px 16px 60px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .productsGrid {
+    gap: 24px;
+    margin: 48px 0;
+  }
+
+  .productCard {
+    border-radius: 24px;
+  }
+
+  .productHeader {
+    padding: 24px 20px 16px;
+  }
+
+  .productName {
+    font-size: 24px;
+  }
+
+  .productImage {
+    padding: 24px;
+  }
+
+  .productSpecs,
+  .bestFor,
+  .productCTA {
+    padding: 24px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .costColumnTitle {
+    font-size: 22px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .savingsBadge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .fiveYearTCO {
+    font-size: 18px;
+    padding: 24px;
+  }
+
+  .botStep {
+    padding: 32px 24px;
+  }
+
+  .finalCTA h2 {
+    font-size: 28px;
+  }
+
+  .finalCTA p {
+    font-size: 16px;
   }
 }

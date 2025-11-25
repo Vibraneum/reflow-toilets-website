@@ -93,6 +93,8 @@
     padding: 8px 12px;
     border-radius: 980px;
     transition: background 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .phoneLink:hover {
@@ -103,6 +105,11 @@
     width: 18px;
     height: 18px;
     color: #86868b;
+    flex-shrink: 0;
+  }
+
+  .phoneText {
+    white-space: nowrap;
   }
 
   .ctaButton {
