@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
+import { jsPDF } from 'jspdf'
 import styles from './page.module.css'
 import LuxuryButton from '@/components/LuxuryButton'
 
@@ -13,6 +14,14 @@ interface CalculatorInputs {
   laborCostPerStaff: number
 }
 
+interface LeadFormData {
+  name: string
+  email: string
+  phone: string
+  district: string
+  designation: string
+}
+
 export default function ROICalculatorPage() {
   const [inputs, setInputs] = useState<CalculatorInputs>({
     toilets: 25,
@@ -22,6 +31,17 @@ export default function ROICalculatorPage() {
     maintenanceStaff: 10,
     laborCostPerStaff: 15000,
   })
+
+  const [showLeadForm, setShowLeadForm] = useState(false)
+  const [leadFormData, setLeadFormData] = useState<LeadFormData>({
+    name: '',
+    email: '',
+    phone: '',
+    district: '',
+    designation: '',
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [exportAction, setExportAction] = useState<'pdf' | 'email' | null>(null)
 
   const resultsRef = useRef<HTMLDivElement>(null)
 
@@ -97,16 +117,252 @@ export default function ROICalculatorPage() {
     return num.toLocaleString('en-IN', { maximumFractionDigits: 0 })
   }
 
-  // Export PDF function (simplified - would use a library like jsPDF in production)
-  const handleExportPDF = () => {
-    alert('PDF export feature would be implemented with jsPDF library in production. This would generate a comprehensive business case document with all calculations and government program alignments.')
+  // Submit lead to Google Sheets CRM
+  const submitLeadToCRM = async (action: 'pdf' | 'email') => {
+    try {
+      const submissionData = {
+        name: leadFormData.name,
+        email: leadFormData.email,
+        phone: leadFormData.phone || '',
+        company: leadFormData.district,
+        subject: `ROI Calculator - ${action === 'pdf' ? 'PDF Export' : 'Email Results'}`,
+        message: `
+Designation: ${leadFormData.designation}
+District/Organization: ${leadFormData.district}
+
+ROI Calculator Configuration:
+- Toilets: ${inputs.toilets}
+- Daily Users: ${inputs.dailyUsers}
+- Water Cost: ₹${inputs.waterCostPerKL}/KL
+- Electricity Cost: ₹${inputs.electricityCostPerUnit}/unit
+
+Results:
+- B-CRT TCO (20yr): ${formatCurrency(bcrtTCO)}
+- Traditional TCO (20yr): ${formatCurrency(tradTCO)}
+- Total Savings: ${formatCurrency(totalSavings)}
+- ROI: ${roiPercentage.toFixed(1)}%
+- Payback: ${paybackPeriod.toFixed(1)} years
+- Water Saved: ${formatNumber(waterSaved20Years)} KL
+- CO2 Reduced: ${formatNumber(co2Reduced)} kg
+        `.trim(),
+        source: 'reflowtoilets.com/roi-calculator'
+      }
+
+      await fetch('https://script.google.com/macros/s/AKfycbwJs-QIKrH86XQPiXYLLQf7iy82xSeC7tcJYrxnvP119aSZ6NElX_T59pD2hUgvMaNn/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(submissionData)
+      })
+    } catch (error) {
+      console.error('CRM submission error:', error)
+    }
   }
 
-  // Email results
+  // Generate PDF with jsPDF
+  const generatePDF = () => {
+    const doc = new jsPDF()
+    const pageWidth = doc.internal.pageSize.getWidth()
+    let yPos = 20
+
+    // Helper function for centered text
+    const centerText = (text: string, y: number, fontSize: number = 12) => {
+      doc.setFontSize(fontSize)
+      const textWidth = doc.getStringUnitWidth(text) * fontSize / doc.internal.scaleFactor
+      const x = (pageWidth - textWidth) / 2
+      doc.text(text, x, y)
+    }
+
+    // Header
+    doc.setFillColor(29, 29, 31)
+    doc.rect(0, 0, pageWidth, 45, 'F')
+
+    doc.setTextColor(255, 255, 255)
+    doc.setFontSize(24)
+    doc.setFont('helvetica', 'bold')
+    centerText('ReFlow Toilets', 20, 24)
+
+    doc.setFontSize(14)
+    doc.setFont('helvetica', 'normal')
+    centerText('District ROI Analysis Report', 32, 14)
+
+    // Reset text color
+    doc.setTextColor(29, 29, 31)
+    yPos = 60
+
+    // Generated info
+    doc.setFontSize(10)
+    doc.setTextColor(134, 134, 139)
+    doc.text(`Generated: ${new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}`, 14, yPos)
+    doc.text(`Prepared for: ${leadFormData.name}`, pageWidth - 14 - doc.getTextWidth(`Prepared for: ${leadFormData.name}`), yPos)
+    yPos += 15
+
+    // Executive Summary Box
+    doc.setFillColor(251, 251, 253)
+    doc.roundedRect(14, yPos, pageWidth - 28, 45, 3, 3, 'F')
+
+    doc.setTextColor(29, 29, 31)
+    doc.setFontSize(14)
+    doc.setFont('helvetica', 'bold')
+    doc.text('Executive Summary', 20, yPos + 12)
+
+    doc.setFontSize(10)
+    doc.setFont('helvetica', 'normal')
+    doc.text(`Deployment: ${inputs.toilets} B-CRT units serving ${formatNumber(inputs.dailyUsers * inputs.toilets)} daily users`, 20, yPos + 24)
+    doc.text(`20-Year Savings: ${formatCurrency(totalSavings)} | ROI: ${roiPercentage.toFixed(1)}% | Payback: ${paybackPeriod > 0 ? paybackPeriod.toFixed(1) + ' years' : 'Immediate'}`, 20, yPos + 34)
+
+    yPos += 55
+
+    // Financial Comparison Section
+    doc.setFontSize(14)
+    doc.setFont('helvetica', 'bold')
+    doc.text('Financial Comparison (20-Year Analysis)', 14, yPos)
+    yPos += 10
+
+    // Table headers
+    doc.setFillColor(29, 29, 31)
+    doc.rect(14, yPos, pageWidth - 28, 8, 'F')
+    doc.setTextColor(255, 255, 255)
+    doc.setFontSize(9)
+    doc.setFont('helvetica', 'bold')
+    doc.text('Category', 18, yPos + 6)
+    doc.text('Traditional Sewered', 80, yPos + 6)
+    doc.text('ReFlow B-CRT', 130, yPos + 6)
+    doc.text('Savings', 175, yPos + 6)
+    yPos += 8
+
+    // Table rows
+    doc.setTextColor(29, 29, 31)
+    doc.setFont('helvetica', 'normal')
+
+    const tableData = [
+      ['CAPEX (Total)', formatCurrency(tradCapex), formatCurrency(bcrtCapex), formatCurrency(tradCapex - bcrtCapex)],
+      ['Annual Maintenance', formatCurrency(tradAnnualMaintenance), formatCurrency(bcrtAnnualMaintenance), formatCurrency(tradAnnualMaintenance - bcrtAnnualMaintenance)],
+      ['Annual Water Cost', formatCurrency(tradAnnualWater), '₹0 (Zero Discharge)', formatCurrency(tradAnnualWater)],
+      ['Annual Electricity', formatCurrency(tradAnnualElectricity), formatCurrency(bcrtAnnualElectricity), formatCurrency(tradAnnualElectricity - bcrtAnnualElectricity)],
+      ['Annual Labor', formatCurrency(tradAnnualLabor), formatCurrency(bcrtAnnualLabor), formatCurrency(tradAnnualLabor - bcrtAnnualLabor)],
+      ['Total Annual OPEX', formatCurrency(tradTotalAnnualOpex), formatCurrency(bcrtTotalAnnualOpex), formatCurrency(annualSavings)],
+      ['20-Year TCO', formatCurrency(tradTCO), formatCurrency(bcrtTCO), formatCurrency(totalSavings)],
+    ]
+
+    tableData.forEach((row, i) => {
+      if (i % 2 === 0) {
+        doc.setFillColor(251, 251, 253)
+        doc.rect(14, yPos, pageWidth - 28, 7, 'F')
+      }
+      if (i === tableData.length - 1) {
+        doc.setFont('helvetica', 'bold')
+        doc.setFillColor(52, 211, 153, 30)
+        doc.rect(14, yPos, pageWidth - 28, 7, 'F')
+      }
+      doc.text(row[0], 18, yPos + 5)
+      doc.text(row[1], 80, yPos + 5)
+      doc.text(row[2], 130, yPos + 5)
+      doc.setTextColor(16, 185, 129)
+      doc.text(row[3], 175, yPos + 5)
+      doc.setTextColor(29, 29, 31)
+      doc.setFont('helvetica', 'normal')
+      yPos += 7
+    })
+
+    yPos += 15
+
+    // Environmental Impact Section
+    doc.setFontSize(14)
+    doc.setFont('helvetica', 'bold')
+    doc.text('Environmental & Social Impact', 14, yPos)
+    yPos += 10
+
+    doc.setFontSize(10)
+    doc.setFont('helvetica', 'normal')
+
+    const impactData = [
+      ['Water Saved (20 years)', `${formatNumber(waterSaved20Years)} KL`, 'Zero discharge technology'],
+      ['CO2 Emissions Reduced', `${formatNumber(co2Reduced)} kg`, `Equivalent to ${formatNumber(Math.round(co2Reduced / 20))} trees planted`],
+      ['Jobs Created', `${jobsCreated} positions`, 'Skilled maintenance & tech support'],
+      ['Citizens Served', `${formatNumber(usersServed / 1000000)}M+ uses`, 'Over 20-year operation period'],
+    ]
+
+    impactData.forEach((row) => {
+      doc.setFont('helvetica', 'bold')
+      doc.text(row[0] + ':', 18, yPos)
+      doc.setFont('helvetica', 'normal')
+      doc.text(row[1], 70, yPos)
+      doc.setTextColor(134, 134, 139)
+      doc.text(row[2], 110, yPos)
+      doc.setTextColor(29, 29, 31)
+      yPos += 7
+    })
+
+    yPos += 10
+
+    // Government Programs Section
+    doc.setFontSize(14)
+    doc.setFont('helvetica', 'bold')
+    doc.text('Government Program Alignment', 14, yPos)
+    yPos += 8
+
+    doc.setFontSize(9)
+    doc.setFont('helvetica', 'normal')
+
+    const programs = [
+      'SBM 2.0: Eligible for Swachh Bharat Mission 2.0 grants (up to 60% central funding)',
+      'Smart Cities Mission: IoT-enabled infrastructure qualifies for SCM funding',
+      'ODF++ Certification: Direct pathway to ODF++ status with sustainable sanitation',
+      'CRZ Compliance: Zero discharge meets Coastal Regulation Zone requirements',
+    ]
+
+    programs.forEach((program) => {
+      doc.text('• ' + program, 18, yPos)
+      yPos += 6
+    })
+
+    // Footer
+    yPos = 280
+    doc.setFillColor(29, 29, 31)
+    doc.rect(0, yPos - 5, pageWidth, 20, 'F')
+
+    doc.setTextColor(255, 255, 255)
+    doc.setFontSize(9)
+    centerText('ReFlow Toilets by iRise Toilets Pvt. Ltd. | www.reflowtoilets.com | +91 9494330442', yPos + 5, 9)
+
+    // Save PDF
+    doc.save(`ReFlow_ROI_Analysis_${leadFormData.district.replace(/\s+/g, '_') || 'District'}_${new Date().toISOString().split('T')[0]}.pdf`)
+  }
+
+  // Handle export button click - show lead form
+  const handleExportPDF = () => {
+    setExportAction('pdf')
+    setShowLeadForm(true)
+  }
+
+  // Handle email button click - show lead form
   const handleEmailResults = () => {
-    const subject = encodeURIComponent('ReFlow Toilets ROI Calculator Results')
-    const body = encodeURIComponent(`
+    setExportAction('email')
+    setShowLeadForm(true)
+  }
+
+  // Process export after lead form submission
+  const handleLeadFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    try {
+      // Submit lead to CRM
+      await submitLeadToCRM(exportAction!)
+
+      // Perform the export action
+      if (exportAction === 'pdf') {
+        generatePDF()
+      } else if (exportAction === 'email') {
+        const subject = encodeURIComponent('ReFlow Toilets ROI Calculator Results')
+        const body = encodeURIComponent(`
 ROI Calculator Results - ReFlow Toilets B-CRT
+
+Prepared for: ${leadFormData.name}
+District/Organization: ${leadFormData.district}
 
 Deployment Configuration:
 - Number of Toilets: ${inputs.toilets}
@@ -117,15 +373,24 @@ Deployment Configuration:
 - Total Cost of Ownership (Traditional): ${formatCurrency(tradTCO)}
 - Total Savings: ${formatCurrency(totalSavings)}
 - ROI: ${roiPercentage.toFixed(1)}%
-- Payback Period: ${paybackPeriod.toFixed(1)} years
+- Payback Period: ${paybackPeriod > 0 ? paybackPeriod.toFixed(1) + ' years' : 'Immediate'}
 
 Environmental Impact:
 - Water Saved (20 years): ${formatNumber(waterSaved20Years)} KL
 - CO2 Reduced: ${formatNumber(co2Reduced)} kg
 
 Request a detailed feasibility study: https://www.reflowtoilets.com/contact
-    `)
-    window.location.href = `mailto:?subject=${subject}&body=${body}`
+        `)
+        window.location.href = `mailto:?subject=${subject}&body=${body}`
+      }
+
+      setShowLeadForm(false)
+      setLeadFormData({ name: '', email: '', phone: '', district: '', designation: '' })
+    } catch (error) {
+      console.error('Export error:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -550,6 +815,145 @@ Request a detailed feasibility study: https://www.reflowtoilets.com/contact
           </div>
         </div>
       </section>
+
+      {/* Lead Capture Modal */}
+      {showLeadForm && (
+        <div className={styles.modalOverlay} onClick={() => setShowLeadForm(false)}>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <button
+              className={styles.modalClose}
+              onClick={() => setShowLeadForm(false)}
+              aria-label="Close modal"
+            >
+              &times;
+            </button>
+
+            <div className={styles.modalHeader}>
+              <div className={styles.modalIcon}>
+                {exportAction === 'pdf' ? '📄' : '📧'}
+              </div>
+              <h2 className={styles.modalTitle}>
+                {exportAction === 'pdf' ? 'Download Your ROI Report' : 'Email Your Results'}
+              </h2>
+              <p className={styles.modalSubtitle}>
+                Enter your details to receive your personalized analysis
+              </p>
+            </div>
+
+            <form onSubmit={handleLeadFormSubmit} className={styles.leadForm}>
+              <div className={styles.formRow}>
+                <div className={styles.formGroup}>
+                  <label htmlFor="leadName">Name *</label>
+                  <input
+                    type="text"
+                    id="leadName"
+                    required
+                    value={leadFormData.name}
+                    onChange={(e) => setLeadFormData({ ...leadFormData, name: e.target.value })}
+                    placeholder="Your full name"
+                    className={styles.formInput}
+                  />
+                </div>
+                <div className={styles.formGroup}>
+                  <label htmlFor="leadDesignation">Designation *</label>
+                  <input
+                    type="text"
+                    id="leadDesignation"
+                    required
+                    value={leadFormData.designation}
+                    onChange={(e) => setLeadFormData({ ...leadFormData, designation: e.target.value })}
+                    placeholder="e.g., District Collector, Engineer"
+                    className={styles.formInput}
+                  />
+                </div>
+              </div>
+
+              <div className={styles.formRow}>
+                <div className={styles.formGroup}>
+                  <label htmlFor="leadEmail">Email *</label>
+                  <input
+                    type="email"
+                    id="leadEmail"
+                    required
+                    value={leadFormData.email}
+                    onChange={(e) => setLeadFormData({ ...leadFormData, email: e.target.value })}
+                    placeholder="official@district.gov.in"
+                    className={styles.formInput}
+                  />
+                </div>
+                <div className={styles.formGroup}>
+                  <label htmlFor="leadPhone">Phone</label>
+                  <input
+                    type="tel"
+                    id="leadPhone"
+                    value={leadFormData.phone}
+                    onChange={(e) => setLeadFormData({ ...leadFormData, phone: e.target.value })}
+                    placeholder="+91 98765 43210"
+                    className={styles.formInput}
+                  />
+                </div>
+              </div>
+
+              <div className={styles.formGroup}>
+                <label htmlFor="leadDistrict">District / Organization *</label>
+                <input
+                  type="text"
+                  id="leadDistrict"
+                  required
+                  value={leadFormData.district}
+                  onChange={(e) => setLeadFormData({ ...leadFormData, district: e.target.value })}
+                  placeholder="e.g., Hyderabad Municipal Corporation"
+                  className={styles.formInput}
+                />
+              </div>
+
+              <div className={styles.formSummary}>
+                <h4>Your ROI Summary</h4>
+                <div className={styles.summaryGrid}>
+                  <div className={styles.summaryItem}>
+                    <span className={styles.summaryLabel}>Toilets</span>
+                    <span className={styles.summaryValue}>{inputs.toilets}</span>
+                  </div>
+                  <div className={styles.summaryItem}>
+                    <span className={styles.summaryLabel}>20-Yr Savings</span>
+                    <span className={styles.summaryValue}>{formatCurrency(totalSavings)}</span>
+                  </div>
+                  <div className={styles.summaryItem}>
+                    <span className={styles.summaryLabel}>ROI</span>
+                    <span className={styles.summaryValue}>{roiPercentage.toFixed(1)}%</span>
+                  </div>
+                  <div className={styles.summaryItem}>
+                    <span className={styles.summaryLabel}>Payback</span>
+                    <span className={styles.summaryValue}>{paybackPeriod > 0 ? paybackPeriod.toFixed(1) + ' yrs' : 'Immediate'}</span>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                className={styles.submitButton}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  'Processing...'
+                ) : exportAction === 'pdf' ? (
+                  <>
+                    <span>📥</span> Download PDF Report
+                  </>
+                ) : (
+                  <>
+                    <span>📧</span> Send via Email
+                  </>
+                )}
+              </button>
+
+              <p className={styles.privacyNote}>
+                Your information is secure and will only be used to follow up on your infrastructure inquiry.
+              </p>
+            </form>
+          </div>
+        </div>
+      )}
     </main>
   )
 }
