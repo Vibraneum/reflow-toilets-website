@@ -215,6 +215,66 @@ export default function ExitIntentPopup() {
       }
     }
 
+    // Government Framework page - Focus on procurement assistance
+    if (currentPage === 'government_framework' || currentPage === 'government-framework') {
+      return {
+        heading: "Need Procurement Assistance? 🏛️",
+        subheading: "Get tender documents, budget templates, and expert guidance for your district deployment",
+        fields: [
+          {
+            name: 'name',
+            type: 'text',
+            label: 'Name',
+            required: true,
+            placeholder: 'Your name'
+          },
+          {
+            name: 'designation',
+            type: 'text',
+            label: 'Designation',
+            required: true,
+            placeholder: 'e.g., Commissioner, District Collector, Executive Engineer'
+          },
+          {
+            name: 'district',
+            type: 'text',
+            label: 'District/Corporation',
+            required: true,
+            placeholder: 'e.g., Greater Hyderabad Municipal Corporation'
+          },
+          {
+            name: 'phone',
+            type: 'tel',
+            label: 'Phone',
+            required: true,
+            placeholder: '+91 98765 43210'
+          },
+          {
+            name: 'assistanceNeeded',
+            type: 'dropdown',
+            label: 'Assistance Needed',
+            required: false,
+            options: [
+              'Select Type',
+              'Tender Document Preparation',
+              'Budget Justification Support',
+              'Funding Application Help',
+              'Site Feasibility Study',
+              'Technical Specifications',
+              'Complete Procurement Support'
+            ]
+          }
+        ],
+        buttonText: "Get Procurement Support",
+        benefits: [
+          "✓ Ready-to-use tender templates",
+          "✓ Budget justification documents",
+          "✓ Funding application assistance"
+        ],
+        crmSource: 'exit-popup-government-framework'
+      }
+    }
+
     // Design page - Focus on design consultation
     if (currentPage === 'design') {
       return {

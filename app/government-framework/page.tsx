@@ -715,25 +715,55 @@ export default function GovernmentFrameworkPage() {
 
           <ScrollReveal>
             <div className={styles.downloadSection}>
-              <h3>Download Resources</h3>
+              <h3>Request Procurement Resources</h3>
               <div className={styles.downloadGrid}>
                 <div className={styles.downloadCard}>
                   <div className={styles.downloadIcon}>📄</div>
                   <h4>Sample Tender Document</h4>
-                  <p>Ready-to-use tender specifications</p>
-                  <button className={styles.downloadButton}>Download PDF</button>
+                  <p>Ready-to-use tender specifications for ISO30500 compliant systems</p>
+                  <LuxuryButton
+                    href="/contact?subject=Request%20Tender%20Document&message=Please%20send%20me%20the%20sample%20tender%20document%20for%20ISO30500%20compliant%20sanitation%20systems."
+                    variant="outline"
+                    size="sm"
+                  >
+                    Request Document
+                  </LuxuryButton>
                 </div>
                 <div className={styles.downloadCard}>
                   <div className={styles.downloadIcon}>📊</div>
                   <h4>Budget Justification Template</h4>
-                  <p>For internal approvals</p>
-                  <button className={styles.downloadButton}>Download Excel</button>
+                  <p>For internal approvals and council presentations</p>
+                  <LuxuryButton
+                    href="/contact?subject=Request%20Budget%20Template&message=Please%20send%20me%20the%20budget%20justification%20template%20for%20ReFlow%20toilet%20deployment."
+                    variant="outline"
+                    size="sm"
+                  >
+                    Request Template
+                  </LuxuryButton>
                 </div>
                 <div className={styles.downloadCard}>
                   <div className={styles.downloadIcon}>✅</div>
                   <h4>Evaluation Criteria Matrix</h4>
-                  <p>Technical & financial scoring</p>
-                  <button className={styles.downloadButton}>Download PDF</button>
+                  <p>Technical & financial scoring framework</p>
+                  <LuxuryButton
+                    href="/contact?subject=Request%20Evaluation%20Criteria&message=Please%20send%20me%20the%20evaluation%20criteria%20matrix%20for%20vendor%20assessment."
+                    variant="outline"
+                    size="sm"
+                  >
+                    Request Matrix
+                  </LuxuryButton>
+                </div>
+                <div className={styles.downloadCard}>
+                  <div className={styles.downloadIcon}>🏛️</div>
+                  <h4>Request Site Visit</h4>
+                  <p>Visit our operational units in Hyderabad</p>
+                  <LuxuryButton
+                    href="https://calendar.app.google/5pRiSHEjP851jiNQ7"
+                    variant="primary"
+                    size="sm"
+                  >
+                    Schedule Site Visit
+                  </LuxuryButton>
                 </div>
               </div>
             </div>

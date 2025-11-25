@@ -200,6 +200,12 @@ export default function ProductsPage() {
                 >
                   Configure This Bundle
                 </a>
+                <a
+                  href="/contact?subject=Request%20Spec%20Sheet&message=Please%20send%20me%20the%20specification%20sheet%20for%20the%20${encodeURIComponent(product.name)}"
+                  className={styles.ctaButtonSecondary}
+                >
+                  📄 Request Spec Sheet
+                </a>
               </div>
             </div>
           ))}

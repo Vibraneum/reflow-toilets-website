@@ -279,6 +279,13 @@ export default function Header() {
                           <span className={styles.megaLinkDesc}>Our story & mission</span>
                         </div>
                       </Link>
+                      <Link href="/team" className={styles.megaLink} onClick={closeMenu}>
+                        <div className={styles.megaLinkIcon}>👥</div>
+                        <div>
+                          <span className={styles.megaLinkTitle}>Our Team</span>
+                          <span className={styles.megaLinkDesc}>Leadership & credentials</span>
+                        </div>
+                      </Link>
                       <Link href="/hiring" className={styles.megaLink} onClick={closeMenu}>
                         <div className={styles.megaLinkIcon}>💼</div>
                         <div>
@@ -323,6 +330,7 @@ export default function Header() {
                   <Link href="/blog" className={styles.navLink} onClick={closeMenu}>Blog</Link>
                   <Link href="/events" className={styles.navLink} onClick={closeMenu}>Events</Link>
                   <Link href="/about" className={styles.navLink} onClick={closeMenu}>About Us</Link>
+                  <Link href="/team" className={styles.navLink} onClick={closeMenu}>Our Team</Link>
                   <Link href="/hiring" className={styles.navLink} onClick={closeMenu}>Careers</Link>
                   <Link href="/contact" className={styles.navLink} onClick={closeMenu}>Contact</Link>
                 </div>

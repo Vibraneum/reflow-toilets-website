@@ -1,0 +1,424 @@
+/* Team Page - Apple-Style Design */
+
+.page {
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(180deg, #f5f5f7 0%, #fff 100%);
+  padding: 140px 20px 100px;
+  text-align: center;
+}
+
+.heroContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 21px;
+  line-height: 1.5;
+  color: #6e6e73;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* SECTION SHARED */
+.sectionTitle {
+  font-size: clamp(36px, 4.5vw, 52px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: #1d1d1f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sectionIntro {
+  font-size: 19px;
+  line-height: 1.5;
+  color: #6e6e73;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+/* LEADERSHIP SECTION */
+.leadership {
+  background: #fff;
+  padding: 100px 20px;
+}
+
+.leadershipGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.leaderCard {
+  background: #f5f5f7;
+  border-radius: 24px;
+  padding: 40px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.leaderCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.leaderHeader {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.leaderAvatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leaderTitle {
+  flex: 1;
+}
+
+.leaderName {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 4px;
+}
+
+.leaderRole {
+  font-size: 15px;
+  color: #0f766e;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.linkedinLink {
+  font-size: 14px;
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.linkedinLink:hover {
+  text-decoration: underline;
+}
+
+.leaderBio {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #1d1d1f;
+  margin: 0;
+}
+
+/* OPERATIONS SECTION */
+.operations {
+  background: #f5f5f7;
+  padding: 100px 20px;
+}
+
+.opsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.opsCard {
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
+  border-radius: 20px;
+  padding: 36px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.opsCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(15, 118, 110, 0.3);
+}
+
+.opsNumber {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.opsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.opsText {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin: 0;
+}
+
+.totalTeam {
+  background: #1d1d1f;
+  border-radius: 20px;
+  padding: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+.totalNumber {
+  font-size: 72px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0f766e 0%, #06b6d4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.totalLabel {
+  font-size: 19px;
+  color: #a1a1a6;
+}
+
+/* IXORA SECTION */
+.ixora {
+  background: #fff;
+  padding: 100px 20px;
+}
+
+.ixoraStats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.ixoraStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ixoraStatValue {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff6b35;
+  line-height: 1;
+}
+
+.ixoraStatLabel {
+  font-size: 15px;
+  color: #6e6e73;
+  margin-top: 8px;
+}
+
+.ixoraServices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.serviceTag {
+  background: #f5f5f7;
+  color: #1d1d1f;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ixoraText {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1d1d1f;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* CTA SECTION */
+.cta {
+  background: #1d1d1f;
+  padding: 100px 20px;
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.ctaTitle {
+  font-size: clamp(36px, 4.5vw, 52px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #fff 0%, #a1a1a6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ctaText {
+  font-size: 19px;
+  line-height: 1.5;
+  color: #a1a1a6;
+  margin-bottom: 40px;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaButton {
+  background: #fff;
+  color: #1d1d1f;
+  padding: 18px 36px;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+.ctaButtonSecondary {
+  background: transparent;
+  color: #2997ff;
+  padding: 18px 36px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.ctaButtonSecondary:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .leadershipGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px 60px;
+  }
+
+  .leaderHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leaderTitle {
+    text-align: center;
+  }
+
+  .opsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ixoraStats {
+    gap: 32px;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctaButton,
+  .ctaButtonSecondary {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .leaderCard {
+    padding: 28px 20px;
+  }
+
+  .opsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .totalNumber {
+    font-size: 56px;
+  }
+
+  .ixoraStatValue {
+    font-size: 36px;
+  }
+}
