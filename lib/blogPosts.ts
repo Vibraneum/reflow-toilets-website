@@ -31,11 +31,11 @@ export const blogPosts: BlogPost[] = [
     category: 'Technology',
     tags: ['B-CRT', 'Water Treatment', 'MBBR', 'ISO30500', 'Engineering'],
     readingTime: '12 min read',
-    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/v1732432100/reflow-assets/blog/laboratory-testing-bcrt.jpg',
+    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png',
     imageAlt: 'Technical diagram of zero-discharge toilet system components',
     author: {
-      name: 'Dr. Abhishek Nath',
-      role: 'Chief Technology Officer, ReFlow Toilets | Former Research Fellow, IIT Delhi',
+      name: 'ReFlow Engineering Team',
+      role: 'Sanitation Technology Research',
     },
     seo: {
       metaTitle: 'How Zero-Discharge Toilets Work: Complete Technical Guide (2025)',
@@ -287,11 +287,11 @@ As climate change intensifies water scarcity and urbanization accelerates, zero-
     category: 'Economics',
     tags: ['Public Policy', 'Cost Analysis', 'Urban Planning', 'Municipal Governance'],
     readingTime: '10 min read',
-    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/v1732432101/reflow-assets/blog/cost-analysis-chart.jpg',
+    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/hero-image.png',
     imageAlt: 'Financial analysis of public toilet infrastructure costs',
     author: {
-      name: 'Prof. Rajesh Kumar',
-      role: 'Head of Research, ReFlow Labs | PhD Environmental Engineering, Georgia Tech',
+      name: 'ReFlow Research Team',
+      role: 'Urban Infrastructure Analysis',
     },
     seo: {
       metaTitle: 'Public Toilet Economics: Why Traditional Models Fail (2025 Analysis)',
@@ -608,7 +608,7 @@ The question isn't whether cities can afford to switch to decentralized sanitati
     category: 'Standards & Compliance',
     tags: ['ISO 30500', 'Certification', 'Quality Standards', 'Procurement', 'Compliance'],
     readingTime: '9 min read',
-    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/v1732432102/reflow-assets/blog/iso-certification-badge.jpg',
+    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png',
     imageAlt: 'ISO 30500 certification badge and testing facility',
     author: {
       name: 'ReFlow Quality Assurance',
@@ -1033,7 +1033,7 @@ The question for municipal decision-makers is simple: why would you invest publi
     category: 'Water Conservation',
     tags: ['Water Scarcity', 'Climate Change', 'Decentralized Systems', 'Sustainability'],
     readingTime: '11 min read',
-    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/v1732432103/reflow-assets/blog/water-conservation-tech.jpg',
+    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png',
     imageAlt: 'Comparison of water usage: traditional vs. zero-discharge toilets',
     author: {
       name: 'ReFlow Sustainability',
@@ -1434,7 +1434,7 @@ The question is not whether we can afford to deploy these systems, but whether w
     category: 'Case Studies',
     tags: ['Hyderabad', 'ROI', 'Case Study', 'Smart Cities', 'Municipal Projects'],
     readingTime: '14 min read',
-    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/v1732432104/reflow-assets/blog/hyderabad-deployment.jpg',
+    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/mini-on-footpath-reflow.jpg',
     imageAlt: 'ReFlow B-CRT toilet installation in Hyderabad',
     author: {
       name: 'ReFlow Projects',
@@ -2109,7 +2109,7 @@ Hyderabad's experience provides a roadmap. Other cities should follow.
     category: 'Technology',
     tags: ['IoT', 'Smart Cities', 'Digital Transformation', 'Predictive Maintenance', 'Data Analytics'],
     readingTime: '13 min read',
-    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/v1732432105/reflow-assets/blog/iot-sensors-dashboard.jpg',
+    featuredImage: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png',
     imageAlt: 'Dashboard showing real-time IoT monitoring of smart toilet systems',
     author: {
       name: 'ReFlow Technology',
