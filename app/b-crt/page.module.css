@@ -86,7 +86,48 @@
   margin-right: auto;
 }
 
-/* ... (Stats remain similar but adjusted spacing) ... */
+/* STATS SECTION */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stat {
+  background: #f5f5f7;
+  border-radius: 18px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.statValue {
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #1d1d1f 0%, #0071e3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.statLabel {
+  font-size: 17px;
+  font-weight: 600;
+  color: #6e6e73;
+  line-height: 1.4;
+}
 
 /* CTA */
 .cta {
@@ -169,6 +210,213 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* SECTION TITLE - Global */
+.sectionTitle {
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: #1d1d1f;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* PRODUCT IMAGE SECTION */
+.productImage {
+  background: #f5f5f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mainImage {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* BENEFITS SECTION */
+.benefits {
+  background: #f5f5f7;
+  padding: 100px 20px;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.benefitCard {
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefitCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.benefitTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.benefitText {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6e6e73;
+  margin: 0;
+}
+
+/* SPECS LIST */
+.specsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.specsList li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #1d1d1f;
+  padding: 12px 0;
+  padding-left: 28px;
+  position: relative;
+  border-bottom: 1px solid #e5e5e7;
+}
+
+.specsList li:last-child {
+  border-bottom: none;
+}
+
+.specsList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #34c759;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* GALLERY SECTION */
+.gallery {
+  background: #fff;
+  padding: 100px 20px;
+}
+
+.galleryIntro {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #6e6e73;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.galleryItem {
+  background: #f5f5f7;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galleryItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.galleryImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryCaption {
+  padding: 20px 24px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #1d1d1f;
+  font-weight: 500;
+  margin: 0;
+  background: #fff;
+}
+
+/* VIDEO SECTION */
+.video {
+  background: #1d1d1f;
+  padding: 100px 20px;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videoContent {
+  color: #fff;
+}
+
+.videoTitle {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #fff 0%, #a1a1a6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.videoText {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #a1a1a6;
+  margin: 0;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.videoEmbed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* CTA CONTENT */
+.ctaContent {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* THE CHALLENGE */
@@ -478,7 +726,7 @@
   .videoGrid,
   .standardGrid {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
   }
 
   .specsImage {
@@ -487,6 +735,14 @@
 
   .specsContent {
     order: 2;
+  }
+
+  .videoContent {
+    text-align: center;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -525,6 +781,23 @@
   .ctaButtonSecondary {
     width: 100%;
     text-align: center;
+  }
+
+  .videoGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .videoContent {
+    text-align: center;
+  }
+
+  .productImage {
+    padding: 40px 20px;
+  }
+
+  .mainImage {
+    border-radius: 16px;
   }
 }
 

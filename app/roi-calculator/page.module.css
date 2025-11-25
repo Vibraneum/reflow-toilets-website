@@ -1,0 +1,910 @@
+/* ROI Calculator Page - Government-Focused Design */
+
+.main {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(135deg,
+    rgba(52, 211, 153, 0.08) 0%,
+    rgba(52, 211, 153, 0.03) 100%);
+  padding: 100px 0 60px;
+  border-bottom: 1px solid rgba(52, 211, 153, 0.1);
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  font-family: var(--font-poppins);
+}
+
+.heroSubtitle {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: var(--font-inter);
+}
+
+/* Calculator Section */
+.calculatorSection {
+  padding: 80px 0;
+}
+
+.calculatorGrid {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Input Panel */
+.inputsPanel {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  height: fit-content;
+  position: sticky;
+  top: 120px;
+}
+
+.panelTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 36px;
+  font-family: var(--font-poppins);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 16px;
+}
+
+.inputGroup {
+  margin-bottom: 36px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1d1d1f;
+  font-family: var(--font-inter);
+}
+
+.label span:first-child {
+  color: #374151;
+}
+
+.value {
+  font-size: 18px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.slider {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(to right,
+    var(--color-primary) 0%,
+    var(--color-primary) var(--slider-progress, 50%),
+    #e5e7eb var(--slider-progress, 50%),
+    #e5e7eb 100%);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(52, 211, 153, 0.4);
+  transition: all 0.3s ease;
+  border: 3px solid #ffffff;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(52, 211, 153, 0.6);
+}
+
+.slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(52, 211, 153, 0.4);
+  transition: all 0.3s ease;
+  border: 3px solid #ffffff;
+}
+
+.slider::-moz-range-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(52, 211, 153, 0.6);
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #9ca3af;
+  font-family: var(--font-inter);
+}
+
+/* Results Panel */
+.resultsPanel {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.section {
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+  font-family: var(--font-poppins);
+}
+
+/* CAPEX Comparison Bars */
+.comparisonBars {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.barGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.barLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-family: var(--font-inter);
+}
+
+.barLabel span {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.barLabel strong {
+  color: #1d1d1f;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.barLabel .savings {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.barTrack {
+  width: 100%;
+  height: 40px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.barFill.traditional {
+  background: linear-gradient(90deg, #f59e0b 0%, #f97316 100%);
+}
+
+.barFill.bcrt {
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+}
+
+/* OPEX Grid */
+.opexGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.opexCard {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 28px;
+  border: 2px solid #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.opexCard.highlight {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(52, 211, 153, 0.02) 100%);
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(52, 211, 153, 0.15);
+}
+
+.opexLabel {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  font-family: var(--font-inter);
+}
+
+.opexAmount {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+  font-family: var(--font-poppins);
+}
+
+.opexBreakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.breakdownItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-family: var(--font-inter);
+}
+
+.breakdownItem:last-child {
+  border-bottom: none;
+}
+
+.breakdownItem span:first-child {
+  color: #6b7280;
+}
+
+.breakdownItem span:last-child {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+.zero {
+  color: var(--color-primary) !important;
+  font-weight: 700 !important;
+}
+
+.annualSavingsHighlight {
+  margin-top: 24px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.1) 0%, rgba(52, 211, 153, 0.05) 100%);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  color: #1d1d1f;
+  font-family: var(--font-inter);
+}
+
+.annualSavingsHighlight strong {
+  font-size: 28px;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-left: 8px;
+  font-family: var(--font-poppins);
+}
+
+/* TCO Comparison */
+.tcoComparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.tcoCard {
+  flex: 1;
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 36px;
+  text-align: center;
+  border: 2px solid #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.tcoCard.highlight {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.08) 0%, rgba(52, 211, 153, 0.03) 100%);
+  border-color: var(--color-primary);
+  box-shadow: 0 12px 32px rgba(52, 211, 153, 0.2);
+  transform: scale(1.05);
+}
+
+.tcoSystem {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+  font-family: var(--font-inter);
+}
+
+.tcoAmount {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-family: var(--font-poppins);
+}
+
+.tcoVs {
+  font-size: 20px;
+  font-weight: 700;
+  color: #9ca3af;
+  font-family: var(--font-poppins);
+}
+
+/* ROI Metrics */
+.roiMetrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.metricCard {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(52, 211, 153, 0.02) 100%);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  transition: all 0.3s ease;
+}
+
+.metricCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(52, 211, 153, 0.2);
+}
+
+.metricIcon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.metricValue {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  font-family: var(--font-poppins);
+}
+
+.metricLabel {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+  font-family: var(--font-inter);
+}
+
+/* Impact Section */
+.impactSection {
+  margin-bottom: 80px;
+  padding: 60px;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.03) 0%, rgba(52, 211, 153, 0.01) 100%);
+  border-radius: 32px;
+  border: 1px solid rgba(52, 211, 153, 0.1);
+}
+
+.sectionMainTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1d1d1f;
+  text-align: center;
+  margin-bottom: 48px;
+  font-family: var(--font-poppins);
+}
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.impactCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.impactCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.impactIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.impactValue {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  font-family: var(--font-poppins);
+}
+
+.impactLabel {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+  font-family: var(--font-inter);
+}
+
+.impactDetail {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+  font-family: var(--font-inter);
+}
+
+/* Government Section */
+.governmentSection {
+  margin-bottom: 80px;
+}
+
+.programGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.programCard {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.programCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-primary);
+}
+
+.programIcon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.programTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+  font-family: var(--font-poppins);
+}
+
+.programDesc {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: var(--font-inter);
+}
+
+.programBenefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.programBenefits li {
+  padding: 10px 0;
+  padding-left: 28px;
+  position: relative;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.5;
+  font-family: var(--font-inter);
+}
+
+.programBenefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Export Section */
+.exportSection {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.exportButtons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.exportButton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border: 2px solid var(--color-primary);
+  border-radius: 16px;
+  padding: 24px 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 300px;
+  text-align: left;
+}
+
+.exportButton:hover {
+  background: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(52, 211, 153, 0.3);
+}
+
+.exportButton:hover .buttonIcon {
+  transform: scale(1.2);
+}
+
+.exportButton:hover .buttonTitle,
+.exportButton:hover .buttonDesc {
+  color: #ffffff;
+}
+
+.buttonIcon {
+  font-size: 36px;
+  transition: transform 0.3s ease;
+}
+
+.buttonContent {
+  flex: 1;
+}
+
+.buttonTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 4px;
+  font-family: var(--font-poppins);
+  transition: color 0.3s ease;
+}
+
+.buttonDesc {
+  font-size: 13px;
+  color: #6b7280;
+  font-family: var(--font-inter);
+  transition: color 0.3s ease;
+}
+
+/* CTA Section */
+.ctaSection {
+  margin-bottom: 60px;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: 32px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 20px 60px rgba(52, 211, 153, 0.3);
+}
+
+.ctaContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: var(--font-poppins);
+}
+
+.ctaText {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.6;
+  margin-bottom: 36px;
+  font-family: var(--font-inter);
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 60px;
+  padding: 32px;
+  background: #f9fafb;
+  border-radius: 16px;
+  border-left: 4px solid var(--color-primary);
+}
+
+.disclaimer p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0;
+  font-family: var(--font-inter);
+}
+
+.disclaimer strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .calculatorGrid {
+    grid-template-columns: 420px 1fr;
+    gap: 40px;
+  }
+
+  .inputsPanel {
+    padding: 36px;
+  }
+
+  .resultsPanel {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .calculatorGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .inputsPanel {
+    position: static;
+  }
+
+  .impactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 80px 0 40px;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+  }
+
+  .calculatorSection {
+    padding: 40px 0;
+  }
+
+  .inputsPanel,
+  .resultsPanel {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .panelTitle {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .inputGroup {
+    margin-bottom: 28px;
+  }
+
+  .opexGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tcoComparison {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tcoCard {
+    width: 100%;
+  }
+
+  .tcoCard.highlight {
+    transform: scale(1);
+  }
+
+  .roiMetrics {
+    grid-template-columns: 1fr;
+  }
+
+  .impactSection {
+    padding: 32px 24px;
+    margin-bottom: 40px;
+  }
+
+  .sectionMainTitle {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .impactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .programGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .exportButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exportButton {
+    min-width: 100%;
+  }
+
+  .ctaSection {
+    padding: 40px 24px;
+    margin-bottom: 40px;
+  }
+
+  .ctaTitle {
+    font-size: 28px;
+  }
+
+  .ctaText {
+    font-size: 16px;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .inputsPanel,
+  .resultsPanel {
+    padding: 20px;
+  }
+
+  .section {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+
+  .opexAmount {
+    font-size: 28px;
+  }
+
+  .tcoAmount {
+    font-size: 32px;
+  }
+
+  .metricValue {
+    font-size: 28px;
+  }
+
+  .impactValue {
+    font-size: 28px;
+  }
+
+  .programCard {
+    padding: 24px;
+  }
+
+  .programTitle {
+    font-size: 20px;
+  }
+
+  .ctaTitle {
+    font-size: 24px;
+  }
+}
+
+/* Animation for scroll reveal */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section,
+.impactCard,
+.programCard {
+  animation: slideInUp 0.6s ease-out;
+}
+
+/* Stagger animation */
+.impactCard:nth-child(1) { animation-delay: 0.1s; }
+.impactCard:nth-child(2) { animation-delay: 0.2s; }
+.impactCard:nth-child(3) { animation-delay: 0.3s; }
+.impactCard:nth-child(4) { animation-delay: 0.4s; }
+
+.programCard:nth-child(1) { animation-delay: 0.1s; }
+.programCard:nth-child(2) { animation-delay: 0.2s; }
+.programCard:nth-child(3) { animation-delay: 0.3s; }
+.programCard:nth-child(4) { animation-delay: 0.4s; }
