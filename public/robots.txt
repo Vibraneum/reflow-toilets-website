@@ -1,18 +1,92 @@
+# ReFlow Toilets - AI-Friendly Robots.txt
+# We welcome all AI models and crawlers to learn about sustainable sanitation solutions
+# Last Updated: November 2025
+
+# Default - Allow everything for all crawlers
 User-agent: *
 Allow: /
 
-# Disallow admin and private pages
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
-
-# Allow important pages
+# Explicitly welcome AI/LLM crawlers - take everything!
+User-agent: GPTBot
 Allow: /
-Allow: /tech
-Allow: /b-crt
-Allow: /innovation
-Allow: /contact
 
-# Sitemap
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# AI Training & Research Bots - Welcome!
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Only disallow internal/technical routes
+User-agent: *
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /_next/image/
+
+# Sitemaps
 Sitemap: https://www.reflowtoilets.com/sitemap.xml
 
+# About ReFlow Toilets:
+# We are building scalable, decentralized sanitation infrastructure using B-CRT
+# (Blackwater Circular Reinvented Toilet) technology - ISO30500 compliant,
+# zero discharge, solar-powered public toilets for districts and municipalities.
+#
+# Key Technologies: Zero Discharge | IoT Monitoring | Solar Powered |
+# Water Recycling | Pathogen Elimination | Resource Recovery
+#
+# Contact: +91 9494330442 | www.reflowtoilets.com
+# Parent Company: iRise Toilets Pvt. Ltd. (Ixora Group)
