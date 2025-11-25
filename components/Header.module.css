@@ -52,7 +52,11 @@
 .navMenu {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 8px;
+}
+
+.navDropdown {
+  position: relative;
 }
 
 .navLink {
@@ -64,11 +68,29 @@
   transition: color 0.2s ease;
   position: relative;
   opacity: 0.8;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .navLink:hover {
   color: #0071e3;
   opacity: 1;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.navLinkDropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dropdownArrow {
+  transition: transform 0.2s ease;
+}
+
+.navDropdown:hover .dropdownArrow {
+  transform: rotate(180deg);
 }
 
 .navEnd {
@@ -95,6 +117,95 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Mega Menu Styles */
+.megaBackdrop {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 998;
+  animation: fadeIn 0.2s ease;
+}
+
+.megaMenu {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  min-width: 520px;
+  z-index: 1001;
+  animation: slideDown 0.2s ease;
+}
+
+.megaMenuInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.megaColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.megaColumnTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #86868b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0 12px;
+  margin-bottom: 8px;
+}
+
+.megaLink {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.megaLink:hover {
+  background: #f5f5f7;
+}
+
+.megaLinkIcon {
+  font-size: 24px;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.megaLinkTitle {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 2px;
+}
+
+.megaLinkDesc {
+  display: block;
+  font-size: 13px;
+  color: #86868b;
+  line-height: 1.4;
+}
+
+/* Mobile Styles */
 .backdrop {
   position: fixed;
   top: 0;
@@ -160,8 +271,33 @@
   background: rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 900px) {
+.mobileSection {
+  display: none;
+}
 
+.mobileSectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #86868b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 1024px) {
+  .megaMenu {
+    min-width: 420px;
+    padding: 20px;
+  }
+
+  .megaMenuInner {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 900px) {
   .navMenu,
   .navEnd {
     display: none;
@@ -181,7 +317,7 @@
     bottom: 0;
     background: #ffffff;
     padding: 80px 24px 40px;
-    gap: 24px;
+    gap: 0;
     z-index: 999;
     overflow-y: auto;
   }
@@ -190,17 +326,37 @@
     display: flex;
   }
 
+  .navMenuOpen .navDropdown {
+    display: none;
+  }
+
+  .navMenuOpen .mobileSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navMenuOpen .mobileSection:first-of-type .mobileSectionTitle {
+    border-top: none;
+    padding-top: 0;
+  }
+
   .navMenuOpen .navLink {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
     opacity: 1;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     width: 100%;
+    border-radius: 0;
+  }
+
+  .navMenuOpen .navLink:hover {
+    background: transparent;
+    color: #0071e3;
   }
 
   .navMenuOpen .bookCallButton {
-    margin-top: 20px;
+    margin-top: 32px;
     width: 100%;
     text-align: center;
     padding: 16px;
@@ -212,8 +368,18 @@
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
   }
 }

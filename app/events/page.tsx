@@ -86,159 +86,141 @@ export default function EventsPage() {
           </ScrollReveal>
 
           <div className={styles.timeline}>
-            {/* 2011 - Gates Foundation Award */}
+            {/* 2018 - LooCafe Founded */}
             <ScrollReveal delay={100}>
               <div className={styles.timelineItem}>
-                <div className={styles.timelineYear}>2011</div>
+                <div className={styles.timelineYear}>2018</div>
                 <div className={styles.timelineContent}>
-                  <div className={styles.timelineIcon}>🏆</div>
-                  <h3 className={styles.timelineTitle}>Gates Foundation Award</h3>
+                  <div className={styles.timelineIcon}>🚀</div>
+                  <h3 className={styles.timelineTitle}>LooCafe Founded by Abhishek Nath</h3>
                   <p className={styles.timelineDescription}>
-                    ReFlow technology recognized by the Bill & Melinda Gates Foundation for innovation in decentralized sanitation. Received grant funding for prototype development and field testing.
+                    LooCafe launches in Hyderabad with a revolutionary public toilet model built from recycled shipping containers. Partnership with GHMC under PPP model begins, serving transit hubs with free, clean, and sustainable washrooms.
                   </p>
                   <div className={styles.timelineMeta}>
-                    <span className={styles.timelineLocation}>Seattle, Washington, USA</span>
+                    <span className={styles.timelineLocation}>Hyderabad, Telangana</span>
+                    <span className={styles.timelineCategory}>Company Launch</span>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 2019 - CII Innovation Award */}
+            <ScrollReveal delay={150}>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineYear}>2019</div>
+                <div className={styles.timelineContent}>
+                  <div className={styles.timelineIcon}>🏆</div>
+                  <h3 className={styles.timelineTitle}>CII Most Innovative Company Award</h3>
+                  <p className={styles.timelineDescription}>
+                    LooCafe 1.0 wins CII Most Innovative Company Award for revolutionizing public sanitation in India. Recognition for IoT-based hygiene monitoring, RFID janitor tracking, and UV-coated floors with misting exhaust systems.
+                  </p>
+                  <div className={styles.timelineMeta}>
+                    <span className={styles.timelineLocation}>Confederation of Indian Industry</span>
                     <span className={styles.timelineCategory}>Award Ceremony</span>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* 2013 - Chinese Academy Partnership */}
-            <ScrollReveal delay={150}>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineYear}>2013</div>
-                <div className={styles.timelineContent}>
-                  <div className={styles.timelineIcon}>🤝</div>
-                  <h3 className={styles.timelineTitle}>Chinese Academy of Engineering Partnership</h3>
-                  <p className={styles.timelineDescription}>
-                    Strategic partnership established with Chinese Academy of Engineering for technology transfer and collaborative research on bio-circular resource technologies for urban sanitation.
-                  </p>
-                  <div className={styles.timelineMeta}>
-                    <span className={styles.timelineLocation}>Beijing, China</span>
-                    <span className={styles.timelineCategory}>Partnership Signing</span>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 2015 - Hyderabad Pilot Launch */}
+            {/* 2020 - British Council & Design Week */}
             <ScrollReveal delay={200}>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineYear}>2015</div>
-                <div className={styles.timelineContent}>
-                  <div className={styles.timelineIcon}>🚀</div>
-                  <h3 className={styles.timelineTitle}>Hyderabad Pilot Launch</h3>
-                  <p className={styles.timelineDescription}>
-                    First commercial deployment at 12 pilot locations across Hyderabad. Integration with LooCafe network begins, testing real-world performance in high-traffic urban environments.
-                  </p>
-                  <div className={styles.timelineMeta}>
-                    <span className={styles.timelineLocation}>Hyderabad, Telangana, India</span>
-                    <span className={styles.timelineCategory}>Pilot Deployment</span>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 2018 - Scale-Up Phase */}
-            <ScrollReveal delay={250}>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineYear}>2018</div>
-                <div className={styles.timelineContent}>
-                  <div className={styles.timelineIcon}>📈</div>
-                  <h3 className={styles.timelineTitle}>270+ Unit Deployment with Ixora Group</h3>
-                  <p className={styles.timelineDescription}>
-                    Partnership with Ixora Corporate Services for large-scale deployment. 270+ ReFlow units installed across LooCafe network in Hyderabad, serving millions of users annually with 24/7 operations.
-                  </p>
-                  <div className={styles.timelineMeta}>
-                    <span className={styles.timelineLocation}>Hyderabad & Surrounding Districts</span>
-                    <span className={styles.timelineCategory}>Mass Deployment</span>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 2020 - Government Inspections */}
-            <ScrollReveal delay={300}>
               <div className={styles.timelineItem}>
                 <div className={styles.timelineYear}>2020</div>
                 <div className={styles.timelineContent}>
-                  <div className={styles.timelineIcon}>🏛️</div>
-                  <h3 className={styles.timelineTitle}>Government Inspections & Approvals</h3>
+                  <div className={styles.timelineIcon}>🎨</div>
+                  <h3 className={styles.timelineTitle}>Hyderabad Design Week Partnership</h3>
                   <p className={styles.timelineDescription}>
-                    Comprehensive technical inspections by Telangana State Urban Development Department and Ministry of Housing & Urban Affairs. Units certified for compliance with ISO30500 standards.
+                    LooCafe partners with British Council and Hyderabad Design Week to showcase innovative sanitation design. Featured in WASH Book of Innovations for bringing technology-driven reforms to public toilet infrastructure.
                   </p>
                   <div className={styles.timelineMeta}>
                     <span className={styles.timelineLocation}>Hyderabad, Telangana</span>
-                    <span className={styles.timelineCategory}>Certification</span>
+                    <span className={styles.timelineCategory}>Design Exhibition</span>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* 2022 - Navi Mumbai Deployment */}
-            <ScrollReveal delay={350}>
+            {/* 2021 - Scale Expansion */}
+            <ScrollReveal delay={250}>
               <div className={styles.timelineItem}>
-                <div className={styles.timelineYear}>2022</div>
+                <div className={styles.timelineYear}>2021</div>
                 <div className={styles.timelineContent}>
-                  <div className={styles.timelineIcon}>🌊</div>
-                  <h3 className={styles.timelineTitle}>Navi Mumbai Expansion</h3>
+                  <div className={styles.timelineIcon}>📈</div>
+                  <h3 className={styles.timelineTitle}>270+ Units Across Hyderabad Network</h3>
                   <p className={styles.timelineDescription}>
-                    First deployment outside Telangana. 25 units installed across Navi Mumbai as part of Smart Cities Mission, demonstrating scalability across different municipal corporations.
+                    LooCafe network expands to 270+ locations across Hyderabad's bus stations, metro stops, and railway platforms. Integration of live tracking sensors for hygiene, water levels, and automated housekeeper alerts.
                   </p>
                   <div className={styles.timelineMeta}>
-                    <span className={styles.timelineLocation}>Navi Mumbai, Maharashtra</span>
+                    <span className={styles.timelineLocation}>Hyderabad Metro Region</span>
+                    <span className={styles.timelineCategory}>Network Expansion</span>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 2023 - Multi-State Expansion */}
+            <ScrollReveal delay={300}>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineYear}>2023</div>
+                <div className={styles.timelineContent}>
+                  <div className={styles.timelineIcon}>🗺️</div>
+                  <h3 className={styles.timelineTitle}>Expansion to Jammu & Kashmir, Tamil Nadu</h3>
+                  <p className={styles.timelineDescription}>
+                    LooCafe expands beyond Telangana to Jammu & Kashmir and Tamil Nadu. Annual revenue reaches ₹21.5 Cr with 533 employees. Target set for 1,000-2,000 units with G2RT technology integration.
+                  </p>
+                  <div className={styles.timelineMeta}>
+                    <span className={styles.timelineLocation}>Multiple States, India</span>
                     <span className={styles.timelineCategory}>Regional Expansion</span>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* 2023 - Industry Conferences */}
-            <ScrollReveal delay={400}>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineYear}>2023</div>
-                <div className={styles.timelineContent}>
-                  <div className={styles.timelineIcon}>🎤</div>
-                  <h3 className={styles.timelineTitle}>WASH Summit & Sanitation Conference</h3>
-                  <p className={styles.timelineDescription}>
-                    Presented at international WASH (Water, Sanitation, Hygiene) conferences in New Delhi and Singapore. Showcased AI-powered management platform and 5-year operational data from Hyderabad deployment.
-                  </p>
-                  <div className={styles.timelineMeta}>
-                    <span className={styles.timelineLocation}>New Delhi & Singapore</span>
-                    <span className={styles.timelineCategory}>Conference Presentations</span>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 2024 - AI Integration */}
-            <ScrollReveal delay={450}>
+            {/* 2024 - Gates Foundation G2RT Partnership */}
+            <ScrollReveal delay={350}>
               <div className={styles.timelineItem}>
                 <div className={styles.timelineYear}>2024</div>
                 <div className={styles.timelineContent}>
-                  <div className={styles.timelineIcon}>🤖</div>
-                  <h3 className={styles.timelineTitle}>Google Gemini AI Platform Launch</h3>
+                  <div className={styles.timelineIcon}>🤝</div>
+                  <h3 className={styles.timelineTitle}>Gates Foundation G2RT Partnership</h3>
                   <p className={styles.timelineDescription}>
-                    Integration of Google Gemini AI for automated image analysis, damage detection, and predictive maintenance. Platform now manages 270+ units with 60% reduction in supervisory staff requirements.
+                    LooCafe becomes the Gates Foundation's exclusive partner for public toilets in India. First G2RT (Generation 2 Reinvented Toilet) deployment in scalable public toilet setting announced for 2025. LIXIL named commercial license partner.
                   </p>
                   <div className={styles.timelineMeta}>
-                    <span className={styles.timelineLocation}>Platform-wide Deployment</span>
-                    <span className={styles.timelineCategory}>Technology Launch</span>
+                    <span className={styles.timelineLocation}>Bill & Melinda Gates Foundation</span>
+                    <span className={styles.timelineCategory}>Strategic Partnership</span>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* 2025 - Current */}
-            <ScrollReveal delay={500}>
+            {/* September 2024 - LooCafe 3.0 Announcement */}
+            <ScrollReveal delay={400}>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineYear}>Sep 2024</div>
+                <div className={styles.timelineContent}>
+                  <div className={styles.timelineIcon}>🚀</div>
+                  <h3 className={styles.timelineTitle}>LooCafe 3.0 Announced with GHMC & ASCI</h3>
+                  <p className={styles.timelineDescription}>
+                    GHMC announces LooCafe 3.0 in collaboration with ASCI (Administrative Staff College of India) and Bill & Melinda Gates Foundation. This "one-of-its-kind" model treats wastewater on-site — the foundation for ReFlow B-CRT technology.
+                  </p>
+                  <div className={styles.timelineMeta}>
+                    <span className={styles.timelineLocation}>Hyderabad, Telangana</span>
+                    <span className={styles.timelineCategory}>Product Launch</span>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 2025 - ReFlow District Expansion */}
+            <ScrollReveal delay={450}>
               <div className={styles.timelineItem}>
                 <div className={styles.timelineYear}>2025</div>
                 <div className={styles.timelineContent}>
                   <div className={styles.timelineIcon}>🎯</div>
-                  <h3 className={styles.timelineTitle}>District-Wide Expansion Strategy</h3>
+                  <h3 className={styles.timelineTitle}>ReFlow B-CRT District Deployment</h3>
                   <p className={styles.timelineDescription}>
-                    Active discussions with 12 municipal corporations across India for district-wide deployments. Target: 1,000+ units deployed by 2026 under Swachh Bharat Mission 2.0.
+                    ReFlow Toilets launches as district-scale B-CRT technology brand. Active discussions with municipal corporations for ISO 30500 certified zero-discharge deployments under Swachh Bharat Mission 2.0 and AMRUT 2.0.
                   </p>
                   <div className={styles.timelineMeta}>
                     <span className={styles.timelineLocation}>Pan-India Expansion</span>
@@ -387,15 +369,15 @@ export default function EventsPage() {
             <ScrollReveal delay={100}>
               <div className={styles.mediaCard}>
                 <div className={styles.mediaIcon}>📰</div>
-                <h3 className={styles.mediaTitle}>Gates Foundation Announces Sanitation Award Winners</h3>
+                <h3 className={styles.mediaTitle}>LooCafé Makes for a Healthy Alternate to the Stinking Public Toilets</h3>
                 <p className={styles.mediaExcerpt}>
-                  ReFlow technology among 16 global recipients of grants for innovative decentralized sanitation solutions...
+                  Only LooCafé and Urban Loo maintain their toilets well in Hyderabad. LooCafé does not charge users as it depends on cafe revenue...
                 </p>
                 <div className={styles.mediaMeta}>
-                  <span className={styles.mediaSource}>Bill & Melinda Gates Foundation</span>
-                  <span className={styles.mediaDate}>August 2011</span>
+                  <span className={styles.mediaSource}>Deccan Chronicle</span>
+                  <span className={styles.mediaDate}>2024</span>
                 </div>
-                <a href="https://www.gatesfoundation.org" target="_blank" rel="noopener noreferrer" className={styles.mediaLink}>
+                <a href="https://www.deccanchronicle.com/southern-states/telangana/loocaf-makes-for-a-healthy-alternate-to-the-stinking-public-toilets-in-city-1824707" target="_blank" rel="noopener noreferrer" className={styles.mediaLink}>
                   Read More →
                 </a>
               </div>
@@ -404,15 +386,15 @@ export default function EventsPage() {
             <ScrollReveal delay={150}>
               <div className={styles.mediaCard}>
                 <div className={styles.mediaIcon}>📺</div>
-                <h3 className={styles.mediaTitle}>Smart Cities Mission: Navi Mumbai Adopts AI-Powered Toilets</h3>
+                <h3 className={styles.mediaTitle}>Hyderabad Startup Loocafe Abhishek Nath GHMC Public Toilet</h3>
                 <p className={styles.mediaExcerpt}>
-                  Municipal corporation deploys IoT-enabled sanitation infrastructure with real-time monitoring and predictive maintenance...
+                  How Abhishek Nath is changing India's public toilet scene with IoT-based washrooms, sensors, UV floors, and RFID janitor tracking...
                 </p>
                 <div className={styles.mediaMeta}>
-                  <span className={styles.mediaSource}>The Times of India</span>
-                  <span className={styles.mediaDate}>March 2022</span>
+                  <span className={styles.mediaSource}>The Better India</span>
+                  <span className={styles.mediaDate}>2021</span>
                 </div>
-                <a href="#" className={styles.mediaLink}>
+                <a href="https://thebetterindia.com/244124/hyderabad-startup-loocafe-ixora-fm-abhishek-nath-ghmc-public-toilet-innovation-him16/" target="_blank" rel="noopener noreferrer" className={styles.mediaLink}>
                   Read More →
                 </a>
               </div>
@@ -421,16 +403,16 @@ export default function EventsPage() {
             <ScrollReveal delay={200}>
               <div className={styles.mediaCard}>
                 <div className={styles.mediaIcon}>🎙️</div>
-                <h3 className={styles.mediaTitle}>Interview: Revolutionizing Urban Sanitation with B-CRT</h3>
+                <h3 className={styles.mediaTitle}>Loo Cafés Aim to Change Perception of Indian Public Toilets</h3>
                 <p className={styles.mediaExcerpt}>
-                  How bio-circular resource technology is transforming public toilet infrastructure in India's tier-1 cities...
+                  In Hyderabad, a LooCafe challenges the poor perception of Indian public toilets with hi-tech technologies and sustainability...
                 </p>
                 <div className={styles.mediaMeta}>
-                  <span className={styles.mediaSource}>WASH Matters Podcast</span>
-                  <span className={styles.mediaDate}>September 2023</span>
+                  <span className={styles.mediaSource}>Scroll.in</span>
+                  <span className={styles.mediaDate}>2019</span>
                 </div>
-                <a href="#" className={styles.mediaLink}>
-                  Listen Now →
+                <a href="https://scroll.in/magazine/894556/in-hyderabad-a-loo-cafe-challenges-the-poor-perception-of-indian-public-toilets" target="_blank" rel="noopener noreferrer" className={styles.mediaLink}>
+                  Read More →
                 </a>
               </div>
             </ScrollReveal>
@@ -438,16 +420,16 @@ export default function EventsPage() {
             <ScrollReveal delay={250}>
               <div className={styles.mediaCard}>
                 <div className={styles.mediaIcon}>📄</div>
-                <h3 className={styles.mediaTitle}>Case Study: 270+ Units Managed by AI in Hyderabad</h3>
+                <h3 className={styles.mediaTitle}>Driving Change: The Impactful Tale of LooCafe in India</h3>
                 <p className={styles.mediaExcerpt}>
-                  White paper examining 5-year operational data from LooCafe network, demonstrating 60% cost reduction through automation...
+                  LooCafe founder shares how they are changing India's public toilet scene under Swachh Bharat, Skill India, and women empowerment...
                 </p>
                 <div className={styles.mediaMeta}>
-                  <span className={styles.mediaSource}>Asian Development Bank</span>
-                  <span className={styles.mediaDate}>January 2024</span>
+                  <span className={styles.mediaSource}>The CSR Journal</span>
+                  <span className={styles.mediaDate}>2024</span>
                 </div>
-                <a href="#" className={styles.mediaLink}>
-                  Download PDF →
+                <a href="https://thecsrjournal.in/loocafe-founder-abhishek-nath-shares-how-they-are-changing-indias-public-toilet-scene/" target="_blank" rel="noopener noreferrer" className={styles.mediaLink}>
+                  Read More →
                 </a>
               </div>
             </ScrollReveal>
