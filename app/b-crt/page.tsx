@@ -161,6 +161,87 @@ export default function BCRTPage() {
         </div>
       </section>
 
+      {/* Deployment Types */}
+      <section className={styles.deploymentTypes}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>Built for every environment.</h2>
+          <p className={styles.benefitsIntro}>
+            Two container sizes. Multiple deployment configurations. Customized for your specific needs.
+          </p>
+
+          <div className={styles.deploymentGrid}>
+            <div className={styles.deploymentCard}>
+              <div className={styles.deploymentImageWrapper}>
+                <Image
+                  src="/images/bcrt/gallery/tworks-20ft-exterior.jpg"
+                  alt="20-foot B-CRT compact unit"
+                  width={400}
+                  height={300}
+                  className={styles.deploymentImage}
+                />
+              </div>
+              <div className={styles.deploymentContent}>
+                <h3 className={styles.deploymentTitle}>20-foot Compact</h3>
+                <p className={styles.deploymentDesc}>
+                  Space-constrained locations, heritage sites, narrow urban plots. Full treatment capability in half the footprint.
+                </p>
+                <ul className={styles.deploymentFeatures}>
+                  <li>3 cubicles</li>
+                  <li>150+ users daily</li>
+                  <li>Ideal for tight spaces</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className={styles.deploymentCard}>
+              <div className={styles.deploymentImageWrapper}>
+                <Image
+                  src="/images/bcrt/gallery/school-40ft-exterior.jpg"
+                  alt="40-foot B-CRT full unit"
+                  width={400}
+                  height={300}
+                  className={styles.deploymentImage}
+                />
+              </div>
+              <div className={styles.deploymentContent}>
+                <h3 className={styles.deploymentTitle}>40-foot Standard</h3>
+                <p className={styles.deploymentDesc}>
+                  High-traffic public areas, schools, parks, transit hubs. Maximum capacity with full amenities.
+                </p>
+                <ul className={styles.deploymentFeatures}>
+                  <li>6 cubicles</li>
+                  <li>300+ users daily</li>
+                  <li>Commercial space included</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className={styles.deploymentCard}>
+              <div className={styles.deploymentImageWrapper}>
+                <Image
+                  src="/images/bcrt/gallery/loocafe-40ft-interior.jpg"
+                  alt="Accessible cubicle interior"
+                  width={400}
+                  height={300}
+                  className={styles.deploymentImage}
+                />
+              </div>
+              <div className={styles.deploymentContent}>
+                <h3 className={styles.deploymentTitle}>Universal Access</h3>
+                <p className={styles.deploymentDesc}>
+                  Every cubicle designed for accessibility. Safety grab bars, adequate space, and barrier-free entry.
+                </p>
+                <ul className={styles.deploymentFeatures}>
+                  <li>ADA-compliant design</li>
+                  <li>Safety grab bars</li>
+                  <li>Individual ventilation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* System Architecture */}
       <section className={styles.architecture}>
         <div className={styles.container}>
@@ -534,77 +615,77 @@ export default function BCRTPage() {
         </div>
       </section>
 
-      {/* Technical Drawings Gallery */}
+      {/* B-CRT Photo Gallery */}
       <section className={styles.gallery}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Engineering documentation.</h2>
-          <p className={styles.galleryIntro}>Complete technical drawings, schematics, and system specifications.</p>
+          <h2 className={styles.sectionTitle}>See B-CRT up close.</h2>
+          <p className={styles.galleryIntro}>Real photos from our manufacturing facility and deployment sites.</p>
 
           <div className={styles.galleryGrid}>
             <div className={styles.galleryItem}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png"
-                alt="40ft container floor plan with cubicle layout"
+                src="/images/bcrt/gallery/tworks-20ft-exterior.jpg"
+                alt="20-foot B-CRT container exterior at T-Works facility"
                 width={600}
                 height={400}
                 className={styles.galleryImage}
               />
-              <p className={styles.galleryCaption}>40ft Container Floor Plan - 6 ADA-Compliant Cubicles + Treatment System</p>
+              <p className={styles.galleryCaption}>20-foot B-CRT - Compact variant for space-constrained locations</p>
             </div>
 
             <div className={styles.galleryItem}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png"
-                alt="Treatment equipment installation diagram"
+                src="/images/bcrt/gallery/school-40ft-exterior.jpg"
+                alt="40-foot B-CRT container exterior showing multiple cubicles"
                 width={600}
                 height={400}
                 className={styles.galleryImage}
               />
-              <p className={styles.galleryCaption}>Treatment Equipment Installation - 8-Stage System Configuration</p>
+              <p className={styles.galleryCaption}>40-foot B-CRT - Full-size unit with 6 accessible cubicles</p>
             </div>
 
             <div className={styles.galleryItem}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png"
-                alt="8-stage treatment process flow diagram"
+                src="/images/bcrt/gallery/loocafe-40ft-interior.jpg"
+                alt="Accessible toilet cubicle interior with grab bars and sink"
                 width={600}
                 height={400}
                 className={styles.galleryImage}
               />
-              <p className={styles.galleryCaption}>8-Stage Treatment Process Flow - Blackwater to ISO30500 Reusable Water</p>
+              <p className={styles.galleryCaption}>Accessible Cubicle Interior - Universal design with safety grab bars</p>
             </div>
 
             <div className={styles.galleryItem}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png"
-                alt="Engineering drawings with complete dimensions"
+                src="/images/bcrt/gallery/school-40ft-interior.jpg"
+                alt="40-foot B-CRT showing cubicle doors and ventilation"
                 width={600}
                 height={400}
                 className={styles.galleryImage}
               />
-              <p className={styles.galleryCaption}>Engineering Drawings - All Views with ISO-Standard Dimensions</p>
+              <p className={styles.galleryCaption}>Cubicle Access - Individual ventilation and entry doors</p>
             </div>
 
             <div className={styles.galleryItem}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png"
-                alt="Equipment configuration and specifications"
+                src="/images/bcrt/gallery/tworks-20ft-treatment.jpg"
+                alt="Treatment room with stainless steel tanks and piping"
                 width={600}
                 height={400}
                 className={styles.galleryImage}
               />
-              <p className={styles.galleryCaption}>Equipment Configuration - Solar, Battery, Treatment System Specifications</p>
+              <p className={styles.galleryCaption}>Treatment Room - Stainless steel tanks and control systems</p>
             </div>
 
             <div className={styles.galleryItem}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png"
-                alt="Water quality standards and compliance data"
+                src="/images/bcrt/gallery/loocafe-40ft-treatment.jpg"
+                alt="8-stage treatment system piping and equipment"
                 width={600}
                 height={400}
                 className={styles.galleryImage}
               />
-              <p className={styles.galleryCaption}>Water Quality Standards - ISO30500 Compliance Verification Data</p>
+              <p className={styles.galleryCaption}>8-Stage Treatment System - Complete water recycling infrastructure</p>
             </div>
           </div>
         </div>
