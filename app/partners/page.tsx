@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './page.module.css'
 import ScrollReveal from '@/components/ScrollReveal'
 import LuxuryCard from '@/components/LuxuryCard'
@@ -164,7 +165,15 @@ export default function PartnersPage() {
 
             <LuxuryCard variant="elevated">
               <div className={styles.opportunityCard}>
-                <div className={styles.opportunityIcon}>☕</div>
+                <div className={styles.opportunityIcon}>
+                  <Image
+                    src="/images/logos/loocafe-logo.png"
+                    alt="LooCafe Logo"
+                    width={80}
+                    height={80}
+                    style={{ objectFit: 'contain' }}
+                  />
+                </div>
                 <h3>LooCafe</h3>
                 <p style={{ color: '#0f766e', fontWeight: 600, marginBottom: '16px' }}>Scalable Business Model</p>
                 <ul style={{ textAlign: 'left', fontSize: '14px', lineHeight: '1.8', color: '#666', listStyle: 'none', padding: 0 }}>
@@ -376,7 +385,15 @@ export default function PartnersPage() {
 
           <LuxuryCard variant="elevated">
             <div style={{ padding: '40px', textAlign: 'center' }}>
-              <div style={{ fontSize: '64px', marginBottom: '24px' }}>☕</div>
+              <div style={{ marginBottom: '24px' }}>
+                <Image
+                  src="/images/logos/loocafe-logo.png"
+                  alt="LooCafe Logo"
+                  width={120}
+                  height={120}
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
               <h3 style={{ fontSize: '28px', fontWeight: 700, marginBottom: '16px', color: '#1d1d1f' }}>
                 LooCafe - Scalable Business Model
               </h3>

@@ -143,6 +143,94 @@ export default function Home() {
       <main>
         <Hero />
         <Partners />
+
+        {/* Government Gazette Compliance Section */}
+        <section style={{ background: '#f5f5f7', padding: '80px 20px', textAlign: 'center' }}>
+          <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+            <div style={{
+              display: 'inline-block',
+              background: 'rgba(52, 199, 89, 0.1)',
+              color: '#34c759',
+              padding: '8px 16px',
+              borderRadius: '980px',
+              fontSize: '13px',
+              fontWeight: '700',
+              marginBottom: '24px',
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em'
+            }}>
+              Government Approved
+            </div>
+            <h2 style={{
+              fontSize: 'clamp(32px, 5vw, 48px)',
+              fontWeight: '700',
+              marginBottom: '24px',
+              color: '#1d1d1f',
+              lineHeight: '1.1'
+            }}>
+              Gazette Compliant Infrastructure
+            </h2>
+            <p style={{
+              fontSize: '21px',
+              lineHeight: '1.5',
+              color: '#86868b',
+              marginBottom: '40px',
+              maxWidth: '800px',
+              marginLeft: 'auto',
+              marginRight: 'auto'
+            }}>
+              ReFlow Toilets operates 50 locations in full compliance with the <strong>Government of India's Liquid Waste Management Rules 2024</strong> (Gazette CG DL-E-08102024-257748).
+            </p>
+
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              gap: '24px',
+              marginTop: '40px'
+            }}>
+              <div style={{
+                background: '#fff',
+                padding: '24px',
+                borderRadius: '16px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+                flex: '1 1 200px',
+                maxWidth: '300px'
+              }}>
+                <div style={{ fontSize: '32px', marginBottom: '12px' }}>📜</div>
+                <h4 style={{ fontSize: '17px', fontWeight: '600', marginBottom: '8px' }}>Gazette Compliant</h4>
+                <p style={{ fontSize: '14px', color: '#86868b' }}>CG DL-E-08102024-257748</p>
+              </div>
+
+              <div style={{
+                background: '#fff',
+                padding: '24px',
+                borderRadius: '16px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+                flex: '1 1 200px',
+                maxWidth: '300px'
+              }}>
+                <div style={{ fontSize: '32px', marginBottom: '12px' }}>🏛️</div>
+                <h4 style={{ fontSize: '17px', fontWeight: '600', marginBottom: '8px' }}>50+ Locations</h4>
+                <p style={{ fontSize: '14px', color: '#86868b' }}>Government Approved Sites</p>
+              </div>
+
+              <div style={{
+                background: '#fff',
+                padding: '24px',
+                borderRadius: '16px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+                flex: '1 1 200px',
+                maxWidth: '300px'
+              }}>
+                <div style={{ fontSize: '32px', marginBottom: '12px' }}>🤝</div>
+                <h4 style={{ fontSize: '17px', fontWeight: '600', marginBottom: '8px' }}>Telangana Rising</h4>
+                <p style={{ fontSize: '14px', color: '#86868b' }}>Official Partner</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <TrustBadges />
         <DesignInnovation />
         <KeyFeatures />

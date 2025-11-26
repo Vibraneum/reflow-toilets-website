@@ -39,27 +39,32 @@ export default function DesignPage() {
         </div>
       </section>
 
-      {/* Design Philosophy */}
+      {/* Design Excellence - 4 Pillars */}
       <section className={styles.philosophy}>
         <div className={styles.philosophyContainer}>
           <div className={styles.philosophyText}>
             <span className={styles.label}>Our Approach</span>
-            <h2 className={styles.philosophyTitle}>Design Philosophy</h2>
+            <h2 className={styles.philosophyTitle}>The Four Pillars of ReFlow Excellence</h2>
             <div className={styles.philosophyPrinciples}>
               <div className={styles.principle}>
                 <div className={styles.principleNumber}>01</div>
-                <h3>Human-Centered</h3>
-                <p>Every design decision prioritizes dignity, accessibility, and user experience. Public infrastructure should elevate, not diminish.</p>
+                <h3>Security</h3>
+                <p>On-site owner & trained staff always present. Continuous supervision deters vandalism and misuse. Enhanced women's safety with accountability.</p>
               </div>
               <div className={styles.principle}>
                 <div className={styles.principleNumber}>02</div>
-                <h3>Context-Sensitive</h3>
-                <p>From Dal Lake to urban footpaths, each unit adapts to its environment while maintaining design integrity.</p>
+                <h3>Sanitation</h3>
+                <p>IoT-enabled sensors monitor cleanliness & consumables in real time. Scheduled maintenance alerts ensure consistently hygienic facilities.</p>
               </div>
               <div className={styles.principle}>
                 <div className={styles.principleNumber}>03</div>
-                <h3>Circular by Design</h3>
-                <p>Materials, waste, water, energy—everything flows in closed loops. Zero discharge isn't a feature; it's the foundation.</p>
+                <h3>Accessibility</h3>
+                <p>Inclusive designs meet ReFlow standards for wheelchair users and the visually impaired. Dedicated "women-only" and LGBTQ+-friendly units available.</p>
+              </div>
+              <div className={styles.principle}>
+                <div className={styles.principleNumber}>04</div>
+                <h3>Optimized User Flow</h3>
+                <p>Separate entry/exit points with clear sightlines to deter misuse. Strategic siting maximizes footfall while maintaining privacy.</p>
               </div>
             </div>
           </div>
@@ -181,6 +186,53 @@ export default function DesignPage() {
               className={styles.image}
             />
             <p className={styles.imageLabel}>Interior craftsmanship and user experience</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Interior Excellence */}
+      <section className={styles.interiorExcellence}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>Interior Excellence</h2>
+          <p className={styles.galleryIntro}>
+            Crafted for hygiene, durability, and user comfort.
+          </p>
+
+          <div style={{ margin: '40px 0', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 24px 48px rgba(0,0,0,0.1)' }}>
+            <Image
+              src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/Interior.png"
+              alt="ReFlow Toilet Interior"
+              width={1200}
+              height={600}
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+            />
+          </div>
+
+          <div className={styles.interiorGrid}>
+            <div className={styles.interiorCard}>
+              <h4>Easy wash metal surface</h4>
+              <p>Hygienic, durable, and easy to clean.</p>
+            </div>
+            <div className={styles.interiorCard}>
+              <h4>Spring up toilet seats</h4>
+              <p>Automatic retraction for improved hygiene.</p>
+            </div>
+            <div className={styles.interiorCard}>
+              <h4>Thermal insulation</h4>
+              <p>Comfortable interior temperature in all climates.</p>
+            </div>
+            <div className={styles.interiorCard}>
+              <h4>Impulse pressure washer</h4>
+              <p>High-pressure cleaning for deep sanitation.</p>
+            </div>
+            <div className={styles.interiorCard}>
+              <h4>Self drying floor</h4>
+              <p>Prevents slip hazards and maintains cleanliness.</p>
+            </div>
+            <div className={styles.interiorCard}>
+              <h4>Mechanical ventilation</h4>
+              <p>Continuous air exchange for odor control.</p>
+            </div>
           </div>
         </div>
       </section>

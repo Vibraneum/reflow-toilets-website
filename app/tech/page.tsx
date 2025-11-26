@@ -220,7 +220,7 @@ export default function TechPage() {
             <div className={styles.aiContent}>
               <h3 className={styles.aiSubtitle}>Google Gemini AI Integration</h3>
               <p className={styles.aiDescription}>
-                Google's advanced Gemini 2.5 Flash AI model analyzes daily operational photos, generates summaries, and provides predictive insights for maintenance and performance optimization.
+                Google's advanced Gemini 3.0 Flash AI model analyzes daily operational photos, generates summaries, and provides predictive insights for maintenance and performance optimization.
               </p>
               <ul className={styles.aiFeatureList}>
                 <li><strong>Image Analysis:</strong> Automated cleanliness scoring (0-100 scale) from daily photos</li>
@@ -549,8 +549,8 @@ export default function TechPage() {
             </div>
             <div className={styles.sludgeImage}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/wiring-system.jpg"
-                alt="Sludge Disinfection Device"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png"
+                alt="Sludge Disinfection Process Diagram"
                 width={500}
                 height={400}
                 className={styles.sludgeImg}

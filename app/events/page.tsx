@@ -505,7 +505,13 @@ export default function EventsPage() {
             <ScrollReveal delay={250}>
               <div className={styles.partnerCard}>
                 <div className={styles.partnerLogoWrapper}>
-                  <div className={styles.partnerLogoPlaceholder}>LooCafe</div>
+                  <Image
+                    src="/images/logos/loocafe-logo.png"
+                    alt="LooCafe Logo"
+                    width={80}
+                    height={80}
+                    className={styles.partnerLogo}
+                  />
                 </div>
                 <h3 className={styles.partnerName}>LooCafe (WASH Network)</h3>
                 <p className={styles.partnerDescription}>
