@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
 
             <p className={`${styles.heroSubtitle} slide-in-up`}>
-              ISO30500-certified B-CRT technology. First deployment coming soon. Zero environmental discharge.
+              ISO30500-certified B-CRT technology. Now live at Lumbini Park, Hyderabad. Zero environmental discharge.
             </p>
 
             <div className={styles.spacer} style={{ height: '16px' }}></div>

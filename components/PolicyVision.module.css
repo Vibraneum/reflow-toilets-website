@@ -1,0 +1,912 @@
+.section {
+  background: linear-gradient(180deg, #000 0%, #0a0a0a 50%, #000 100%);
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, #34c759);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(52, 199, 89, 0.1);
+  color: #34c759;
+  padding: 8px 20px;
+  border-radius: 980px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+  border: 1px solid rgba(52, 199, 89, 0.2);
+}
+
+.title {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #34c759 0%, #30d158 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 21px;
+  color: #a1a1a6;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.subtitle strong {
+  color: #fff;
+}
+
+/* Evolution Section */
+.evolutionSection {
+  margin-bottom: 100px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.evolutionGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.evolutionCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.evolutionCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.evolutionCardHighlight {
+  background: linear-gradient(135deg, rgba(52, 199, 89, 0.1) 0%, rgba(48, 209, 88, 0.05) 100%);
+  border-color: rgba(52, 199, 89, 0.3);
+}
+
+.evolutionCardHighlight:hover {
+  border-color: rgba(52, 199, 89, 0.5);
+}
+
+.evolutionIcon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  color: #86868b;
+}
+
+.evolutionCardHighlight .evolutionIcon {
+  color: #34c759;
+}
+
+.evolutionCard h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.evolutionCard p {
+  font-size: 14px;
+  color: #86868b;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.evolutionTime {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #a1a1a6;
+  padding: 4px 12px;
+  border-radius: 980px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.evolutionCardHighlight .evolutionTime {
+  background: rgba(52, 199, 89, 0.2);
+  color: #34c759;
+}
+
+/* Policy Section */
+.policySection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 60px;
+  background: linear-gradient(135deg, rgba(52, 199, 89, 0.05) 0%, transparent 100%);
+  border-radius: 32px;
+  border: 1px solid rgba(52, 199, 89, 0.15);
+}
+
+.policyContent {
+  padding-right: 20px;
+}
+
+.policyBadge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff9500 0%, #ff6b00 100%);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 980px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.policyTitle {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.policyText {
+  font-size: 17px;
+  color: #a1a1a6;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.policyText strong {
+  color: #fff;
+}
+
+/* Policy Stats */
+.policyStats {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.policyStat {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  padding: 16px;
+  background: rgba(52, 199, 89, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(52, 199, 89, 0.2);
+}
+
+.policyStatNumber {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #34c759;
+  margin-bottom: 4px;
+}
+
+.policyStatLabel {
+  font-size: 11px;
+  color: #86868b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+.policyPoints {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.policyPoint {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.policyIcon {
+  width: 24px;
+  height: 24px;
+  color: #34c759;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.policyPoint h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.policyPoint p {
+  font-size: 14px;
+  color: #86868b;
+  line-height: 1.5;
+}
+
+.policyImageWrapper {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.policyImageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.policyImageOverlay span:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.policyImageOverlay span:last-child {
+  font-size: 13px;
+  color: #34c759;
+}
+
+/* Off-Grid Section */
+.offGridSection {
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 60px 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.offGridTitle {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.offGridSubtitle {
+  font-size: 17px;
+  color: #86868b;
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offGridGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.offGridCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.offGridCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.offGridIcon {
+  font-size: 32px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.offGridCard h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.offGridCard p {
+  font-size: 13px;
+  color: #86868b;
+  line-height: 1.5;
+}
+
+/* Working Group Section */
+.workingGroup {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.workingGroupTitle {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.workingGroupSubtitle {
+  font-size: 17px;
+  color: #86868b;
+  margin-bottom: 48px;
+}
+
+.partnersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.partnerCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.partnerCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-4px);
+}
+
+.partnerLogo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hubLogo {
+  font-size: 14px;
+  font-weight: 700;
+  color: #34c759;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 12px 20px;
+  border: 2px solid #34c759;
+  border-radius: 8px;
+}
+
+.partnerCard h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.partnerCard p {
+  font-size: 14px;
+  color: #86868b;
+  line-height: 1.6;
+}
+
+/* ISO Box */
+.isoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 48px;
+  padding: 32px 40px;
+  background: linear-gradient(135deg, rgba(52, 199, 89, 0.1) 0%, rgba(52, 199, 89, 0.02) 100%);
+  border: 1px solid rgba(52, 199, 89, 0.3);
+  border-radius: 20px;
+  text-align: left;
+}
+
+.isoContent h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.isoContent p {
+  font-size: 15px;
+  color: #a1a1a6;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.isoContent strong {
+  color: #fff;
+}
+
+.isoBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #34c759 0%, #30d158 100%);
+  border-radius: 12px;
+  padding: 16px 24px;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.isoBadge span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.1em;
+}
+
+.isoBadge span:nth-child(2) {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.isoBadge span:last-child {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Decision CTA */
+.decisionCta {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d1f12 100%);
+  border: 1px solid rgba(52, 199, 89, 0.2);
+  border-radius: 32px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+
+.decisionContent h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.decisionContent p {
+  font-size: 17px;
+  color: #a1a1a6;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.decisionContent strong {
+  color: #fff;
+}
+
+.decisionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.decisionList li {
+  font-size: 15px;
+  color: #86868b;
+  padding-left: 24px;
+  position: relative;
+}
+
+.decisionList li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #34c759;
+}
+
+.decisionActions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #34c759 0%, #30d158 100%);
+  color: #fff;
+  padding: 18px 36px;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(52, 199, 89, 0.4);
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 18px 36px;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Global Ecosystem Section */
+.ecosystemSection {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.ecosystemTitle {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.ecosystemSubtitle {
+  font-size: 18px;
+  color: #86868b;
+  max-width: 700px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+}
+
+.ecosystemGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.ecosystemCard {
+  background: #fff;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ecosystemCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ecosystemIcon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.ecosystemCard h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.ecosystemTag {
+  display: inline-block;
+  background: rgba(52, 199, 89, 0.1);
+  color: #34c759;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.ecosystemCard p {
+  font-size: 14px;
+  color: #6e6e73;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Market Opportunity Stats */
+.marketOpportunity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background: linear-gradient(135deg, #1d1d1f 0%, #2d2d30 100%);
+  border-radius: 24px;
+  flex-wrap: wrap;
+}
+
+.marketStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.marketNumber {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  color: #34c759;
+  letter-spacing: -0.02em;
+}
+
+.marketLabel {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  max-width: 180px;
+}
+
+.marketDivider {
+  width: 1px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .evolutionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .policySection {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .policyContent {
+    padding-right: 0;
+  }
+
+  .policyImageWrapper {
+    aspect-ratio: 16/9;
+  }
+
+  .partnersGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .decisionCta {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .decisionList {
+    grid-template-columns: 1fr;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .decisionActions {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offGridGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .isoBox {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .isoBadge {
+    margin: 0 auto;
+  }
+
+  .ecosystemGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .marketOpportunity {
+    gap: 32px;
+    padding: 32px;
+  }
+
+  .marketDivider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 16px;
+  }
+
+  .evolutionGrid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .policySection {
+    padding: 28px;
+    gap: 32px;
+  }
+
+  .policyTitle {
+    font-size: 24px;
+  }
+
+  .workingGroupTitle {
+    font-size: 24px;
+  }
+
+  .decisionCta {
+    padding: 28px;
+  }
+
+  .decisionContent h3 {
+    font-size: 24px;
+  }
+
+  .decisionActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .offGridGrid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .offGridTitle {
+    font-size: 24px;
+  }
+
+  .policyStats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .policyStat {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .policyStatNumber {
+    font-size: 28px;
+  }
+
+  .isoContent h4 {
+    font-size: 18px;
+  }
+
+  .isoContent p {
+    font-size: 14px;
+  }
+
+  .isoBadge {
+    padding: 16px 24px;
+  }
+
+  .isoBadge span:first-child {
+    font-size: 14px;
+  }
+
+  .isoBadge span:nth-child(2) {
+    font-size: 28px;
+  }
+
+  .ecosystemSection {
+    margin-top: 60px;
+  }
+
+  .ecosystemTitle {
+    font-size: 24px;
+  }
+
+  .ecosystemSubtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .ecosystemGrid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto 32px;
+  }
+
+  .ecosystemCard {
+    padding: 24px;
+  }
+
+  .marketOpportunity {
+    flex-direction: column;
+    gap: 24px;
+    padding: 28px;
+  }
+
+  .marketNumber {
+    font-size: 32px;
+  }
+
+  .marketLabel {
+    font-size: 13px;
+  }
+}

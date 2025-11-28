@@ -53,6 +53,9 @@ const CompetitiveAdvantage = dynamic(() => import('@/components/CompetitiveAdvan
 const LaunchGallery = dynamic(() => import('@/components/LaunchGallery'), {
   loading: () => <div style={{ minHeight: '500px' }} />,
 })
+const PolicyVision = dynamic(() => import('@/components/PolicyVision'), {
+  loading: () => <div style={{ minHeight: '600px' }} />,
+})
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -252,6 +255,7 @@ export default function Home() {
         <ReinventedMission />
         <ImpactMetrics />
         <BCRT />
+        <PolicyVision />
         <MarketOpportunity />
         <GatesComparison />
         <CompetitiveAdvantage />
