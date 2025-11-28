@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Configure Your ReFlow Bundle | District Sanitation Solutions',
     description: 'Interactive bundle builder for district sanitation deployments. Customize units, services, and financing.',
-    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg'],
   },
 }
 

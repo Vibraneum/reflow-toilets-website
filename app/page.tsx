@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import Hero from '@/components/Hero'
 import Partners from '@/components/Partners'
+import LaunchAnnouncement from '@/components/LaunchAnnouncement'
 
 // Code splitting - Load heavy components dynamically
 const TrustBadges = dynamic(() => import('@/components/TrustBadges'), {
@@ -40,6 +41,18 @@ const BundlingEcosystem = dynamic(() => import('@/components/BundlingEcosystem')
 const SustainabilityModel = dynamic(() => import('@/components/SustainabilityModel'), {
   loading: () => <div style={{ minHeight: '400px' }} />,
 })
+const MarketOpportunity = dynamic(() => import('@/components/MarketOpportunity'), {
+  loading: () => <div style={{ minHeight: '500px' }} />,
+})
+const GatesComparison = dynamic(() => import('@/components/GatesComparison'), {
+  loading: () => <div style={{ minHeight: '500px' }} />,
+})
+const CompetitiveAdvantage = dynamic(() => import('@/components/CompetitiveAdvantage'), {
+  loading: () => <div style={{ minHeight: '500px' }} />,
+})
+const LaunchGallery = dynamic(() => import('@/components/LaunchGallery'), {
+  loading: () => <div style={{ minHeight: '500px' }} />,
+})
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -47,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ReFlow Toilets - Scalable Decentralized Sanitation Infrastructure',
     description: 'Smart, resilient, and sustainable public toilet solutions designed for modern urban needs',
-    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg'],
   },
 }
 
@@ -58,7 +71,7 @@ export default function Home() {
     name: 'ReFlow Toilets',
     alternateName: 'iRise Toilets',
     url: 'https://www.reflowtoilets.com',
-    logo: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-toilets-png.png',
+    logo: '/images/logos/reflow toilets png.png',
     description: 'Smart, resilient, and sustainable public toilet solutions designed for modern urban needs',
     address: {
       '@type': 'PostalAddress',
@@ -141,6 +154,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <main>
+        <LaunchAnnouncement />
         <Hero />
         <Partners />
 
@@ -231,12 +245,16 @@ export default function Home() {
           </div>
         </section>
 
+        <LaunchGallery />
         <TrustBadges />
         <DesignInnovation />
         <KeyFeatures />
         <ReinventedMission />
         <ImpactMetrics />
         <BCRT />
+        <MarketOpportunity />
+        <GatesComparison />
+        <CompetitiveAdvantage />
         <BundlingEcosystem />
         <IxoraCrossSell />
         <ConceptVideos />

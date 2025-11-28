@@ -1,0 +1,86 @@
+{
+  "name": "ReFlow Toilets",
+  "type": "Advanced Decentralized Sanitation Technology Provider",
+  "parentCompany": {
+    "name": "Ixora Group",
+    "legalName": "Ixora Corporate Services Pvt Ltd",
+    "url": "https://ixoragroup.com"
+  },
+  "mission": "Reinventing sanitation for a sustainable future",
+  "tagline": "The Future of Sanitation",
+  "technology": "B-CRT (Bio-Circular Resource Technology)",
+
+  "headquarters": {
+    "address": "Journalist Colony, Jubilee Hills",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "postalCode": "500033",
+    "country": "India"
+  },
+
+  "gatesFoundationPartnership": {
+    "status": "Exclusive India Partner",
+    "project": "G2RT (Gates Reinvented Toilet)",
+    "investment": "$1 billion global sanitation mission",
+    "launchYear": 2025
+  },
+
+  "contact": {
+    "phone": "+91-40-4850-4850",
+    "email": "info@reflowtoilets.com",
+    "businessHours": "Mon-Sat 9:00 AM - 6:00 PM IST",
+    "departments": {
+      "general": "info@reflowtoilets.com",
+      "business": "bd@reflowtoilets.com",
+      "technical": "technical@reflowtoilets.com"
+    }
+  },
+
+  "socialMedia": {
+    "website": "https://reflowtoilets.com",
+    "parentWebsite": "https://ixoragroup.com",
+    "sisterSite": "https://loocafe.com"
+  },
+
+  "targetMarkets": {
+    "primary": {
+      "type": "Government",
+      "segments": ["Municipal Corporations", "Urban Local Bodies", "Smart City Projects", "Swachh Bharat Mission"]
+    },
+    "secondary": {
+      "type": "Private Sector",
+      "segments": ["Corporate Campuses", "Industrial Facilities", "Educational Institutions", "Healthcare Facilities"]
+    }
+  },
+
+  "certifications": [
+    "Gates Foundation Technology Partner",
+    "ISO 9001:2015",
+    "UNDP Best Practice"
+  ],
+
+  "ecosystem": [
+    {
+      "name": "Ixora Group",
+      "description": "Parent company - integrated facilities management",
+      "url": "https://ixoragroup.com"
+    },
+    {
+      "name": "LooCafe",
+      "description": "Public sanitation network using ReFlow technology",
+      "url": "https://loocafe.com"
+    },
+    {
+      "name": "Ixora Security",
+      "description": "Security services",
+      "url": "https://ixorasecurity.com"
+    },
+    {
+      "name": "DRNF",
+      "description": "Community service foundation",
+      "url": "https://drnf.org"
+    }
+  ],
+
+  "lastUpdated": "2025-11-26"
+}

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Our Team | ReFlow Toilets',
     description: 'Meet the experienced team driving India\'s sanitation revolution with B-CRT technology.',
-    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg'],
   },
 }
 
@@ -25,34 +25,34 @@ const leadershipTeam: TeamMember[] = [
   {
     name: 'Abhishek Nath',
     role: 'MD, Ixora Group',
-    bio: 'From running restaurants & resorts, being an area manager to leading global companies, pitching as a startup & now making LooCafe & Ixora Group a global powerhouse for WASH. Transitioned from hotel management to Fortune 50 multinational director role. Currently spearheads LooCafe\'s vision and ReFlow\'s B-CRT technology deployment across India.',
-    linkedin: 'https://www.linkedin.com/in/abhisheknath/',
-    image: 'https://api.typedream.com/v0/document/public/d30bcf02-27bf-4bc8-9664-abda8139117d/2uZVocBnmdwX9ZFtc93iTTZVxH_abhishek_nath_photo.png',
+    bio: 'Founded Ixora Group in 2010, building it into a multi-service facilities management company managing 500+ critical facilities including 300+ Hyderabad Police stations. Launched LooCafe to address India\'s public sanitation gap with 270+ self-sustaining toilets across 10+ cities. Now leads ReFlow to bring Gates Foundation-validated B-CRT technology to districts nationwide.',
+    linkedin: 'https://www.linkedin.com/in/abhiisheknath/',
+    image: 'https://res.cloudinary.com/dehglnwgz/image/upload/v1758359257/667ebb7c246436e4d9aa1916_7_rpenql.png',
   },
   {
-    name: 'Chakkravarthi Rajamani',
+    name: 'Chakkaravarthi Rajamani',
     role: 'Director, LooCafe',
-    bio: 'Brings strategic leadership and operational excellence to our sanitation initiatives. Oversees business development and partnerships across government and private sectors.',
-    image: 'https://api.typedream.com/v0/document/public/d30bcf02-27bf-4bc8-9664-abda8139117d/2j0XaSlOBWarr4zQGX22Z4TsOMf_667ec0b26d475aff07a8e371_chakksPFP-p-500.png',
+    bio: 'Brings strategic leadership and operational excellence to our sanitation initiatives. Oversees business development and partnerships across government and private sectors. Key driver of LooCafe\'s expansion across 10+ Indian cities.',
+    image: 'https://res.cloudinary.com/dehglnwgz/image/upload/v1758359264/667ec0b26d475aff07a8e371_chakksPFP_lybztd.png',
   },
   {
     name: 'Krishna Chaitanya',
-    role: 'Director',
-    bio: 'Drives technology integration and innovation across our product lines. Leads the development of IoT monitoring systems and smart sanitation solutions.',
-    image: 'https://api.typedream.com/v0/document/public/d30bcf02-27bf-4bc8-9664-abda8139117d/2j0XpYmDB4wm84JGHbWnbNOPKV8_667ebb7ceb38a6f84e8404a3_8-p-500.png',
+    role: 'Director, Operations',
+    bio: 'Drives technology integration and innovation across our product lines. Leads the development of IoT monitoring systems and smart sanitation solutions that power real-time tracking across all ReFlow installations.',
+    image: 'https://res.cloudinary.com/dehglnwgz/image/upload/v1758355988/667ebb7ceb38a6f84e8404a3_8_azzctg.png',
   },
   {
-    name: 'Athma Jairam',
-    role: 'Director',
-    bio: 'Oversees operations and ensures SLA compliance across all installations. Manages the 24/7 maintenance network that powers both LooCafe and ReFlow deployments.',
-    image: 'https://api.typedream.com/v0/document/public/d30bcf02-27bf-4bc8-9664-abda8139117d/2j3NfdGh5jApZym7Wdd4v3ZyucS_jairam.png',
+    name: 'Athma Jayaram M',
+    role: 'Executive Director',
+    bio: 'Oversees operations and ensures SLA compliance across all installations. Manages the 24/7 maintenance network that powers both LooCafe and ReFlow deployments with under 4-hour response times.',
+    image: 'https://res.cloudinary.com/dehglnwgz/image/upload/v1758359257/667ebb7c295352e3e758daee_10_fk2hay.png',
   },
   {
     name: 'Vedanth Nath',
     role: 'Innovation Head',
     bio: 'Leads product innovation and R&D for next-generation sanitation solutions. Maintains expertise in WASH sector developments and emerging technologies. Writes about WASH topics at vedanthnath.com/wash.',
     linkedin: 'https://www.linkedin.com/in/vedanthnath/',
-    image: 'https://api.typedream.com/v0/document/public/d30bcf02-27bf-4bc8-9664-abda8139117d/2uZWEV88yH9eqibomtMOLDV3UhS_ved_trasnparent_back.png',
+    image: 'https://res.cloudinary.com/dehglnwgz/image/upload/v1758012307/1_qGOL9FvIrvMKvbtNGYtHNA_s0vlos.jpg',
   },
 ]
 
@@ -173,20 +173,20 @@ export default function TeamPage() {
 
           <div className={styles.ixoraStats}>
             <div className={styles.ixoraStat}>
-              <span className={styles.ixoraStatValue}>15+</span>
-              <span className={styles.ixoraStatLabel}>Years of Operations</span>
+              <span className={styles.ixoraStatValue}>216+</span>
+              <span className={styles.ixoraStatLabel}>Trained Professionals</span>
             </div>
             <div className={styles.ixoraStat}>
-              <span className={styles.ixoraStatValue}>5</span>
-              <span className={styles.ixoraStatLabel}>Service Lines</span>
+              <span className={styles.ixoraStatValue}>500+</span>
+              <span className={styles.ixoraStatLabel}>Facilities Managed</span>
             </div>
             <div className={styles.ixoraStat}>
               <span className={styles.ixoraStatValue}>270+</span>
               <span className={styles.ixoraStatLabel}>LooCafe Units</span>
             </div>
             <div className={styles.ixoraStat}>
-              <span className={styles.ixoraStatValue}>24/7</span>
-              <span className={styles.ixoraStatLabel}>Support Network</span>
+              <span className={styles.ixoraStatValue}>300+</span>
+              <span className={styles.ixoraStatLabel}>Police Stations Serviced</span>
             </div>
           </div>
 

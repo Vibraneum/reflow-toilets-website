@@ -62,7 +62,7 @@ export default function BundlingEcosystem() {
                         </div>
                         <div className={styles.imageWrapper}>
                             <Image
-                                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard-analytics.png"
+                                src="/images/tech/reflow dashboard.png"
                                 alt="Ixora Security Monitoring"
                                 width={300}
                                 height={200}
@@ -105,7 +105,7 @@ export default function BundlingEcosystem() {
                         </div>
                         <div className={styles.imageWrapper}>
                             <Image
-                                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/interior.png"
+                                src="/images/hero/Interior.png"
                                 alt="Ixora Facility Management"
                                 width={300}
                                 height={200}

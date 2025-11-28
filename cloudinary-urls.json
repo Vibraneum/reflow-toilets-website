@@ -1,0 +1,212 @@
+{
+  "bcrt-archive": [
+    {
+      "localPath": "bcrt/archive/(Loocafe)40- foot b-CRT(1).jpg",
+      "publicId": "reflow-assets/bcrt-archive/loocafe-40ft-bcrt-1",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148844/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-1.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-1"
+    },
+    {
+      "localPath": "bcrt/archive/(Loocafe)40-foot b-CRT(2).jpg",
+      "publicId": "reflow-assets/bcrt-archive/loocafe-40ft-bcrt-2",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148849/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-2.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-2"
+    },
+    {
+      "localPath": "bcrt/archive/(Loocafe)40-foot b-CRT(3).jpg",
+      "publicId": "reflow-assets/bcrt-archive/loocafe-40ft-bcrt-3",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148855/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-3.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-3"
+    },
+    {
+      "localPath": "bcrt/archive/(Loocafe)40-foot b-CRT(4).jpg",
+      "publicId": "reflow-assets/bcrt-archive/loocafe-40ft-bcrt-4",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148860/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-4.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-4"
+    },
+    {
+      "localPath": "bcrt/archive/(Loocafe)40-foot b-CRT(5).jpg",
+      "publicId": "reflow-assets/bcrt-archive/loocafe-40ft-bcrt-5",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148868/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-5.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-5"
+    },
+    {
+      "localPath": "bcrt/archive/(Loocafe)40-foot b-CRT(6).jpg",
+      "publicId": "reflow-assets/bcrt-archive/loocafe-40ft-bcrt-6",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148877/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-6.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/loocafe-40ft-bcrt-6"
+    },
+    {
+      "localPath": "bcrt/archive/(School)40-foot b-CRT(1).jpg",
+      "publicId": "reflow-assets/bcrt-archive/school-40ft-bcrt-1",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148882/reflow-assets/bcrt-archive/school-40ft-bcrt-1.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/school-40ft-bcrt-1"
+    },
+    {
+      "localPath": "bcrt/archive/(School)40-foot b-CRT(2).jpg",
+      "publicId": "reflow-assets/bcrt-archive/school-40ft-bcrt-2",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148888/reflow-assets/bcrt-archive/school-40ft-bcrt-2.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/school-40ft-bcrt-2"
+    },
+    {
+      "localPath": "bcrt/archive/(School)40-foot b-CRT(3).jpg",
+      "publicId": "reflow-assets/bcrt-archive/school-40ft-bcrt-3",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148893/reflow-assets/bcrt-archive/school-40ft-bcrt-3.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/school-40ft-bcrt-3"
+    },
+    {
+      "localPath": "bcrt/archive/(School)40-foot b-CRT(4).jpg",
+      "publicId": "reflow-assets/bcrt-archive/school-40ft-bcrt-4",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148897/reflow-assets/bcrt-archive/school-40ft-bcrt-4.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/school-40ft-bcrt-4"
+    },
+    {
+      "localPath": "bcrt/archive/(School)40-foot b-CRT(5).jpg",
+      "publicId": "reflow-assets/bcrt-archive/school-40ft-bcrt-5",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148901/reflow-assets/bcrt-archive/school-40ft-bcrt-5.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/school-40ft-bcrt-5"
+    },
+    {
+      "localPath": "bcrt/archive/(School)40-foot b-CRT(6).jpg",
+      "publicId": "reflow-assets/bcrt-archive/school-40ft-bcrt-6",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148906/reflow-assets/bcrt-archive/school-40ft-bcrt-6.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/school-40ft-bcrt-6"
+    },
+    {
+      "localPath": "bcrt/archive/(School)40-foot b-CRT(7).jpg",
+      "publicId": "reflow-assets/bcrt-archive/school-40ft-bcrt-7",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148910/reflow-assets/bcrt-archive/school-40ft-bcrt-7.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/school-40ft-bcrt-7"
+    },
+    {
+      "localPath": "bcrt/archive/(T-works)20-foot b-CRT(1).jpg",
+      "publicId": "reflow-assets/bcrt-archive/tworks-20ft-bcrt-1",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148916/reflow-assets/bcrt-archive/tworks-20ft-bcrt-1.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/tworks-20ft-bcrt-1"
+    },
+    {
+      "localPath": "bcrt/archive/(T-works)20-foot b-CRT(2).jpg",
+      "publicId": "reflow-assets/bcrt-archive/tworks-20ft-bcrt-2",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148920/reflow-assets/bcrt-archive/tworks-20ft-bcrt-2.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/tworks-20ft-bcrt-2"
+    },
+    {
+      "localPath": "bcrt/archive/(T-works)20-foot b-CRT(3).jpg",
+      "publicId": "reflow-assets/bcrt-archive/tworks-20ft-bcrt-3",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148925/reflow-assets/bcrt-archive/tworks-20ft-bcrt-3.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/tworks-20ft-bcrt-3"
+    },
+    {
+      "localPath": "bcrt/archive/(T-works)20-foot b-CRT(4).jpg",
+      "publicId": "reflow-assets/bcrt-archive/tworks-20ft-bcrt-4",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148931/reflow-assets/bcrt-archive/tworks-20ft-bcrt-4.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-archive/tworks-20ft-bcrt-4"
+    }
+  ],
+  "bcrt-gallery": [
+    {
+      "localPath": "bcrt/gallery/loocafe-40ft-interior.jpg",
+      "publicId": "reflow-assets/bcrt-gallery/loocafe-40ft-interior",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148936/reflow-assets/bcrt-gallery/loocafe-40ft-interior.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/loocafe-40ft-interior"
+    },
+    {
+      "localPath": "bcrt/gallery/loocafe-40ft-treatment.jpg",
+      "publicId": "reflow-assets/bcrt-gallery/loocafe-40ft-treatment",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148941/reflow-assets/bcrt-gallery/loocafe-40ft-treatment.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/loocafe-40ft-treatment"
+    },
+    {
+      "localPath": "bcrt/gallery/school-40ft-exterior.jpg",
+      "publicId": "reflow-assets/bcrt-gallery/school-40ft-exterior",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148947/reflow-assets/bcrt-gallery/school-40ft-exterior.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/school-40ft-exterior"
+    },
+    {
+      "localPath": "bcrt/gallery/school-40ft-interior.jpg",
+      "publicId": "reflow-assets/bcrt-gallery/school-40ft-interior",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148952/reflow-assets/bcrt-gallery/school-40ft-interior.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/school-40ft-interior"
+    },
+    {
+      "localPath": "bcrt/gallery/tworks-20ft-exterior.jpg",
+      "publicId": "reflow-assets/bcrt-gallery/tworks-20ft-exterior",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148956/reflow-assets/bcrt-gallery/tworks-20ft-exterior.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/tworks-20ft-exterior"
+    },
+    {
+      "localPath": "bcrt/gallery/tworks-20ft-treatment.jpg",
+      "publicId": "reflow-assets/bcrt-gallery/tworks-20ft-treatment",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148963/reflow-assets/bcrt-gallery/tworks-20ft-treatment.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/tworks-20ft-treatment"
+    }
+  ],
+  "heritage": [
+    {
+      "localPath": "heritage/charminar-hyderabad.jpg",
+      "publicId": "reflow-assets/heritage/charminar-hyderabad",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148967/reflow-assets/heritage/charminar-hyderabad.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/heritage/charminar-hyderabad"
+    },
+    {
+      "localPath": "heritage/ixora-team-charminar.jpg",
+      "publicId": "reflow-assets/heritage/ixora-team-charminar",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148970/reflow-assets/heritage/ixora-team-charminar.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/heritage/ixora-team-charminar"
+    },
+    {
+      "localPath": "heritage/mobile-bio-toilet-ghmc.jpg",
+      "publicId": "reflow-assets/heritage/mobile-bio-toilet-ghmc",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148972/reflow-assets/heritage/mobile-bio-toilet-ghmc.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/heritage/mobile-bio-toilet-ghmc"
+    }
+  ],
+  "hero": [
+    {
+      "localPath": "hero/Hero image.png",
+      "publicId": "reflow-assets/hero/hero-image",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732613/reflow-assets/hero/hero-image.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/hero/hero-image"
+    }
+  ],
+  "tech": [
+    {
+      "localPath": "tech/Reflow app 2 (1).png",
+      "publicId": "reflow-assets/tech/reflow-app-2",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148977/reflow-assets/tech/reflow-app-2.png",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/tech/reflow-app-2"
+    },
+    {
+      "localPath": "tech/Reflow unit app (1).png",
+      "publicId": "reflow-assets/tech/reflow-unit-app",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148981/reflow-assets/tech/reflow-unit-app.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/tech/reflow-unit-app"
+    },
+    {
+      "localPath": "tech/Screenshot 2025-04-18 172042.png",
+      "publicId": "reflow-assets/tech/tech-screenshot-1",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148983/reflow-assets/tech/tech-screenshot-1.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/tech/tech-screenshot-1"
+    },
+    {
+      "localPath": "tech/Screenshot 2025-04-18 172328.png",
+      "publicId": "reflow-assets/tech/tech-screenshot-2",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148985/reflow-assets/tech/tech-screenshot-2.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/tech/tech-screenshot-2"
+    }
+  ],
+  "units": [
+    {
+      "localPath": "units/reflow dal lake.png",
+      "publicId": "reflow-assets/units/reflow-dal-lake",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1764148987/reflow-assets/units/reflow-dal-lake.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/units/reflow-dal-lake"
+    },
+    {
+      "localPath": "units/reflow mini.png",
+      "publicId": "reflow-assets/units/reflow-mini",
+      "url": "https://res.cloudinary.com/dhupieu4x/image/upload/v1763732615/reflow-assets/units/reflow-mini.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/units/reflow-mini"
+    }
+  ]
+}

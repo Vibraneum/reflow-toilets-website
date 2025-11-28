@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'B-CRT Technical Specifications | ReFlow Toilets',
     description: '8-stage treatment. Zero discharge. ISO30500 compliant. 98% water recovery. Gates Foundation technology verified by Georgia Tech.',
-    images: ['/images/bcrt/MAIN B-CRT IMAGE.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg'],
   },
 }
 
@@ -25,7 +25,7 @@ export default function BCRTPage() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
-          <div className={styles.badge}>Deploying Q4 2025</div>
+          <div className={styles.badge}>Now Live at Lumbini Park</div>
           <h1 className={styles.title}>B-CRT</h1>
           <p className={styles.subtitle}>The largest scale deployment of the most advanced public toilet in the world.</p>
           <p className={styles.description}>
@@ -57,7 +57,7 @@ export default function BCRTPage() {
       <section className={styles.productImage}>
         <div className={styles.container}>
           <Image
-            src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png"
+            src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg"
             alt="B-CRT 40ft containerized toilet unit"
             width={1200}
             height={600}
@@ -133,7 +133,7 @@ export default function BCRTPage() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Why districts choose B-CRT.</h2>
           <p className={styles.benefitsIntro}>
-            Built on Gates Foundation "Reinvent the Toilet" initiative. ISO30500 compliant. Verified by Georgia Tech Research Institute. Managed by Ixora Group's 15-year operating experience with 270+ LooCafe locations.
+            Built on Gates Foundation "Reinvent the Toilet" initiative. ISO30500 compliant. Verified by Georgia Tech Research Institute. Managed by Ixora Group&apos;s 15-year operating experience with <a href="https://loocafe.com" target="_blank" rel="noopener noreferrer" className={styles.loocafeLink}>270+ LooCafe</a> locations.
           </p>
 
           <div className={styles.benefitsGrid}>
@@ -173,7 +173,7 @@ export default function BCRTPage() {
             <div className={styles.deploymentCard}>
               <div className={styles.deploymentImageWrapper}>
                 <Image
-                  src="/images/bcrt/gallery/tworks-20ft-exterior.jpg"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/tworks-20ft-exterior"
                   alt="20-foot B-CRT compact unit"
                   width={400}
                   height={300}
@@ -196,7 +196,7 @@ export default function BCRTPage() {
             <div className={styles.deploymentCard}>
               <div className={styles.deploymentImageWrapper}>
                 <Image
-                  src="/images/bcrt/gallery/school-40ft-exterior.jpg"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/school-40ft-exterior"
                   alt="40-foot B-CRT full unit"
                   width={400}
                   height={300}
@@ -219,7 +219,7 @@ export default function BCRTPage() {
             <div className={styles.deploymentCard}>
               <div className={styles.deploymentImageWrapper}>
                 <Image
-                  src="/images/bcrt/gallery/loocafe-40ft-interior.jpg"
+                  src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/loocafe-40ft-interior"
                   alt="Accessible cubicle interior"
                   width={400}
                   height={300}
@@ -308,7 +308,7 @@ export default function BCRTPage() {
           {/* Process Flow Image */}
           <div className={styles.treatmentFlowWrapper}>
             <Image
-              src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/screenshot-2025-04-03-011136.png"
+              src="/images/bcrt/Screenshot 2025-04-03 011136.png"
               alt="8-stage treatment process flow diagram"
               width={1200}
               height={600}
@@ -615,6 +615,85 @@ export default function BCRTPage() {
         </div>
       </section>
 
+      {/* Lumbini Park Launch Gallery */}
+      <section className={styles.gallery} style={{ background: '#000' }}>
+        <div className={styles.container}>
+          <div style={{ display: 'inline-block', background: 'linear-gradient(135deg, #34c759 0%, #30d158 100%)', color: '#fff', padding: '8px 20px', borderRadius: '980px', fontSize: '13px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '20px' }}>
+            November 2025 Launch
+          </div>
+          <h2 className={styles.sectionTitle}>B-CRT Unit #1 at Lumbini Park, Hyderabad</h2>
+          <p className={styles.galleryIntro}>Hyderabad&apos;s first zero-discharge public toilet. Official launch with government officials and stakeholders.</p>
+
+          <div className={styles.galleryGrid}>
+            <div className={styles.galleryItem}>
+              <Image
+                src="/images/launch-lumbini-park/lumbini-launch-02.jpg"
+                alt="B-CRT container unit exterior at Lumbini Park showing toilet doors"
+                width={600}
+                height={400}
+                className={styles.galleryImage}
+              />
+              <p className={styles.galleryCaption}>B-CRT Unit Exterior - Container-based toilet facility at Lumbini Park</p>
+            </div>
+
+            <div className={styles.galleryItem}>
+              <Image
+                src="/images/launch-lumbini-park/lumbini-launch-05.jpg"
+                alt="Officials and dignitaries visiting the B-CRT launch"
+                width={600}
+                height={400}
+                className={styles.galleryImage}
+              />
+              <p className={styles.galleryCaption}>Launch Event - Officials and dignitaries inspecting the B-CRT unit</p>
+            </div>
+
+            <div className={styles.galleryItem}>
+              <Image
+                src="/images/launch-lumbini-park/lumbini-launch-08.jpg"
+                alt="ReFlow team presenting B-CRT technology"
+                width={600}
+                height={400}
+                className={styles.galleryImage}
+              />
+              <p className={styles.galleryCaption}>Technical Presentation - ReFlow team demonstrating B-CRT technology</p>
+            </div>
+
+            <div className={styles.galleryItem}>
+              <Image
+                src="/images/launch-lumbini-park/lumbini-launch-14.jpg"
+                alt="Team photo at B-CRT Lumbini Park launch"
+                width={600}
+                height={400}
+                className={styles.galleryImage}
+              />
+              <p className={styles.galleryCaption}>Launch Team - Stakeholders and partners at the inauguration</p>
+            </div>
+
+            <div className={styles.galleryItem}>
+              <Image
+                src="/images/launch-lumbini-park/lumbini-launch-11.jpg"
+                alt="Stakeholder engagement at B-CRT launch"
+                width={600}
+                height={400}
+                className={styles.galleryImage}
+              />
+              <p className={styles.galleryCaption}>Stakeholder Engagement - Discussion with government representatives</p>
+            </div>
+
+            <div className={styles.galleryItem}>
+              <Image
+                src="/images/launch-lumbini-park/lumbini-launch-17.jpg"
+                alt="B-CRT launch ceremony"
+                width={600}
+                height={400}
+                className={styles.galleryImage}
+              />
+              <p className={styles.galleryCaption}>Launch Ceremony - Official inauguration of B-CRT at Lumbini Park</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* B-CRT Photo Gallery */}
       <section className={styles.gallery}>
         <div className={styles.container}>
@@ -624,7 +703,7 @@ export default function BCRTPage() {
           <div className={styles.galleryGrid}>
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/gallery/tworks-20ft-exterior.jpg"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/tworks-20ft-exterior"
                 alt="20-foot B-CRT container exterior at T-Works facility"
                 width={600}
                 height={400}
@@ -635,7 +714,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/gallery/school-40ft-exterior.jpg"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/school-40ft-exterior"
                 alt="40-foot B-CRT container exterior showing multiple cubicles"
                 width={600}
                 height={400}
@@ -646,7 +725,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/gallery/loocafe-40ft-interior.jpg"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/loocafe-40ft-interior"
                 alt="Accessible toilet cubicle interior with grab bars and sink"
                 width={600}
                 height={400}
@@ -657,7 +736,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/gallery/school-40ft-interior.jpg"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/school-40ft-interior"
                 alt="40-foot B-CRT showing cubicle doors and ventilation"
                 width={600}
                 height={400}
@@ -668,7 +747,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/gallery/tworks-20ft-treatment.jpg"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/tworks-20ft-treatment"
                 alt="Treatment room with stainless steel tanks and piping"
                 width={600}
                 height={400}
@@ -679,7 +758,7 @@ export default function BCRTPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/bcrt/gallery/loocafe-40ft-treatment.jpg"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/q_auto,f_auto/reflow-assets/bcrt-gallery/loocafe-40ft-treatment"
                 alt="8-stage treatment system piping and equipment"
                 width={600}
                 height={400}
@@ -687,6 +766,88 @@ export default function BCRTPage() {
               />
               <p className={styles.galleryCaption}>8-Stage Treatment System - Complete water recycling infrastructure</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Comparison */}
+      <section className={styles.techComparison}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>How B-CRT compares.</h2>
+          <p className={styles.treatmentIntro}>
+            B-CRT versus conventional decentralized treatment approaches in India&apos;s wastewater market.
+          </p>
+
+          <div className={styles.tableWrapper}>
+            <table className={styles.performanceTable}>
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>B-CRT</th>
+                  <th>Conventional Batch Systems</th>
+                  <th>Nature-Based Systems</th>
+                  <th>Industry Average</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Treatment Stages</td>
+                  <td className={styles.compliant}>8 stages</td>
+                  <td>3-5 stages</td>
+                  <td>Natural process</td>
+                  <td>4 stages</td>
+                </tr>
+                <tr>
+                  <td>Water Recovery</td>
+                  <td className={styles.compliant}>98%</td>
+                  <td>70-80%</td>
+                  <td>Limited</td>
+                  <td>75%</td>
+                </tr>
+                <tr>
+                  <td>Footprint Required</td>
+                  <td className={styles.compliant}>15-30 sqm</td>
+                  <td>50-100 sqm</td>
+                  <td>100+ sqm</td>
+                  <td>60+ sqm</td>
+                </tr>
+                <tr>
+                  <td>Off-Grid Capability</td>
+                  <td className={styles.compliant}>Yes (72+ hours)</td>
+                  <td>Grid-dependent</td>
+                  <td>Passive</td>
+                  <td>Limited</td>
+                </tr>
+                <tr>
+                  <td>ISO 30500 Certified</td>
+                  <td className={styles.compliant}>Yes</td>
+                  <td>Typically no</td>
+                  <td>No</td>
+                  <td>Rare</td>
+                </tr>
+                <tr>
+                  <td>Energy (kWh/m³)</td>
+                  <td className={styles.compliant}>0.8-1.2</td>
+                  <td>0.5-1.5</td>
+                  <td>0</td>
+                  <td>1.0-2.0</td>
+                </tr>
+                <tr>
+                  <td>Installation Time</td>
+                  <td className={styles.compliant}>2-4 weeks</td>
+                  <td>2-4 months</td>
+                  <td>3-6 months</td>
+                  <td>3+ months</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className={styles.comparisonNote}>
+            <h4>Why B-CRT stands apart</h4>
+            <p>
+              B-CRT is one of only 3 known ISO 30500-certified systems globally. Its 8-stage biological treatment process achieves 98% water recovery while maintaining Category A output quality—exceeding requirements by 60-80%. The containerized design enables rapid deployment in water-stressed, off-grid, or coastal areas where traditional infrastructure is impractical.
+            </p>
           </div>
         </div>
       </section>
@@ -749,7 +910,7 @@ export default function BCRTPage() {
             <div className={styles.faqItem}>
               <h3 className={styles.faqQuestion}>How does B-CRT compare to other decentralized treatment systems?</h3>
               <p className={styles.faqAnswer}>
-                B-CRT integrates 8 treatment stages in a single containerized unit (competitors: 3-5 stages). 98% water consumption reduction vs conventional. 65% energy reduction. 55% lower operational costs. Ixora Group's 15-year operating experience and 270+ LooCafe deployments provide proven maintenance infrastructure.
+                B-CRT integrates 8 treatment stages in a single containerized unit (competitors: 3-5 stages). 98% water consumption reduction vs conventional. 65% energy reduction. 55% lower operational costs. Ixora Group&apos;s 15-year operating experience and <a href="https://loocafe.com" target="_blank" rel="noopener noreferrer" className={styles.loocafeLink}>270+ LooCafe</a> deployments provide proven maintenance infrastructure. Learn about the technology evolution on <a href="https://loocafe.com/g2rt" target="_blank" rel="noopener noreferrer" className={styles.loocafeLink}>LooCafe&apos;s G2RT page</a>.
               </p>
             </div>
           </div>

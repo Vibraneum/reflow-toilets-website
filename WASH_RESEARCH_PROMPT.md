@@ -348,7 +348,91 @@ This document serves as a comprehensive research guide for AI agents to gather i
 
 ---
 
+## COMPLETED RESEARCH DATA (November 2025)
+
+### Market Size Data (Validated)
+
+| Market Segment | 2024 Value | 2030 Projection | CAGR |
+|----------------|------------|-----------------|------|
+| India Decentralized Wastewater Treatment | $1.33B | $2.46B | 10.8% |
+| Public Toilet Market (India) | ~500,000 units | +30-50K/year | - |
+| Technology Upgrade Potential | - | 100,000+ units | - |
+
+### Competitive Technology Comparison Matrix
+
+| Parameter | B-CRT | SBR (Cleantech) | Wetlands (BlueDrop) | HydRec (Xpredict) |
+|-----------|-------|-----------------|---------------------|-------------------|
+| Treatment Stages | 8 | 4-5 | Natural | Electro-bio |
+| Water Recovery | 98% | 70-80% | Limited | ~85% |
+| Footprint (sqm) | 15-30 | 50-100 | 100+ | 10-20 |
+| Off-Grid | Yes (72+ hrs) | No | Yes | Limited |
+| ISO 30500 | Yes | No | No | Pending |
+| Energy (kWh/m³) | 0.8-1.2 | 0.5-0.8 | 0 | 2.0-3.0 |
+
+### ISO 30500 Output Requirements
+
+| Parameter | Category A | Category B | B-CRT Actual |
+|-----------|------------|------------|--------------|
+| BOD5 | ≤10 mg/L | ≤30 mg/L | <10 mg/L |
+| TSS | ≤10 mg/L | ≤30 mg/L | <5 mg/L |
+| E. coli | ≤100 CFU/100mL | ≤1000 CFU/100mL | <500 CFU/100mL |
+
+### Gates Foundation RTTC Comparison
+
+| Project | Origin | Treatment Method | Status |
+|---------|--------|-----------------|--------|
+| B-CRT (Yixing) | China/India | 8-stage biological | Commercial |
+| Caltech Solar Toilet | USA | Electrochemical | Pilot |
+| Cranfield Nano Membrane | UK | Membrane + gasification | Prototype |
+| Duke Supercritical Water | USA | Supercritical oxidation | Research |
+
+### Priority Partner Recommendations
+
+**High Priority (IoT Integration)**:
+1. FluxGen (AquaGen) - API integration for monitoring dashboard
+2. Kritsnam (Dhaara) - Flow monitoring for water accounting
+3. FountLab (FL-SWQM) - Solar-powered quality monitoring (off-grid compatible)
+4. Neerovel - AI analytics for predictive maintenance
+
+**Medium Priority (Strategic)**:
+1. Water Offset Ltd - Carbon/water credit monetization
+2. Hashtag PerCapita - Government market access
+3. Bariflo Cybernetics - Aeration technology enhancement
+
+### Government Program Alignment
+
+| Program | Budget | B-CRT Fit |
+|---------|--------|-----------|
+| SBM 2.0 | ₹1.41L Cr (~$17B) | High - meets sustainable tech requirements |
+| AMRUT 2.0 | ₹2.87L Cr (~$34B) | High - 300+ cities need decentralized solutions |
+| Smart Cities | ₹48K Cr (~$6B) | High - 35+ sensors meet IoT mandates |
+
+### Carbon Credit Potential
+
+- Net carbon benefit: ~0.9 kg CO₂/m³ avoided
+- Annual savings per B-CRT: ~0.5 tonnes CO₂
+- Voluntary market value: $5-12.50/unit/year
+- At scale (1000 units): $5,000-12,500/year potential
+
+---
+
+## Research Status
+
+- [x] T-Works WASH companies analysis - COMPLETED (Nov 2025)
+- [x] ISO 30500 certification deep dive - COMPLETED (Nov 2025)
+- [x] Gates Foundation projects status - COMPLETED (Nov 2025)
+- [x] Market size and projections - COMPLETED (Nov 2025)
+- [x] Technology comparison matrix - COMPLETED (Nov 2025)
+- [ ] Indian government tender specifications - IN PROGRESS
+- [ ] State-level opportunity mapping - PENDING
+- [ ] Partner API evaluation - PENDING
+
+---
+
 *Document Created: November 26, 2025*
+*Last Updated: November 26, 2025*
 *For: ReFlow Toilets (www.reflowtoilets.com)*
 *Parent Company: Ixora Group (www.ixoragroup.com)*
 *Related: LooCafe (www.loocafe.com), DRNF (www.drnf.org)*
+
+**See Also**: `/STRATEGIC_INTELLIGENCE_REPORT.md` for full 15,000+ word detailed analysis

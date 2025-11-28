@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Careers - ReFlow Toilets',
     description: 'Join ReFlow Toilets - Careers and job opportunities in innovative public sanitation',
-    images: ['/images/hero/Hero image.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732613/reflow-assets/hero/hero-image.jpg'],
   },
 }
 
@@ -98,7 +98,7 @@ export default function HiringPage() {
           <div className={styles.splitLayout}>
             <div className={styles.imageWrapper}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/hero/interior.png"
+                src="/images/hero/Interior.png"
                 alt="ReFlow Team"
                 width={600}
                 height={400}

@@ -1,0 +1,108 @@
+{
+  "products": [
+    {
+      "id": "reflow-standard",
+      "name": "ReFlow Standard Unit",
+      "tagline": "Full-featured decentralized sanitation",
+      "description": "Complete B-CRT implementation for high-traffic public areas with off-grid operation and zero discharge",
+      "capacity": "High traffic (500+ users/day)",
+      "technology": "Full B-CRT Suite",
+      "applications": ["Urban areas", "Transit hubs", "Public spaces", "Tourist locations"],
+      "features": [
+        "Off-grid operation",
+        "Zero discharge",
+        "80% water recycling",
+        "IoT monitoring",
+        "Solar powered",
+        "Resource recovery"
+      ]
+    },
+    {
+      "id": "reflow-compact",
+      "name": "ReFlow Compact",
+      "tagline": "Space-efficient sanitation solution",
+      "description": "Scaled B-CRT technology for medium-traffic locations with smaller footprint",
+      "capacity": "Medium traffic (200-500 users/day)",
+      "technology": "Scaled B-CRT",
+      "applications": ["Smaller public areas", "Institutional use", "Schools", "Community centers"],
+      "features": [
+        "Compact design",
+        "Off-grid capable",
+        "Water recycling",
+        "Smart monitoring",
+        "Easy maintenance"
+      ]
+    },
+    {
+      "id": "reflow-enterprise",
+      "name": "ReFlow Enterprise",
+      "tagline": "Industrial-grade sanitation system",
+      "description": "Large-scale deployment solution for corporate and industrial applications",
+      "capacity": "Large scale (1000+ users/day)",
+      "technology": "Enhanced B-CRT with multiple units",
+      "applications": ["Corporate campuses", "Industrial parks", "Large institutions", "Commercial complexes"],
+      "features": [
+        "Multi-unit configuration",
+        "Centralized monitoring",
+        "High capacity",
+        "Advanced resource recovery",
+        "Enterprise integration"
+      ]
+    },
+    {
+      "id": "g2rt",
+      "name": "G2RT (Gates Reinvented Toilet)",
+      "tagline": "Gates Foundation technology for India",
+      "description": "Exclusive India implementation of the Gates Reinvented Toilet technology as part of $1 billion global sanitation mission",
+      "status": "Launching 2025",
+      "partnership": "Bill & Melinda Gates Foundation",
+      "pilotLocations": ["Hyderabad", "Srinagar"],
+      "technology": "Advanced off-grid sanitation with complete waste processing",
+      "features": [
+        "Zero municipal water needed",
+        "Zero discharge",
+        "Energy self-sufficient",
+        "Complete pathogen elimination",
+        "Nutrient recovery",
+        "Global standard technology"
+      ]
+    }
+  ],
+
+  "technology": {
+    "name": "B-CRT (Bio-Circular Resource Technology)",
+    "description": "Advanced waste processing technology that operates completely off-grid with zero discharge",
+    "components": [
+      {
+        "name": "Electrochemical Treatment",
+        "function": "Pathogen elimination and disinfection"
+      },
+      {
+        "name": "Biological Processing",
+        "function": "Organic matter breakdown and treatment"
+      },
+      {
+        "name": "Membrane Filtration",
+        "function": "Water purification and recovery"
+      },
+      {
+        "name": "Nutrient Recovery",
+        "function": "Fertilizer and nutrient extraction"
+      },
+      {
+        "name": "Energy Generation",
+        "function": "Biogas and thermal energy recovery"
+      }
+    ],
+    "benefits": [
+      "No sewer connection required",
+      "No municipal water needed",
+      "Zero groundwater pollution",
+      "80%+ water recycling",
+      "Carbon-neutral operation",
+      "Resource recovery (water, nutrients, energy)"
+    ]
+  },
+
+  "lastUpdated": "2025-11-26"
+}

@@ -16,36 +16,49 @@ export default function Partners() {
           <ScrollReveal delay={0}>
             <div className={styles.partnerItem}>
               <Image
-                src="https://api.typedream.com/v0/document/public/4201e856-7d19-451a-97b5-9ce53fe83ce2/2w5Axc1dNHexVjdcakE9HdMbj6v_wash-innovation-hub-logo.jpg"
-                alt="WASH Innovation Hub"
-                width={79}
-                height={79}
-                className={styles.partnerLogo}
-                loading="lazy"
-              />
-            </div>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={100}>
-            <div className={styles.partnerItem}>
-              <Image
-                src="https://api.typedream.com/v0/document/public/4201e856-7d19-451a-97b5-9ce53fe83ce2/2w5AzsIiHb6TQz65ECr8RBVG7q7_asci-logo.jpg"
-                alt="ASCI Logo"
-                width={113}
-                height={113}
-                className={styles.partnerLogo}
-                loading="lazy"
-              />
-            </div>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={200}>
-            <div className={styles.partnerItem}>
-              <Image
-                src="https://api.typedream.com/v0/document/public/4201e856-7d19-451a-97b5-9ce53fe83ce2/2w5B0bt7KZh8S0A1Xj1e42yLwIq_gates-foundation-logo.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1764067931/loocafe-assets/awards/gates_foundation.png"
                 alt="Gates Foundation"
                 width={186}
                 height={38}
+                className={styles.partnerLogo}
+                loading="lazy"
+              />
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <div className={styles.partnerItem}>
+              <Image
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1764067931/loocafe-assets/awards/undp.png"
+                alt="UNDP"
+                width={100}
+                height={100}
+                className={styles.partnerLogo}
+                loading="lazy"
+              />
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <div className={styles.partnerItem}>
+              <Image
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1764067930/loocafe-assets/awards/swachh_bharat.png"
+                alt="Swachh Bharat Mission"
+                width={100}
+                height={100}
+                className={styles.partnerLogo}
+                loading="lazy"
+              />
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={300}>
+            <div className={styles.partnerItem}>
+              <Image
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1764067929/loocafe-assets/awards/british_council.png"
+                alt="British Council"
+                width={100}
+                height={100}
                 className={styles.partnerLogo}
                 loading="lazy"
               />

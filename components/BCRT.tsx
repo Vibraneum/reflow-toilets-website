@@ -132,7 +132,7 @@ export default function BCRT() {
           <div className={styles.standardGrid}>
             <div className={styles.standardImageWrapper}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/units/reflow-dal-lake.png"
+                src="/images/units/reflow dal lake.png"
                 alt="ReFlow at Dal Lake"
                 fill
                 className={styles.standardImage}
@@ -143,7 +143,7 @@ export default function BCRT() {
             </div>
             <div className={styles.standardImageWrapper}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png"
+                src="/images/tech/reflow dashboard.png"
                 alt="ReFlow Dashboard"
                 fill
                 className={styles.standardImage}

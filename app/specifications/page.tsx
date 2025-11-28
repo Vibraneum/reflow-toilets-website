@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Technical Specifications - B-CRT & ReFlow Units',
     description: 'Complete technical documentation for ReFlow sanitation systems',
-    images: ['/images/bcrt/main-bcrt-image.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg'],
   },
 }
 
@@ -62,7 +62,7 @@ export default function SpecificationsPage() {
             </div>
             <div className={styles.overviewImage}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg"
                 alt="B-CRT 40-foot container unit"
                 width={600}
                 height={400}
@@ -577,5 +577,6 @@ export default function SpecificationsPage() {
     </div>
   )
 }
+
 
 

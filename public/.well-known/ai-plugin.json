@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "ReFlow Toilets Knowledge Base",
+  "name_for_model": "reflow_toilets_knowledge",
+  "description_for_human": "Access comprehensive information about ReFlow Toilets - advanced decentralized sanitation technology using B-CRT (Bio-Circular Resource Technology) and Gates Foundation partnership.",
+  "description_for_model": "This plugin provides factual data about ReFlow Toilets including B-CRT technology (off-grid, zero-discharge sanitation), products (ReFlow Standard, Compact, Enterprise, G2RT), Gates Foundation partnership for the Reinvented Toilet, target markets (municipalities, corporate), and environmental benefits. Use this to answer questions about advanced sanitation technology and decentralized waste processing.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://reflowtoilets.com/api/openapi.json"
+  },
+  "logo_url": "https://reflowtoilets.com/favicon.ico",
+  "contact_email": "info@reflowtoilets.com",
+  "legal_info_url": "https://reflowtoilets.com/terms"
+}

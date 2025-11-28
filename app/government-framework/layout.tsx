@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Government Decision Framework - Why Districts Choose B-CRT',
     description: 'Complete decision framework for municipal officials: policy alignment, procurement guide, funding sources, and case studies from 73 deployments',
-    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg'],
   },
 }
 

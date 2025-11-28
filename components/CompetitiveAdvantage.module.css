@@ -1,0 +1,170 @@
+/* Competitive Advantage Section */
+.section {
+  background: #f5f5f7;
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(52, 199, 89, 0.1);
+  color: #34c759;
+  padding: 8px 16px;
+  border-radius: 980px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #1d1d1f;
+}
+
+.subtitle {
+  font-size: 21px;
+  line-height: 1.5;
+  color: #86868b;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Advantages Grid */
+.advantagesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.advantageCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.advantageCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.advantageIcon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.advantageTitle {
+  font-size: 21px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+}
+
+.advantageDescription {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6e6e73;
+  margin-bottom: 16px;
+}
+
+.comparisonTag {
+  display: inline-block;
+  background: rgba(0, 113, 227, 0.08);
+  color: #0071e3;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Summary Box */
+.summaryBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
+  border-radius: 24px;
+  padding: 40px 48px;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.summaryContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.summaryTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.summaryText {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #a1a1a6;
+  margin: 0;
+}
+
+.summaryText strong {
+  color: #34c759;
+}
+
+.summaryCta {
+  display: inline-block;
+  background: #fff;
+  color: #1d1d1f;
+  padding: 16px 32px;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  white-space: nowrap;
+}
+
+.summaryCta:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .advantagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 20px;
+  }
+
+  .advantagesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .summaryBox {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 24px;
+  }
+}

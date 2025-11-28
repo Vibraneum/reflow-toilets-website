@@ -120,6 +120,18 @@
   margin-bottom: 20px;
 }
 
+.loocafeLink {
+  color: #ff6b35;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.loocafeLink:hover {
+  color: #e55a25;
+  text-decoration: underline;
+}
+
 .originStats {
   display: flex;
   gap: 40px;

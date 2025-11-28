@@ -1,0 +1,81 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ReFlow Toilets Knowledge API",
+    "description": "Machine-readable API for ReFlow Toilets company data, products, and technology specifications",
+    "version": "1.0.0",
+    "contact": {
+      "name": "ReFlow Toilets",
+      "email": "info@reflowtoilets.com",
+      "url": "https://reflowtoilets.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://reflowtoilets.com/api",
+      "description": "Production API"
+    }
+  ],
+  "paths": {
+    "/company.json": {
+      "get": {
+        "operationId": "getCompanyInfo",
+        "summary": "Get comprehensive company information",
+        "description": "Returns all company data including Gates Foundation partnership, contact info, and ecosystem",
+        "responses": {
+          "200": {
+            "description": "Company information",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Company"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products.json": {
+      "get": {
+        "operationId": "getProducts",
+        "summary": "Get all ReFlow products",
+        "description": "Returns detailed information about ReFlow Standard, Compact, Enterprise units and G2RT technology",
+        "responses": {
+          "200": {
+            "description": "Products catalog",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductsCatalog"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Company": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "parentCompany": { "type": "object" },
+          "gatesFoundationPartnership": { "type": "object" },
+          "contact": { "type": "object" },
+          "targetMarkets": { "type": "object" }
+        }
+      },
+      "ProductsCatalog": {
+        "type": "object",
+        "properties": {
+          "products": { "type": "array" },
+          "technology": { "type": "object" }
+        }
+      }
+    }
+  }
+}

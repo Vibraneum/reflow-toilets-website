@@ -1,0 +1,211 @@
+/* Market Opportunity Section */
+.section {
+  background: linear-gradient(180deg, #1d1d1f 0%, #0a0a0a 100%);
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(52, 199, 89, 0.15);
+  color: #34c759;
+  padding: 8px 16px;
+  border-radius: 980px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  background: linear-gradient(180deg, #ffffff 0%, #a1a1a6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 21px;
+  line-height: 1.5;
+  color: #a1a1a6;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.statValue {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  font-size: 15px;
+  font-weight: 600;
+  color: #a1a1a6;
+  margin-bottom: 12px;
+}
+
+.statGrowth {
+  font-size: 13px;
+  color: #34c759;
+  font-weight: 500;
+}
+
+/* Programs Section */
+.programsSection {
+  margin-bottom: 60px;
+}
+
+.programsTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.programsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.programCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.programCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(52, 199, 89, 0.3);
+}
+
+.programHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.programBadge {
+  background: rgba(0, 113, 227, 0.2);
+  color: #0a84ff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.programBudget {
+  font-size: 14px;
+  font-weight: 600;
+  color: #34c759;
+}
+
+.programName {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.programDesc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #a1a1a6;
+  margin-bottom: 16px;
+}
+
+.programFit {
+  display: inline-block;
+  background: rgba(52, 199, 89, 0.15);
+  color: #34c759;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* CTA Row */
+.ctaRow {
+  margin-top: 40px;
+}
+
+.ctaLink {
+  display: inline-block;
+  color: #0a84ff;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.ctaLink:hover {
+  color: #409cff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .programsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 20px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .statValue {
+    font-size: 32px;
+  }
+}

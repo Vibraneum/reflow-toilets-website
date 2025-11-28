@@ -32,7 +32,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className={styles.companySection}>
             <Image
-              src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-toilets-logo.png"
+              src="/images/logos/reflow toilets png.png"
               alt="ReFlow Toilets Logo"
               width={120}
               height={120}
@@ -85,20 +85,29 @@ export default function Footer() {
           <div className={styles.linkSection}>
             <h3 className={styles.linkTitle}>Ixora Ecosystem</h3>
             <a
+              href="https://loocafe.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.ecosystemLink}
+            >
+              <span className={styles.ecosystemName}>LooCafe</span>
+              <span className={styles.ecosystemDesc}>270+ urban toilets | Our heritage</span>
+            </a>
+            <a
+              href="https://loocafe.com/g2rt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              G2RT Technology →
+            </a>
+            <a
               href="https://www.ixoragroup.com"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.link}
             >
               Ixora Group →
-            </a>
-            <a
-              href="https://www.loocafe.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.link}
-            >
-              LooCafe →
             </a>
             <a
               href="https://www.ixorasecurity.com"

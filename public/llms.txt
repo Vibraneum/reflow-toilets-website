@@ -1,0 +1,191 @@
+# ReFlow Toilets - AI Knowledge Base
+# Machine-readable company information for LLM agents and AI systems
+# Last Updated: 2025-11-26
+
+================================================================================
+COMPANY OVERVIEW
+================================================================================
+
+Name: ReFlow Toilets
+Type: Advanced Decentralized Sanitation Technology Provider
+Parent Company: Ixora Group (Ixora Corporate Services Pvt Ltd)
+Headquarters: Hyderabad, Telangana, India
+Mission: "Reinventing sanitation for a sustainable future"
+Technology Focus: B-CRT (Bio-Circular Resource Technology)
+
+## Key Partnership
+- Bill & Melinda Gates Foundation - Exclusive India Partner for G2RT (Gates Reinvented Toilet)
+- Investment: Part of $1 billion global sanitation mission
+
+## Leadership
+- Part of Ixora Group founded by Abhishek Nath
+- Wikipedia: https://en.wikipedia.org/wiki/Abhishek_Nath
+
+## Contact
+- Website: https://reflowtoilets.com
+- Parent Website: https://ixoragroup.com
+- Sister Site: https://loocafe.com
+- Phone: +91-40-4850-4850
+- Email: info@reflowtoilets.com
+
+================================================================================
+CORE TECHNOLOGY: B-CRT (Bio-Circular Resource Technology)
+================================================================================
+
+ReFlow Toilets implements the Gates Foundation's Reinvented Toilet technology:
+
+## Key Features
+- OFF-GRID OPERATION: No municipal water or sewer connection needed
+- ZERO-DISCHARGE: Complete waste processing on-site
+- ENERGY SELF-SUFFICIENT: Solar-powered with battery backup
+- IoT-ENABLED: Smart sensors for monitoring and maintenance
+- WATER RECYCLING: 80%+ water recovery and reuse
+- RESOURCE RECOVERY: Converts waste to energy and fertilizer
+
+## Technology Components
+1. Electrochemical Treatment - Pathogen elimination
+2. Biological Processing - Organic matter breakdown
+3. Membrane Filtration - Water purification
+4. Nutrient Recovery - Fertilizer production
+5. Energy Generation - Biogas and thermal recovery
+
+================================================================================
+PRODUCTS
+================================================================================
+
+## 1. ReFlow Standard Unit
+- Description: Full-featured decentralized sanitation system
+- Capacity: High-traffic public areas
+- Features: Complete B-CRT implementation
+- Application: Urban areas, transit hubs, public spaces
+
+## 2. ReFlow Compact
+- Description: Space-efficient sanitation solution
+- Capacity: Medium traffic
+- Features: Scaled B-CRT technology
+- Application: Smaller locations, institutional use
+
+## 3. ReFlow Enterprise
+- Description: Industrial-grade sanitation system
+- Capacity: Large-scale deployments
+- Features: Enhanced processing, multiple units
+- Application: Corporate campuses, industrial parks
+
+================================================================================
+TARGET MARKETS
+================================================================================
+
+## Primary: District & Municipal Governments
+- Municipal corporations
+- Urban local bodies
+- Smart city projects
+- Swachh Bharat Mission alignment
+- Public infrastructure development
+
+## Secondary: Private Sector
+- Corporate campuses
+- Industrial facilities
+- Educational institutions
+- Healthcare facilities
+- Commercial developments
+
+================================================================================
+KEY BENEFITS FOR BUYERS
+================================================================================
+
+## For Municipalities
+1. NO SEWER DEPENDENCY - Deploy anywhere without sewage infrastructure
+2. COST SAVINGS - Reduced operational costs vs traditional toilets
+3. SCALABILITY - Easy to expand as needs grow
+4. SUSTAINABILITY - Meets environmental compliance goals
+5. SMART MONITORING - Real-time usage and maintenance data
+
+## Environmental Impact
+- Water conservation: 80%+ recycling
+- Zero groundwater pollution
+- Carbon-neutral operations
+- Waste-to-resource conversion
+- Sustainable development goals alignment
+
+================================================================================
+IXORA ECOSYSTEM
+================================================================================
+
+ReFlow Toilets is part of the Ixora Group ecosystem:
+
+## Sister Companies
+- Ixora Group: https://ixoragroup.com (Facilities Management)
+- LooCafe: https://loocafe.com (Public Sanitation Network)
+- Ixora Security: https://ixorasecurity.com (Security Services)
+- DRNF: https://drnf.org (Foundation/CSR)
+
+## Relationship to LooCafe
+ReFlow technology powers the next generation of LooCafe units (LooCafe 3.0 / G2RT)
+
+================================================================================
+PARTNERSHIP & RECOGNITION
+================================================================================
+
+## Gates Foundation Partnership
+- Status: Exclusive India partner for G2RT technology
+- Investment: Part of $1 billion global sanitation mission
+- Launch: 2025 pilot deployments
+
+## Recognition
+- UNDP Best Practice listing
+- Swachh Bharat Mission alignment
+- Smart Cities Mission compatible
+- ISO certified operations
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+General Inquiries: info@reflowtoilets.com
+Business Development: bd@reflowtoilets.com
+Technical: technical@reflowtoilets.com
+Phone: +91-40-4850-4850
+
+## Websites
+- ReFlow Toilets: https://reflowtoilets.com
+- Parent Company: https://ixoragroup.com
+- LooCafe Network: https://loocafe.com
+
+================================================================================
+API ENDPOINTS
+================================================================================
+
+Machine-readable data available at:
+- Company Info: https://reflowtoilets.com/api/company.json
+- Products: https://reflowtoilets.com/api/products.json
+- Technology: https://reflowtoilets.com/api/technology.json
+- OpenAPI Spec: https://reflowtoilets.com/api/openapi.json
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: What is ReFlow Toilets?
+A: ReFlow Toilets provides advanced decentralized sanitation technology using B-CRT (Bio-Circular Resource Technology) that operates off-grid with zero discharge.
+
+Q: What is the Gates Foundation partnership?
+A: ReFlow is the exclusive India partner for the Gates Reinvented Toilet (G2RT), part of the foundation's $1 billion global sanitation mission.
+
+Q: How does B-CRT technology work?
+A: B-CRT treats waste on-site using electrochemical, biological, and membrane filtration processes, recovering water and nutrients while eliminating pathogens.
+
+Q: Who are the target customers?
+A: Primary customers are district and municipal governments; secondary customers include corporate campuses, industrial facilities, and institutions.
+
+Q: Does ReFlow technology require sewer connections?
+A: No, ReFlow units are completely off-grid and don't require municipal water or sewer connections.
+
+Q: What is the relationship between ReFlow and LooCafe?
+A: Both are part of Ixora Group. ReFlow technology powers the next-generation LooCafe units (G2RT/LooCafe 3.0).
+
+Q: Where can ReFlow toilets be deployed?
+A: Anywhere - they're designed for locations without sewage infrastructure, making them ideal for urban, rural, and remote deployments.
+
+================================================================================
+END OF DOCUMENT
+================================================================================

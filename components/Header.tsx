@@ -69,7 +69,7 @@ export default function Header() {
             <Link href="/" className={styles.logoLink} onClick={closeMenu}>
               <div className={styles.logoImage}>
                 <Image
-                  src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-favicon.png"
+                  src="/images/logos/reflow favicon.png"
                   alt="ReFlow Toilets Logo"
                   width={42}
                   height={42}
@@ -162,6 +162,13 @@ export default function Header() {
                         <div>
                           <span className={styles.megaLinkTitle}>Product Range</span>
                           <span className={styles.megaLinkDesc}>Mini, Standard, 40ft units</span>
+                        </div>
+                      </Link>
+                      <Link href="/reflow-hub" className={styles.megaLink} onClick={closeMenu}>
+                        <div className={styles.megaLinkIcon}>⚡</div>
+                        <div>
+                          <span className={styles.megaLinkTitle}>ReFlow Hub</span>
+                          <span className={styles.megaLinkDesc}>Mobility + Sanitation + Services</span>
                         </div>
                       </Link>
                       <Link href="/compare" className={styles.megaLink} onClick={closeMenu}>
@@ -262,6 +269,13 @@ export default function Header() {
                           <span className={styles.megaLinkDesc}>Sanitation research & data</span>
                         </div>
                       </Link>
+                      <Link href="/global-studies" className={styles.megaLink} onClick={closeMenu}>
+                        <div className={styles.megaLinkIcon}>🌍</div>
+                        <div>
+                          <span className={styles.megaLinkTitle}>Global Studies</span>
+                          <span className={styles.megaLinkDesc}>Worldwide toilet innovations</span>
+                        </div>
+                      </Link>
                       <Link href="/blog" className={styles.megaLink} onClick={closeMenu}>
                         <div className={styles.megaLinkIcon}>✍️</div>
                         <div>
@@ -324,6 +338,7 @@ export default function Header() {
                   <Link href="/innovation" className={styles.navLink} onClick={closeMenu}>Innovation</Link>
                   <Link href="/design" className={styles.navLink} onClick={closeMenu}>Design Solutions</Link>
                   <Link href="/products" className={styles.navLink} onClick={closeMenu}>Products</Link>
+                  <Link href="/reflow-hub" className={styles.navLink} onClick={closeMenu}>ReFlow Hub</Link>
                 </div>
                 <div className={styles.mobileSection}>
                   <h4 className={styles.mobileSectionTitle}>Solutions</h4>
@@ -335,6 +350,7 @@ export default function Header() {
                 <div className={styles.mobileSection}>
                   <h4 className={styles.mobileSectionTitle}>Resources</h4>
                   <Link href="/knowledge" className={styles.navLink} onClick={closeMenu}>Knowledge Hub</Link>
+                  <Link href="/global-studies" className={styles.navLink} onClick={closeMenu}>Global Studies</Link>
                   <Link href="/blog" className={styles.navLink} onClick={closeMenu}>Blog</Link>
                   <Link href="/events" className={styles.navLink} onClick={closeMenu}>Events</Link>
                   <Link href="/about" className={styles.navLink} onClick={closeMenu}>About Us</Link>

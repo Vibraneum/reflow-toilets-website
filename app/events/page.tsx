@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Events & Meetings - ReFlow in Action | ReFlow Toilets',
     description: 'Explore our journey: awards, partnerships, deployments, and media coverage',
-    images: ['/images/events/hero.jpg'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732613/reflow-assets/hero/hero-image.jpg'],
   },
 }
 
@@ -233,6 +233,202 @@ export default function EventsPage() {
         </div>
       </section>
 
+      {/* Lumbini Park B-CRT Deployment - Featured Section */}
+      <section className={styles.launchSection}>
+        <div className={styles.container}>
+          <ScrollReveal>
+            <div className={styles.launchBadge}>First Deployment</div>
+            <h2 className={styles.sectionTitle}>B-CRT Unit at Lumbini Park</h2>
+            <p className={styles.launchIntro}>
+              ReFlow's first B-CRT container unit deployed at Lumbini Park, Hyderabad — overlooking the iconic Telangana Secretariat. This landmark deployment demonstrates our commitment to bringing sustainable sanitation to high-visibility public locations.
+            </p>
+          </ScrollReveal>
+
+          <div className={styles.launchGrid}>
+            <ScrollReveal delay={100}>
+              <div className={styles.launchMainImage}>
+                <Image
+                  src="/images/events/secretariat-bcrt/bcrt-unit-secretariat.jpg"
+                  alt="ReFlow B-CRT container unit at Lumbini Park overlooking Telangana Secretariat"
+                  width={800}
+                  height={450}
+                  className={styles.launchImage}
+                  priority
+                />
+                <div className={styles.launchCaption}>
+                  <h4>B-CRT Container Unit</h4>
+                  <p>ReFlow's first B-CRT deployment at Lumbini Park, with the Telangana Secretariat visible in the background</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <div className={styles.launchSideInfo}>
+              <ScrollReveal delay={150}>
+                <div className={styles.infoCard}>
+                  <h4>Location</h4>
+                  <p>Lumbini Park, Hyderabad</p>
+                  <p className={styles.infoSubtext}>Overlooking Telangana Secretariat</p>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={200}>
+                <div className={styles.infoCard}>
+                  <h4>Technology</h4>
+                  <p>B-CRT Container Unit</p>
+                  <p className={styles.infoSubtext}>Zero-discharge sanitation system</p>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={250}>
+                <div className={styles.infoCard}>
+                  <h4>Significance</h4>
+                  <p>First Public Deployment</p>
+                  <p className={styles.infoSubtext}>High-visibility government district location</p>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+
+          <ScrollReveal delay={300}>
+            <div className={styles.launchStats}>
+              <div className={styles.launchStat}>
+                <span className={styles.launchStatValue}>First</span>
+                <span className={styles.launchStatLabel}>B-CRT Public Deployment</span>
+              </div>
+              <div className={styles.launchStat}>
+                <span className={styles.launchStatValue}>Lumbini Park</span>
+                <span className={styles.launchStatLabel}>Overlooking Secretariat, Hyderabad</span>
+              </div>
+              <div className={styles.launchStat}>
+                <span className={styles.launchStatValue}>Zero Discharge</span>
+                <span className={styles.launchStatLabel}>Sustainable Sanitation</span>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Swachh Bharat Mission Visit Section */}
+      <section className={styles.launchSection}>
+        <div className={styles.container}>
+          <ScrollReveal>
+            <div className={styles.launchBadge}>Government Partnership</div>
+            <h2 className={styles.sectionTitle}>Swachh Bharat Mission Visit</h2>
+            <p className={styles.launchIntro}>
+              Roopa Mishra, Joint Secretary &amp; National Mission Director of Swachh Bharat Mission (Urban), visited the Telangana Rising / GHMC LooCafe B-CRT unit — experiencing India's "Home of Innovation for WASH" technology firsthand.
+            </p>
+          </ScrollReveal>
+
+          <div className={styles.launchGallery}>
+            <ScrollReveal delay={100}>
+              <div className={styles.launchGalleryItem}>
+                <Image
+                  src="/images/events/bcrt-launch/IMG_3085.jpg"
+                  alt="Roopa Mishra at Telangana Rising B-CRT unit inauguration"
+                  width={400}
+                  height={300}
+                  className={styles.launchImage}
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={120}>
+              <div className={styles.launchGalleryItem}>
+                <Image
+                  src="/images/events/bcrt-launch/IMG_3086.jpg"
+                  alt="Officials at Home of Innovation for WASH"
+                  width={400}
+                  height={300}
+                  className={styles.launchImage}
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={140}>
+              <div className={styles.launchGalleryItem}>
+                <Image
+                  src="/images/events/bcrt-launch/IMG_3087.jpg"
+                  alt="Technology presentation to Swachh Bharat Mission"
+                  width={400}
+                  height={300}
+                  className={styles.launchImage}
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={160}>
+              <div className={styles.launchGalleryItem}>
+                <Image
+                  src="/images/events/bcrt-launch/IMG_3088.jpg"
+                  alt="Roopa Mishra learning about B-CRT technology"
+                  width={400}
+                  height={300}
+                  className={styles.launchImage}
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={180}>
+              <div className={styles.launchGalleryItem}>
+                <Image
+                  src="/images/events/bcrt-launch/IMG_3091.jpg"
+                  alt="Telangana Rising WASH innovation discussion"
+                  width={400}
+                  height={300}
+                  className={styles.launchImage}
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className={styles.launchGalleryItem}>
+                <Image
+                  src="/images/events/bcrt-launch/IMG_3092.jpg"
+                  alt="GHMC and Swachh Bharat Mission collaboration"
+                  width={400}
+                  height={300}
+                  className={styles.launchImage}
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={220}>
+              <div className={styles.launchGalleryItem}>
+                <Image
+                  src="/images/events/bcrt-launch/IMG_3081.jpg"
+                  alt="Team presenting Toilet Tales book"
+                  width={400}
+                  height={300}
+                  className={styles.launchImage}
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={240}>
+              <div className={styles.launchGalleryItem}>
+                <Image
+                  src="/images/events/bcrt-launch/IMG_3100.jpg"
+                  alt="Officials touring the LooCafe facility"
+                  width={400}
+                  height={300}
+                  className={styles.launchImage}
+                />
+              </div>
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal delay={300}>
+            <div className={styles.launchStats}>
+              <div className={styles.launchStat}>
+                <span className={styles.launchStatValue}>Roopa Mishra</span>
+                <span className={styles.launchStatLabel}>JS &amp; MD, Swachh Bharat Mission</span>
+              </div>
+              <div className={styles.launchStat}>
+                <span className={styles.launchStatValue}>GHMC</span>
+                <span className={styles.launchStatLabel}>Telangana Rising Partnership</span>
+              </div>
+              <div className={styles.launchStat}>
+                <span className={styles.launchStatValue}>Home of Innovation</span>
+                <span className={styles.launchStatLabel}>for WASH Technology</span>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Photo Gallery */}
       <section className={styles.gallerySection}>
         <div className={styles.container}>
@@ -248,16 +444,16 @@ export default function EventsPage() {
               <div className={styles.galleryItem}>
                 <div className={styles.galleryImageWrapper}>
                   <Image
-                    src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png"
-                    alt="B-CRT unit installation at LooCafe location"
+                    src="https://res.cloudinary.com/dhupieu4x/image/upload/v1762599633/ixora-assets/operational-photos/loocafe-exhibition-booth-ixora-corporate.jpg"
+                    alt="LooCafe Exhibition Booth at Industry Conference"
                     width={600}
                     height={400}
                     className={styles.galleryImage}
                   />
                 </div>
                 <div className={styles.galleryCaption}>
-                  <h4 className={styles.galleryCaptionTitle}>B-CRT Unit Installation</h4>
-                  <p className={styles.galleryCaptionText}>Hyderabad Pilot Project • 2015</p>
+                  <h4 className={styles.galleryCaptionTitle}>LooCafe Exhibition Booth</h4>
+                  <p className={styles.galleryCaptionText}>Industry Conference • Hyderabad</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -266,7 +462,25 @@ export default function EventsPage() {
               <div className={styles.galleryItem}>
                 <div className={styles.galleryImageWrapper}>
                   <Image
-                    src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/tech/dashboard.png"
+                    src="https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg"
+                    alt="B-CRT unit installation at LooCafe location"
+                    width={600}
+                    height={400}
+                    className={styles.galleryImage}
+                  />
+                </div>
+                <div className={styles.galleryCaption}>
+                  <h4 className={styles.galleryCaptionTitle}>B-CRT Unit Installation</h4>
+                  <p className={styles.galleryCaptionText}>Hyderabad Pilot Project • 2024</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={200}>
+              <div className={styles.galleryItem}>
+                <div className={styles.galleryImageWrapper}>
+                  <Image
+                    src="/images/tech/reflow dashboard.png"
                     alt="Operations dashboard demonstration at WASH Summit"
                     width={600}
                     height={400}
@@ -284,7 +498,7 @@ export default function EventsPage() {
               <div className={styles.galleryItem}>
                 <div className={styles.galleryImageWrapper}>
                   <Image
-                    src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-dashboard2.png"
+                    src="/images/tech/reflow dashboard2.png"
                     alt="Government inspection of deployed units"
                     width={600}
                     height={400}
@@ -302,7 +516,7 @@ export default function EventsPage() {
               <div className={styles.galleryItem}>
                 <div className={styles.galleryImageWrapper}>
                   <Image
-                    src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-dashboard.png"
+                    src="/images/tech/reflow dashboard.png"
                     alt="IoT platform demonstration to municipal corporation"
                     width={600}
                     height={400}
@@ -320,7 +534,7 @@ export default function EventsPage() {
               <div className={styles.galleryItem}>
                 <div className={styles.galleryImageWrapper}>
                   <Image
-                    src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-app.png"
+                    src="/images/tech/Reflow app.png"
                     alt="Mobile app training for field operators"
                     width={600}
                     height={400}
@@ -338,7 +552,7 @@ export default function EventsPage() {
               <div className={styles.galleryItem}>
                 <div className={styles.galleryImageWrapper}>
                   <Image
-                    src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-toilets/images/tech/reflow-app-2-1.png"
+                    src="/images/tech/Reflow app 2 (1).png"
                     alt="Partnership signing with Chinese Academy of Engineering"
                     width={600}
                     height={400}

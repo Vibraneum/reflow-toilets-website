@@ -590,6 +590,19 @@
   margin: 0 auto 60px;
 }
 
+/* LooCafe Link */
+.loocafeLink {
+  color: #ff6b35;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.loocafeLink:hover {
+  color: #e55a25;
+  text-decoration: underline;
+}
+
 /* SYSTEM ARCHITECTURE */
 .architecture {
   background: #fff;
@@ -790,9 +803,37 @@
   border-radius: 12px;
 }
 
+/* TECHNOLOGY COMPARISON */
+.techComparison {
+  background: #f5f5f7;
+  padding: 100px 20px;
+}
+
+.comparisonNote {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  margin-top: 40px;
+}
+
+.comparisonNote h4 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.comparisonNote p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6e6e73;
+  margin: 0;
+}
+
 /* TECHNICAL FAQ */
 .faq {
-  background: #f5f5f7;
+  background: #fff;
   padding: 100px 20px;
 }
 

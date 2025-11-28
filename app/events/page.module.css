@@ -321,6 +321,243 @@
   color: #0071e3;
 }
 
+/* HITEX LAUNCH SECTION */
+.launchSection {
+  background: linear-gradient(180deg, #fff 0%, #f5f5f7 100%);
+  padding: 140px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.launchSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(16, 185, 129, 0.3) 50%, transparent 100%);
+}
+
+.launchBadge {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  color: #fff;
+  border-radius: 980px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25);
+}
+
+.launchIntro {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #6e6e73;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 80px;
+  font-weight: 400;
+}
+
+.launchGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.launchMainImage {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.launchMainImage:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+}
+
+.launchSideImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.launchSideInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoCard {
+  background: linear-gradient(135deg, #1d1d1f 0%, #2c2c2e 100%);
+  border-radius: 16px;
+  padding: 28px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.infoCard h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #10b981;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.infoCard p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.infoSubtext {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #a1a1a6 !important;
+  margin-top: 6px !important;
+}
+
+.launchSideImage {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.launchSideImage:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.launchImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.launchMainImage .launchImage {
+  aspect-ratio: 3/2;
+}
+
+.launchSideImage .launchImage {
+  aspect-ratio: 4/3;
+}
+
+.launchCaption {
+  padding: 20px 24px;
+  background: #fff;
+}
+
+.launchCaption h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.launchCaption p {
+  font-size: 14px;
+  color: #86868b;
+  line-height: 1.4;
+}
+
+.launchSideImage .launchCaption {
+  padding: 16px;
+}
+
+.launchSideImage .launchCaption h4 {
+  font-size: 15px;
+}
+
+.launchSideImage .launchCaption p {
+  font-size: 13px;
+}
+
+.launchStats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 80px;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #1d1d1f 0%, #2c2c2e 100%);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.launchStat {
+  text-align: center;
+}
+
+.launchStatValue {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  color: #10b981;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.launchStatLabel {
+  font-size: 15px;
+  color: #a1a1a6;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.gallerySubtitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1d1d1f;
+  text-align: center;
+  margin: 80px 0 40px;
+  letter-spacing: -0.01em;
+}
+
+.launchGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.launchGalleryItem {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: #fff;
+}
+
+.launchGalleryItem:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.launchGalleryItem .launchImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
 /* GALLERY SECTION */
 .gallerySection {
   background: #f5f5f7;
@@ -810,6 +1047,23 @@
   .timelineYear {
     font-size: 40px;
   }
+
+  .launchGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .launchSideImages {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .launchStats {
+    gap: 40px;
+    padding: 40px 30px;
+  }
+
+  .launchStatValue {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -822,8 +1076,28 @@
   .gallerySection,
   .mediaSection,
   .partnersSection,
-  .upcomingSection {
+  .upcomingSection,
+  .launchSection {
     padding: 80px 20px;
+  }
+
+  .launchSideImages {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .launchStats {
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 24px;
+  }
+
+  .launchStatValue {
+    font-size: 32px;
+  }
+
+  .launchIntro {
+    font-size: 19px;
+    margin-bottom: 48px;
   }
 
   .timeline::before {

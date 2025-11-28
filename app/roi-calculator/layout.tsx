@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: 'Calculate your 20-year savings with ReFlow B-CRT technology. Comprehensive financial analysis for government infrastructure decisions.',
     images: [
       {
-        url: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png',
+        url: 'https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg',
         width: 1200,
         height: 630,
         alt: 'ReFlow Toilets ROI Calculator',

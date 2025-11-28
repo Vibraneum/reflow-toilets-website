@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     description: 'Smart, resilient, and sustainable public toilet solutions designed for modern urban needs',
     images: [
       {
-        url: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png',
+        url: 'https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg',
         width: 1200,
         height: 630,
         alt: 'ReFlow Toilets - B-CRT Blackwater Circular Reinvented Toilet',
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ReFlow Toilets - Scalable Decentralized Sanitation Infrastructure',
     description: 'Smart, resilient, and sustainable public toilet solutions designed for modern urban needs',
-    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg'],
   },
   robots: {
     index: true,
@@ -119,6 +119,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${montserrat.variable} ${inter.variable} ${quicksand.variable} ${poppins.variable} ${playfairDisplay.variable} ${cormorantGaramond.variable}`}>
       <head>
+        {/* Preconnect to external resources for faster loading */}
+        <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
         {/* Prevent hydration mismatch by ensuring consistent image rendering */}
         <style>{`
           html, body { filter: none !important; }

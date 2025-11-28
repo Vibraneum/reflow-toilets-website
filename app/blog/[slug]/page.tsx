@@ -84,7 +84,7 @@ export default async function BlogPostPage({ params }: Props) {
       name: 'ReFlow Toilets',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/logos/reflow-favicon.png',
+        url: '/images/logos/reflow favicon.png',
       },
     },
     keywords: post.tags.join(', '),

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About ReFlow Toilets | Our Story',
     description: 'From LooCafe to ReFlow - 15 years of sanitation innovation leading to B-CRT technology.',
-    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/bcrt/main-bcrt-image.png'],
+    images: ['https://res.cloudinary.com/dhupieu4x/image/upload/v1763732619/reflow-assets/bcrt/main-bcrt.jpg'],
   },
 }
 
@@ -54,7 +54,7 @@ export default function AboutPage() {
             <div className={styles.originContent}>
               <h2 className={styles.originTitle}>The LooCafe Foundation</h2>
               <p className={styles.originText}>
-                In 2010, LooCafe launched in Hyderabad with a simple premise: public toilets can be clean, free, and sustainable through advertising revenue.
+                In 2010, <a href="https://loocafe.com" target="_blank" rel="noopener noreferrer" className={styles.loocafeLink}>LooCafe</a> launched in Hyderabad with a simple premise: public toilets can be clean, free, and sustainable through advertising revenue.
               </p>
               <p className={styles.originText}>
                 Today, 270+ LooCafe units serve millions across India's busiest transit hubs — bus stations, metro stops, and railway platforms.
@@ -81,7 +81,7 @@ export default function AboutPage() {
 
             <div className={styles.originVisual}>
               <Image
-                src="https://res.cloudinary.com/dhupieu4x/image/upload/reflow-assets/loocafe/loocafe-unit.png"
+                src="https://res.cloudinary.com/dhupieu4x/image/upload/v1764067929/loocafe-assets/units/loocafe-container.jpg"
                 alt="LooCafe public toilet unit"
                 width={500}
                 height={400}
